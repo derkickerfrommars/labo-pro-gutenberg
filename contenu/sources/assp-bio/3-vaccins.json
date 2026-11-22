@@ -1,0 +1,646 @@
+{
+  "lieu": {
+    "id": "bio-vaccins",
+    "nom": "Centre de vaccination",
+    "icone": "💉",
+    "couleur": "#0ea5e9"
+  },
+  "ateliers": [
+    {
+      "id": "bio-immunite",
+      "titre": "Immunité, vaccins, allergies",
+      "icone": "🛡️",
+      "programme": "Bloc 4 · Le système immunitaire : immunité innée et adaptative, vaccination, allergies"
+    },
+    {
+      "id": "bio-maladies",
+      "titre": "Maladies infectieuses",
+      "icone": "🤒",
+      "programme": "Bloc 4 · Rubéole, coqueluche, scarlatine, varicelle, rougeole, oreillons, méningites · Bloc 3 · Hépatite B, grippe"
+    }
+  ],
+  "items": [
+    {
+      "id": "bio-immunite-01",
+      "atelier": "bio-immunite",
+      "type": "multi",
+      "contexte": "🏰 Ton corps est un château fort. Avant même les soldats, il y a les remparts !",
+      "enonce": "Quelles sont les barrières naturelles de l’immunité innée ? Choisis-en 4.",
+      "options": [
+        "💧 Le mucus et les cils des voies respiratoires",
+        "🧪 L’acidité de l’estomac",
+        "🧱 La peau intacte",
+        "💉 Un vaccin reçu dans l’enfance",
+        "😢 Les larmes et la salive (lysozyme)"
+      ],
+      "bonnes": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "explications": [
+        "Oui : ils piègent et évacuent les microbes.",
+        "Oui : beaucoup de microbes avalés y sont détruits.",
+        "Oui : une barrière physique, avec sa flore protectrice.",
+        "Non : le vaccin éduque l’immunité adaptative, ce n’est pas une barrière naturelle.",
+        "Oui : le lysozyme détruit certaines bactéries."
+      ],
+      "pourquoi": "L’immunité innée est présente dès la naissance, immédiate et non spécifique : barrières, flores, puis réaction inflammatoire et phagocytose si un microbe passe.",
+      "fiche": {
+        "titre": "Les remparts du corps",
+        "texte": "Immunité innée : peau, muqueuses, mucus, cils, larmes, salive, acidité gastrique, flores. Puis inflammation et phagocytose. Immédiate et non spécifique."
+      }
+    },
+    {
+      "id": "bio-immunite-02",
+      "atelier": "bio-immunite",
+      "type": "qcm",
+      "contexte": "🌹 Lucas, 8 ans · Il s’est piqué avec une épine. Le lendemain, la zone est rouge, chaude, gonflée et douloureuse.",
+      "enonce": "Que se passe-t-il ?",
+      "options": [
+        "Une réaction inflammatoire : l’organisme réagit à la blessure en attirant des cellules de défense",
+        "Une phlébite : un caillot de sang s’est formé dans une veine profonde à l’endroit de la piqûre",
+        "Une réaction allergique grave à la sève de l’épine : il faut appeler le 15 et surveiller sa respiration",
+        "Une nécrose : les cellules de la peau sont mortes et ne pourront pas se réparer"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "Les 4 signes de l’inflammation : rougeur, chaleur, gonflement (œdème), douleur. Les vaisseaux se dilatent, les cellules immunitaires arrivent sur place. L’inflammation peut apparaître même sans microbe : elle aide à défendre et à réparer le tissu. Si une infection s’ajoute (pus, rougeur qui s’étend, fièvre) : consulter.",
+      "fiche": {
+        "titre": "Réaction inflammatoire",
+        "texte": "4 signes : rougeur, chaleur, gonflement, douleur. Mastocytes (libèrent l’histamine), granulocytes et macrophages arrivent sur place pour éliminer les intrus et préparer la réparation."
+      }
+    },
+    {
+      "id": "bio-immunite-03",
+      "atelier": "bio-immunite",
+      "type": "tri",
+      "enonce": "Associe chaque mot à sa définition.",
+      "categories": [
+        "Chimiotactisme",
+        "Diapédèse",
+        "Phagocytose"
+      ],
+      "icones": [
+        "🧲",
+        "🚪",
+        "😋"
+      ],
+      "elements": [
+        {
+          "texte": "Les globules blancs sont attirés vers le lieu de l’infection par des substances chimiques",
+          "categorie": 0
+        },
+        {
+          "texte": "Les globules blancs traversent la paroi des capillaires pour sortir du sang",
+          "categorie": 1
+        },
+        {
+          "texte": "Un globule blanc englobe un microbe et le digère",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "Dans l’ordre : le signal chimique attire (chimiotactisme), le globule blanc se faufile hors du vaisseau (diapédèse), puis il « mange » le microbe (phagocytose).",
+      "fiche": {
+        "titre": "3 mots de l’inflammation",
+        "texte": "🧲 Chimiotactisme : attraction chimique. 🚪 Diapédèse : passage à travers la paroi des capillaires. 😋 Phagocytose : englober et digérer le microbe."
+      }
+    },
+    {
+      "id": "bio-immunite-04",
+      "atelier": "bio-immunite",
+      "type": "ordre",
+      "enonce": "Remets les étapes de la phagocytose dans l’ordre.",
+      "elements": [
+        {
+          "texte": "Adhésion : le phagocyte se colle au microbe"
+        },
+        {
+          "texte": "Ingestion : il l’entoure et l’englobe dans une vésicule"
+        },
+        {
+          "texte": "Digestion : des enzymes détruisent le microbe"
+        },
+        {
+          "texte": "Rejet : les déchets sont évacués"
+        }
+      ],
+      "pourquoi": "Astuce : « A-I-D-R » comme « AIDeR » le corps ! Les phagocytes sont les granulocytes neutrophiles et les macrophages.",
+      "fiche": {
+        "titre": "Phagocytose",
+        "texte": "Adhésion → Ingestion → Digestion → Rejet (« AIDeR »). Réalisée par les granulocytes neutrophiles et les macrophages."
+      }
+    },
+    {
+      "id": "bio-immunite-05",
+      "atelier": "bio-immunite",
+      "type": "tri",
+      "enonce": "Immunité innée ou immunité adaptative ?",
+      "categories": [
+        "Innée",
+        "Adaptative"
+      ],
+      "icones": [
+        "⚡",
+        "🎯"
+      ],
+      "elements": [
+        {
+          "texte": "Immédiate, présente dès la naissance",
+          "categorie": 0
+        },
+        {
+          "texte": "Agit de la même façon contre tous les microbes",
+          "categorie": 0
+        },
+        {
+          "texte": "Phagocytose par les macrophages",
+          "categorie": 0
+        },
+        {
+          "texte": "Spécifique d’un antigène précis",
+          "categorie": 1
+        },
+        {
+          "texte": "Possède une mémoire",
+          "categorie": 1
+        },
+        {
+          "texte": "Fabrication d’anticorps par les lymphocytes B",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "L’innée est la première ligne, rapide mais générale. L’adaptative met quelques jours la première fois, mais elle est ciblée et garde la mémoire : c’est elle que les vaccins entraînent.",
+      "fiche": {
+        "titre": "Innée / adaptative",
+        "texte": "Innée : immédiate, non spécifique, sans mémoire (barrières, inflammation, phagocytose). Adaptative : spécifique, plus lente la 1ʳᵉ fois, avec mémoire (lymphocytes B → anticorps ; lymphocytes T)."
+      }
+    },
+    {
+      "id": "bio-immunite-06",
+      "atelier": "bio-immunite",
+      "type": "qcm",
+      "enonce": "Quelle est la différence entre un antigène et un anticorps ?",
+      "options": [
+        "L’antigène est une molécule reconnue comme étrangère ; l’anticorps, une protéine produite par l’organisme qui s’y fixe spécifiquement",
+        "Ce sont deux sortes de globules rouges : l’un transporte l’oxygène, l’autre transporte les déchets vers les reins",
+        "L’antigène est un médicament qui détruit les microbes ; l’anticorps est le microbe que l’organisme cherche à éliminer",
+        "L’anticorps est une molécule étrangère qui attaque nos propres cellules ; l’antigène est la protéine fabriquée pour le neutraliser"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "Les anticorps sont produits par les plasmocytes (lymphocytes B activés). Ils s’accrochent à l’antigène comme une clé dans une serrure (complexe antigène-anticorps), ce qui le neutralise et facilite la phagocytose.",
+      "fiche": {
+        "titre": "Antigène / anticorps",
+        "texte": "Antigène : molécule étrangère qui déclenche une réponse immunitaire. Anticorps : protéine produite par les plasmocytes, spécifique d’un antigène → complexe immun → neutralisation."
+      }
+    },
+    {
+      "id": "bio-immunite-07",
+      "atelier": "bio-immunite",
+      "type": "tri",
+      "enonce": "Quelle cellule fait quoi ?",
+      "categories": [
+        "Lymphocyte B / plasmocyte",
+        "Lymphocyte T cytotoxique",
+        "Lymphocyte T4 (auxiliaire)",
+        "Macrophage"
+      ],
+      "icones": [
+        "🏹",
+        "🗡️",
+        "📣",
+        "😋"
+      ],
+      "elements": [
+        {
+          "texte": "Produit des anticorps (réponse humorale)",
+          "categorie": 0
+        },
+        {
+          "texte": "Détruit les cellules infectées par un virus",
+          "categorie": 1
+        },
+        {
+          "texte": "Coordonne et active les autres lymphocytes ; cible du VIH",
+          "categorie": 2
+        },
+        {
+          "texte": "Phagocyte les microbes et présente leurs antigènes",
+          "categorie": 3
+        }
+      ],
+      "pourquoi": "La réponse adaptative est un travail d’équipe : le macrophage présente l’antigène, le T4 donne l’alerte, les B fabriquent les anticorps, les T cytotoxiques éliminent les cellules infectées. Le VIH infecte les T4 : sans traitement, leur nombre baisse peu à peu, les défenses s’affaiblissent et des infections opportunistes apparaissent. Les traitements antirétroviraux permettent de contrôler l’infection.",
+      "fiche": {
+        "titre": "L’équipe immunitaire",
+        "texte": "Macrophage : phagocyte et présente. T4 : chef d’orchestre (cible du VIH). B → plasmocytes : anticorps (humorale). T cytotoxiques : tuent les cellules infectées (cellulaire)."
+      }
+    },
+    {
+      "id": "bio-immunite-08",
+      "atelier": "bio-immunite",
+      "type": "qcm",
+      "contexte": "📈 Une courbe montre la quantité d’anticorps après une 1ʳᵉ injection de vaccin, puis après un rappel.",
+      "enonce": "Que montre-t-elle après le rappel ?",
+      "options": [
+        "Aucune différence avec la première injection : le corps repart de zéro",
+        "Une réponse plus lente et plus faible, car l’organisme s’est habitué au vaccin et ne le perçoit plus comme étranger",
+        "La disparition des anticorps, car le rappel neutralise ceux de la première dose",
+        "Une réponse plus rapide, plus forte et plus durable, grâce à la mémoire immunitaire"
+      ],
+      "bonnes": [
+        3
+      ],
+      "pourquoi": "Après la 1ʳᵉ rencontre, des lymphocytes mémoire restent en réserve. Au rappel (ou si le vrai microbe arrive), ils réagissent tout de suite : c’est le principe de la vaccination.",
+      "fiche": {
+        "titre": "Mémoire immunitaire",
+        "texte": "Réponse primaire : lente, faible. Réponse secondaire (rappel) : rapide, forte, durable, grâce aux lymphocytes mémoire."
+      }
+    },
+    {
+      "id": "bio-immunite-09",
+      "atelier": "bio-immunite",
+      "type": "qcm",
+      "enonce": "Quel est le principe de la vaccination ?",
+      "options": [
+        "Injecter des antibiotiques en prévention pour que les microbes soient détruits avant même d’avoir pu entrer dans l’organisme",
+        "Injecter directement des anticorps tout prêts, fabriqués par un autre organisme, qui restent dans le sang et protègent à vie contre la maladie",
+        "Donner volontairement la maladie sous sa forme grave, pour que l’organisme apprenne à la combattre et s’en souvienne ensuite",
+        "Présenter à l’organisme un antigène inoffensif (ou le lui faire fabriquer un moment) pour qu’il développe défenses et mémoire, sans tomber malade"
+      ],
+      "bonnes": [
+        3
+      ],
+      "pourquoi": "Le vaccin contient un microbe atténué ou inactivé, une toxine inactivée (anatoxine), un fragment de microbe ou un ARN messager. L’immunité est active et durable ; des rappels l’entretiennent. Plus il y a de vaccinés, plus on protège aussi les fragiles (immunité collective).",
+      "fiche": {
+        "titre": "Vaccination",
+        "texte": "Antigène inoffensif, ou ARN messager qui fait fabriquer un moment l’antigène → réponse immunitaire + mémoire, sans maladie. Immunité active, durable (rappels). Protège la personne et la collectivité (immunité de groupe)."
+      }
+    },
+    {
+      "id": "bio-immunite-10",
+      "atelier": "bio-immunite",
+      "type": "qcm",
+      "contexte": "📒 Tu consultes le carnet de santé de Jade, 15 mois, née en août 2025, pour son inscription en crèche.",
+      "enonce": "Parmi ces vaccinations, laquelle est obligatoire pour elle ?",
+      "options": [
+        "Grippe saisonnière",
+        "BCG (tuberculose)",
+        "Hépatite B",
+        "Varicelle"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Depuis 2018, 11 vaccinations sont obligatoires pour les enfants (diphtérie, tétanos, poliomyélite, coqueluche, Haemophilus influenzae b, hépatite B, rougeole, oreillons, rubéole, pneumocoque, méningocoque C). Depuis le 1er janvier 2025, le méningocoque C est remplacé par les méningocoques ACWY, et la vaccination contre le méningocoque B est aussi obligatoire (enfants nés depuis le 1er janvier 2023). La grippe, la varicelle et le BCG sont recommandés seulement dans certaines situations. Ces vaccinations conditionnent l’entrée en collectivité.",
+      "fiche": {
+        "titre": "Vaccins obligatoires",
+        "texte": "Enfants nés depuis 2018 : DTP, coqueluche, Hib, hépatite B, ROR, pneumocoque, méningocoque. Depuis 2025 : méningocoques ACWY et B (enfants nés depuis 2023). Exigées pour entrer en crèche ou à l’école. Vérifier le calendrier vaccinal de l’année."
+      }
+    },
+    {
+      "id": "bio-immunite-11",
+      "atelier": "bio-immunite",
+      "type": "qcm",
+      "enonce": "Une allergie, c’est…",
+      "options": [
+        "Une réaction excessive du système immunitaire contre une substance normalement inoffensive (allergène)",
+        "Un manque d’anticorps qui laisse entrer les pollens et les poussières dans l’organisme",
+        "Une infection par un virus du rhume, contagieuse, qui provoque éternuements, nez qui coule et yeux qui piquent",
+        "Un empoisonnement des cellules par une substance toxique, comme le pollen ou les acariens"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "Lors d’un 1ᵉʳ contact, l’organisme se sensibilise. Aux contacts suivants, des cellules (mastocytes) libèrent de l’histamine : éternuements, urticaire, gonflement… Allergènes fréquents : pollens, acariens, poils d’animaux, arachide, lait, œuf, venins, certains médicaments, latex.",
+      "fiche": {
+        "titre": "Allergie",
+        "texte": "Réaction immunitaire excessive contre un allergène inoffensif, après sensibilisation. Histamine → urticaire, rhinite, asthme, œdème. Allergènes : pollens, acariens, aliments, venins, médicaments, latex."
+      }
+    },
+    {
+      "id": "bio-immunite-12",
+      "atelier": "bio-immunite",
+      "type": "ordre",
+      "contexte": "🥜 Tom, 6 ans · À l’accueil périscolaire, il mange un gâteau qui contenait de l’arachide. Ses lèvres gonflent, il a du mal à respirer. Il a un PAI.",
+      "enonce": "Remets les bonnes actions dans l’ordre.",
+      "elements": [
+        {
+          "texte": "Reconnaître une réaction allergique grave, rester avec Tom et appeler à l’aide"
+        },
+        {
+          "texte": "Sans attendre : un adulte injecte l’adrénaline (stylo du PAI) pendant qu’un autre appelle le 15 ou le 112"
+        },
+        {
+          "texte": "L’installer sans le faire lever ni marcher (allongé ; demi-assis s’il a du mal à respirer ; en PLS s’il est inconscient et respire) et le surveiller jusqu’aux secours"
+        },
+        {
+          "texte": "Transmettre aux secours ce qui s’est passé : aliment, heure des signes, heure de l’injection"
+        }
+      ],
+      "pourquoi": "C’est un choc anaphylactique possible : urgence vitale. L’adrénaline et l’appel aux secours se font tout de suite, en même temps si l’on est deux (seul : adrénaline d’abord selon le PAI, puis le 15). On ne laisse jamais l’enfant seul.",
+      "fiche": {
+        "titre": "Choc anaphylactique",
+        "texte": "Réaction allergique généralisée : gonflement, gêne respiratoire, malaise, chute de tension. Urgence vitale : adrénaline (stylo, selon le PAI) + 15/112 sans délai, idéalement en même temps ; ne pas le faire lever ; surveiller ; noter l’heure de l’injection."
+      }
+    },
+    {
+      "id": "bio-immunite-13",
+      "atelier": "bio-immunite",
+      "type": "qcm",
+      "contexte": "📒 Malo, 14 mois, né en septembre 2025, entre à la micro-crèche. Dans son carnet de santé, tu lis : hexavalent (DTCaP-Hib-hépatite B) et pneumocoque à 2, 4 et 11 mois ✔ ; méningocoque B à 3 et 5 mois ✔ ; méningocoque ACWY à 6 mois ✔ ; rien depuis ses 12 mois.",
+      "enonce": "Que fais-tu ?",
+      "options": [
+        "Tu signales à la responsable que les vaccins prévus à 12 mois (ROR, rappels contre les méningocoques) manquent ; c’est elle qui voit avec la famille",
+        "Tu conseilles aux parents d’acheter le vaccin ROR en pharmacie pour que l’équipe de la crèche puisse le lui faire sur place",
+        "Tu refuses toi-même l’entrée de l’enfant dès ce matin et tu annonces aux parents qu’il ne pourra revenir à la micro-crèche qu’une fois tous ses vaccins faits",
+        "Tu ne dis rien : les vaccins de 12 mois sont facultatifs et peuvent attendre l’entrée à l’école maternelle"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "À 12 mois sont prévus : la 1re dose de ROR (rougeole, oreillons, rubéole) et les rappels contre les méningocoques B et ACWY. Le professionnel repère et transmet à la responsable ; la vérification des obligations et le dialogue avec la famille relèvent de la direction, la vaccination relève du médecin. L’enfant peut être admis provisoirement, le temps que la famille régularise (3 mois). Le carnet de santé est confidentiel.",
+      "fiche": {
+        "titre": "Lire un carnet de vaccination",
+        "texte": "2, 4, 11 mois : hexavalent + pneumocoque. 3, 5, 12 mois : méningocoque B. 6 et 12 mois : méningocoques ACWY. 12 mois et 16-18 mois : ROR. Rôle ASSP : repérer, transmettre à la responsable, jamais conseiller soi-même."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-maladies-01",
+      "atelier": "bio-maladies",
+      "type": "tri",
+      "contexte": "🤒 À la crèche, plusieurs maladies de l’enfance circulent. Qui est le coupable ?",
+      "enonce": "Bactérie ou virus ?",
+      "categories": [
+        "Bactérie",
+        "Virus"
+      ],
+      "icones": [
+        "🦠",
+        "👾"
+      ],
+      "elements": [
+        {
+          "texte": "Coqueluche",
+          "categorie": 0
+        },
+        {
+          "texte": "Scarlatine",
+          "categorie": 0
+        },
+        {
+          "texte": "Rougeole",
+          "categorie": 1
+        },
+        {
+          "texte": "Rubéole",
+          "categorie": 1
+        },
+        {
+          "texte": "Varicelle",
+          "categorie": 1
+        },
+        {
+          "texte": "Oreillons",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Coqueluche (Bordetella pertussis) et scarlatine (streptocoque A) sont bactériennes. Rougeole, rubéole, varicelle et oreillons sont virales. Les méningites peuvent être virales ou bactériennes.",
+      "fiche": {
+        "titre": "Agents des maladies infantiles",
+        "texte": "Bactéries : coqueluche, scarlatine (streptocoque), méningites bactériennes (méningocoque, pneumocoque). Virus : rougeole, rubéole, varicelle, oreillons, méningites virales."
+      }
+    },
+    {
+      "id": "bio-maladies-02",
+      "atelier": "bio-maladies",
+      "type": "qcm",
+      "contexte": "👶 Lina, 2 mois · Pas encore protégée par ses vaccins. Elle tousse par quintes, devient rouge et reprend son souffle avec un bruit de « chant du coq ».",
+      "enonce": "Quelle maladie évoquer, et pourquoi est-ce grave ?",
+      "options": [
+        "La varicelle : chez le nourrisson, elle se limite à quelques boutons sans gravité",
+        "Une allergie au lait : elle provoque une toux sèche après chaque biberon",
+        "Les oreillons : le gonflement des glandes salivaires gêne la respiration du bébé",
+        "La coqueluche : chez le nourrisson, elle peut provoquer des pauses respiratoires"
+      ],
+      "bonnes": [
+        3
+      ],
+      "pourquoi": "La coqueluche est très contagieuse et dangereuse avant 6 mois (apnées, hospitalisation). Pour protéger le bébé avant qu’il soit vacciné : vaccination de la femme enceinte à chaque grossesse et vaccination de l’entourage (stratégie « cocooning »).",
+      "fiche": {
+        "titre": "Coqueluche",
+        "texte": "Bactérie (Bordetella pertussis). Toux en quintes, reprise en « chant du coq ». Grave chez le nourrisson (apnées). Prévention : vaccin du nourrisson (obligatoire), vaccination de la femme enceinte à chaque grossesse, vaccination de l’entourage."
+      }
+    },
+    {
+      "id": "bio-maladies-03",
+      "atelier": "bio-maladies",
+      "type": "tri",
+      "enonce": "Associe chaque signe à la bonne maladie.",
+      "categories": [
+        "Varicelle",
+        "Rougeole",
+        "Scarlatine",
+        "Oreillons"
+      ],
+      "icones": [
+        "🫧",
+        "🔴",
+        "🍓",
+        "🐹"
+      ],
+      "elements": [
+        {
+          "texte": "Petites vésicules (bulles) qui grattent, par poussées",
+          "categorie": 0
+        },
+        {
+          "texte": "Peut se réveiller des années plus tard sous forme de zona",
+          "categorie": 0
+        },
+        {
+          "texte": "Fièvre, toux, yeux rouges puis plaques rouges qui partent du visage",
+          "categorie": 1
+        },
+        {
+          "texte": "Maladie extrêmement contagieuse, transmise par l’air",
+          "categorie": 1
+        },
+        {
+          "texte": "Angine, langue rouge « framboisée »",
+          "categorie": 2
+        },
+        {
+          "texte": "Gonflement des glandes sous les oreilles (parotides)",
+          "categorie": 3
+        }
+      ],
+      "pourquoi": "Astuce visuelle : 🫧 bulles pour la varicelle, 🍓 framboise pour la scarlatine, 🐹 joues de hamster pour les oreillons ! La rougeole peut se compliquer (pneumonie, encéphalite) : le vaccin ROR protège.",
+      "fiche": {
+        "titre": "Reconnaître les éruptions",
+        "texte": "Varicelle : vésicules qui grattent (virus, zona plus tard). Rougeole : fièvre, toux, plaques rouges du visage vers le corps (virus très contagieux). Scarlatine : angine + langue framboisée (streptocoque). Oreillons : parotides gonflées (virus)."
+      }
+    },
+    {
+      "id": "bio-maladies-04",
+      "atelier": "bio-maladies",
+      "type": "qcm",
+      "enonce": "Pourquoi la rubéole est-elle surtout dangereuse pendant la grossesse ?",
+      "options": [
+        "Le virus peut traverser le placenta et provoquer des malformations graves de l’embryon (surdité, cœur, yeux)",
+        "Elle donne du diabète au bébé, car le virus détruit le pancréas de la mère pendant la grossesse",
+        "Elle est dangereuse seulement pour la mère, car le placenta forme une barrière qui empêche le virus d’atteindre l’embryon",
+        "Elle provoque des caries chez la mère, car le bébé puise tout le calcium de ses dents pendant la grossesse"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "Chez l’enfant, la rubéole est souvent bénigne. Mais une femme enceinte non immunisée risque de la transmettre à l’embryon. Le vaccin ROR et la sérologie en début de grossesse permettent de prévenir.",
+      "fiche": {
+        "titre": "Rubéole",
+        "texte": "Virus. Bénigne chez l’enfant, mais dangereuse pour l’embryon (malformations). Prévention : vaccin ROR, sérologie en début de grossesse."
+      }
+    },
+    {
+      "id": "bio-maladies-05",
+      "atelier": "bio-maladies",
+      "type": "multi",
+      "contexte": "🚨 Adam, 3 ans · Fièvre forte, il est très abattu, se plaint de la tête, ne supporte pas la lumière. Tu vois des petites taches rouges violacées qui ne s’effacent pas quand on appuie dessus.",
+      "enonce": "Quelles réactions sont adaptées ? Choisis-en 2.",
+      "options": [
+        "📞 Appeler immédiatement le 15 : suspicion d’infection grave (purpura fulminans, souvent dû au méningocoque)",
+        "🛌 Le laisser dormir au calme dans la pénombre et attendre le soir pour en parler aux parents",
+        "👀 Rester près de lui, le surveiller et transmettre précisément ce que tu as observé",
+        "💊 Lui donner un antibiotique trouvé dans la pharmacie de la structure pour gagner du temps"
+      ],
+      "bonnes": [
+        0,
+        2
+      ],
+      "explications": [
+        "Oui : fièvre + taches qui ne s’effacent pas = urgence vitale, même sans autre signe de méningite.",
+        "Non : chaque minute compte.",
+        "Oui : surveillance et transmission précise aident les secours.",
+        "Non : jamais de médicament sans prescription."
+      ],
+      "pourquoi": "Méningite = inflammation des méninges (enveloppes du cerveau). Les formes bactériennes (méningocoque, pneumocoque) sont graves. Signes : fièvre, maux de tête, raideur de la nuque, vomissements, gêne à la lumière ; chez le nourrisson, fontanelle bombée. Le méningocoque peut aussi provoquer une infection du sang (septicémie) avec purpura, même sans méningite : un purpura avec fièvre impose le 15.",
+      "fiche": {
+        "titre": "Méningite et purpura : urgence",
+        "texte": "Fièvre + maux de tête + raideur de nuque + vomissements + gêne à la lumière. Fièvre + taches rouge violacé qui ne s’effacent pas à la pression (purpura) = urgence vitale : 15 immédiatement."
+      }
+    },
+    {
+      "id": "bio-maladies-06",
+      "atelier": "bio-maladies",
+      "type": "qcm",
+      "contexte": "🤧 M. Paul, 84 ans · Résidence seniors, en janvier. Fièvre brutale à 39,5 °C, frissons, courbatures, toux et grosse fatigue.",
+      "enonce": "Quelle maladie est la plus probable, et quelle prévention était possible ?",
+      "options": [
+        "Le tétanos : un antibiotique à prendre en prévention chaque hiver, et une désinfection soignée de toutes les plaies",
+        "La varicelle : un vaccin unique à la naissance, qui protège à vie contre toutes les éruptions",
+        "La grippe : un vaccin chaque année (recommandé dès 65 ans) et les gestes barrières (masque, mains, aération)",
+        "L’hépatite B : éviter les fruits crus et laver soigneusement les légumes pendant l’hiver"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "La grippe est due au virus influenza. Il se transmet surtout par les particules émises en toussant, en parlant ou en éternuant, en particulier dans les pièces fermées et mal aérées, et aussi par les mains et les surfaces. Incubation courte (1 à 3 jours), début brutal. Le virus change chaque année, d’où un vaccin annuel. Chez la personne âgée, complications possibles : pneumonie, aggravation d’une maladie chronique.",
+      "fiche": {
+        "titre": "Grippe",
+        "texte": "Virus influenza. Particules respiratoires (surtout en pièce mal aérée), mains, surfaces. Début brutal : fièvre, frissons, courbatures, toux. Complications chez les fragiles. Prévention : vaccin annuel, hygiène des mains, masque, aération."
+      }
+    },
+    {
+      "id": "bio-maladies-07",
+      "atelier": "bio-maladies",
+      "type": "multi",
+      "enonce": "Comment se transmet le virus de l’hépatite B ? Choisis-en 3.",
+      "options": [
+        "🤰 De la mère à l’enfant à la naissance",
+        "❤️ Par les relations sexuelles non protégées",
+        "🩸 Par le sang (piqûre accidentelle, matériel partagé)",
+        "🤝 En se serrant la main ou en s’embrassant sur la joue",
+        "🍽️ En partageant la vaisselle ou les couverts"
+      ],
+      "bonnes": [
+        0,
+        1,
+        2
+      ],
+      "explications": [
+        "Oui : le nouveau-né d’une mère porteuse est protégé par une sérovaccination dès la naissance.",
+        "Oui : le préservatif protège.",
+        "Oui : c’est pourquoi les soignants sont vaccinés et préviennent les accidents d’exposition au sang.",
+        "Non : une poignée de main ou une bise ne transmet pas ce virus.",
+        "Non : la vaisselle et les couverts partagés ne transmettent pas ce virus."
+      ],
+      "pourquoi": "L’hépatite B est due à un virus à ADN qui attaque le foie. Souvent silencieuse, elle peut donner une jaunisse (ictère), et évoluer vers une hépatite chronique, une cirrhose ou un cancer du foie. Le vaccin est très efficace.",
+      "fiche": {
+        "titre": "Hépatite B",
+        "texte": "Virus (VHB) qui attaque le foie. Transmission : sang, sexuelle, mère-enfant. Signes : fatigue, ictère, souvent rien. Complications : chronicité, cirrhose, cancer du foie. Prévention : vaccin, préservatif, prévention des AES."
+      }
+    },
+    {
+      "id": "bio-maladies-08",
+      "atelier": "bio-maladies",
+      "type": "qcm",
+      "enonce": "Pourquoi éviter qu’un enfant malade de la rougeole soit en contact avec des nourrissons ou des personnes fragiles ?",
+      "options": [
+        "Parce que la rougeole est extrêmement contagieuse par l’air et peut être grave chez les plus fragiles",
+        "Parce qu’elle rend les nourrissons allergiques aux arachides et au lait pour toute leur vie",
+        "Parce qu’elle se transmet par le sang, par exemple lors d’un change ou d’une petite blessure",
+        "Ce n’est pas nécessaire : elle n’est plus contagieuse une fois que les boutons sont apparus"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "Une personne atteinte de rougeole peut contaminer de nombreuses personnes non protégées. Avant l’âge de la vaccination (ROR), le bébé est exposé. Éviction de la collectivité et vaccination de tous protègent les plus fragiles.",
+      "fiche": {
+        "titre": "Rougeole",
+        "texte": "Virus très contagieux (air). Fièvre, toux, yeux rouges, éruption. Complications : pneumonie, encéphalite. Prévention : vaccin ROR (2 doses), éviction de la collectivité."
+      }
+    },
+    {
+      "id": "bio-maladies-09",
+      "atelier": "bio-maladies",
+      "type": "multi",
+      "contexte": "🏠 M. Paul, 84 ans · Résidence des Tilleuls. Depuis deux jours, il tousse et a de la fièvre. Ce matin, il est essoufflé et plus confus que d’habitude.",
+      "enonce": "Quelles actions relèvent de ton rôle ? Choisis-en 3.",
+      "options": [
+        "⏳ Attendre la prochaine visite de sa famille pour en parler, sans inquiéter les soignants",
+        "🩺 Lui annoncer qu’il a une pneumonie pour qu’il accepte de se reposer",
+        "📞 Alerter sans délai : appeler le 15 ou le 112 devant un essoufflement associé à une confusion nouvelle, et prévenir le responsable selon la procédure",
+        "💊 Lui donner l’antibiotique qui reste dans son armoire, pour traiter l’infection sans attendre",
+        "😷 Appliquer les gestes barrières : masque, hygiène des mains, aération",
+        "📝 Transmettre des observations précises et datées : toux, essoufflement, confusion, peau chaude, ce qu’il a bu et mangé"
+      ],
+      "bonnes": [
+        2,
+        4,
+        5
+      ],
+      "explications": [
+        "Non : l’état d’une personne âgée peut s’aggraver rapidement.",
+        "Non : le diagnostic relève du médecin.",
+        "Oui : essoufflement + confusion nouvelle chez une personne âgée = situation potentiellement grave, alerte immédiate.",
+        "Non : jamais de médicament sans prescription.",
+        "Oui : on se protège et on protège les autres.",
+        "Oui : une transmission précise aide le soignant à évaluer la situation."
+      ],
+      "pourquoi": "Chez la personne âgée, une infection (grippe, pneumonie…) peut se manifester par une confusion ou une fatigue inhabituelle, parfois sans forte fièvre. Une confusion nouvelle associée à des difficultés respiratoires peut signaler une situation grave : on alerte tout de suite. Le professionnel ASSP ne pose pas de diagnostic et ne donne pas de médicament sans prescription : il observe, protège, alerte et transmet.",
+      "fiche": {
+        "titre": "Observer, alerter, transmettre",
+        "texte": "Signes d’alerte : essoufflement, confusion nouvelle, fièvre, ne boit plus, chute. Essoufflement + confusion : 15/112 sans délai. Transmettre (quoi, depuis quand, à qui). Pas de diagnostic, pas de médicament sans prescription."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    }
+  ]
+}

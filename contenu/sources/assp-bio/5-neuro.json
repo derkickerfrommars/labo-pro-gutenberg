@@ -1,0 +1,1031 @@
+{
+  "lieu": {
+    "id": "bio-neuro",
+    "nom": "Centre neuro et sens",
+    "icone": "🧠",
+    "couleur": "#a855f7"
+  },
+  "ateliers": [
+    {
+      "id": "bio-nerveux",
+      "titre": "Système nerveux",
+      "icone": "⚡",
+      "programme": "Bloc 4 · Système nerveux : neurone, synapse, réflexe, Parkinson, démences, épilepsie, toxicomanies, EEG, ponction lombaire"
+    },
+    {
+      "id": "bio-sommeil",
+      "titre": "Le sommeil",
+      "icone": "😴",
+      "programme": "Bloc 4 · Cycles et fonctions du sommeil, besoins selon l’âge, troubles"
+    },
+    {
+      "id": "bio-sens",
+      "titre": "Œil, oreille, équilibre",
+      "icone": "👁️",
+      "programme": "Bloc 1 · L’œil · Bloc 4 · L’oreille, troubles de l’équilibre, imagerie et endoscopie"
+    }
+  ],
+  "items": [
+    {
+      "id": "bio-nerveux-01",
+      "atelier": "bio-nerveux",
+      "type": "tri",
+      "enonce": "Système nerveux central ou périphérique ?",
+      "categories": [
+        "Central (SNC)",
+        "Périphérique (SNP)"
+      ],
+      "icones": [
+        "🧠",
+        "🕸️"
+      ],
+      "elements": [
+        {
+          "texte": "Le cerveau",
+          "categorie": 0
+        },
+        {
+          "texte": "Le cervelet",
+          "categorie": 0
+        },
+        {
+          "texte": "La moelle épinière",
+          "categorie": 0
+        },
+        {
+          "texte": "Le nerf sciatique",
+          "categorie": 1
+        },
+        {
+          "texte": "Les nerfs qui partent de la moelle épinière (nerfs rachidiens)",
+          "categorie": 1
+        },
+        {
+          "texte": "Les ganglions nerveux et les nerfs des membres",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Le SNC (encéphale = cerveau + cervelet + tronc cérébral, et moelle épinière) est protégé par les os du crâne et la colonne vertébrale. Le SNP, ce sont les nerfs qui relient le SNC à tout le corps.",
+      "fiche": {
+        "titre": "SNC et SNP",
+        "texte": "SNC : encéphale (cerveau, cervelet, tronc cérébral) + moelle épinière, protégés par crâne et vertèbres. SNP : nerfs qui relient le SNC aux organes."
+      }
+    },
+    {
+      "id": "bio-nerveux-02",
+      "atelier": "bio-nerveux",
+      "type": "qcm",
+      "enonce": "Les battements du cœur et la digestion fonctionnent sans qu’on y pense. Quelle partie du système nerveux les commande ?",
+      "options": [
+        "Le système nerveux cérébrospinal (volontaire)",
+        "Les organes des sens",
+        "Le système nerveux neurovégétatif (autonome)",
+        "Le cervelet uniquement"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Le système cérébrospinal gère la vie de relation (mouvements volontaires, sensations). Le neurovégétatif, avec ses deux branches (sympathique et parasympathique), gère automatiquement les organes : cœur, digestion, respiration, transpiration.",
+      "fiche": {
+        "titre": "Cérébrospinal / neurovégétatif",
+        "texte": "Cérébrospinal : vie de relation, volontaire. Neurovégétatif (autonome) : organes, involontaire ; sympathique (action, stress) et parasympathique (repos, digestion)."
+      }
+    },
+    {
+      "id": "bio-nerveux-03",
+      "atelier": "bio-nerveux",
+      "type": "tri",
+      "enonce": "Associe chaque partie du neurone à son rôle.",
+      "categories": [
+        "Dendrites",
+        "Corps cellulaire",
+        "Axone",
+        "Gaine de myéline"
+      ],
+      "icones": [
+        "🌿",
+        "⭕",
+        "➖",
+        "🧥"
+      ],
+      "elements": [
+        {
+          "texte": "Reçoivent les messages des autres neurones",
+          "categorie": 0
+        },
+        {
+          "texte": "Contient le noyau",
+          "categorie": 1
+        },
+        {
+          "texte": "Long prolongement qui conduit le message vers d’autres cellules",
+          "categorie": 2
+        },
+        {
+          "texte": "Isole l’axone et accélère le message nerveux",
+          "categorie": 3
+        }
+      ],
+      "pourquoi": "Le message nerveux entre par les dendrites, passe par le corps cellulaire et part par l’axone. Propriétés du neurone : excitabilité (réagir à un stimulus) et conductibilité (transmettre le message).",
+      "fiche": {
+        "titre": "Le neurone",
+        "texte": "Dendrites (reçoivent) → corps cellulaire (noyau) → axone (conduit) → terminaisons. La myéline accélère la conduction. Propriétés : excitabilité, conductibilité."
+      }
+    },
+    {
+      "id": "bio-nerveux-04",
+      "atelier": "bio-nerveux",
+      "type": "tri",
+      "enonce": "Quel type de nerf ?",
+      "categories": [
+        "Nerf sensitif",
+        "Nerf moteur",
+        "Nerf mixte"
+      ],
+      "icones": [
+        "📥",
+        "📤",
+        "🔁"
+      ],
+      "elements": [
+        {
+          "texte": "Conduit le message de la peau vers la moelle et le cerveau",
+          "categorie": 0
+        },
+        {
+          "texte": "Conduit l’ordre du cerveau vers un muscle",
+          "categorie": 1
+        },
+        {
+          "texte": "Contient des fibres qui font les deux",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "Sensitif = message qui monte vers les centres nerveux (sensation). Moteur = ordre qui descend vers un muscle. La plupart des nerfs sont mixtes.",
+      "fiche": {
+        "titre": "Types de nerfs",
+        "texte": "Sensitif : organes des sens → centres nerveux. Moteur : centres nerveux → muscles. Mixte : les deux (la plupart des nerfs)."
+      }
+    },
+    {
+      "id": "bio-nerveux-05",
+      "atelier": "bio-nerveux",
+      "type": "qcm",
+      "enonce": "Qu’est-ce qu’une synapse chimique ?",
+      "options": [
+        "La zone de connexion entre deux neurones (ou un neurone et un muscle), où un neurotransmetteur transmet le message",
+        "Une maladie du cerveau dans laquelle les neurones se déconnectent et ne transmettent plus le message nerveux",
+        "Le long prolongement du neurone, entouré d’une gaine de myéline, qui conduit le message électrique jusqu’à son extrémité",
+        "Une hormone du pancréas libérée dans le sang, qui transmet un message chimique d’un organe à un autre"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "Le message électrique arrive au bout de l’axone. Le neurone libère alors un neurotransmetteur dans la fente synaptique, qui se fixe sur des récepteurs de la cellule suivante. Exemples : acétylcholine, dopamine, sérotonine, noradrénaline. (Il existe aussi quelques synapses électriques, plus rares.)",
+      "fiche": {
+        "titre": "Synapse chimique",
+        "texte": "Connexion entre 2 neurones ou neurone-muscle. Message électrique → libération d’un neurotransmetteur → fixation sur des récepteurs de la cellule suivante. Ex. : acétylcholine, dopamine, sérotonine."
+      }
+    },
+    {
+      "id": "bio-nerveux-06",
+      "atelier": "bio-nerveux",
+      "type": "ordre",
+      "contexte": "🔥 Aïe ! Léo pose la main sur une casserole brûlante et la retire avant même d’avoir réfléchi.",
+      "enonce": "Remets dans l’ordre les éléments de l’arc réflexe.",
+      "elements": [
+        {
+          "texte": "Récepteur de la peau (stimulus : chaleur)"
+        },
+        {
+          "texte": "Neurone sensitif"
+        },
+        {
+          "texte": "Centre nerveux : la moelle épinière"
+        },
+        {
+          "texte": "Neurone moteur"
+        },
+        {
+          "texte": "Effecteur : le muscle se contracte, la main se retire"
+        }
+      ],
+      "pourquoi": "Le réflexe est involontaire, rapide et automatique : le message ne passe pas par le cerveau pour décider. Certains réflexes sont innés (succion, réflexe de Moro du nouveau-né), d’autres sont acquis (conditionnés).",
+      "fiche": {
+        "titre": "Arc réflexe",
+        "texte": "Récepteur → neurone sensitif → moelle épinière → neurone moteur → muscle. Réflexe : involontaire, rapide. Inné (succion, rotulien) ou acquis."
+      }
+    },
+    {
+      "id": "bio-nerveux-07",
+      "atelier": "bio-nerveux",
+      "type": "qcm",
+      "contexte": "🧠 M. Ali, 74 ans · Un AVC a touché l’hémisphère gauche de son cerveau.",
+      "enonce": "De quel côté du corps risque-t-il d’être paralysé ?",
+      "options": [
+        "Du côté gauche",
+        "Aucun côté : le cerveau ne commande pas les muscles",
+        "Du côté droit",
+        "Des deux côtés"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Les voies de la motricité volontaire se croisent : l’hémisphère gauche commande le côté droit du corps (et inversement). Un AVC gauche s’accompagne aussi souvent de troubles du langage (aphasie).",
+      "fiche": {
+        "titre": "Commande croisée",
+        "texte": "Activité volontaire : cortex moteur → moelle → nerf moteur → muscle. Les voies se croisent : hémisphère gauche = côté droit du corps."
+      }
+    },
+    {
+      "id": "bio-nerveux-08",
+      "atelier": "bio-nerveux",
+      "type": "qcm",
+      "contexte": "🤲 Mme Marchand, 70 ans · Sa main tremble quand elle est au repos, elle marche à petits pas, ses gestes sont lents et raides.",
+      "enonce": "Quelle maladie évoquer ?",
+      "options": [
+        "Une crise d’épilepsie prolongée",
+        "Une myopie sévère",
+        "Une méningite virale",
+        "La maladie de Parkinson"
+      ],
+      "bonnes": [
+        3
+      ],
+      "pourquoi": "La maladie de Parkinson est due à la disparition progressive de neurones qui fabriquent la dopamine. Triade : tremblement de repos, rigidité, lenteur des mouvements. Accompagnement : respecter son rythme, prévenir les chutes, encourager l’autonomie.",
+      "fiche": {
+        "titre": "Maladie de Parkinson",
+        "texte": "Perte des neurones à dopamine. Tremblement de repos, rigidité, lenteur, marche à petits pas. Traitement médicamenteux, kiné, prévention des chutes, respect du rythme."
+      }
+    },
+    {
+      "id": "bio-nerveux-09",
+      "atelier": "bio-nerveux",
+      "type": "multi",
+      "contexte": "🧓 Mme Claire, 85 ans · Atteinte de la maladie d’Alzheimer. Elle oublie ce qu’elle vient de faire mais raconte très bien son enfance.",
+      "enonce": "Quelles attitudes l’aident au quotidien ? Choisis-en 3.",
+      "options": [
+        "🧩 Valoriser ce qu’elle sait encore faire",
+        "🗣️ Parler calmement, avec des phrases courtes, en la regardant",
+        "🗓️ Garder des repères stables (horaires, calendrier, objets familiers)",
+        "😤 La corriger sèchement à chaque oubli",
+        "🙈 Faire les choses à sa place pour aller plus vite"
+      ],
+      "bonnes": [
+        0,
+        1,
+        2
+      ],
+      "explications": [
+        "Oui : on maintient l’autonomie et l’estime de soi.",
+        "Oui : la communication simple et bienveillante rassure.",
+        "Oui : les repères limitent la désorientation.",
+        "Non : cela la met en échec et l’angoisse.",
+        "Non : cela accélère la perte d’autonomie."
+      ],
+      "pourquoi": "La maladie d’Alzheimer est la cause la plus fréquente de trouble neurocognitif majeur. Elle peut toucher la mémoire récente, l’orientation, le langage et les gestes de la vie quotidienne ; les premiers signes varient d’une personne à l’autre. Il n’existe pas de guérison : l’accompagnement vise à préserver les capacités, l’autonomie, la sécurité et la dignité de la personne.",
+      "fiche": {
+        "titre": "Maladie d’Alzheimer",
+        "texte": "Cause la plus fréquente de trouble neurocognitif majeur : mémoire récente, orientation, langage, gestes. Accompagnement : repères stables, communication simple, valoriser les capacités, sécurité, dignité."
+      }
+    },
+    {
+      "id": "bio-nerveux-10",
+      "atelier": "bio-nerveux",
+      "type": "multi",
+      "contexte": "⚡ Bastien, 12 ans · À la cantine, il tombe brutalement, se raidit puis fait des mouvements saccadés des bras et des jambes.",
+      "enonce": "Quels gestes sont adaptés pendant la crise ? Choisis-en 3.",
+      "options": [
+        "⏱️ Noter l’heure du début de la crise",
+        "🛡️ Protéger sa tête et écarter les objets dangereux",
+        "🥄 Lui mettre quelque chose dans la bouche",
+        "🛌 Après les secousses, vérifier qu’il respire ; le mettre en PLS s’il ne répond pas et respire normalement, puis le surveiller",
+        "💪 Le maintenir fermement pour arrêter les mouvements"
+      ],
+      "bonnes": [
+        0,
+        1,
+        3
+      ],
+      "explications": [
+        "Oui : la durée de la crise est une information essentielle pour les secours.",
+        "Oui : on évite qu’il se blesse.",
+        "Non ! Risque de blessure et d’étouffement.",
+        "Oui : après la crise, il peut rester inconscient, somnolent ou confus.",
+        "Non : on ne bloque jamais les mouvements."
+      ],
+      "pourquoi": "L’épilepsie est due à des décharges électriques anormales et brutales d’un groupe de neurones. L’EEG (électroencéphalogramme) aide au diagnostic. On appelle le 15 (ou 112) s’il s’agit d’une première crise, si elle dure plus de 5 minutes, si les crises se répètent, s’il s’est blessé ou s’il respire mal. Pour un enfant épileptique connu, on suit son PAI.",
+      "fiche": {
+        "titre": "Crise convulsive",
+        "texte": "Protéger sans immobiliser, ne rien mettre dans la bouche, noter l’heure. Après : vérifier la respiration, PLS s’il est inconscient et respire, surveiller. 15 : 1re crise, > 5 min, crises répétées, blessure, difficulté à respirer."
+      }
+    },
+    {
+      "id": "bio-nerveux-11",
+      "atelier": "bio-nerveux",
+      "type": "tri",
+      "enonce": "Dépendance ou accoutumance ?",
+      "categories": [
+        "Dépendance",
+        "Accoutumance (tolérance)"
+      ],
+      "icones": [
+        "⛓️",
+        "📈"
+      ],
+      "elements": [
+        {
+          "texte": "Besoin irrépressible de consommer, malgré les conséquences",
+          "categorie": 0
+        },
+        {
+          "texte": "Malaise physique ou psychique en cas d’arrêt (manque)",
+          "categorie": 0
+        },
+        {
+          "texte": "Il faut augmenter les doses pour obtenir le même effet",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Les drogues agissent sur les synapses, en particulier dans le circuit de la récompense (dopamine). Elles dérèglent la transmission du message nerveux, avec des effets à court terme (ivresse, accidents) et à long terme (atteintes du cerveau, du foie, du cœur).",
+      "fiche": {
+        "titre": "Toxicomanies",
+        "texte": "Dépendance : besoin compulsif, manque à l’arrêt. Accoutumance : doses croissantes pour le même effet. Les drogues perturbent les synapses (circuit de la récompense, dopamine)."
+      }
+    },
+    {
+      "id": "bio-nerveux-12",
+      "atelier": "bio-nerveux",
+      "type": "tri",
+      "enonce": "Quel examen pour chaque situation ?",
+      "categories": [
+        "Électroencéphalogramme (EEG)",
+        "Ponction lombaire"
+      ],
+      "icones": [
+        "📈",
+        "💉"
+      ],
+      "elements": [
+        {
+          "texte": "Des électrodes sur le cuir chevelu enregistrent l’activité électrique du cerveau",
+          "categorie": 0
+        },
+        {
+          "texte": "Utile pour diagnostiquer une épilepsie",
+          "categorie": 0
+        },
+        {
+          "texte": "On prélève du liquide céphalorachidien entre deux vertèbres du bas du dos",
+          "categorie": 1
+        },
+        {
+          "texte": "Utile pour confirmer une méningite",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "L’EEG est indolore. La ponction lombaire analyse le liquide qui entoure le cerveau et la moelle (présence de microbes, de globules blancs…).",
+      "fiche": {
+        "titre": "EEG et ponction lombaire",
+        "texte": "EEG : activité électrique du cerveau (épilepsie, sommeil). Ponction lombaire : prélèvement de liquide céphalorachidien (méningite)."
+      }
+    },
+    {
+      "id": "bio-nerveux-13",
+      "atelier": "bio-nerveux",
+      "type": "multi",
+      "contexte": "📝 Bastien, 12 ans · Sa crise convulsive est terminée, les secours sont prévenus. Tu remplis la fiche de transmission.",
+      "enonce": "Que notes-tu ? Choisis-en 3.",
+      "options": [
+        "📣 Le nom des élèves qui ont assisté à la scène",
+        "🛌 Son état après la crise : respiration, réponse, confusion, blessure éventuelle",
+        "🧠 Le nom de la maladie que tu suspectes",
+        "👀 Ce que tu as vu : chute, raideur, secousses, côté du corps concerné",
+        "⏱️ L’heure de début et la durée de la crise"
+      ],
+      "bonnes": [
+        1,
+        3,
+        4
+      ],
+      "explications": [
+        "Non : inutile, et cela touche à la confidentialité.",
+        "Oui : l’état après la crise est important.",
+        "Non : on décrit des faits, on ne pose pas de diagnostic.",
+        "Oui : une description précise aide le médecin.",
+        "Oui : la durée guide la conduite à tenir."
+      ],
+      "pourquoi": "Une transmission utile est factuelle, datée et précise. Le médecin s’appuie sur ta description pour comprendre ce qui s’est passé. Les informations sur l’élève restent confidentielles : on ne les partage qu’avec les personnes concernées.",
+      "fiche": {
+        "titre": "Transmettre une crise",
+        "texte": "Heure de début, durée, description (chute, raideur, secousses, côté), état après (respiration, conscience, blessure). Des faits, pas de diagnostic. Confidentialité."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-sommeil-01",
+      "atelier": "bio-sommeil",
+      "type": "tri",
+      "enonce": "Quelle phase du sommeil ?",
+      "categories": [
+        "Sommeil lent profond",
+        "Sommeil paradoxal"
+      ],
+      "icones": [
+        "🛌",
+        "💭"
+      ],
+      "elements": [
+        {
+          "texte": "Récupération de la fatigue physique",
+          "categorie": 0
+        },
+        {
+          "texte": "Sécrétion de l’hormone de croissance",
+          "categorie": 0
+        },
+        {
+          "texte": "Les terreurs nocturnes de l’enfant surviennent pendant cette phase",
+          "categorie": 0
+        },
+        {
+          "texte": "Phase des rêves, les yeux bougent rapidement",
+          "categorie": 1
+        },
+        {
+          "texte": "Rôle dans la mémorisation et l’équilibre psychique",
+          "categorie": 1
+        },
+        {
+          "texte": "Les cauchemars surviennent pendant cette phase",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Une nuit enchaîne plusieurs cycles (≈ 90 min chez l’adulte, plus courts chez le bébé) : endormissement, sommeil lent léger, sommeil lent profond, sommeil paradoxal. Bien dormir aide aussi à mémoriser tes cours !",
+      "fiche": {
+        "titre": "Les phases du sommeil",
+        "texte": "Cycle ≈ 90 min (adulte) : lent léger → lent profond (récupération physique, hormone de croissance) → paradoxal (rêves, mémoire). Plusieurs cycles par nuit."
+      }
+    },
+    {
+      "id": "bio-sommeil-02",
+      "atelier": "bio-sommeil",
+      "type": "ordre",
+      "enonce": "Range ces personnes de celle qui a le plus besoin de sommeil à celle qui en a le moins.",
+      "elements": [
+        {
+          "texte": "Nouveau-né (0 à 3 mois)",
+          "info": "≈ 14 à 17 h par 24 h"
+        },
+        {
+          "texte": "Enfant de 4 ans",
+          "info": "≈ 10 à 13 h"
+        },
+        {
+          "texte": "Adolescent",
+          "info": "≈ 8 à 10 h"
+        },
+        {
+          "texte": "Adulte",
+          "info": "≈ 7 à 9 h"
+        }
+      ],
+      "pourquoi": "Les besoins diminuent avec l’âge. Ce sont des repères : ils varient beaucoup d’une personne à l’autre. Chez la personne âgée, le sommeil devient plus léger et plus fragmenté, avec des réveils nocturnes plus fréquents.",
+      "fiche": {
+        "titre": "Besoins de sommeil",
+        "texte": "Repères : nouveau-né ≈ 14-17 h ; jeune enfant ≈ 10-13 h ; ado ≈ 8-10 h ; adulte ≈ 7-9 h. Variations individuelles. Personne âgée : sommeil plus léger, fragmenté."
+      }
+    },
+    {
+      "id": "bio-sommeil-03",
+      "atelier": "bio-sommeil",
+      "type": "multi",
+      "contexte": "🌙 Les parents de Sarah, 3 ans, disent qu’elle a beaucoup de mal à s’endormir le soir.",
+      "enonce": "Quels conseils favorisent l’endormissement ? Choisis-en 3.",
+      "options": [
+        "📖 Un rituel calme et régulier (histoire, câlin, doudou)",
+        "🌑 Une chambre calme, sombre et pas trop chauffée",
+        "⏰ Des horaires de coucher réguliers",
+        "📱 Une tablette au lit pour l’aider à se détendre",
+        "🍫 Un goûter très sucré juste avant de dormir"
+      ],
+      "bonnes": [
+        0,
+        1,
+        2
+      ],
+      "explications": [
+        "Oui : le rituel rassure et signale l’heure du coucher.",
+        "Oui : environ 18-19 °C.",
+        "Oui : le corps s’habitue à un rythme.",
+        "Non : la lumière et l’activité des écrans retardent l’endormissement.",
+        "Non : ce n’est pas une bonne habitude alimentaire et cela perturbe le rituel du soir (attention : le sucre n’est pas un excitant comme la caféine)."
+      ],
+      "pourquoi": "On guette les signes de fatigue (bâillements, yeux frottés) et on respecte le rythme de l’enfant. Ces conseils valent aussi pour toi : pas d’écran juste avant de dormir !",
+      "fiche": {
+        "titre": "Bien dormir",
+        "texte": "Rituel calme, horaires réguliers, chambre calme, sombre, ≈ 18-19 °C, pas d’écran ni de boisson caféinée le soir, repérer les signes de fatigue."
+      }
+    },
+    {
+      "id": "bio-sommeil-04",
+      "atelier": "bio-sommeil",
+      "type": "qcm",
+      "contexte": "😱 Nathan, 4 ans · Une heure après s’être endormi, il hurle, les yeux ouverts, semble terrorisé mais ne reconnaît personne. Le matin, il ne s’en souvient pas.",
+      "enonce": "De quoi s’agit-il et quelle attitude adopter ?",
+      "options": [
+        "Un cauchemar : le réveiller brusquement et lui raconter son rêve pour qu’il le comprenne",
+        "Une crise d’asthme nocturne : l’asseoir, ouvrir la fenêtre et appeler le 15 sans attendre",
+        "Un caprice pour ne pas dormir : le gronder fermement et le recoucher dans le noir complet",
+        "Une terreur nocturne : ne pas le réveiller, rester près de lui pour qu’il ne se blesse pas"
+      ],
+      "bonnes": [
+        3
+      ],
+      "pourquoi": "La terreur nocturne survient en début de nuit, en sommeil lent profond ; l’enfant ne s’en souvient pas. Le cauchemar, lui, arrive plutôt en fin de nuit (sommeil paradoxal) : l’enfant se réveille, s’en souvient et a besoin d’être rassuré.",
+      "fiche": {
+        "titre": "Terreur nocturne / cauchemar",
+        "texte": "Terreur nocturne : début de nuit, sommeil lent profond, pas de souvenir → ne pas réveiller, sécuriser. Cauchemar : fin de nuit, sommeil paradoxal, souvenir → rassurer."
+      }
+    },
+    {
+      "id": "bio-sommeil-05",
+      "atelier": "bio-sommeil",
+      "type": "qcm",
+      "enonce": "M. Robert, 68 ans, ronfle fort, fait des pauses respiratoires la nuit et s’endort pendant la journée. Quel trouble du sommeil peut-on évoquer ?",
+      "options": [
+        "Le somnambulisme de l’adulte",
+        "La presbytie",
+        "L’apnée du sommeil",
+        "Les terreurs nocturnes"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Pendant l’apnée, les voies respiratoires se ferment, le sommeil est haché et peu reposant. Facteurs : surpoids, âge, alcool. Autres troubles du sommeil : insomnie, somnambulisme, terreurs nocturnes.",
+      "fiche": {
+        "titre": "Troubles du sommeil",
+        "texte": "Insomnie, apnée du sommeil (ronflements, pauses respiratoires, somnolence le jour), somnambulisme, terreurs nocturnes, cauchemars."
+      }
+    },
+    {
+      "id": "bio-sommeil-06",
+      "atelier": "bio-sommeil",
+      "type": "qcm",
+      "contexte": "📓 Agenda du sommeil d’Inès, 16 ans, tenu pendant une semaine : couchée vers 1 h du matin (téléphone au lit), réveil à 6 h 45 en semaine ; le week-end, elle dort jusqu’à midi. Elle s’endort en cours.",
+      "enonce": "Que montre cet agenda ?",
+      "options": [
+        "Un sommeil suffisant : les longues nuits du week-end compensent largement les nuits courtes de la semaine",
+        "Une narcolepsie certaine : elle s’endort en cours malgré des nuits complètes, signe d’une maladie du sommeil",
+        "Un besoin de sommeil plus faible que celui d’un adulte, normal à l’adolescence : 6 h lui suffisent",
+        "Une dette de sommeil : environ 6 h par nuit en semaine, alors qu’à 16 ans il en faut environ 8 à 10"
+      ],
+      "bonnes": [
+        3
+      ],
+      "pourquoi": "L’agenda du sommeil est un document simple pour repérer les habitudes. Ici, Inès dort trop peu en semaine et « rattrape » le week-end, ce qui décale encore son rythme. Les écrans le soir retardent l’endormissement. Conséquences : somnolence, difficultés de concentration, irritabilité.",
+      "fiche": {
+        "titre": "Dette de sommeil",
+        "texte": "Dormir moins que son besoin plusieurs nuits de suite. Signes : somnolence le jour, concentration difficile, irritabilité. Conseils : horaires réguliers, pas d’écran au lit, éviter les grasses matinées qui décalent le rythme."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-sens-01",
+      "atelier": "bio-sens",
+      "type": "tri",
+      "contexte": "👁️ Bienvenue dans l’œil ! Chaque élément a son métier.",
+      "enonce": "Associe chaque élément à son rôle.",
+      "categories": [
+        "Cornée",
+        "Iris / pupille",
+        "Cristallin",
+        "Rétine",
+        "Nerf optique"
+      ],
+      "icones": [
+        "🪟",
+        "🎯",
+        "🔍",
+        "🎞️",
+        "🔌"
+      ],
+      "elements": [
+        {
+          "texte": "Fenêtre transparente à l’avant de l’œil",
+          "categorie": 0
+        },
+        {
+          "texte": "Règle la quantité de lumière qui entre",
+          "categorie": 1
+        },
+        {
+          "texte": "Lentille qui fait la mise au point",
+          "categorie": 2
+        },
+        {
+          "texte": "Contient les cônes et les bâtonnets",
+          "categorie": 3
+        },
+        {
+          "texte": "Transmet l’influx nerveux visuel au cerveau",
+          "categorie": 4
+        }
+      ],
+      "pourquoi": "Les cônes servent à la vision des couleurs et des détails (de jour) ; les bâtonnets à la vision quand il fait sombre. L’image se forme à l’envers sur la rétine ; le cerveau interprète les messages nerveux et construit une perception à l’endroit.",
+      "fiche": {
+        "titre": "L’œil",
+        "texte": "Cornée (fenêtre) → pupille (diaphragme réglé par l’iris) → cristallin (mise au point) → rétine (cônes : couleurs ; bâtonnets : pénombre) → nerf optique → cerveau."
+      }
+    },
+    {
+      "id": "bio-sens-02",
+      "atelier": "bio-sens",
+      "type": "tri",
+      "enonce": "Associe chaque situation au trouble de la vision.",
+      "categories": [
+        "Myopie",
+        "Presbytie",
+        "Cataracte",
+        "DMLA",
+        "Strabisme"
+      ],
+      "icones": [
+        "🔭",
+        "📖",
+        "🌫️",
+        "⚫",
+        "👀"
+      ],
+      "elements": [
+        {
+          "texte": "Kevin, 15 ans, voit flou le tableau mais lit bien de près",
+          "categorie": 0
+        },
+        {
+          "texte": "M. Pierre, 52 ans, tend les bras pour lire son journal",
+          "categorie": 1
+        },
+        {
+          "texte": "Mme Yvette, 78 ans : le cristallin s’opacifie, tout paraît voilé",
+          "categorie": 2
+        },
+        {
+          "texte": "Mme Jeanne, 80 ans, ne voit plus le centre des visages",
+          "categorie": 3
+        },
+        {
+          "texte": "Les deux yeux de Léna, 2 ans, ne regardent pas dans la même direction",
+          "categorie": 4
+        }
+      ],
+      "pourquoi": "Myopie : œil trop long, image formée avant la rétine. Presbytie : le cristallin perd sa souplesse avec l’âge. Cataracte : opacification du cristallin (opération). DMLA : atteinte de la macula, perte de la vision centrale. Strabisme : à dépister tôt chez l’enfant.",
+      "fiche": {
+        "titre": "Troubles de la vision",
+        "texte": "Myopie : flou de loin. Presbytie (vers 45 ans) : flou de près. Cataracte : cristallin opaque, chirurgie. DMLA (après 50 ans) : perte de vision centrale. Strabisme : yeux non alignés, dépistage précoce."
+      }
+    },
+    {
+      "id": "bio-sens-03",
+      "atelier": "bio-sens",
+      "type": "qcm",
+      "enonce": "Pourquoi faut-il dépister et traiter tôt un strabisme chez le jeune enfant ?",
+      "options": [
+        "Parce qu’il est contagieux : l’enfant peut le transmettre aux autres enfants de la crèche par les mains, les jouets et les doudous",
+        "Parce que l’œil dévié finit par développer une cataracte précoce, qu’il faudrait opérer dès l’adolescence",
+        "Ce n’est pas nécessaire : il disparaît de lui-même en grandissant, une fois que les muscles de l’œil sont plus forts",
+        "Pour éviter que le cerveau « néglige » l’œil dévié, ce qui entraînerait une baisse définitive de sa vision (amblyopie)"
+      ],
+      "bonnes": [
+        3
+      ],
+      "pourquoi": "La vision se construit pendant l’enfance. Lunettes, cache sur le bon œil ou rééducation permettent de faire travailler l’œil paresseux. Signes à transmettre : yeux qui ne regardent pas dans la même direction, enfant qui ferme un œil.",
+      "fiche": {
+        "titre": "Strabisme",
+        "texte": "Défaut de parallélisme des yeux. Risque : œil paresseux (amblyopie). Dépister tôt : lunettes, cache-œil, rééducation."
+      }
+    },
+    {
+      "id": "bio-sens-04",
+      "atelier": "bio-sens",
+      "type": "ordre",
+      "contexte": "🎵 La musique de Louna voyage jusqu’à son cerveau…",
+      "enonce": "Remets le trajet du son dans l’ordre.",
+      "elements": [
+        {
+          "texte": "Pavillon et conduit auditif (oreille externe)"
+        },
+        {
+          "texte": "Tympan : il vibre"
+        },
+        {
+          "texte": "Osselets : marteau, enclume, étrier (oreille moyenne)"
+        },
+        {
+          "texte": "Cochlée : les cellules ciliées transforment la vibration en message nerveux (oreille interne)"
+        },
+        {
+          "texte": "Nerf auditif → cerveau"
+        }
+      ],
+      "pourquoi": "L’oreille externe capte, l’oreille moyenne amplifie, l’oreille interne transforme en message nerveux. Les cellules ciliées détruites par le bruit ne repoussent pas : protège tes oreilles !",
+      "fiche": {
+        "titre": "Trajet du son",
+        "texte": "Pavillon → conduit → tympan → osselets (marteau, enclume, étrier) → cochlée (cellules ciliées) → nerf auditif → cerveau."
+      }
+    },
+    {
+      "id": "bio-sens-05",
+      "atelier": "bio-sens",
+      "type": "qcm",
+      "contexte": "👂 Mila, 18 mois · Fièvre, elle pleure beaucoup, se touche l’oreille et dort mal. Elle a un rhume depuis 3 jours.",
+      "enonce": "Que suspecter ?",
+      "options": [
+        "Une cataracte congénitale, qui se révèle souvent lors d’une fièvre",
+        "Un AVC de l’enfant, révélé par la douleur et les pleurs",
+        "Une otite moyenne aiguë, fréquente chez le jeune enfant après un rhume",
+        "Une presbytie précoce, qui donne mal à la tête et empêche de bien dormir"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Chez le jeune enfant, la trompe d’Eustache (qui relie la gorge à l’oreille moyenne) est courte : les microbes du rhume y montent facilement. On transmet aux parents pour une consultation.",
+      "fiche": {
+        "titre": "Otite",
+        "texte": "Inflammation de l’oreille, souvent l’oreille moyenne chez l’enfant, après un rhume (trompe d’Eustache courte). Fièvre, douleur, enfant qui se touche l’oreille, sommeil agité."
+      }
+    },
+    {
+      "id": "bio-sens-06",
+      "atelier": "bio-sens",
+      "type": "tri",
+      "enonce": "Surdité de transmission ou de perception ?",
+      "categories": [
+        "De transmission",
+        "De perception"
+      ],
+      "icones": [
+        "🚧",
+        "🔇"
+      ],
+      "elements": [
+        {
+          "texte": "Problème dans l’oreille externe ou moyenne",
+          "categorie": 0
+        },
+        {
+          "texte": "Bouchon de cérumen, otite",
+          "categorie": 0
+        },
+        {
+          "texte": "Atteinte de l’oreille interne ou du nerf auditif",
+          "categorie": 1
+        },
+        {
+          "texte": "Exposition prolongée au bruit, vieillissement (presbyacousie)",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "La surdité de transmission empêche le son d’arriver jusqu’à l’oreille interne ; elle est souvent soignable. Celle de perception touche les cellules ciliées ou le nerf ; elle est souvent définitive (appareillage).",
+      "fiche": {
+        "titre": "Les surdités",
+        "texte": "Transmission : oreille externe/moyenne (bouchon, otite), souvent soignable. Perception : oreille interne/nerf (bruit, âge), souvent définitive. Prévention : limiter le volume et la durée d’exposition."
+      }
+    },
+    {
+      "id": "bio-sens-07",
+      "atelier": "bio-sens",
+      "type": "multi",
+      "contexte": "🧓 M. Gilbert, 82 ans · Il a chuté deux fois ce mois-ci et dit avoir souvent la tête qui tourne en se levant.",
+      "enonce": "Quels organes participent à l’équilibre ? Choisis-en 3.",
+      "options": [
+        "👂 L’oreille interne (vestibule et canaux semi-circulaires)",
+        "🫀 Le pancréas",
+        "🦷 Les dents",
+        "👁️ Les yeux",
+        "🦵 Les récepteurs des muscles et des articulations (proprioception)"
+      ],
+      "bonnes": [
+        0,
+        3,
+        4
+      ],
+      "explications": [
+        "Oui : il détecte les mouvements et la position de la tête.",
+        "Non.",
+        "Non.",
+        "Oui : la vision donne des repères.",
+        "Oui : la proprioception renseigne sur la position du corps."
+      ],
+      "pourquoi": "Le cerveau, et surtout le cervelet, intègre ces informations. Chez la personne âgée, les troubles de l’équilibre ont de nombreuses causes : baisse de la vue, médicaments, chute de tension au lever, faiblesse musculaire. Prévention : se lever en plusieurs temps, chaussures adaptées, éclairage, activité physique.",
+      "fiche": {
+        "titre": "Équilibre",
+        "texte": "Oreille interne (vestibule) + yeux + proprioception, intégrés par le cervelet. Personne âgée : prévenir les chutes (lever progressif, chaussures, éclairage, aides techniques)."
+      }
+    },
+    {
+      "id": "bio-sens-08",
+      "atelier": "bio-sens",
+      "type": "tri",
+      "enonce": "Quel examen ?",
+      "categories": [
+        "Imagerie",
+        "Endoscopie"
+      ],
+      "icones": [
+        "🖼️",
+        "🔦"
+      ],
+      "elements": [
+        {
+          "texte": "Radiographie : rayons X, idéale pour une fracture",
+          "categorie": 0
+        },
+        {
+          "texte": "Échographie : ultrasons, utilisée pendant la grossesse",
+          "categorie": 0
+        },
+        {
+          "texte": "IRM : champ magnétique, très précise pour le cerveau",
+          "categorie": 0
+        },
+        {
+          "texte": "Scanner : rayons X, images en coupes, utile en urgence pour un AVC",
+          "categorie": 0
+        },
+        {
+          "texte": "Fibroscopie : une caméra au bout d’un tube souple observe l’estomac",
+          "categorie": 1
+        },
+        {
+          "texte": "Coloscopie : observation de l’intérieur du côlon",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "L’imagerie photographie l’intérieur du corps de l’extérieur. L’endoscopie fait entrer une petite caméra par un orifice naturel ; elle permet aussi des prélèvements.",
+      "fiche": {
+        "titre": "Imagerie et endoscopie",
+        "texte": "Imagerie : radio et scanner (rayons X), échographie (ultrasons, pas de rayons X), IRM (champ magnétique : signaler tout implant, pacemaker ou objet métallique). Endoscopie : caméra dans un tube souple (fibroscopie, coloscopie)."
+      }
+    },
+    {
+      "id": "bio-sens-09",
+      "atelier": "bio-sens",
+      "type": "tri",
+      "contexte": "👂 Voyage dans l’oreille : trois parties, trois métiers.",
+      "enonce": "Dans quelle partie de l’oreille se trouve chaque structure ?",
+      "categories": [
+        "Oreille externe",
+        "Oreille moyenne",
+        "Oreille interne"
+      ],
+      "icones": [
+        "📡",
+        "🥁",
+        "🐌"
+      ],
+      "elements": [
+        {
+          "texte": "Pavillon : capte les sons",
+          "categorie": 0
+        },
+        {
+          "texte": "Conduit auditif : guide les sons vers le tympan",
+          "categorie": 0
+        },
+        {
+          "texte": "Tympan : vibre sous l’effet des sons",
+          "categorie": 1
+        },
+        {
+          "texte": "Osselets (marteau, enclume, étrier) : transmettent et amplifient les vibrations",
+          "categorie": 1
+        },
+        {
+          "texte": "Cochlée : transforme les vibrations en messages nerveux",
+          "categorie": 2
+        },
+        {
+          "texte": "Vestibule et canaux semi-circulaires : participent à l’équilibre",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "L’oreille externe et l’oreille moyenne conduisent le son : une atteinte à ce niveau donne une surdité de transmission. L’oreille interne et le nerf auditif transforment et transmettent le message : une atteinte donne une surdité de perception. L’oreille interne contient aussi l’organe de l’équilibre.",
+      "fiche": {
+        "titre": "L’oreille",
+        "texte": "Externe : pavillon, conduit auditif. Moyenne : tympan, osselets (marteau, enclume, étrier). Interne : cochlée (audition), vestibule et canaux semi-circulaires (équilibre) → nerf auditif → cerveau."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-nerveux-14",
+      "atelier": "bio-nerveux",
+      "type": "ordre",
+      "contexte": "📌 Inès marche pieds nus et pose le pied sur une punaise. Sa jambe se replie aussitôt, sans qu’elle ait le temps d’y penser.",
+      "enonce": "Remets dans l’ordre le trajet du message nerveux dans cet arc réflexe.",
+      "elements": [
+        {
+          "texte": "Récepteur sensoriel de la peau du pied",
+          "info": "capte le stimulus (la piqûre)"
+        },
+        {
+          "texte": "Neurone sensitif",
+          "info": "conduit le message vers la moelle épinière"
+        },
+        {
+          "texte": "Centre nerveux : la moelle épinière",
+          "info": "transmet le message au neurone moteur"
+        },
+        {
+          "texte": "Neurone moteur",
+          "info": "conduit l’ordre vers le muscle"
+        },
+        {
+          "texte": "Muscle effecteur",
+          "info": "il se contracte : la jambe se replie"
+        }
+      ],
+      "pourquoi": "Le message part du récepteur, passe par le neurone sensitif jusqu’à la moelle épinière, qui le transmet au neurone moteur. Le muscle se contracte. Le cerveau n’a pas besoin de décider : c’est pour cela que le réflexe est si rapide.",
+      "fiche": {
+        "titre": "Les 5 éléments de l’arc réflexe",
+        "texte": "Récepteur sensoriel → neurone sensitif → centre nerveux (moelle épinière) → neurone moteur → muscle effecteur."
+      },
+      "meta": {
+        "ajout": "programme-2026-11"
+      }
+    },
+    {
+      "id": "bio-nerveux-15",
+      "atelier": "bio-nerveux",
+      "type": "tri",
+      "enonce": "Réflexe inné ou réflexe acquis ?",
+      "categories": [
+        "Réflexe inné",
+        "Réflexe acquis (conditionné)"
+      ],
+      "icones": [
+        "👶",
+        "🎓"
+      ],
+      "elements": [
+        {
+          "texte": "Retirer la main d’une plaque brûlante",
+          "categorie": 0
+        },
+        {
+          "texte": "La jambe se soulève quand le médecin tape sous le genou",
+          "categorie": 0
+        },
+        {
+          "texte": "La pupille se rétrécit à la lumière vive",
+          "categorie": 0
+        },
+        {
+          "texte": "Le chien de Pavlov salive en entendant la sonnerie qui annonce son repas",
+          "categorie": 1
+        },
+        {
+          "texte": "Après plusieurs sons toujours suivis d’un souffle d’air sur l’œil, une personne cligne des yeux au seul son",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Le réflexe inné existe dès la naissance, chez tout le monde : on n’a pas besoin de l’apprendre. Le réflexe acquis (conditionné) s’apprend par la répétition et l’association de deux situations : il dépend de l’expérience de chacun.",
+      "fiche": {
+        "titre": "Réflexe inné / réflexe acquis",
+        "texte": "Inné : présent dès la naissance, chez tous (retrait de la main, réflexe rotulien, succion du bébé). Acquis (conditionné) : réponse automatique créée par l’association répétée de deux stimulus (salivation au son de la cloche, clignement au son). Un geste volontaire devenu automatique par l’entraînement n’est pas forcément un réflexe conditionné."
+      },
+      "meta": {
+        "ajout": "programme-2026-11"
+      }
+    },
+    {
+      "id": "bio-nerveux-16",
+      "atelier": "bio-nerveux",
+      "type": "qcm",
+      "enonce": "Quelle phrase décrit un réflexe ?",
+      "options": [
+        "Un mouvement volontaire, décidé par le cerveau après réflexion",
+        "Une réponse lente, qui demande de se concentrer pour la réaliser",
+        "Une réponse involontaire, rapide et automatique à un stimulus",
+        "Un message qui va du muscle vers la peau sans passer par un neurone"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Un réflexe est involontaire (on ne le décide pas), rapide et automatique : le même stimulus donne la même réponse. Le mouvement volontaire, lui, est commandé par le cerveau.",
+      "fiche": {
+        "titre": "Le réflexe",
+        "texte": "Réponse involontaire, rapide et automatique à un stimulus. Il emprunte un arc réflexe : récepteur → neurone sensitif → centre nerveux → neurone moteur → effecteur."
+      },
+      "meta": {
+        "ajout": "programme-2026-11"
+      }
+    }
+  ]
+}

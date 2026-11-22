@@ -1,0 +1,1281 @@
+{
+ "lieu": {
+  "id": "bio-microbes",
+  "nom": "Labo des microbes",
+  "icone": "🦠",
+  "couleur": "#10b981"
+ },
+ "ateliers": [
+  {
+   "id": "bio-microbes",
+   "titre": "Le monde microbien",
+   "icone": "🧪",
+   "programme": "Bloc 3 · Microbiologie : diversité, bactéries, virus, antibiotiques"
+  },
+  {
+   "id": "bio-ias",
+   "titre": "Infections associées aux soins",
+   "icone": "🧼",
+   "programme": "Bloc 2 · Infections associées aux soins, précautions standard et complémentaires"
+  }
+ ],
+ "items": [
+  {
+   "id": "bio-microbes-01",
+   "atelier": "bio-microbes",
+   "type": "tri",
+   "contexte": "🦠 Quatre familles de microbes se cachent dans ce labo. Démasque-les !",
+   "enonce": "À quelle famille appartient chaque micro-organisme ?",
+   "categories": [
+    "Bactérie",
+    "Virus",
+    "Champignon",
+    "Protozoaire"
+   ],
+   "icones": [
+    "🦠",
+    "👾",
+    "🍄",
+    "🐛"
+   ],
+   "elements": [
+    {
+     "texte": "Escherichia coli (E. coli)",
+     "categorie": 0
+    },
+    {
+     "texte": "Le bacille de la tuberculose",
+     "categorie": 0
+    },
+    {
+     "texte": "Le virus de la grippe",
+     "categorie": 1
+    },
+    {
+     "texte": "Le VIH",
+     "categorie": 1
+    },
+    {
+     "texte": "Candida albicans (muguet du nourrisson)",
+     "categorie": 2
+    },
+    {
+     "texte": "La levure du pain",
+     "categorie": 2
+    },
+    {
+     "texte": "Toxoplasma gondii (toxoplasmose)",
+     "categorie": 3
+    },
+    {
+     "texte": "Plasmodium (paludisme)",
+     "categorie": 3
+    }
+   ],
+   "pourquoi": "Bactéries : cellules sans noyau. Virus : pas des cellules, parasites obligatoires. Champignons microscopiques : levures et moisissures. Protozoaires : cellules uniques avec noyau, souvent parasites.",
+   "fiche": {
+    "titre": "4 familles de microbes",
+    "texte": "🦠 Bactéries (E. coli, staphylocoque). 👾 Virus (grippe, VIH). 🍄 Champignons microscopiques (Candida, levures). 🐛 Protozoaires (toxoplasme, plasmodium)."
+   }
+  },
+  {
+   "id": "bio-microbes-02",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "enonce": "Quelle est la différence entre une cellule procaryote et une cellule eucaryote ?",
+   "options": [
+    "La procaryote est plus grosse que l’eucaryote, car elle contient plusieurs noyaux dans son cytoplasme",
+    "La procaryote n’a pas de noyau : son ADN est libre dans le cytoplasme ; l’eucaryote a un vrai noyau",
+    "Les deux sont des virus : la procaryote est à ADN, l’eucaryote est à ARN",
+    "L’eucaryote n’a pas d’ADN ; la procaryote garde son ADN dans un noyau entouré d’une membrane"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Les bactéries sont procaryotes (pas de noyau). Nos cellules, les champignons et les protozoaires sont eucaryotes (vrai noyau). Astuce : « EU » comme « EUh… j’ai un noyau ! »",
+   "fiche": {
+    "titre": "Procaryote / eucaryote",
+    "texte": "Procaryote = pas de noyau (bactéries). Eucaryote = vrai noyau entouré d’une membrane (humain, champignons, protozoaires). Le virus n’est ni l’un ni l’autre : ce n’est pas une cellule."
+   }
+  },
+  {
+   "id": "bio-microbes-03",
+   "atelier": "bio-microbes",
+   "type": "multi",
+   "enonce": "Les microbes ne sont pas tous méchants ! Lesquels sont utiles à l’être humain ? Choisis-en 3.",
+   "options": [
+    "🍞 Les levures qui font lever le pain",
+    "😷 Le virus de la grippe",
+    "🤢 Clostridium botulinum dans une conserve abîmée",
+    "💊 La moisissure Penicillium, à l’origine de la pénicilline",
+    "🥛 Les bactéries lactiques qui fabriquent le yaourt"
+   ],
+   "bonnes": [
+    0,
+    3,
+    4
+   ],
+   "explications": [
+    "Oui : la fermentation produit du gaz qui fait lever la pâte.",
+    "Non : il est responsable d’une maladie.",
+    "Non : il produit une toxine très dangereuse (botulisme).",
+    "Oui : Alexander Fleming l’a découverte en 1928 ; l’industrie pharmaceutique en produit.",
+    "Oui : utilisées dans l’industrie agroalimentaire."
+   ],
+   "pourquoi": "Certains microbes sont pathogènes (ils rendent malades), d’autres sont précieux : alimentation, médicaments, et même nos flores (intestin, peau) qui nous protègent.",
+   "fiche": {
+    "titre": "Microbes utiles",
+    "texte": "Agroalimentaire : yaourt, fromage, pain, bière. Pharmacie : antibiotiques (pénicilline), insuline produite par des bactéries. Nos flores nous protègent."
+   }
+  },
+  {
+   "id": "bio-microbes-04",
+   "atelier": "bio-microbes",
+   "type": "tri",
+   "enonce": "Quelle forme a chaque bactérie ?",
+   "categories": [
+    "Coque (sphérique)",
+    "Bacille (bâtonnet)",
+    "Bactérie spiralée"
+   ],
+   "icones": [
+    "⚪",
+    "💊",
+    "🌀"
+   ],
+   "elements": [
+    {
+     "texte": "Staphylocoque (coques en grappe)",
+     "categorie": 0
+    },
+    {
+     "texte": "Streptocoque (coques en chaînette)",
+     "categorie": 0
+    },
+    {
+     "texte": "Escherichia coli",
+     "categorie": 1
+    },
+    {
+     "texte": "Clostridium tetani (tétanos)",
+     "categorie": 1
+    },
+    {
+     "texte": "Treponema pallidum (syphilis), un spirochète",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "La forme est un critère de classification. Le nom aide : « -coque » = rond, « bacille » = bâtonnet. Staphylo = en grappe de raisin, strepto = en chaînette. Le tréponème est une bactérie spiralée de la famille des spirochètes.",
+   "fiche": {
+    "titre": "Formes des bactéries",
+    "texte": "Coques (rondes) : staphylocoques en grappe, streptocoques en chaînette. Bacilles (bâtonnets) : E. coli. Bactéries spiralées : tréponème (un spirochète). Autres critères : taille, mobilité, spore, capsule."
+   }
+  },
+  {
+   "id": "bio-microbes-05",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "🔬 Au microscope, Sami voit des bactéries violettes, et d’autres roses.",
+   "enonce": "Quelle coloration vient-il de réaliser, et à quoi sert-elle ?",
+   "options": [
+    "Un caryotype : il colore les chromosomes des bactéries pour les compter et repérer une anomalie génétique responsable de l’infection",
+    "Une glycémie : elle mesure le sucre consommé par les bactéries sur la lame, ce qui indique leur vitesse de multiplication",
+    "La coloration de Gram : elle tue les bactéries de la lame et colore en violet celles qui sont mortes pour pouvoir les compter",
+    "La coloration de Gram : elle sépare les bactéries Gram + (violettes) et Gram − (roses) selon leur paroi, ce qui oriente le traitement"
+   ],
+   "bonnes": [
+    3
+   ],
+   "pourquoi": "Gram + : paroi épaisse qui garde le violet. Gram − : paroi fine, la bactérie apparaît rose. Résultat rapide qui oriente le traitement en attendant l’antibiogramme.",
+   "fiche": {
+    "titre": "Coloration de Gram",
+    "texte": "Gram + = violet (paroi épaisse). Gram − = rose (paroi fine + membrane externe). Intérêt : classer vite les bactéries et orienter le choix de l’antibiotique."
+   }
+  },
+  {
+   "id": "bio-microbes-06",
+   "atelier": "bio-microbes",
+   "type": "tri",
+   "enonce": "Cet élément est-il présent chez toutes les bactéries, ou seulement chez certaines ?",
+   "categories": [
+    "Chez toutes les bactéries",
+    "Seulement chez certaines"
+   ],
+   "icones": [
+    "🔒",
+    "🎒"
+   ],
+   "elements": [
+    {
+     "texte": "Membrane cytoplasmique",
+     "categorie": 0
+    },
+    {
+     "texte": "Cytoplasme",
+     "categorie": 0
+    },
+    {
+     "texte": "Chromosome (ADN)",
+     "categorie": 0
+    },
+    {
+     "texte": "Ribosomes",
+     "categorie": 0
+    },
+    {
+     "texte": "Capsule (protège de la phagocytose)",
+     "categorie": 1
+    },
+    {
+     "texte": "Flagelle (mobilité)",
+     "categorie": 1
+    },
+    {
+     "texte": "Pili (adhésion)",
+     "categorie": 1
+    },
+    {
+     "texte": "Plasmide (peut porter une résistance aux antibiotiques)",
+     "categorie": 1
+    }
+   ],
+   "pourquoi": "Toutes les bactéries ont une membrane, du cytoplasme, des ribosomes et un chromosome. La paroi existe chez presque toutes (exception : les mycoplasmes). Capsule, flagelles, pili, plasmides ou spore : seulement chez certaines ; ils leur donnent des « super-pouvoirs ».",
+   "fiche": {
+    "titre": "Ultrastructure bactérienne",
+    "texte": "Chez toutes : membrane, cytoplasme, ribosomes, chromosome. Paroi : chez presque toutes (pas les mycoplasmes). Chez certaines : capsule (anti-phagocytose), flagelles (mobilité), pili (adhésion), plasmides (résistances), spore."
+   }
+  },
+  {
+   "id": "bio-microbes-07",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "⏱️ Une bactérie E. coli se divise en deux toutes les 20 minutes dans de bonnes conditions.",
+   "enonce": "Combien de bactéries obtient-on à partir d’une seule après 1 heure ?",
+   "options": [
+    "6",
+    "60",
+    "8",
+    "3"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "En 1 heure : 3 divisions (60 ÷ 20). 1 → 2 → 4 → 8. La croissance est exponentielle : après 7 heures, plus de 2 millions ! D’où l’importance de la chaîne du froid et de l’hygiène.",
+   "fiche": {
+    "titre": "Temps de génération",
+    "texte": "Temps pour qu’une population double (≈ 20 min pour E. coli). Division binaire : 1 → 2 → 4 → 8 → 16… Croissance exponentielle."
+   }
+  },
+  {
+   "id": "bio-microbes-08",
+   "atelier": "bio-microbes",
+   "type": "ordre",
+   "enonce": "Remets dans l’ordre les phases de la croissance bactérienne en milieu non renouvelé.",
+   "elements": [
+    {
+     "texte": "Latence : les bactéries s’adaptent au milieu, pas de multiplication"
+    },
+    {
+     "texte": "Accélération : les divisions commencent"
+    },
+    {
+     "texte": "Croissance exponentielle : multiplication maximale"
+    },
+    {
+     "texte": "Ralentissement : les nutriments s’épuisent, les déchets s’accumulent"
+    },
+    {
+     "texte": "Phase stationnaire : autant de naissances que de morts"
+    },
+    {
+     "texte": "Déclin : les bactéries meurent plus vite qu’elles ne se divisent"
+    }
+   ],
+   "pourquoi": "Dans un milieu fermé (une boîte, un aliment), la population démarre, explose, puis manque de nourriture et finit par décliner.",
+   "fiche": {
+    "titre": "Courbe de croissance",
+    "texte": "Latence → accélération → exponentielle → ralentissement → stationnaire → déclin. Le froid ralentit la croissance mais ne tue pas les bactéries."
+   }
+  },
+  {
+   "id": "bio-microbes-09",
+   "atelier": "bio-microbes",
+   "type": "tri",
+   "enonce": "Quel est le besoin en dioxygène (O₂) de chaque type de bactérie ?",
+   "categories": [
+    "Aérobie stricte",
+    "Anaérobie stricte",
+    "Aéro-anaérobie"
+   ],
+   "icones": [
+    "🌬️",
+    "🚫",
+    "🔄"
+   ],
+   "elements": [
+    {
+     "texte": "Ne vit qu’en présence d’O₂",
+     "categorie": 0
+    },
+    {
+     "texte": "Exemple : le bacille de la tuberculose",
+     "categorie": 0
+    },
+    {
+     "texte": "L’O₂ lui est toxique",
+     "categorie": 1
+    },
+    {
+     "texte": "Exemple : Clostridium tetani, dans une plaie profonde",
+     "categorie": 1
+    },
+    {
+     "texte": "Vit avec ou sans O₂",
+     "categorie": 2
+    },
+    {
+     "texte": "Exemple : E. coli",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Une plaie profonde et souillée de terre manque d’O₂ : idéal pour le bacille du tétanos, qui est anaérobie strict. D’où l’importance de bien nettoyer les plaies et d’être à jour du vaccin.",
+   "fiche": {
+    "titre": "Bactéries et O₂",
+    "texte": "Aérobies strictes : besoin d’O₂. Anaérobies strictes : O₂ toxique (Clostridium). Aéro-anaérobies : les deux (E. coli). Autres conditions : température, pH, eau, nutriments."
+   }
+  },
+  {
+   "id": "bio-microbes-10",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "enonce": "Les spores bactériennes (Clostridium, Bacillus) sont redoutables. Pourquoi ?",
+   "options": [
+    "Elles ne résistent à rien et meurent à l’air, mais elles passent très vite d’un patient à l’autre",
+    "Ce sont des formes de résistance : elles survivent à la chaleur, à la sécheresse et à de nombreux désinfectants",
+    "Elles sont visibles à l’œil nu et forment une poussière qui contamine le matériel de soins",
+    "Elles se multiplient beaucoup plus vite que les bactéries ordinaires et envahissent l’organisme en quelques minutes"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Quand les conditions deviennent mauvaises, la bactérie forme une spore qui « hiberne ». Elle résiste à la plupart des désinfectants courants : on la détruit par stérilisation (ex. : autoclave) ou avec des produits sporicides adaptés. Pour Clostridioides difficile : lavage des mains au savon puis friction (la solution hydroalcoolique seule ne détruit pas les spores) et désinfection de l’environnement avec un produit sporicide.",
+   "fiche": {
+    "titre": "Spores",
+    "texte": "Forme de résistance de certaines bactéries (Bacillus, Clostridium) : résiste chaleur, dessiccation, désinfectants courants. Détruite par stérilisation ou produits sporicides. C. difficile : lavage au savon + SHA."
+   }
+  },
+  {
+   "id": "bio-microbes-11",
+   "atelier": "bio-microbes",
+   "type": "tri",
+   "enonce": "Pouvoir invasif ou pouvoir toxique ?",
+   "categories": [
+    "Pouvoir invasif",
+    "Pouvoir toxique"
+   ],
+   "icones": [
+    "🏃",
+    "☠️"
+   ],
+   "elements": [
+    {
+     "texte": "Capacité à pénétrer, se multiplier et se répandre dans l’organisme",
+     "categorie": 0
+    },
+    {
+     "texte": "Favorisé par la capsule ou les pili",
+     "categorie": 0
+    },
+    {
+     "texte": "Capacité à produire une toxine",
+     "categorie": 1
+    },
+    {
+     "texte": "Clostridium tetani (tétanos)",
+     "categorie": 1
+    },
+    {
+     "texte": "Clostridium botulinum (botulisme)",
+     "categorie": 1
+    }
+   ],
+   "pourquoi": "Le pouvoir pathogène d’une bactérie repose sur son pouvoir invasif (envahir) et/ou son pouvoir toxique (empoisonner avec une toxine). Le tétanos et le botulisme agissent par leur toxine, même avec peu de bactéries.",
+   "fiche": {
+    "titre": "Pouvoir pathogène",
+    "texte": "Capacité à provoquer une maladie. Invasif : pénétrer et se multiplier. Toxique : produire une toxine (tétanos, botulisme). Pathogène spécifique : peut rendre malade une personne en bonne santé. Opportuniste : surtout si les défenses sont affaiblies."
+   }
+  },
+  {
+   "id": "bio-microbes-12",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "🙂 M. Karim, 45 ans · Il va très bien, mais on retrouve un staphylocoque doré dans son nez. Il peut le transmettre.",
+   "enonce": "Comment appelle-t-on M. Karim ?",
+   "options": [
+    "Un malade en phase d’état de l’infection",
+    "Un porteur asymptomatique (porteur sain)",
+    "Un cas contact qu’il faut vacciner",
+    "Un immunodéprimé infecté par une bactérie opportuniste"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Un porteur asymptomatique héberge un microbe pathogène et peut le transmettre sans avoir aucun signe. C’est une raison de plus pour appliquer l’hygiène des mains avec tout le monde.",
+   "fiche": {
+    "titre": "Porteur asymptomatique",
+    "texte": "Héberge et transmet un microbe sans être malade. → On applique les précautions standard avec TOUTES les personnes, malades ou non."
+   }
+  },
+  {
+   "id": "bio-microbes-13",
+   "atelier": "bio-microbes",
+   "type": "ordre",
+   "enonce": "Range les phases d’une maladie infectieuse dans l’ordre.",
+   "elements": [
+    {
+     "texte": "Contamination : le microbe pénètre dans l’organisme"
+    },
+    {
+     "texte": "Incubation : le microbe se multiplie, aucun signe"
+    },
+    {
+     "texte": "Invasion : les premiers signes apparaissent"
+    },
+    {
+     "texte": "Phase d’état : les signes sont à leur maximum"
+    },
+    {
+     "texte": "Guérison ou complications"
+    }
+   ],
+   "pourquoi": "Pendant l’incubation, la personne ne se sent pas malade mais peut déjà être contagieuse pour certaines maladies. Les ganglions lymphatiques filtrent la lymphe et activent les défenses (ils gonflent parfois).",
+   "fiche": {
+    "titre": "Phases de l’infection",
+    "texte": "Contamination → incubation (silencieuse) → invasion (premiers signes) → état (signes maximaux) → guérison/convalescence ou complications."
+   }
+  },
+  {
+   "id": "bio-microbes-14",
+   "atelier": "bio-microbes",
+   "type": "multi",
+   "enonce": "Par où un microbe peut-il entrer dans l’organisme ? Choisis toutes les bonnes voies (4).",
+   "options": [
+    "🍽️ Le tube digestif (aliments, mains sales)",
+    "🤰 De la mère au fœtus (voie materno-fœtale)",
+    "🩹 Une plaie de la peau (voie cutanée)",
+    "😮‍💨 Les voies respiratoires",
+    "🧴 Une peau saine et intacte (par les pores)"
+   ],
+   "bonnes": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "explications": [
+    "Oui : ex. gastro-entérite.",
+    "Oui : ex. toxoplasmose, rubéole.",
+    "Oui : ex. tétanos.",
+    "Oui : ex. grippe, tuberculose.",
+    "Non : une peau intacte est une excellente barrière, les microbes ne passent pas par les pores."
+   ],
+   "pourquoi": "Autres voies possibles : sexuelle, sanguine (piqûre, transfusion). La peau intacte et les muqueuses sont nos premières barrières : les préserver, c’est se protéger.",
+   "fiche": {
+    "titre": "Voies de pénétration",
+    "texte": "Cutanée (plaie), respiratoire, digestive, sexuelle, sanguine, materno-fœtale. La peau intacte est une barrière."
+   }
+  },
+  {
+   "id": "bio-microbes-15",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "🤧 Inès, 4 ans · Elle a un gros rhume (virus). Sa maman demande des antibiotiques « pour que ça passe plus vite ».",
+   "enonce": "Que lui expliquer ?",
+   "options": [
+    "Les antibiotiques guérissent toutes les infections, virales comme bactériennes, s’ils sont pris dès les premiers signes",
+    "Il faut garder les restes d’antibiotiques de la dernière fois et les lui donner dès qu’elle a de la fièvre",
+    "Les antibiotiques agissent sur les bactéries, pas sur les virus : ici, ils sont inutiles et favorisent les résistances",
+    "Il faut doubler la dose prescrite pour être sûr que l’antibiotique fasse vite effet sur le rhume"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Les antibiotiques ciblent les bactéries (paroi, ribosomes…), que les virus n’ont pas. Un usage inutile sélectionne des bactéries résistantes. « Les antibiotiques, c’est pas automatique ! »",
+   "fiche": {
+    "titre": "Antibiotiques",
+    "texte": "Actifs uniquement sur les bactéries, jamais sur les virus. Spectre d’activité = ensemble des bactéries sensibles. Mal utilisés → résistances (BMR)."
+   }
+  },
+  {
+   "id": "bio-microbes-16",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "enonce": "À quoi sert un antibiogramme ?",
+   "options": [
+    "À tester l’efficacité de plusieurs antibiotiques sur la bactérie du patient pour choisir le bon",
+    "À mesurer la fièvre du patient pour adapter la dose d’antibiotique à donner",
+    "À vacciner le patient contre la bactérie qui a été isolée lors du prélèvement",
+    "À compter les globules blancs du patient pour savoir si l’infection est bactérienne"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "On cultive la bactérie avec des pastilles d’antibiotiques : là où la bactérie ne pousse pas autour de la pastille, elle est sensible. On choisit alors l’antibiotique le plus adapté.",
+   "fiche": {
+    "titre": "Antibiogramme",
+    "texte": "Test de sensibilité d’une bactérie à différents antibiotiques (zones d’inhibition). Permet de choisir un traitement efficace et d’éviter les résistances."
+   }
+  },
+  {
+   "id": "bio-microbes-17",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "enonce": "Une BMR (bactérie multirésistante), c’est…",
+   "options": [
+    "Une bactérie utile à la digestion, naturellement très présente dans notre intestin",
+    "Une bactérie du froid, qui continue à se multiplier même dans le réfrigérateur",
+    "Une bactérie résistante à plusieurs familles d’antibiotiques, dure à soigner",
+    "Un virus très contagieux qui se transmet par l’air entre les patients hospitalisés"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Exemples : SARM (staphylocoque doré résistant à la méticilline), entérobactéries BLSE. Conséquences : échecs de traitement, infections graves. Prévention : bon usage des antibiotiques, hygiène des mains, précautions « contact ».",
+   "fiche": {
+    "titre": "BMR",
+    "texte": "Bactérie résistante à plusieurs familles d’antibiotiques (ex. SARM). Risque : infections difficiles à traiter. Prévention : bon usage des antibiotiques + hygiène des mains + précautions contact."
+   }
+  },
+  {
+   "id": "bio-microbes-18",
+   "atelier": "bio-microbes",
+   "type": "multi",
+   "enonce": "Quelles affirmations sur les virus sont vraies ? Choisis-en 3.",
+   "options": [
+    "🧬 Ils contiennent un seul type d’acide nucléique : ADN ou ARN",
+    "📦 Leur matériel génétique est protégé par une capside (parfois une enveloppe)",
+    "🏠 Ce sont des parasites obligatoires : ils ne se multiplient que dans une cellule vivante",
+    "💊 Les antibiotiques les détruisent en bloquant la fabrication de leur paroi",
+    "🔬 Ils sont plus gros que les bactéries et visibles au microscope optique"
+   ],
+   "bonnes": [
+    0,
+    1,
+    2
+   ],
+   "explications": [
+    "Oui : jamais les deux à la fois.",
+    "Oui : la capside est une coque de protéines.",
+    "Oui : ils détournent la machinerie de la cellule hôte.",
+    "Non : les virus n’ont pas de paroi, et les antibiotiques n’agissent pas sur eux.",
+    "Non : ils sont bien plus petits (en nanomètres) ; il faut un microscope électronique pour les voir."
+   ],
+   "pourquoi": "Un virus n’est pas une cellule : il entre dans une cellule hôte, la force à fabriquer de nouveaux virus, puis ceux-ci sortent et infectent d’autres cellules.",
+   "fiche": {
+    "titre": "Les virus",
+    "texte": "Pas une cellule. ADN OU ARN + capside (± enveloppe). Parasite obligatoire : se reproduit seulement dans une cellule hôte. Insensible aux antibiotiques."
+   }
+  },
+  {
+   "id": "bio-microbes-19",
+   "atelier": "bio-microbes",
+   "type": "tri",
+   "contexte": "🍽️ Comme tous les êtres vivants, les bactéries ont besoin de carbone pour se construire et d’énergie pour vivre.",
+   "enonce": "Associe chaque définition au bon mot.",
+   "categories": [
+    "Autotrophe",
+    "Hétérotrophe",
+    "Phototrophe",
+    "Chimiotrophe"
+   ],
+   "icones": [
+    "🌱",
+    "🍖",
+    "☀️",
+    "⚗️"
+   ],
+   "elements": [
+    {
+     "texte": "Fabrique sa matière à partir du carbone minéral (CO₂)",
+     "categorie": 0
+    },
+    {
+     "texte": "Utilise de la matière organique déjà fabriquée par d’autres êtres vivants",
+     "categorie": 1
+    },
+    {
+     "texte": "Tire son énergie de la lumière",
+     "categorie": 2
+    },
+    {
+     "texte": "Tire son énergie de réactions chimiques (dégradation de molécules)",
+     "categorie": 3
+    }
+   ],
+   "pourquoi": "On classe les bactéries selon leur source de carbone (auto- = « soi-même » à partir du CO₂ ; hétéro- = « autre », à partir de matière organique) et selon leur source d’énergie (photo- = lumière ; chimio- = réactions chimiques).",
+   "fiche": {
+    "titre": "Types trophiques",
+    "texte": "Carbone : autotrophe (CO₂) / hétérotrophe (matière organique). Énergie : phototrophe (lumière) / chimiotrophe (réactions chimiques). Les bactéries pathogènes sont chimio-hétérotrophes."
+   },
+   "meta": {
+    "ajout": "relecture-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-20",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "🦠 Les bactéries qui nous rendent malades (staphylocoque, E. coli…) se nourrissent de matière organique (celle de notre corps, des aliments) et tirent leur énergie de réactions chimiques.",
+   "enonce": "Quel est leur type trophique ?",
+   "options": [
+    "Photo-hétérotrophes",
+    "Photo-autotrophes, comme les plantes",
+    "Chimio-hétérotrophes",
+    "Chimio-autotrophes"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Énergie tirée de réactions chimiques = chimiotrophe. Carbone pris dans la matière organique = hétérotrophe. C’est pour cela qu’elles se multiplient si bien dans un aliment riche ou dans une plaie.",
+   "fiche": {
+    "titre": "Bactéries pathogènes",
+    "texte": "Chimio-hétérotrophes : énergie chimique + carbone organique. Elles ont besoin d’un milieu riche (aliments, tissus du corps)."
+   },
+   "meta": {
+    "ajout": "relecture-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-21",
+   "atelier": "bio-microbes",
+   "type": "tri",
+   "contexte": "🍲 À la cuisine de la crèche, le cuisinier t’explique pourquoi on ne laisse jamais un plat tiède sur le plan de travail.",
+   "enonce": "Ce facteur favorise-t-il ou freine-t-il la multiplication de la plupart des bactéries pathogènes ?",
+   "categories": [
+    "Favorise",
+    "Freine"
+   ],
+   "icones": [
+    "📈",
+    "📉"
+   ],
+   "elements": [
+    {
+     "texte": "Une température proche de 37 °C",
+     "categorie": 0
+    },
+    {
+     "texte": "Un milieu humide",
+     "categorie": 0
+    },
+    {
+     "texte": "Un aliment riche en nutriments (lait, viande, œufs)",
+     "categorie": 0
+    },
+    {
+     "texte": "Un pH proche de la neutralité (environ 7)",
+     "categorie": 0
+    },
+    {
+     "texte": "Le réfrigérateur, entre 0 et 4 °C",
+     "categorie": 1
+    },
+    {
+     "texte": "Un aliment très sucré ou très salé (confiture, salaison)",
+     "categorie": 1
+    },
+    {
+     "texte": "Un milieu très acide (vinaigre)",
+     "categorie": 1
+    },
+    {
+     "texte": "Un aliment séché (déshydraté)",
+     "categorie": 1
+    }
+   ],
+   "pourquoi": "Les bactéries pathogènes se multiplient le mieux vers 37 °C, en milieu humide, riche et peu acide. Le froid ralentit leur multiplication sans les tuer ; le sucre, le sel, l’acidité et le séchage les gênent. Une cuisson suffisante détruit la plupart des bactéries, mais pas forcément leurs spores (ex. Bacillus cereus) ni certaines toxines : un plat resté tiède trop longtemps ne redevient pas sûr en le réchauffant. D’où la règle : garder au froid ou au chaud, et refroidir vite.",
+   "fiche": {
+    "titre": "Facteurs de croissance",
+    "texte": "Favorisent : 37 °C, humidité, nutriments, pH ≈ 7. Freinent : froid (ralentit sans tuer), sucre et sel, acidité, sécheresse. Cuisson : détruit la plupart des bactéries, mais pas toutes les spores ni toxines → maîtriser les températures, refroidir rapidement."
+   },
+   "meta": {
+    "ajout": "relecture-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-22",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "🧪 Au labo, dans de bonnes conditions, un staphylocoque a un temps de génération d’environ 30 minutes. On part de 100 bactéries.",
+   "enonce": "Combien de bactéries obtient-on après 2 heures ?",
+   "options": [
+    "800",
+    "6 400",
+    "1 600",
+    "400"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "En 2 heures, il y a 4 générations (120 ÷ 30). À chaque génération, la population double : 100 → 200 → 400 → 800 → 1 600. Formule : N = N₀ × 2ⁿ, avec n = durée ÷ temps de génération.",
+   "fiche": {
+    "titre": "Calculer une croissance",
+    "texte": "n = durée ÷ temps de génération. N = N₀ × 2ⁿ. Ex. : 100 bactéries, 4 générations → 100 × 16 = 1 600."
+   },
+   "meta": {
+    "ajout": "relecture-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-23",
+   "atelier": "bio-microbes",
+   "type": "tri",
+   "contexte": "🔬 Au laboratoire, une technicienne décrit plusieurs préparations bactériennes observées au microscope après coloration.",
+   "enonce": "Associe chaque description au type de bactérie correspondant.",
+   "categories": [
+    "Staphylocoques",
+    "Streptocoques",
+    "Bacilles",
+    "Diplocoques"
+   ],
+   "icones": [
+    "🍇",
+    "📿",
+    "💊",
+    "☕"
+   ],
+   "elements": [
+    {
+     "texte": "Des petits grains ronds groupés en amas, comme une grappe de raisin",
+     "categorie": 0
+    },
+    {
+     "texte": "Des grains ronds alignés en chaînette, comme un collier de perles",
+     "categorie": 1
+    },
+    {
+     "texte": "Des petits bâtonnets, isolés ou par deux",
+     "categorie": 2
+    },
+    {
+     "texte": "Des grains ronds groupés par deux, en forme de grains de café (ex. : méningocoque)",
+     "categorie": 3
+    }
+   ],
+   "pourquoi": "Au microscope, on décrit la forme (coque ronde, bacille en bâtonnet) et le mode de groupement (amas, chaînette, par deux). Avec la coloration de Gram, ces observations orientent rapidement vers une famille de bactéries.",
+   "fiche": {
+    "titre": "Lire une microphotographie",
+    "texte": "Forme + groupement. Amas = staphylocoques. Chaînette = streptocoques. Par deux = diplocoques (méningocoque, pneumocoque). Bâtonnets = bacilles."
+   },
+   "meta": {
+    "ajout": "relecture-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-24",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "🫁 Le pneumocoque (Streptococcus pneumoniae) est entouré d’une épaisse capsule.",
+   "enonce": "Comment cette capsule l’aide-t-elle à envahir l’organisme ?",
+   "options": [
+    "Elle lui sert de flagelle pour nager très vite dans le sang jusqu’aux organes",
+    "Elle empêche sa phagocytose par les globules blancs : il se multiplie et se répand (poumons, sang, méninges)",
+    "Elle produit une toxine qui paralyse les muscles respiratoires, ce qui empêche le malade de tousser et de cracher",
+    "Elle lui permet de fabriquer sa propre nourriture à partir de la lumière, comme une plante"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Le pouvoir invasif, c’est la capacité à pénétrer, se multiplier et se répandre dans l’organisme. La capsule protège la bactérie de la phagocytose ; les pili l’aident à s’accrocher. Les vaccins contre le pneumocoque visent justement les sucres de sa capsule.",
+   "fiche": {
+    "titre": "Pouvoir invasif : un exemple",
+    "texte": "Pneumocoque : capsule anti-phagocytose → pneumonie, septicémie, méningite. Pili = adhésion. Le vaccin cible la capsule."
+   },
+   "meta": {
+    "ajout": "relecture-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-25",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "📈 Au labo, on suit le nombre de bactéries dans un bouillon fermé. Sur la courbe, après une forte montée, le nombre reste stable pendant plusieurs heures : c’est un plateau.",
+   "enonce": "Quelle phase est-ce, et pourquoi ?",
+   "options": [
+    "La phase de latence : les bactéries s’adaptent au milieu et ne se multiplient pas encore, d’où le plateau",
+    "La phase exponentielle : la multiplication est maximale et le nombre de bactéries double à chaque génération",
+    "La phase de déclin : toutes les bactéries sont mortes, donc leur nombre ne peut plus ni monter ni descendre",
+    "La phase stationnaire : autant de bactéries naissent que meurent, car les nutriments s’épuisent et les déchets s’accumulent"
+   ],
+   "bonnes": [
+    3
+   ],
+   "pourquoi": "La latence est aussi un palier, mais au début, avant la montée. Après la croissance exponentielle, le milieu s’appauvrit : la population se stabilise (phase stationnaire), puis diminue (déclin).",
+   "fiche": {
+    "titre": "Lire une courbe de croissance",
+    "texte": "Palier au début = latence. Montée forte = exponentielle. Plateau après la montée = stationnaire. Descente = déclin."
+   },
+   "meta": {
+    "ajout": "relecture-2026-11"
+   }
+  },
+  {
+   "id": "bio-ias-01",
+   "atelier": "bio-ias",
+   "type": "qcm",
+   "contexte": "🏥 M. Jean, 76 ans · Hospitalisé pour une fracture, il développe une infection urinaire cinq jours après la pose d’une sonde.",
+   "enonce": "Comment appelle-t-on cette infection ?",
+   "options": [
+    "Une infection associée aux soins (ici nosocomiale, car contractée à l’hôpital)",
+    "Une allergie au matériel de la sonde, sans aucun microbe en cause",
+    "Une infection communautaire, qu’il avait déjà en incubation en arrivant aux urgences pour sa fracture",
+    "Une maladie génétique révélée par la fracture et l’alitement prolongé"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Une infection associée aux soins (IAS) survient au cours ou au décours d’une prise en charge et n’était ni présente ni en incubation au début. Si elle est contractée dans un établissement de santé, on parle d’infection nosocomiale.",
+   "fiche": {
+    "titre": "IAS et nosocomiale",
+    "texte": "IAS : infection qui survient au cours ou après une prise en charge (soins), absente au départ (délai indicatif 48 h). Nosocomiale : IAS contractée dans un établissement de santé."
+   }
+  },
+  {
+   "id": "bio-ias-02",
+   "atelier": "bio-ias",
+   "type": "qcm",
+   "enonce": "Quel est l’un des principaux modes de transmission des microbes d’un patient à l’autre (transmission croisée) dans les soins ?",
+   "options": [
+    "Les rayons du soleil",
+    "Les mains (transmission manuportée)",
+    "Les ondes du téléphone",
+    "L’eau du robinet bue par le patient"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Les mains des professionnels passent d’une personne à l’autre et touchent le matériel : c’est une voie majeure de transmission croisée. D’où la règle d’or : friction hydroalcoolique avant et après chaque contact. Attention : certaines IAS viennent aussi de la propre flore du patient (infection endogène).",
+   "fiche": {
+    "titre": "Transmission manuportée",
+    "texte": "Transmission croisée : souvent par les mains. Autres modes : matériel, surfaces, gouttelettes, air. Certaines IAS viennent de la propre flore du patient (endogènes)."
+   }
+  },
+  {
+   "id": "bio-ias-03",
+   "atelier": "bio-ias",
+   "type": "multi",
+   "enonce": "Quels facteurs favorisent les infections associées aux soins ? Choisis-en 4.",
+   "options": [
+    "🩺 Les dispositifs invasifs (sonde urinaire, cathéter)",
+    "👴 Le grand âge ou le très jeune âge",
+    "🛏️ L’alitement prolongé",
+    "🧴 Une friction hydroalcoolique avant chaque soin",
+    "🛡️ Une immunité affaiblie (immunodépression, dénutrition, diabète)"
+   ],
+   "bonnes": [
+    0,
+    1,
+    2,
+    4
+   ],
+   "explications": [
+    "Oui : ils ouvrent une porte d’entrée aux microbes.",
+    "Oui : les défenses sont moins efficaces.",
+    "Oui : risques d’escarres, d’infections urinaires et respiratoires.",
+    "Non : c’est au contraire la meilleure protection !",
+    "Oui : l’organisme se défend moins bien."
+   ],
+   "pourquoi": "Facteurs liés à la personne (âge, défenses, état cutané) et liés aux soins (actes invasifs, durée de séjour, antibiotiques). Ton rôle : repérer les risques et appliquer les précautions.",
+   "fiche": {
+    "titre": "Facteurs de risque d’IAS",
+    "texte": "Personne : âges extrêmes, immunodépression, dénutrition, diabète, alitement. Soins : sondes, cathéters, chirurgie, durée d’hospitalisation, antibiotiques."
+   }
+  },
+  {
+   "id": "bio-ias-04",
+   "atelier": "bio-ias",
+   "type": "multi",
+   "contexte": "🧑‍⚕️ Avant de commencer ton service à l’EHPAD, tu vérifies ta tenue.",
+   "enonce": "Quelles règles font partie des précautions standard ? Choisis-en 4.",
+   "options": [
+    "🧤 Garder les mêmes gants toute la matinée pour gagner du temps",
+    "💍 Pas de bijoux (ni bague, ni montre, ni bracelet)",
+    "🧤 Des gants en cas de risque de contact avec du sang, un liquide biologique, une muqueuse ou une peau lésée (ou si tes mains sont abîmées)",
+    "💅 Ongles courts, sans vernis ni faux ongles",
+    "🧴 Friction hydroalcoolique avant et après chaque contact"
+   ],
+   "bonnes": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "explications": [
+    "Non ! Des gants portés trop longtemps transportent les microbes d’une personne à l’autre.",
+    "Oui : les bijoux empêchent une hygiène efficace.",
+    "Oui : les gants ne sont pas systématiques ; on les retire juste après le soin et ils ne remplacent pas l’hygiène des mains.",
+    "Oui : les microbes se cachent sous les ongles longs et le vernis.",
+    "Oui : c’est la mesure n° 1."
+   ],
+   "pourquoi": "Les précautions standard s’appliquent par tous les professionnels, pour toutes les personnes, à chaque soin : hygiène des mains, tenue adaptée, gants et protections si risque, gestion du linge, des déchets et des surfaces.",
+   "fiche": {
+    "titre": "Précautions standard",
+    "texte": "Pour tous, tout le temps : hygiène des mains (SHA), tenue propre à manches courtes, zéro bijou, ongles courts, gants si risque de contact (sang, liquides biologiques, muqueuse, peau lésée), masque/lunettes si risque de projection, hygiène respiratoire, gestion excreta, linge, déchets, surfaces."
+   }
+  },
+  {
+   "id": "bio-ias-05",
+   "atelier": "bio-ias",
+   "type": "tri",
+   "enonce": "Quelles précautions complémentaires pour chaque situation ? (en plus des précautions standard)",
+   "categories": [
+    "Contact",
+    "Gouttelettes",
+    "Air"
+   ],
+   "icones": [
+    "✋",
+    "💧",
+    "🌫️"
+   ],
+   "elements": [
+    {
+     "texte": "Patient porteur d’une BMR",
+     "categorie": 0
+    },
+    {
+     "texte": "Gale",
+     "categorie": 0
+    },
+    {
+     "texte": "Grippe",
+     "categorie": 1
+    },
+    {
+     "texte": "Coqueluche",
+     "categorie": 1
+    },
+    {
+     "texte": "Tuberculose pulmonaire",
+     "categorie": 2
+    },
+    {
+     "texte": "Rougeole",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Ces précautions s’ajoutent toujours aux précautions standard, selon le protocole de l’établissement. Contact : tablier ou surblouse pour les soins rapprochés, matériel dédié, gants selon le protocole (par exemple pour la gale). Gouttelettes : masque chirurgical (grosses particules projetées en parlant, en toussant). Air : masque FFP2 et porte fermée (fines particules qui restent en suspension). Les recommandations récentes (SF2H, 2024) parlent de précautions « respiratoires » graduées selon le niveau de risque.",
+   "fiche": {
+    "titre": "Précautions complémentaires",
+    "texte": "En plus des précautions standard, selon le protocole. ✋ Contact (BMR, gale) : tablier ou surblouse pour les soins rapprochés, matériel dédié. 💧 Gouttelettes (grippe, coqueluche) : masque chirurgical. 🌫️ Air (tuberculose, rougeole, varicelle) : masque FFP2, porte fermée."
+   }
+  },
+  {
+   "id": "bio-ias-06",
+   "atelier": "bio-ias",
+   "type": "multi",
+   "contexte": "🧴 Avant d’aider Mme Lise à faire sa toilette, tu fais une friction hydroalcoolique.",
+   "enonce": "Quelles zones faut-il frictionner ? Choisis toutes les bonnes réponses (7).",
+   "options": [
+    "🖐️ Les paumes",
+    "☝️ Le dos des doigts",
+    "🎯 Seulement les zones qui vont toucher la personne",
+    "💅 Le bout des doigts et les ongles",
+    "⌚ Les poignets",
+    "💪 Les avant-bras jusqu’aux coudes",
+    "🖖 Entre les doigts",
+    "🤚 Le dos des mains",
+    "👍 Les pouces"
+   ],
+   "bonnes": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    7,
+    8
+   ],
+   "explications": [
+    "Oui.",
+    "Oui : zone souvent oubliée.",
+    "Non : toutes les surfaces des mains doivent être frictionnées.",
+    "Oui : les microbes se cachent autour des ongles.",
+    "Oui : la friction va jusqu’aux poignets.",
+    "Non : c’est la préparation des mains pour la chirurgie, pas l’hygiène des mains courante.",
+    "Oui : zone souvent oubliée.",
+    "Oui.",
+    "Oui : zone souvent oubliée."
+   ],
+   "pourquoi": "Sur des mains sèches et visiblement propres, prendre assez de produit pour couvrir toutes les surfaces et frictionner 20 à 30 secondes, jusqu’à séchage complet, sans essuyer. Suivre toujours le même ordre aide à ne rien oublier, mais l’essentiel est que toutes les zones soient frictionnées. Mains souillées : lavage au savon d’abord.",
+   "fiche": {
+    "titre": "Friction hydroalcoolique",
+    "texte": "Mains sèches et propres, assez de produit, 20-30 s : paumes, dos des mains, entre les doigts, dos des doigts, pouces, bout des doigts et ongles, poignets. Jusqu’au séchage, sans essuyer. Mains sales : lavage au savon."
+   }
+  },
+  {
+   "id": "bio-ias-07",
+   "atelier": "bio-ias",
+   "type": "qcm",
+   "enonce": "Que sont le PROPIAS et les CPIAS ?",
+   "options": [
+    "Deux bactéries multirésistantes surveillées dans tous les établissements de santé, car elles causent de nombreuses infections nosocomiales",
+    "Deux vaccins obligatoires pour tous les professionnels de santé qui travaillent en établissement de soins ou en EHPAD",
+    "Le programme national de prévention des infections associées aux soins (2015) et les centres régionaux d’appui aux professionnels",
+    "Deux antibiotiques à large spectre réservés à l’hôpital, utilisés en dernier recours contre les infections associées aux soins"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "PROPIAS (2015) : programme national d’actions de prévention des IAS (hôpitaux, EHPAD, domicile ; lutte contre l’antibiorésistance ; sécurité des actes invasifs). Depuis 2022, il est prolongé par une stratégie nationale de prévention des infections et de l’antibiorésistance. CPIAS : centres d’appui pour la prévention des IAS, en région (conseil, formation, surveillance), toujours actifs.",
+   "fiche": {
+    "titre": "PROPIAS et CPIAS",
+    "texte": "PROPIAS (2015) : programme national de prévention des IAS, prolongé depuis 2022 par une stratégie nationale infections + antibiorésistance. CPIAS : centres régionaux d’appui (expertise, formation, surveillance)."
+   }
+  },
+  {
+   "id": "bio-ias-08",
+   "atelier": "bio-ias",
+   "type": "qcm",
+   "enonce": "À l’hôpital, quelle équipe met en œuvre concrètement la prévention des infections (protocoles, formations, surveillance) ?",
+   "options": [
+    "Le service informatique, qui envoie des rappels d’hygiène par messagerie à tout le personnel",
+    "L’équipe opérationnelle d’hygiène (EOH), en lien avec le comité de lutte contre les infections",
+    "Le service de restauration, qui applique les règles d’hygiène alimentaire dans les cuisines",
+    "Le service des admissions, qui vérifie le dossier et les vaccinations de chaque patient à l’entrée"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "L’EOH (médecin ou pharmacien hygiéniste, infirmier hygiéniste) applique le programme de prévention défini avec le comité de lutte contre les infections nosocomiales (CLIN) ou son équivalent dans l’établissement.",
+   "fiche": {
+    "titre": "Instances d’hygiène",
+    "texte": "Dans l’établissement : un comité (CLIN ou équivalent) définit la politique ; l’équipe opérationnelle d’hygiène (EOH) la met en œuvre : protocoles, formation, surveillance, alertes."
+   }
+  },
+  {
+   "id": "bio-microbes-26",
+   "atelier": "bio-microbes",
+   "type": "ordre",
+   "contexte": "🦠 Une bactérie se multiplie par scissiparité (division binaire) : une cellule mère donne deux cellules filles.",
+   "enonce": "Remets dans l’ordre les étapes de la scissiparité.",
+   "elements": [
+    {
+     "texte": "La bactérie grandit et s’allonge"
+    },
+    {
+     "texte": "Son chromosome a été copié : les deux copies s’écartent, une dans chaque moitié"
+    },
+    {
+     "texte": "Une cloison se forme au milieu de la cellule"
+    },
+    {
+     "texte": "La cloison sépare deux cellules filles identiques"
+    }
+   ],
+   "pourquoi": "La bactérie grandit, copie son ADN, puis une cloison la coupe en deux. Les deux cellules filles ont le même ADN que la cellule mère : c’est une reproduction asexuée. En réalité, la croissance et la copie de l’ADN se font en partie en même temps ; l’essentiel est que l’ADN soit copié avant que la cloison ne se ferme.",
+   "fiche": {
+    "titre": "La scissiparité",
+    "texte": "Division binaire : allongement → duplication de l’ADN → cloison → 2 cellules filles identiques. Une bactérie donne 2 bactéries, puis 4, 8, 16…"
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-27",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "⏱️ Sur le compte rendu du labo, on lit : « Temps de génération de la souche : 30 minutes ».",
+   "enonce": "Que signifie cette donnée ?",
+   "options": [
+    "Il faut 30 minutes pour que le nombre de bactéries triple",
+    "Toutes les 30 minutes, le nombre de bactéries double",
+    "La culture doit rester 30 minutes à l’étuve à 37 °C",
+    "Au bout de 30 minutes, la moitié des bactéries est morte"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Le temps de génération (G) est la durée nécessaire pour qu’une population de bactéries double : chaque bactérie se divise en deux. Il dépend de l’espèce et des conditions (température, nutriments, pH).",
+   "fiche": {
+    "titre": "Temps de génération (G)",
+    "texte": "Durée pour que la population double. G = 30 min : 1 → 2 → 4 bactéries en 1 heure. Il varie selon la bactérie et le milieu."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-28",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "🧫 Une souche bactérienne a un temps de génération de 30 minutes.",
+   "enonce": "Combien de générations y a-t-il en 1 heure ? C’est le taux de croissance horaire.",
+   "options": [
+    "4",
+    "30",
+    "1",
+    "2"
+   ],
+   "bonnes": [
+    3
+   ],
+   "pourquoi": "1 heure = 60 minutes, et 60 ÷ 30 = 2 : il y a 2 générations par heure. Le taux de croissance horaire est le nombre de générations en 1 heure. Attention : 4 est le nombre de bactéries obtenu à partir d’une seule, pas le nombre de générations.",
+   "fiche": {
+    "titre": "Taux de croissance horaire",
+    "texte": "Nombre de générations en 1 heure = 60 ÷ G (G en minutes). G = 30 min → 2 générations par heure. G = 20 min → 3 générations par heure."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-29",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "🧫 Même souche : temps de génération de 30 minutes, soit 2 générations par heure. Au départ, il y a 50 bactéries.",
+   "enonce": "Combien de bactéries y a-t-il au bout de 1 heure ?",
+   "options": [
+    "100",
+    "1 500",
+    "200",
+    "150"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Chaque génération double l’effectif : 50 → 100 (après 30 min) → 200 (après 1 h). Avec 2 générations, l’effectif est multiplié par 2 × 2 = 4, et non par 2.",
+   "fiche": {
+    "titre": "Effectif après 1 heure",
+    "texte": "2 générations par heure → effectif × 4 en 1 h (2 × 2). 3 générations par heure → effectif × 8 (2 × 2 × 2)."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-30",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "🔬 Au labo, quatre préparations colorées sont observées au microscope. Les vues sont schématiques : ce sont des dessins simplifiés, pas des photos.",
+   "enonce": "Sur la vue n° 1, quelles bactéries reconnais-tu ?",
+   "image": {
+    "src": "schemas/bacteries-formes.webp",
+    "alt": "Quatre vues schématiques de microscope, numérotées de 1 à 4, montrant des bactéries de formes et de groupements différents."
+   },
+   "options": [
+    "Des staphylocoques",
+    "Des streptocoques",
+    "Des diplocoques",
+    "Des bacilles"
+   ],
+   "bonnes": [
+    0
+   ],
+   "ordreFixe": true,
+   "pourquoi": "Vue n° 1 : des coques (bactéries rondes) groupées en amas, comme des grappes de raisin. Ce sont des staphylocoques (exemple : Staphylococcus aureus).",
+   "fiche": {
+    "titre": "Reconnaître une bactérie au microscope",
+    "texte": "Forme : coque (ronde) ou bacille (bâtonnet). Groupement : amas = staphylocoques, chaînette = streptocoques, par deux = diplocoques."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-31",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "🔬 Au labo, quatre préparations colorées sont observées au microscope. Les vues sont schématiques : ce sont des dessins simplifiés, pas des photos.",
+   "enonce": "Sur la vue n° 2, quelles bactéries reconnais-tu ?",
+   "image": {
+    "src": "schemas/bacteries-formes.webp",
+    "alt": "Quatre vues schématiques de microscope, numérotées de 1 à 4, montrant des bactéries de formes et de groupements différents."
+   },
+   "options": [
+    "Des staphylocoques",
+    "Des streptocoques",
+    "Des diplocoques",
+    "Des bacilles"
+   ],
+   "bonnes": [
+    1
+   ],
+   "ordreFixe": true,
+   "pourquoi": "Vue n° 2 : des coques alignées en chaînettes, comme des colliers de perles. Ce sont des streptocoques (exemple : le streptocoque de l’angine).",
+   "fiche": {
+    "titre": "Reconnaître une bactérie au microscope",
+    "texte": "Forme : coque (ronde) ou bacille (bâtonnet). Groupement : amas = staphylocoques, chaînette = streptocoques, par deux = diplocoques."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-32",
+   "atelier": "bio-microbes",
+   "type": "qcm",
+   "contexte": "🔬 Au labo, quatre préparations colorées sont observées au microscope. Les vues sont schématiques : ce sont des dessins simplifiés, pas des photos.",
+   "enonce": "Sur la vue n° 3, quelles bactéries reconnais-tu ?",
+   "image": {
+    "src": "schemas/bacteries-formes.webp",
+    "alt": "Quatre vues schématiques de microscope, numérotées de 1 à 4, montrant des bactéries de formes et de groupements différents."
+   },
+   "options": [
+    "Des staphylocoques",
+    "Des streptocoques",
+    "Des diplocoques",
+    "Des bacilles"
+   ],
+   "bonnes": [
+    2
+   ],
+   "ordreFixe": true,
+   "pourquoi": "Vue n° 3 : des coques groupées par deux, en forme de grains de café. Ce sont des diplocoques (exemple : le méningocoque).",
+   "fiche": {
+    "titre": "Reconnaître une bactérie au microscope",
+    "texte": "Forme : coque (ronde) ou bacille (bâtonnet). Groupement : amas = staphylocoques, chaînette = streptocoques, par deux = diplocoques."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-microbes-33",
+   "atelier": "bio-microbes",
+   "type": "multi",
+   "contexte": "🔬 Au labo, quatre préparations colorées sont observées au microscope. Les vues sont schématiques : ce sont des dessins simplifiés, pas des photos.",
+   "enonce": "Sur quelles vues voit-on des coques (bactéries rondes) ? Choisis-en 3.",
+   "image": {
+    "src": "schemas/bacteries-formes.webp",
+    "alt": "Quatre vues schématiques de microscope, numérotées de 1 à 4, montrant des bactéries de formes et de groupements différents."
+   },
+   "options": [
+    "Vue n° 1",
+    "Vue n° 2",
+    "Vue n° 3",
+    "Vue n° 4"
+   ],
+   "bonnes": [
+    0,
+    1,
+    2
+   ],
+   "explications": [
+    "Oui : des coques en amas (staphylocoques).",
+    "Oui : des coques en chaînettes (streptocoques).",
+    "Oui : des coques par deux (diplocoques).",
+    "Non : ce sont des bâtonnets, donc des bacilles."
+   ],
+   "pourquoi": "On regarde d’abord la forme : rondes = coques, bâtonnets = bacilles. Puis le groupement : amas, chaînette ou par deux.",
+   "fiche": {
+    "titre": "Reconnaître une bactérie au microscope",
+    "texte": "Forme : coque (ronde) ou bacille (bâtonnet). Groupement : amas = staphylocoques, chaînette = streptocoques, par deux = diplocoques."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  }
+ ]
+}

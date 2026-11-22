@@ -1,0 +1,370 @@
+{
+  "_note": "Cas professionnels à décisions. Première version proposée par ChatGPT (relecture 5, 21/11/2026), adaptée et vérifiée. Chaque parcours compte exactement 3 décisions ; chaque décision a 3 choix dont un seul « juste ». Les indicateurs sont des compétences travaillées, jamais un état de santé ni une note de la personne.",
+  "items": [
+    {
+      "id": "cas-assp-ehpad-signes-01",
+      "filiere": "assp",
+      "icone": "🫁",
+      "titre": "Mme Bernard ne va pas comme d’habitude",
+      "lieu": "EHPAD · 8 h 10",
+      "role": "Tu es élève en stage, sous la responsabilité de l’équipe.",
+      "objectif": "Repérer un changement brutal, alerter, transmettre sans diagnostiquer, surveiller.",
+      "avertissement": "Simulation pédagogique. En situation réelle, applique le protocole de l’établissement : devant une détresse respiratoire avec confusion, l’alerte (15 ou 112) ne doit jamais être retardée.",
+      "personnage": "👵",
+      "indicateurs": [
+        { "id": "alerte", "label": "Alerte immédiate" },
+        { "id": "transmission", "label": "Transmission utile" },
+        { "id": "surveillance", "label": "Surveillance adaptée" }
+      ],
+      "refs": {
+        "ASSP 2.2.1": "Observer la personne : conscience, respiration, douleur, autres signes",
+        "ASSP 2.2.2": "Repérer les changements de comportement et les signes de détresse",
+        "ASSP 2.2.4": "Évaluer l’urgence, agir dans ses limites de compétences et alerter",
+        "ASSP 3.2.1": "Recenser et prioriser les informations à transmettre",
+        "ASSP 3.2.3": "Transmettre les informations au bon destinataire"
+      },
+      "depart": "intro",
+      "noeuds": {
+        "intro": {
+          "type": "scene",
+          "titre": "Une matinée inhabituelle",
+          "texte": "Mme Bernard, 86 ans, discute toujours avec l’équipe. Ce matin, elle répond de façon incohérente et semble manquer d’air. Tu es près d’elle.",
+          "suite": "d1"
+        },
+        "d1": {
+          "type": "decision",
+          "titre": "Priorité",
+          "texte": "Mme Bernard est éveillée, mais parle difficilement. Elle respire vite. D’autres professionnels sont présents dans l’établissement.",
+          "question": "Que fais-tu tout de suite ?",
+          "indice": "Une confusion brutale avec une gêne pour respirer, c’est un signal d’urgence.",
+          "aRetenir": "Confusion nouvelle + essoufflement : l’alerte ne doit pas attendre.",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Je reste avec elle et je fais alerter tout de suite l’infirmière.",
+              "qualite": "juste",
+              "retour": "Oui. La situation justifie une alerte urgente. Tu restes près d’elle et tu suis les consignes.",
+              "consequence": "L’infirmière arrive et appelle le 15. Elle te demande ce que tu as remarqué.",
+              "refs": ["ASSP 2.2.2", "ASSP 2.2.4"],
+              "gain": "alerte",
+              "suite": "suite_alerte"
+            },
+            {
+              "id": "b",
+              "texte": "Je vais chercher l’infirmière, sans lui dire encore ce que j’ai vu.",
+              "qualite": "partiel",
+              "retour": "Alerter vite, c’est bien. Mais dis dès le premier message « confusion » et « respire mal » : c’est ce qui montre l’urgence. Et si possible, ne la laisse pas seule.",
+              "consequence": "L’infirmière vient aussitôt. Elle te demande de décrire les signes pour appeler le 15.",
+              "refs": ["ASSP 2.2.2", "ASSP 2.2.4"],
+              "suite": "suite_guidee"
+            },
+            {
+              "id": "c",
+              "texte": "Je prends d’abord sa température, je la note, puis je préviens.",
+              "qualite": "a-revoir",
+              "retour": "On ne retarde pas l’alerte pour faire une mesure. Confusion brutale et gêne respiratoire : il faut de l’aide tout de suite.",
+              "consequence": "Une collègue voit la scène et alerte l’infirmière, qui appelle le 15. Tu participes à la transmission.",
+              "refs": ["ASSP 2.2.2", "ASSP 2.2.4"],
+              "suite": "suite_guidee"
+            }
+          ]
+        },
+        "suite_alerte": {
+          "type": "scene",
+          "titre": "L’équipe réagit",
+          "texte": "Le médecin régulateur du 15 est en ligne. Tu peux maintenant donner des informations précises.",
+          "suite": "d2"
+        },
+        "suite_guidee": {
+          "type": "scene",
+          "titre": "Une collègue t’accompagne",
+          "texte": "L’alerte est lancée. Ta collègue te demande de dire ce que tu as observé, sans poser de diagnostic.",
+          "suite": "d2"
+        },
+        "d2": {
+          "type": "decision",
+          "titre": "Transmission",
+          "texte": "L’infirmière te demande ce que tu as observé. Mme Bernard est toujours près de toi.",
+          "question": "Que lui dis-tu en premier ?",
+          "indice": "Des faits que tout le monde peut voir, l’heure, et ce qui a changé par rapport à d’habitude.",
+          "aRetenir": "Une transmission utile : les signes, l’heure, la différence avec l’état habituel. Pas de diagnostic.",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "« À 8 h 10, elle répondait de façon incohérente et respirait vite. D’habitude, elle discute normalement. »",
+              "qualite": "juste",
+              "retour": "Précis et objectif : l’heure, les signes, et le changement par rapport à d’habitude.",
+              "consequence": "L’infirmière répète ton message au médecin régulateur, mot pour mot.",
+              "refs": ["ASSP 2.2.1", "ASSP 3.2.1", "ASSP 3.2.3"],
+              "gain": "transmission",
+              "suite": "suite_transmission"
+            },
+            {
+              "id": "b",
+              "texte": "« Elle a 86 ans, elle a l’air très fatiguée et n’a pas pris son petit-déjeuner. »",
+              "qualite": "partiel",
+              "retour": "Ces informations peuvent servir, mais ce qui compte d’abord : la confusion, la respiration et l’heure où tu l’as remarqué.",
+              "consequence": "L’infirmière te pose des questions pour retrouver les signes urgents.",
+              "refs": ["ASSP 3.2.1", "ASSP 3.2.3"],
+              "suite": "suite_complement"
+            },
+            {
+              "id": "c",
+              "texte": "« Je pense qu’elle fait une grave maladie des poumons. »",
+              "qualite": "a-revoir",
+              "retour": "Ne pose pas de diagnostic : ce n’est pas ton rôle, et il peut être faux. Transmets ce que tu as vu ; l’évaluation revient aux professionnels de santé.",
+              "consequence": "L’infirmière reformule avec toi les signes observés et l’heure.",
+              "refs": ["ASSP 3.2.1", "ASSP 3.2.3"],
+              "suite": "suite_complement"
+            }
+          ]
+        },
+        "suite_transmission": {
+          "type": "scene",
+          "titre": "Les informations circulent",
+          "texte": "Les secours sont en route. Mme Bernard est consciente ; elle te regarde, inquiète.",
+          "suite": "d3"
+        },
+        "suite_complement": {
+          "type": "scene",
+          "titre": "Le message est complété",
+          "texte": "L’infirmière a les éléments qui manquaient. Les secours sont en route. Mme Bernard est consciente.",
+          "suite": "d3"
+        },
+        "d3": {
+          "type": "decision",
+          "titre": "Pendant l’attente",
+          "texte": "L’équipe applique les consignes du 15. Mme Bernard respire toujours difficilement.",
+          "question": "Que fais-tu, dans ton rôle ?",
+          "indice": "Rassurer et surveiller comptent, sans faire de geste non demandé.",
+          "aRetenir": "Rester près de la personne, observer, signaler tout changement, suivre les consignes : pas de geste non autorisé.",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Je reste près d’elle, je lui parle calmement, je surveille sa respiration et sa conscience, et je signale tout changement.",
+              "qualite": "juste",
+              "retour": "Exact. Tu rassures, tu observes, et tu alertes si quelque chose change.",
+              "consequence": "À leur arrivée, les secours te demandent depuis quand elle est ainsi : tu sais répondre.",
+              "refs": ["ASSP 2.2.1", "ASSP 2.2.4"],
+              "gain": "surveillance",
+              "suite": "fin_suivie"
+            },
+            {
+              "id": "b",
+              "texte": "Je la rassure, puis je pars préparer sa chambre pour l’arrivée des secours.",
+              "qualite": "partiel",
+              "retour": "Rassurer est utile, mais elle ne doit pas rester sans surveillance. Demande à l’équipe qui reste avec elle.",
+              "consequence": "L’infirmière te demande de revenir près de Mme Bernard ; une autre personne prépare la chambre.",
+              "refs": ["ASSP 2.2.1", "ASSP 2.2.4"],
+              "suite": "fin_accompagnee"
+            },
+            {
+              "id": "c",
+              "texte": "Je lui donne un verre d’eau pour la calmer, puis j’attends de voir si ça va mieux.",
+              "qualite": "a-revoir",
+              "retour": "Pas de boisson sans avis d’un professionnel : avec une confusion et une gêne respiratoire, elle risque de s’étouffer (fausse route). L’alerte est lancée : suis les consignes.",
+              "consequence": "L’infirmière arrête ton geste et te confie la surveillance, à côté d’elle.",
+              "refs": ["ASSP 2.2.1", "ASSP 2.2.4"],
+              "suite": "fin_accompagnee"
+            }
+          ]
+        },
+        "fin_suivie": {
+          "type": "fin",
+          "icone": "🚑",
+          "titre": "La relève est assurée",
+          "texte": "Les secours prennent en charge Mme Bernard. Ton rôle s’achève par une transmission claire. Personne n’attendait de toi un diagnostic."
+        },
+        "fin_accompagnee": {
+          "type": "fin",
+          "icone": "🤝",
+          "titre": "Tu progresses avec l’équipe",
+          "texte": "Les professionnels prennent en charge Mme Bernard. L’équipe t’a montré comment alerter, transmettre et surveiller sans dépasser ton rôle."
+        }
+      },
+      "aRetenir": "Signes nouveaux et inquiétants → alerte immédiate. Faits observés → transmission. Soins et diagnostic → professionnels habilités."
+    },
+    {
+      "id": "cas-aepa-affiche-conflit-01",
+      "filiere": "aepa",
+      "icone": "🖍️",
+      "titre": "Le feutre disputé",
+      "lieu": "Accueil de loisirs · 15 h 15",
+      "role": "Tu es élève en stage d’animation, avec l’équipe.",
+      "objectif": "Apaiser un conflit, écouter les deux enfants, relancer l’activité avec eux.",
+      "avertissement": "Situation sans blessure. En cas de blessure, de violence qui continue ou de mise en danger : arrêter l’activité, mettre en sécurité et prévenir le ou la responsable.",
+      "personnage": "🧒",
+      "indicateurs": [
+        { "id": "apaisement", "label": "Retour au calme" },
+        { "id": "ecoute", "label": "Écoute des deux enfants" },
+        { "id": "participation", "label": "Coopération et réajustement" }
+      ],
+      "refs": {
+        "AEPA C3.2.1": "Animer une activité en garantissant la sécurité",
+        "AEPA C3.2.2": "Gérer le groupe, écouter, faire de la médiation, adapter l’activité",
+        "AEPA C3.2.3": "Évaluer et réajuster son action selon les réactions du public",
+        "AEPA S3.2 C3": "Communication, prévention et médiation des conflits"
+      },
+      "depart": "intro",
+      "noeuds": {
+        "intro": {
+          "type": "scene",
+          "titre": "L’affiche du quartier",
+          "texte": "Tu animes un atelier d’affiche avec ton équipe. Lina, 9 ans, et Yanis, 10 ans, veulent le même feutre. Yanis le tire des mains de Lina. Elle crie ; les autres enfants s’arrêtent.",
+          "suite": "d1"
+        },
+        "d1": {
+          "type": "decision",
+          "titre": "Apaiser",
+          "texte": "Lina serre les poings. Yanis garde le feutre. Tout le groupe regarde.",
+          "question": "Que fais-tu d’abord ?",
+          "indice": "D’abord le calme et la sécurité. Savoir qui a raison viendra après.",
+          "aRetenir": "L’animateur sécurise et calme la situation sans humilier les enfants.",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Je m’approche calmement, je fais poser le feutre et j’invite chacun à reculer un peu.",
+              "qualite": "juste",
+              "retour": "Oui : tu arrêtes la tension sans désigner de coupable et tu gardes le groupe en sécurité.",
+              "consequence": "Le feutre est posé sur la table. Les deux enfants se calment ; les autres reprennent avec d’autres feutres.",
+              "refs": ["AEPA C3.2.1", "AEPA C3.2.2"],
+              "gain": "apaisement",
+              "suite": "suite_calme"
+            },
+            {
+              "id": "b",
+              "texte": "J’emmène Lina faire une pause avec moi pendant que Yanis continue.",
+              "qualite": "partiel",
+              "retour": "Une pause peut aider, mais pas seulement pour Lina : Yanis garde le feutre et la dispute n’est pas réglée. Les deux enfants doivent être traités de la même façon.",
+              "consequence": "Lina proteste : « C’est pas juste ! » Une collègue reprend le groupe ; tu proposes la pause aux deux enfants.",
+              "refs": ["AEPA C3.2.2"],
+              "suite": "suite_guidee"
+            },
+            {
+              "id": "c",
+              "texte": "Je demande à un autre enfant de décider à qui revient le feutre.",
+              "qualite": "a-revoir",
+              "retour": "Faire arbitrer par un camarade peut aggraver le conflit. C’est l’adulte qui sécurise et rappelle les règles.",
+              "consequence": "L’enfant choisi est gêné et refuse. Ta collègue fait poser le feutre et t’aide à ramener le calme.",
+              "refs": ["AEPA C3.2.2"],
+              "suite": "suite_guidee"
+            }
+          ]
+        },
+        "suite_calme": {
+          "type": "scene",
+          "titre": "Le groupe reprend",
+          "texte": "Lina et Yanis sont prêts à parler. Tu te mets à leur hauteur, en gardant un œil sur le reste du groupe.",
+          "suite": "d2"
+        },
+        "suite_guidee": {
+          "type": "scene",
+          "titre": "Le cadre est rétabli",
+          "texte": "Avec ta collègue, tu as arrêté la dispute. Lina et Yanis sont prêts à expliquer ce qui s’est passé.",
+          "suite": "d2"
+        },
+        "d2": {
+          "type": "decision",
+          "titre": "Écouter",
+          "texte": "Lina : « Il ne me laisse jamais choisir ! » Yanis : « On devait écrire le titre maintenant ! »",
+          "question": "Comment les écoutes-tu ?",
+          "indice": "Laisse parler les deux enfants. Cherche ce que chacun veut vraiment.",
+          "aRetenir": "Écouter sans accuser permet de comprendre le désaccord avant de chercher une solution.",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Je donne la parole à chacun, je redis avec mes mots ce que j’ai compris, puis je leur demande ce qu’ils veulent faire.",
+              "qualite": "juste",
+              "retour": "Tu écoutes les deux sans conclure trop vite. Tu comprends d’où vient le désaccord.",
+              "consequence": "Lina veut choisir les couleurs ; Yanis veut finir le titre. Ce sont deux envies différentes, pas un « méchant » et une « victime ».",
+              "refs": ["AEPA C3.2.2", "AEPA S3.2 C3"],
+              "gain": "ecoute",
+              "suite": "suite_compris"
+            },
+            {
+              "id": "b",
+              "texte": "Chacun raconte sa version, puis je donne le feutre à celui qui l’avait en premier.",
+              "qualite": "partiel",
+              "retour": "Écouter chacun, c’est bien. Mais donner le feutre sans chercher ce qu’ils veulent ne règle pas le désaccord : il reviendra.",
+              "consequence": "Yanis boude, Lina aussi. Tu découvres qu’ils veulent tous les deux participer au titre.",
+              "refs": ["AEPA C3.2.2"],
+              "suite": "suite_aider"
+            },
+            {
+              "id": "c",
+              "texte": "Je fais voter le groupe pour savoir lequel des deux a eu tort.",
+              "qualite": "a-revoir",
+              "retour": "Un vote sur « qui a tort » expose les enfants au jugement des autres. Préfère l’écoute et la médiation, à l’écart du groupe.",
+              "consequence": "Ta collègue arrête le vote. Tu reprends l’échange à l’écart avec Lina et Yanis.",
+              "refs": ["AEPA C3.2.2", "AEPA S3.2 C3"],
+              "suite": "suite_aider"
+            }
+          ]
+        },
+        "suite_compris": {
+          "type": "scene",
+          "titre": "Une solution est possible",
+          "texte": "Lina veut choisir les couleurs, Yanis veut écrire le titre. Le groupe attend de reprendre l’affiche.",
+          "suite": "d3"
+        },
+        "suite_aider": {
+          "type": "scene",
+          "titre": "Les envies se précisent",
+          "texte": "Avec ton aide, les enfants finissent par dire ce qu’ils veulent : choisir les couleurs et écrire le titre.",
+          "suite": "d3"
+        },
+        "d3": {
+          "type": "decision",
+          "titre": "Relancer l’activité",
+          "texte": "Il reste vingt minutes. Tous les enfants doivent pouvoir participer.",
+          "question": "Comment proposes-tu de continuer ?",
+          "indice": "Une solution trouvée avec eux, faisable, où chacun participe.",
+          "aRetenir": "L’animateur aide les enfants à trouver un accord réaliste, puis vérifie qu’il fonctionne.",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Je leur propose de se partager deux rôles, puis de faire le point dans quelques minutes.",
+              "qualite": "juste",
+              "retour": "Très bien : la décision est partagée et tu prévois de réajuster si besoin.",
+              "consequence": "Lina choisit les couleurs, Yanis commence le titre. Dix minutes plus tard, ils demandent à échanger.",
+              "refs": ["AEPA C3.2.2", "AEPA C3.2.3"],
+              "gain": "participation",
+              "suite": "fin_partage"
+            },
+            {
+              "id": "b",
+              "texte": "Je décide moi-même qui fait quoi, puis je vérifie que chacun est d’accord.",
+              "qualite": "partiel",
+              "retour": "L’activité repart, mais un choix construit avec les enfants développerait davantage leur autonomie.",
+              "consequence": "Le travail reprend. Plus tard, tu proposes à Lina et Yanis d’échanger leurs rôles.",
+              "refs": ["AEPA C3.2.2", "AEPA C3.2.3"],
+              "suite": "fin_accompagnee"
+            },
+            {
+              "id": "c",
+              "texte": "Je leur rends le feutre et je les laisse trouver une solution seuls, sans intervenir.",
+              "qualite": "a-revoir",
+              "retour": "Juste après une dispute, l’adulte accompagne la recherche d’un accord et observe la reprise. Il ne laisse pas les enfants seuls avec le problème.",
+              "consequence": "La dispute recommence. Avec ta collègue, tu proposes des rôles et un moment pour en reparler.",
+              "refs": ["AEPA C3.2.2", "AEPA C3.2.3"],
+              "suite": "fin_accompagnee"
+            }
+          ]
+        },
+        "fin_partage": {
+          "type": "fin",
+          "icone": "🎨",
+          "titre": "L’affiche avance",
+          "texte": "L’atelier a repris. Lina et Yanis ont trouvé chacun leur place ; tu observes si l’accord tient et tu adaptes si besoin."
+        },
+        "fin_accompagnee": {
+          "type": "fin",
+          "icone": "🤝",
+          "titre": "Le groupe repart avec ton aide",
+          "texte": "L’atelier a repris grâce au cadre posé par l’équipe. La prochaine fois, associe davantage les enfants aux décisions."
+        }
+      },
+      "aRetenir": "Sécuriser sans humilier → écouter les besoins de chacun → construire une solution avec eux → vérifier qu’elle marche."
+    }
+  ]
+}

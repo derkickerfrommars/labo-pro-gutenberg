@@ -1,0 +1,4184 @@
+{
+ "filiere": "aepa",
+ "nom": "Bac Pro AEPA",
+ "sousTitre": "Animation – enfance et personnes âgées",
+ "ateliers": [
+  {
+   "id": "besoins",
+   "titre": "Comprendre les besoins",
+   "icone": "🧩"
+  },
+  {
+   "id": "fait",
+   "titre": "Fait / Hypothèse / Jugement",
+   "icone": "🔎"
+  },
+  {
+   "id": "look",
+   "titre": "Que dois-je regarder ?",
+   "icone": "👀"
+  },
+  {
+   "id": "chain",
+   "titre": "La démarche du projet d’activité",
+   "icone": "🧠"
+  },
+  {
+   "id": "evo",
+   "titre": "Face à l’imprévu",
+   "icone": "⚡"
+  },
+  {
+   "id": "just",
+   "titre": "Je justifie",
+   "icone": "🗣️"
+  },
+  {
+   "id": "struct",
+   "titre": "Du projet de structure à l’activité",
+   "icone": "🏫"
+  },
+  {
+   "id": "sec",
+   "titre": "Les 3 sécurités",
+   "icone": "🛡️"
+  },
+  {
+   "id": "project",
+   "titre": "Les étapes du projet",
+   "icone": "🚀"
+  },
+  {
+   "id": "sortie",
+   "titre": "En sortie",
+   "icone": "🚸"
+  },
+  {
+   "id": "vocab",
+   "titre": "Vocabulaire de l’animation",
+   "icone": "📖"
+  }
+ ],
+ "missions": [
+  {
+   "id": "sortie-parc",
+   "titre": "La sortie au parc",
+   "icone": "🌳",
+   "intro": "Tu emmènes un groupe d’enfants au parc. De la préparation au retour, chaque décision compte.",
+   "etapes": [
+    {
+     "texte": "Avant de partir : tout se prépare.",
+     "atelier": "sortie",
+     "nombre": 3
+    },
+    {
+     "texte": "Les 3 sécurités en tête.",
+     "atelier": "sec",
+     "nombre": 1
+    },
+    {
+     "texte": "Sur place, l’imprévu arrive…",
+     "atelier": "evo",
+     "nombre": 2
+    },
+    {
+     "texte": "De retour, l’équipe te demande de justifier tes choix.",
+     "atelier": "just",
+     "nombre": 2
+    }
+   ]
+  },
+  {
+   "id": "projet-animation",
+   "titre": "Monter un projet d’animation",
+   "icone": "🚀",
+   "intro": "La structure te confie un projet d’animation. Mène-le de l’observation à l’évaluation.",
+   "etapes": [
+    {
+     "texte": "Tout commence par l’observation.",
+     "atelier": "look",
+     "nombre": 1
+    },
+    {
+     "texte": "Quels sont les besoins du public ?",
+     "atelier": "besoins",
+     "nombre": 2
+    },
+    {
+     "texte": "Construis la démarche.",
+     "atelier": "chain",
+     "nombre": 1
+    },
+    {
+     "texte": "Situe chaque action dans le projet.",
+     "atelier": "project",
+     "nombre": 3
+    },
+    {
+     "texte": "Vérifie la cohérence avec le projet de la structure.",
+     "atelier": "struct",
+     "nombre": 2
+    }
+   ]
+  },
+  {
+   "id": "chaque-public",
+   "titre": "Accueillir chaque public",
+   "icone": "🤝",
+   "intro": "Enfants, adolescents, personnes âgées : adapte ta posture à chacun.",
+   "etapes": [
+    {
+     "texte": "Observer avant d’interpréter.",
+     "atelier": "fait",
+     "nombre": 1
+    },
+    {
+     "texte": "Comprendre les besoins de chacun.",
+     "atelier": "besoins",
+     "nombre": 3
+    },
+    {
+     "texte": "Les mots du métier.",
+     "atelier": "vocab",
+     "nombre": 2
+    },
+    {
+     "texte": "Choisis et défends ta réponse.",
+     "atelier": "just",
+     "nombre": 2
+    }
+   ]
+  }
+ ],
+ "lieux": [
+  {
+   "id": "loisirs",
+   "nom": "Centre de loisirs",
+   "icone": "🎪",
+   "couleur": "#f59e0b",
+   "ateliers": [
+    "besoins",
+    "evo",
+    "just"
+   ]
+  },
+  {
+   "id": "residence",
+   "nom": "Résidence seniors",
+   "icone": "🏘️",
+   "couleur": "#06b6d4",
+   "ateliers": [
+    "fait",
+    "look"
+   ]
+  },
+  {
+   "id": "projets",
+   "nom": "Bureau des projets",
+   "icone": "🏛️",
+   "couleur": "#8b5cf6",
+   "ateliers": [
+    "chain",
+    "project",
+    "struct"
+   ]
+  },
+  {
+   "id": "parc",
+   "nom": "Le Parc",
+   "icone": "🌳",
+   "couleur": "#84cc16",
+   "ateliers": [
+    "sortie",
+    "sec"
+   ]
+  },
+  {
+   "id": "mediatheque",
+   "nom": "Médiathèque",
+   "icone": "📚",
+   "couleur": "#ec4899",
+   "ateliers": [
+    "vocab"
+   ]
+  }
+ ],
+ "items": [
+  {
+   "id": "aepa-besoins-C01-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "4 ans · accueil périscolaire · Lina, 4 ans, arrive dans un accueil qu’elle découvre. À l’annonce du jeu collectif, elle reste près de la porte et tient son doudou. Elle regarde pourtant les autres jouer.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Elle pourrait avoir besoin de se sentir rassurée et de se familiariser avec le lieu avant de rejoindre le groupe.",
+    "Elle pourrait surtout avoir besoin de comprendre les règles du jeu en regardant les autres enfants participer.",
+    "Elle pourrait surtout rechercher une activité individuelle lui permettant d’explorer tranquillement le matériel."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Le doudou, la porte et la découverte du lieu orientent vers un besoin de réassurance. Elle regarde le jeu sans qu’on sache si elle en cherche les règles, et rien n’indique qu’elle préfère une activité seule.",
+   "fiche": {
+    "titre": "Besoins · 4 ans · accueil périscolaire",
+    "texte": "Elle pourrait avoir besoin de se sentir rassurée et de se familiariser avec le lieu avant de rejoindre le groupe."
+   }
+  },
+  {
+   "id": "aepa-besoins-C01-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "4 ans · accueil périscolaire · Lina, 4 ans, arrive dans un accueil qu’elle découvre. À l’annonce du jeu collectif, elle reste près de la porte et tient son doudou. Elle regarde pourtant les autres jouer.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Lui demander si elle préfère regarder un moment, et savoir auprès de la famille ce qui la rassure.",
+    "Vérifier si elle connaît déjà ce jeu collectif ou un jeu proche pratiqué à l’école maternelle.",
+    "Vérifier avec l’équipe si le jeu proposé est adapté à l’âge et à la motricité des enfants de 4 ans accueillis."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Les indices concernent la nouveauté du lieu et le besoin d’être rassurée : sa parole et les repères de la famille passent en premier. Savoir si elle connaît le jeu, ou s’il convient à son âge, ne dit pas ce qui la retient près de la porte.",
+   "fiche": {
+    "titre": "Besoins · 4 ans · accueil périscolaire",
+    "texte": "Lui demander si elle préfère regarder un moment, et savoir auprès de la famille ce qui la rassure."
+   }
+  },
+  {
+   "id": "aepa-besoins-C01-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "4 ans · accueil périscolaire · Lina, 4 ans, arrive dans un accueil qu’elle découvre. À l’annonce du jeu collectif, elle reste près de la porte et tient son doudou. Elle regarde pourtant les autres jouer.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Lui proposer de regarder le jeu à côté d’un adulte repère, puis de rejoindre le groupe quand elle le souhaite.",
+    "Lui proposer un rôle simple dans le jeu, comme distribuer le matériel, pour l’intégrer dès le début de la partie.",
+    "Lui proposer une activité calme à une table voisine pendant le jeu, puis l’inviter à la partie suivante."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Elle observe le jeu avec intérêt : rester près d’un adulte repère respecte son rythme et garde le lien avec le groupe. Un rôle dès le début la met trop vite en avant ; une activité à part l’éloigne de ce qui l’attire.",
+   "fiche": {
+    "titre": "Besoins · 4 ans · accueil périscolaire",
+    "texte": "Lui proposer de regarder le jeu à côté d’un adulte repère, puis de rejoindre le groupe quand elle le souhaite."
+   }
+  },
+  {
+   "id": "aepa-besoins-C02-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "5 ans · atelier de motricité · Après trente minutes d’un parcours moteur, Noé, 5 ans, se déplace sans cesse et interrompt parfois la consigne. Il dit : « Je veux bouger encore ! » Plusieurs enfants commencent à s’agiter.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Il pourrait avoir besoin de varier le mouvement, avec des consignes plus courtes adaptées à son attention.",
+    "Il pourrait avoir besoin d’un temps calme pour récupérer, après trente minutes d’effort physique continu.",
+    "Il pourrait surtout chercher l’attention de l’adulte en interrompant la consigne devant tout le groupe d’enfants."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Noé dit vouloir bouger encore, et c’est pendant les consignes qu’il s’agite : la piste du mouvement et de consignes plus brèves colle aux indices. Rien ne montre une fatigue, et la recherche d’attention ne tient pas compte de ce qu’il dit.",
+   "fiche": {
+    "titre": "Besoins · 5 ans · atelier de motricité",
+    "texte": "Il pourrait avoir besoin de varier le mouvement, avec des consignes plus courtes adaptées à son attention."
+   }
+  },
+  {
+   "id": "aepa-besoins-C02-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "5 ans · atelier de motricité · Après trente minutes d’un parcours moteur, Noé, 5 ans, se déplace sans cesse et interrompt parfois la consigne. Il dit : « Je veux bouger encore ! » Plusieurs enfants commencent à s’agiter.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Repérer à quels moments il s’agite, par exemple pendant les consignes, et si d’autres enfants s’agitent aussi.",
+    "Vérifier avec sa famille s’il a bien dormi la nuit dernière et s’il est aussi agité les autres jours de la semaine.",
+    "Vérifier si les règles du parcours ont été bien expliquées et affichées au début de la séance."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Plusieurs enfants s’agitent : c’est la séance elle-même (durée, longueur des consignes) qu’il faut observer d’abord. Le sommeil ou l’affichage des règles peuvent compter, mais n’expliquent pas une agitation collective au bout de trente minutes.",
+   "fiche": {
+    "titre": "Besoins · 5 ans · atelier de motricité",
+    "texte": "Repérer à quels moments il s’agite, par exemple pendant les consignes, et si d’autres enfants s’agitent aussi."
+   }
+  },
+  {
+   "id": "aepa-besoins-C02-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "5 ans · atelier de motricité · Après trente minutes d’un parcours moteur, Noé, 5 ans, se déplace sans cesse et interrompt parfois la consigne. Il dit : « Je veux bouger encore ! » Plusieurs enfants commencent à s’agiter.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Proposer un court jeu de mouvement à tout le groupe, puis reprendre le parcours avec des consignes plus brèves.",
+    "Proposer à Noé de devenir l’aide de l’animateur pour installer les prochains ateliers du parcours.",
+    "Proposer un retour au calme avec une histoire, puis reprendre le parcours après une pause assise."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Le besoin de bouger concerne Noé et une partie du groupe : une transition active collective et des consignes courtes y répondent. Un rôle d’aide ne concerne que lui ; une pause assise va à l’encontre de son envie de mouvement.",
+   "fiche": {
+    "titre": "Besoins · 5 ans · atelier de motricité",
+    "texte": "Proposer un court jeu de mouvement à tout le groupe, puis reprendre le parcours avec des consignes plus brèves."
+   }
+  },
+  {
+   "id": "aepa-besoins-C03-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "3 ans · atelier créatif · Maya, 3 ans, essaie d’enfiler des perles trop petites pour ses capacités actuelles : plusieurs lui échappent des mains. L’adulte s’approche pour vérifier la sécurité du matériel. Maya demande de l’aide pour continuer.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Elle pourrait avoir besoin d’un matériel adapté à sa motricité fine et d’une aide ponctuelle pour réussir.",
+    "Elle pourrait surtout avoir besoin d’encouragements pour persévérer dans un geste qui demande de l’entraînement.",
+    "Elle pourrait préférer une autre activité manuelle, comme la peinture, qui demande moins de précision."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Maya fait tomber les pièces et demande de l’aide : un matériel adapté et un soutien progressif répondent aux indices. Les encouragements seuls ne règlent pas la difficulté, et rien n’indique qu’elle veut changer d’activité.",
+   "fiche": {
+    "titre": "Besoins · 3 ans · atelier créatif",
+    "texte": "Elle pourrait avoir besoin d’un matériel adapté à sa motricité fine et d’une aide ponctuelle pour réussir."
+   }
+  },
+  {
+   "id": "aepa-besoins-C03-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "3 ans · atelier créatif · Maya, 3 ans, essaie d’enfiler des perles trop petites pour ses capacités actuelles : plusieurs lui échappent des mains. L’adulte s’approche pour vérifier la sécurité du matériel. Maya demande de l’aide pour continuer.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Vérifier immédiatement que les perles sont adaptées à son âge et sans risque d’ingestion, puis observer les gestes qu’elle réussit.",
+    "Observer combien de temps elle reste concentrée sur l’activité avant de demander de l’aide à l’adulte présent à sa table.",
+    "Demander aux autres enfants de sa table s’ils rencontrent les mêmes difficultés avec les perles."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "À 3 ans, la sécurité du matériel se vérifie d’abord (risque d’ingestion) ; ses gestes réussis indiquent ensuite quel matériel lui convient. Sa durée de concentration ou les difficultés des autres ne disent rien de ce qu’elle peut faire ni de la sécurité.",
+   "fiche": {
+    "titre": "Besoins · 3 ans · atelier créatif",
+    "texte": "Vérifier immédiatement que les perles sont adaptées à son âge et sans risque d’ingestion, puis observer les gestes qu’elle réussit."
+   }
+  },
+  {
+   "id": "aepa-besoins-C03-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "3 ans · atelier créatif · Maya, 3 ans, essaie d’enfiler des perles trop petites pour ses capacités actuelles : plusieurs lui échappent des mains. L’adulte s’approche pour vérifier la sécurité du matériel. Maya demande de l’aide pour continuer.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Lui proposer de plus grosses perles adaptées à son âge et l’accompagner seulement sur les gestes difficiles.",
+    "Lui proposer de trier les perles par couleur pendant que l’adulte réalise l’enfilage avec elle.",
+    "Garder les mêmes perles en restant à côté d’elle pour l’aider à chaque geste jusqu’à la fin de l’atelier créatif."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Des perles plus grosses, adaptées à son âge et à ses capacités, réduisent le risque d’étouffement et lui permettent d’agir elle-même, sous une surveillance adaptée : aucun matériel ne supprime à lui seul tous les risques. Le tri la prive du geste qu’elle veut faire ; garder les petites perles maintient le risque, même avec un adulte à côté.",
+   "fiche": {
+    "titre": "Besoins · 3 ans · atelier créatif",
+    "texte": "Lui proposer de plus grosses perles adaptées à son âge et l’accompagner seulement sur les gestes difficiles."
+   }
+  },
+  {
+   "id": "aepa-besoins-C04-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "5 ans · jeu symbolique · Dans un coin de jeu, Sam, 5 ans, invente une histoire et refuse qu’un autre enfant impose le rôle de chef. La discussion s’envenime, mais les deux enfants veulent continuer à jouer ensemble.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Les deux enfants pourraient avoir besoin d’aide pour négocier les rôles, puisqu’ils veulent continuer ensemble.",
+    "Sam pourrait avoir besoin de jouer seul un moment pour développer librement son histoire imaginaire.",
+    "L’autre enfant pourrait surtout avoir besoin d’apprendre à jouer sans diriger le jeu de ses camarades."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Les deux veulent continuer ensemble : le besoin porte sur la négociation des rôles. Jouer seul contredit leur souhait, et faire porter la difficulté sur un seul enfant ignore que le désaccord est partagé.",
+   "fiche": {
+    "titre": "Besoins · 5 ans · jeu symbolique",
+    "texte": "Les deux enfants pourraient avoir besoin d’aide pour négocier les rôles, puisqu’ils veulent continuer ensemble."
+   }
+  },
+  {
+   "id": "aepa-besoins-C04-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "5 ans · jeu symbolique · Dans un coin de jeu, Sam, 5 ans, invente une histoire et refuse qu’un autre enfant impose le rôle de chef. La discussion s’envenime, mais les deux enfants veulent continuer à jouer ensemble.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Écouter chaque enfant pour comprendre ce qu’il souhaite jouer, puis les réunir pour comparer leurs idées.",
+    "Vérifier lequel des deux enfants a commencé l’histoire, pour savoir qui peut décider de la suite du jeu en cours.",
+    "Observer si ce désaccord sur le rôle de chef se reproduit souvent entre ces deux enfants."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Comprendre ce que chacun veut jouer permet de trouver un accord. Chercher qui a commencé crée un gagnant et un perdant ; repérer la fréquence du conflit peut servir plus tard, mais ne débloque pas le jeu en cours.",
+   "fiche": {
+    "titre": "Besoins · 5 ans · jeu symbolique",
+    "texte": "Écouter chaque enfant pour comprendre ce qu’il souhaite jouer, puis les réunir pour comparer leurs idées."
+   }
+  },
+  {
+   "id": "aepa-besoins-C04-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "5 ans · jeu symbolique · Dans un coin de jeu, Sam, 5 ans, invente une histoire et refuse qu’un autre enfant impose le rôle de chef. La discussion s’envenime, mais les deux enfants veulent continuer à jouer ensemble.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Aider les enfants à inventer des rôles qui changent au fil de l’histoire, avec une règle simple qu’ils acceptent.",
+    "Proposer un tirage au sort du rôle de chef pour que la décision soit neutre et rapide.",
+    "Proposer d’enrichir l’histoire avec un personnage de chef joué par l’animateur pendant la partie."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Construire avec eux une règle d’alternance les fait coopérer. Le tirage au sort tranche à leur place, sans négociation ; un chef joué par l’adulte apaise le conflit mais leur retire le rôle qu’ils se disputent.",
+   "fiche": {
+    "titre": "Besoins · 5 ans · jeu symbolique",
+    "texte": "Aider les enfants à inventer des rôles qui changent au fil de l’histoire, avec une règle simple qu’ils acceptent."
+   }
+  },
+  {
+   "id": "aepa-besoins-C05-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "8 ans · jeu coopératif · Au début d’un jeu coopératif, Yasmine, 8 ans, accepte de jouer mais n’ose pas proposer d’idées. Elle murmure à l’animateur qu’elle craint que les autres se moquent d’elle.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Elle pourrait avoir besoin de se sentir en confiance dans le groupe pour oser proposer ses idées.",
+    "Elle pourrait avoir besoin d’un temps supplémentaire pour comprendre les règles du jeu coopératif.",
+    "Elle pourrait préférer un rôle d’observatrice, sans participer aux décisions prises par le groupe."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Elle dit craindre les moqueries : la piste de la confiance et de la sécurité affective s’appuie sur sa parole. Rien n’indique qu’elle ne comprend pas les règles, et elle a accepté de jouer : la tenir à l’écart des décisions ne répond pas à sa crainte.",
+   "fiche": {
+    "titre": "Besoins · 8 ans · jeu coopératif",
+    "texte": "Elle pourrait avoir besoin de se sentir en confiance dans le groupe pour oser proposer ses idées."
+   }
+  },
+  {
+   "id": "aepa-besoins-C05-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "8 ans · jeu coopératif · Au début d’un jeu coopératif, Yasmine, 8 ans, accepte de jouer mais n’ose pas proposer d’idées. Elle murmure à l’animateur qu’elle craint que les autres se moquent d’elle.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Lui demander ce qui l’aiderait à proposer ses idées et observer comment le groupe réagit aux propositions.",
+    "Observer si elle propose davantage d’idées dans les activités individuelles, comme le dessin.",
+    "Vérifier avec sa famille si elle se montre aussi réservée dans d’autres groupes d’enfants, à l’école ou au club."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Sa crainte porte sur les réactions des autres : il faut l’écouter et observer le groupe, ici. Ses autres activités ou d’autres groupes peuvent éclairer la situation, mais ne disent pas si des moqueries existent dans ce jeu.",
+   "fiche": {
+    "titre": "Besoins · 8 ans · jeu coopératif",
+    "texte": "Lui demander ce qui l’aiderait à proposer ses idées et observer comment le groupe réagit aux propositions."
+   }
+  },
+  {
+   "id": "aepa-besoins-C05-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "8 ans · jeu coopératif · Au début d’un jeu coopératif, Yasmine, 8 ans, accepte de jouer mais n’ose pas proposer d’idées. Elle murmure à l’animateur qu’elle craint que les autres se moquent d’elle.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Lui laisser choisir entre participer peu à peu ou déposer une idée anonyme, et fixer avec le groupe une règle de respect.",
+    "Lui proposer de confier ses idées à l’animateur, qui les présentera au groupe, sans revoir les règles d’échange.",
+    "Installer une boîte à idées anonymes pour toute la séance, sans jamais aborder avec elle les moqueries qu’elle redoute."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "L’anonymat peut être une vraie aide. La réponse la plus complète respecte le choix de Yasmine et agit aussi sur le climat du groupe ; les deux autres l’aident à contourner la peur sans rendre le groupe plus sûr pour elle.",
+   "fiche": {
+    "titre": "Besoins · 8 ans · jeu coopératif",
+    "texte": "Lui laisser choisir entre participer peu à peu ou déposer une idée anonyme, et fixer avec le groupe une règle de respect."
+   }
+  },
+  {
+   "id": "aepa-besoins-C06-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "10 ans · conseil d’enfants · Dans un accueil de loisirs, un groupe de 10 ans propose de modifier les règles d’un grand jeu. Les enfants argumentent et souhaitent participer aux décisions.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Ils pourraient chercher à participer aux décisions et à prendre des responsabilités dans le jeu.",
+    "Ils pourraient trouver le grand jeu trop facile et souhaiter un niveau de difficulté plus élevé.",
+    "Ils pourraient surtout chercher à rendre le jeu plus juste en équilibrant mieux la composition des équipes."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Les enfants argumentent et demandent à participer aux décisions : la piste de la participation s’appuie sur ce qu’ils disent. La difficulté ou l’équilibre des équipes sont possibles, mais restent à vérifier en les écoutant.",
+   "fiche": {
+    "titre": "Besoins · 10 ans · conseil d’enfants",
+    "texte": "Ils pourraient chercher à participer aux décisions et à prendre des responsabilités dans le jeu."
+   }
+  },
+  {
+   "id": "aepa-besoins-C06-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "10 ans · conseil d’enfants · Dans un accueil de loisirs, un groupe de 10 ans propose de modifier les règles d’un grand jeu. Les enfants argumentent et souhaitent participer aux décisions.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Leur demander quelles règles ils veulent changer et pourquoi, puis vérifier si ces changements restent sûrs.",
+    "Vérifier si les règles actuelles ont été clairement expliquées à tous avant le début du jeu.",
+    "Demander à l’équipe si les règles ont déjà été modifiées lors d’un grand jeu précédent."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Il faut connaître leurs propositions et en vérifier la sécurité. L’explication des règles actuelles ou l’historique du jeu ne disent pas ce que ces enfants veulent changer.",
+   "fiche": {
+    "titre": "Besoins · 10 ans · conseil d’enfants",
+    "texte": "Leur demander quelles règles ils veulent changer et pourquoi, puis vérifier si ces changements restent sûrs."
+   }
+  },
+  {
+   "id": "aepa-besoins-C06-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "10 ans · conseil d’enfants · Dans un accueil de loisirs, un groupe de 10 ans propose de modifier les règles d’un grand jeu. Les enfants argumentent et souhaitent participer aux décisions.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Organiser une courte discussion pour construire avec eux des règles réalisables et sûres.",
+    "Leur proposer de noter leurs idées pour les intégrer au prochain grand jeu, prévu dans un mois.",
+    "Retenir la proposition la plus populaire par un vote rapide et l’appliquer dès la partie suivante."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Une discussion cadrée répond tout de suite à leur envie de participer, tout en gardant la sécurité. Reporter à dans un mois ne répond pas à leur demande ; un vote rapide oublie de vérifier que la règle choisie est sûre.",
+   "fiche": {
+    "titre": "Besoins · 10 ans · conseil d’enfants",
+    "texte": "Organiser une courte discussion pour construire avec eux des règles réalisables et sûres."
+   }
+  },
+  {
+   "id": "aepa-besoins-C07-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "7 ans · activité sportive · Pendant un relais, Maxime, 7 ans, demande à recommencer après deux échecs. Il hésite à passer devant l’équipe et dit qu’il a peur de faire perdre son groupe.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Il pourrait avoir besoin de progresser sans craindre le regard de l’équipe, pour reprendre confiance.",
+    "Il pourrait avoir besoin d’explications techniques supplémentaires sur le passage du témoin.",
+    "Il pourrait préférer un rôle d’arbitre ou de chronométreur, plutôt que de courir à nouveau avec son équipe."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Il veut recommencer mais craint de faire perdre son groupe : le besoin porte sur la confiance face aux pairs. Un rôle d’arbitre l’écarte alors qu’il demande à réessayer ; une explication technique ne répond pas à sa peur.",
+   "fiche": {
+    "titre": "Besoins · 7 ans · activité sportive",
+    "texte": "Il pourrait avoir besoin de progresser sans craindre le regard de l’équipe, pour reprendre confiance."
+   }
+  },
+  {
+   "id": "aepa-besoins-C07-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "7 ans · activité sportive · Pendant un relais, Maxime, 7 ans, demande à recommencer après deux échecs. Il hésite à passer devant l’équipe et dit qu’il a peur de faire perdre son groupe.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Lui demander s’il préfère s’entraîner d’abord, essayer à deux ou changer de place dans l’équipe.",
+    "Observer à quel moment précis du relais il échoue, pour cibler avec lui le geste à travailler en priorité.",
+    "Demander aux membres de son équipe comment ils vivent ses deux échecs successifs."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "C’est sa parole qui indique comment il se sent capable de réessayer. Analyser le geste peut aider ensuite ; interroger l’équipe sur ses échecs risque de renforcer sa peur du jugement.",
+   "fiche": {
+    "titre": "Besoins · 7 ans · activité sportive",
+    "texte": "Lui demander s’il préfère s’entraîner d’abord, essayer à deux ou changer de place dans l’équipe."
+   }
+  },
+  {
+   "id": "aepa-besoins-C07-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "7 ans · activité sportive · Pendant un relais, Maxime, 7 ans, demande à recommencer après deux échecs. Il hésite à passer devant l’équipe et dit qu’il a peur de faire perdre son groupe.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Lui proposer un essai sans score, accompagné d’un camarade s’il le souhaite, avant de reprendre le relais.",
+    "Le placer en dernière position du relais pour qu’il ait le temps d’observer ses coéquipiers.",
+    "Lui montrer à nouveau le bon geste, puis le laisser retenter aussitôt en situation de course."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Un essai sans enjeu répond à sa peur de faire perdre. La dernière position fait peser le résultat sur lui ; retenter tout de suite en course garde la même pression devant l’équipe.",
+   "fiche": {
+    "titre": "Besoins · 7 ans · activité sportive",
+    "texte": "Lui proposer un essai sans score, accompagné d’un camarade s’il le souhaite, avant de reprendre le relais."
+   }
+  },
+  {
+   "id": "aepa-besoins-C08-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "11 ans · fabrication collective · Lors d’un atelier, trois enfants de 11 ans prennent tout le matériel. D’autres attendent et disent qu’ils aimeraient aussi réaliser une partie de l’objet commun.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Les enfants qui attendent pourraient avoir besoin d’un accès équitable au matériel pour contribuer à l’objet.",
+    "Les trois enfants pourraient avoir besoin de plus de responsabilités, car ils s’investissent beaucoup dans l’objet.",
+    "Le groupe pourrait avoir besoin d’un objet plus simple, que tous réaliseraient plus rapidement."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Les enfants qui attendent disent vouloir participer : le besoin porte sur l’équité d’accès. Donner plus de place aux trois premiers renforce le déséquilibre ; simplifier l’objet ne règle pas la répartition du matériel.",
+   "fiche": {
+    "titre": "Besoins · 11 ans · fabrication collective",
+    "texte": "Les enfants qui attendent pourraient avoir besoin d’un accès équitable au matériel pour contribuer à l’objet."
+   }
+  },
+  {
+   "id": "aepa-besoins-C08-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "11 ans · fabrication collective · Lors d’un atelier, trois enfants de 11 ans prennent tout le matériel. D’autres attendent et disent qu’ils aimeraient aussi réaliser une partie de l’objet commun.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Observer qui utilise le matériel et demander aux enfants qui attendent quelle partie ils voudraient faire.",
+    "Vérifier si la quantité de matériel prévue suffit réellement pour le nombre d’enfants inscrits à l’atelier.",
+    "Demander aux trois enfants comment ils ont prévu d’organiser la fabrication de l’objet."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Trois enfants ont pris tout le matériel : c’est la répartition qu’il faut observer, en écoutant ceux qui attendent. La quantité de matériel ou le plan des trois enfants ne disent pas ce que souhaitent les autres.",
+   "fiche": {
+    "titre": "Besoins · 11 ans · fabrication collective",
+    "texte": "Observer qui utilise le matériel et demander aux enfants qui attendent quelle partie ils voudraient faire."
+   }
+  },
+  {
+   "id": "aepa-besoins-C08-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "11 ans · fabrication collective · Lors d’un atelier, trois enfants de 11 ans prennent tout le matériel. D’autres attendent et disent qu’ils aimeraient aussi réaliser une partie de l’objet commun.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Définir avec tout le groupe une répartition des tâches qui permette à chacun de réaliser une partie de l’objet.",
+    "Prévoir davantage de matériel lors de la prochaine séance pour que chacun puisse en disposer.",
+    "Demander aux trois enfants de montrer aux autres ce qu’ils ont déjà réalisé avant de continuer."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Une répartition décidée ensemble permet à chacun de contribuer dès maintenant. Plus de matériel la prochaine fois ne règle pas la séance en cours ; une démonstration laisse les autres spectateurs.",
+   "fiche": {
+    "titre": "Besoins · 11 ans · fabrication collective",
+    "texte": "Définir avec tout le groupe une répartition des tâches qui permette à chacun de réaliser une partie de l’objet."
+   }
+  },
+  {
+   "id": "aepa-besoins-C09-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "15 ans · atelier média · En maison de quartier, Chloé, 15 ans, refuse le thème choisi pour une vidéo. Elle propose un sujet sur la vie du quartier et demande si les jeunes peuvent participer au choix.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Elle pourrait souhaiter s’exprimer sur un sujet qui la concerne et participer aux choix du projet.",
+    "Elle pourrait surtout souhaiter un rôle technique, comme le tournage ou le montage, plutôt que choisir le thème.",
+    "Elle pourrait trouver le thème initial difficile à traiter en vidéo et chercher un sujet plus simple."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Chloé propose un sujet et demande si les jeunes peuvent choisir : la piste de la participation aux choix s’appuie sur sa parole. Rien n’indique un intérêt pour la technique ni une difficulté avec le thème.",
+   "fiche": {
+    "titre": "Besoins · 15 ans · atelier média",
+    "texte": "Elle pourrait souhaiter s’exprimer sur un sujet qui la concerne et participer aux choix du projet."
+   }
+  },
+  {
+   "id": "aepa-besoins-C09-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "15 ans · atelier média · En maison de quartier, Chloé, 15 ans, refuse le thème choisi pour une vidéo. Elle propose un sujet sur la vie du quartier et demande si les jeunes peuvent participer au choix.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Recueillir les propositions de Chloé et des autres jeunes, puis préciser avec eux les possibilités de choix dans le cadre du projet.",
+    "Vérifier auprès de l’équipe si le thème initial permet d’utiliser les techniques vidéo et le matériel déjà prévus.",
+    "Examiner les sujets réalisés lors des précédents ateliers afin de retenir un thème suffisamment différent cette année."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Sa demande porte sur la participation des jeunes au choix : recueillir leurs propositions et préciser le cadre y répond. Le matériel prévu ou les thèmes passés sont des contraintes utiles, mais ne disent rien des souhaits du groupe.",
+   "fiche": {
+    "titre": "Besoins · 15 ans · atelier média",
+    "texte": "Recueillir les propositions de Chloé et des autres jeunes, puis préciser avec eux les possibilités de choix dans le cadre du projet."
+   }
+  },
+  {
+   "id": "aepa-besoins-C09-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "15 ans · atelier média · En maison de quartier, Chloé, 15 ans, refuse le thème choisi pour une vidéo. Elle propose un sujet sur la vie du quartier et demande si les jeunes peuvent participer au choix.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Organiser une concertation avec les jeunes sur le thème, en précisant ce qui est possible dans le projet.",
+    "Garder le thème prévu en proposant à Chloé d’y intégrer des images de la vie du quartier.",
+    "Proposer à Chloé de réaliser seule une seconde vidéo sur le quartier, en plus du projet prévu pour le groupe."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Une concertation cadrée répond à sa demande de choix collectif. Intégrer des images du quartier laisse la décision à l’adulte ; une vidéo à part l’isole du groupe au lieu de l’associer au choix.",
+   "fiche": {
+    "titre": "Besoins · 15 ans · atelier média",
+    "texte": "Organiser une concertation avec les jeunes sur le thème, en précisant ce qui est possible dans le projet."
+   }
+  },
+  {
+   "id": "aepa-besoins-C10-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "13 ans · atelier expression · Pendant un atelier d’expression, Amir, 13 ans, accepte d’écrire un texte mais ne veut pas le lire à voix haute. Il précise qu’il préfère que l’animateur le lise anonymement.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Il pourrait avoir besoin de choisir comment il partage son texte, pour préserver son intimité.",
+    "Il pourrait manquer d’assurance à l’oral et avoir besoin de s’entraîner à lire devant un petit groupe.",
+    "Il pourrait douter de la qualité de son texte et attendre un retour de l’animateur avant de le partager."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Amir demande une lecture anonyme : il veut participer sans être identifié, ce qui renvoie à l’intimité et au choix. Un manque d’assurance ou un doute sur son texte sont des suppositions qu’il n’a pas exprimées.",
+   "fiche": {
+    "titre": "Besoins · 13 ans · atelier expression",
+    "texte": "Il pourrait avoir besoin de choisir comment il partage son texte, pour préserver son intimité."
+   }
+  },
+  {
+   "id": "aepa-besoins-C10-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "13 ans · atelier expression · Pendant un atelier d’expression, Amir, 13 ans, accepte d’écrire un texte mais ne veut pas le lire à voix haute. Il précise qu’il préfère que l’animateur le lise anonymement.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Lui demander quelle forme de partage lui convient, et s’il accepte que son texte soit lu sans son nom.",
+    "Vérifier si les autres participants acceptent, eux, de lire leur texte à voix haute.",
+    "Lui demander ce qui le gêne dans la lecture à voix haute, pour l’aider à dépasser peu à peu cette difficulté."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Il a déjà exprimé une préférence : il s’agit de préciser les modalités qui lui conviennent. Chercher à lever sa gêne revient à viser la lecture publique qu’il refuse ; le choix des autres ne dit rien du sien.",
+   "fiche": {
+    "titre": "Besoins · 13 ans · atelier expression",
+    "texte": "Lui demander quelle forme de partage lui convient, et s’il accepte que son texte soit lu sans son nom."
+   }
+  },
+  {
+   "id": "aepa-besoins-C10-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "13 ans · atelier expression · Pendant un atelier d’expression, Amir, 13 ans, accepte d’écrire un texte mais ne veut pas le lire à voix haute. Il précise qu’il préfère que l’animateur le lise anonymement.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Accepter que l’animateur lise son texte sans le nommer, ou lui laisser choisir une autre forme de partage.",
+    "Lui proposer de lire son texte à un seul camarade de confiance avant la lecture collective.",
+    "Lui proposer de lire seulement la première phrase de son texte, puis de laisser l’animateur lire la suite."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "La restitution anonyme qu’il demande préserve à la fois sa participation et son intimité. Lire à un camarade ou lire une seule phrase l’expose encore, alors qu’il a demandé à ne pas lire.",
+   "fiche": {
+    "titre": "Besoins · 13 ans · atelier expression",
+    "texte": "Accepter que l’animateur lise son texte sans le nommer, ou lui laisser choisir une autre forme de partage."
+   }
+  },
+  {
+   "id": "aepa-besoins-C11-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "16 ans · organisation d’événement · Une équipe de jeunes de 16 ans prépare un événement. Salomé prend en charge l’affiche, puis explique qu’elle se sent débordée parce qu’elle doit aussi réviser pour un examen.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Elle pourrait avoir besoin d’aide pour organiser ses tâches et concilier le projet avec ses révisions.",
+    "Elle pourrait avoir besoin de conseils techniques pour réaliser l’affiche plus rapidement.",
+    "Elle pourrait souhaiter changer de tâche, l’affiche ne correspondant plus vraiment à ses centres d’intérêt."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Salomé relie elle-même sa surcharge à son examen : le besoin porte sur l’organisation et le respect de son rythme. Rien n’indique une difficulté technique ni une perte d’intérêt pour l’affiche.",
+   "fiche": {
+    "titre": "Besoins · 16 ans · organisation d’événement",
+    "texte": "Elle pourrait avoir besoin d’aide pour organiser ses tâches et concilier le projet avec ses révisions."
+   }
+  },
+  {
+   "id": "aepa-besoins-C11-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "16 ans · organisation d’événement · Une équipe de jeunes de 16 ans prépare un événement. Salomé prend en charge l’affiche, puis explique qu’elle se sent débordée parce qu’elle doit aussi réviser pour un examen.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Faire le point avec elle sur ce qui reste à faire, les dates à tenir et ce qu’elle souhaite confier à d’autres.",
+    "Vérifier avec l’équipe si la date de l’événement peut être repoussée après la période d’examens.",
+    "Regarder où en est l’affiche pour estimer le temps de travail encore nécessaire."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Faire le point avec elle prend en compte sa parole et ses contraintes. Repousser l’événement engage tout le groupe sans l’avoir écoutée ; estimer le temps restant ne dit pas ce qu’elle veut garder ou déléguer.",
+   "fiche": {
+    "titre": "Besoins · 16 ans · organisation d’événement",
+    "texte": "Faire le point avec elle sur ce qui reste à faire, les dates à tenir et ce qu’elle souhaite confier à d’autres."
+   }
+  },
+  {
+   "id": "aepa-besoins-C11-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "16 ans · organisation d’événement · Une équipe de jeunes de 16 ans prépare un événement. Salomé prend en charge l’affiche, puis explique qu’elle se sent débordée parce qu’elle doit aussi réviser pour un examen.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Répartir les tâches restantes avec le groupe et fixer avec elle un calendrier compatible avec ses révisions.",
+    "Proposer qu’un adulte de l’équipe termine l’affiche pour lui laisser du temps de révision.",
+    "Lui proposer de simplifier l’affiche pour la finir plus vite, sans modifier son rôle dans le projet."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Partager les tâches avec le groupe allège sa charge tout en la gardant actrice du projet. Confier l’affiche à un adulte retire le projet aux jeunes ; simplifier l’affiche ne règle pas sa surcharge.",
+   "fiche": {
+    "titre": "Besoins · 16 ans · organisation d’événement",
+    "texte": "Répartir les tâches restantes avec le groupe et fixer avec elle un calendrier compatible avec ses révisions."
+   }
+  },
+  {
+   "id": "aepa-besoins-C12-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "14 ans · jeu de rôle · Après une remarque ironique d’un camarade, Nassim, 14 ans, cesse de participer à un jeu de rôle. Il dit qu’il a peur de devenir « la blague du groupe ».",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Il pourrait avoir besoin de se sentir respecté dans le groupe, sans crainte d’être tourné en ridicule.",
+    "Il pourrait trouver le jeu de rôle trop exposant et préférer une activité d’expression plus discrète.",
+    "Il pourrait avoir besoin d’une pause pour se calmer avant de reprendre le jeu de rôle avec les autres."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Sa crainte vient d’une remarque d’un camarade : c’est le respect dans le groupe qui est en jeu. Changer d’activité ou faire une pause ne traite pas la remarque qui l’a blessé.",
+   "fiche": {
+    "titre": "Besoins · 14 ans · jeu de rôle",
+    "texte": "Il pourrait avoir besoin de se sentir respecté dans le groupe, sans crainte d’être tourné en ridicule."
+   }
+  },
+  {
+   "id": "aepa-besoins-C12-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "14 ans · jeu de rôle · Après une remarque ironique d’un camarade, Nassim, 14 ans, cesse de participer à un jeu de rôle. Il dit qu’il a peur de devenir « la blague du groupe ».",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Écouter Nassim, observer les échanges du groupe et vérifier si d’autres jeunes ont vécu des remarques semblables.",
+    "Demander directement au camarade concerné quelle était son intention précise au moment où il a fait cette remarque.",
+    "Vérifier si Nassim a l’habitude de participer aux différents jeux de rôle proposés au fil de l’accueil."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Le ressenti de Nassim et l’ambiance du groupe sont les premiers éléments à recueillir. L’intention du camarade ne mesure pas l’effet de la remarque ; les habitudes de jeu de Nassim ne disent rien de ce qui s’est passé.",
+   "fiche": {
+    "titre": "Besoins · 14 ans · jeu de rôle",
+    "texte": "Écouter Nassim, observer les échanges du groupe et vérifier si d’autres jeunes ont vécu des remarques semblables."
+   }
+  },
+  {
+   "id": "aepa-besoins-C12-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "14 ans · jeu de rôle · Après une remarque ironique d’un camarade, Nassim, 14 ans, cesse de participer à un jeu de rôle. Il dit qu’il a peur de devenir « la blague du groupe ».",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Intervenir tout de suite sur la remarque, rappeler le cadre de respect, écouter Nassim et le laisser choisir comment continuer.",
+    "Proposer au groupe un nouveau jeu de rôle sur un autre thème pour changer l’ambiance de l’atelier.",
+    "Proposer à Nassim un rôle moins visible dans le même jeu, pour qu’il puisse continuer avec le reste du groupe."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "La priorité est de protéger Nassim et de traiter la moquerie. Une adaptation de son rôle peut venir ensuite s’il le souhaite, mais elle ne remplace pas l’intervention de l’adulte. Changer de thème laisse la remarque sans réponse.",
+   "fiche": {
+    "titre": "Besoins · 14 ans · jeu de rôle",
+    "texte": "Intervenir tout de suite sur la remarque, rappeler le cadre de respect, écouter Nassim et le laisser choisir comment continuer."
+   }
+  },
+  {
+   "id": "aepa-besoins-C13-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "82 ans · résidence autonomie · Mme Diallo, 82 ans, refuse un atelier cuisine. Elle explique qu’elle adore préparer des recettes mais que les ustensiles proposés lui font mal aux mains.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Elle pourrait avoir besoin d’un matériel adapté pour continuer à cuisiner avec plaisir et autonomie.",
+    "Elle pourrait préférer un atelier cuisine en plus petit groupe, plus calme et moins fatigant.",
+    "Elle pourrait avoir besoin de recettes plus simples, qui demandent moins de gestes de préparation fatigants."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Elle dit aimer cuisiner et désigne les ustensiles comme cause : la piste d’une adaptation matérielle s’appuie sur sa parole. Ni la taille du groupe ni la difficulté des recettes ne sont en cause.",
+   "fiche": {
+    "titre": "Besoins · 82 ans · résidence autonomie",
+    "texte": "Elle pourrait avoir besoin d’un matériel adapté pour continuer à cuisiner avec plaisir et autonomie."
+   }
+  },
+  {
+   "id": "aepa-besoins-C13-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "82 ans · résidence autonomie · Mme Diallo, 82 ans, refuse un atelier cuisine. Elle explique qu’elle adore préparer des recettes mais que les ustensiles proposés lui font mal aux mains.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Lui demander quels ustensiles lui font mal, lesquels lui conviennent, et quelles tâches elle souhaite réaliser.",
+    "Vérifier avec l’équipe soignante si des contre-indications existent pour les activités manuelles.",
+    "Observer pendant une séance quels gestes de préparation semblent lui demander le plus d’effort."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Mme Diallo sait ce qui lui fait mal et ce qu’elle aime faire : sa parole est la première source. L’observation peut compléter ensuite, et aucun indice ne suggère une contre-indication médicale.",
+   "fiche": {
+    "titre": "Besoins · 82 ans · résidence autonomie",
+    "texte": "Lui demander quels ustensiles lui font mal, lesquels lui conviennent, et quelles tâches elle souhaite réaliser."
+   }
+  },
+  {
+   "id": "aepa-besoins-C13-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "82 ans · résidence autonomie · Mme Diallo, 82 ans, refuse un atelier cuisine. Elle explique qu’elle adore préparer des recettes mais que les ustensiles proposés lui font mal aux mains.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Rechercher avec elle des ustensiles plus confortables et lui permettre de choisir les tâches culinaires auxquelles elle souhaite participer.",
+    "Lui proposer de présenter la recette au groupe et de conseiller les participants pendant que d’autres réalisent la préparation.",
+    "Lui proposer de participer à la dégustation et au choix des recettes pour maintenir sa place dans l’atelier sans solliciter ses mains."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Elle veut continuer à cuisiner : des ustensiles confortables et le choix des tâches préservent son plaisir et son autonomie. Présenter la recette ou déguster la maintient dans l’atelier, mais l’éloigne de la préparation qu’elle aime.",
+   "fiche": {
+    "titre": "Besoins · 82 ans · résidence autonomie",
+    "texte": "Rechercher avec elle des ustensiles plus confortables et lui permettre de choisir les tâches culinaires auxquelles elle souhaite participer."
+   }
+  },
+  {
+   "id": "aepa-besoins-C14-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "89 ans · EHPAD · M. Petit, 89 ans, quitte une activité chant après quinze minutes. Il dit qu’il entend difficilement les paroles lorsque plusieurs voix parlent en même temps, mais souhaite revenir.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Il pourrait avoir besoin d’un environnement sonore plus calme pour suivre les paroles des chansons.",
+    "Il pourrait ressentir de la fatigue au bout de quinze minutes et avoir besoin de séances plus courtes.",
+    "Il pourrait préférer des chansons plus anciennes, dont il connaît déjà bien les paroles."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "M. Petit explique lui-même que les voix mêlées l’empêchent d’entendre : la piste de l’environnement sonore s’appuie sur sa parole. La fatigue ou le choix des chansons sont des suppositions qu’il n’a pas exprimées.",
+   "fiche": {
+    "titre": "Besoins · 89 ans · EHPAD",
+    "texte": "Il pourrait avoir besoin d’un environnement sonore plus calme pour suivre les paroles des chansons."
+   }
+  },
+  {
+   "id": "aepa-besoins-C14-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "89 ans · EHPAD · M. Petit, 89 ans, quitte une activité chant après quinze minutes. Il dit qu’il entend difficilement les paroles lorsque plusieurs voix parlent en même temps, mais souhaite revenir.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Lui demander dans quelles conditions il entend le mieux et vérifier avec lui le bruit et sa place.",
+    "Observer combien de temps il reste habituellement dans les autres activités de groupe.",
+    "Demander aux autres résidents s’ils trouvent eux aussi le volume des chansons trop faible pendant l’atelier."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Il a identifié une gêne précise : il faut l’interroger et vérifier les conditions d’écoute avec lui. Sa durée de présence ailleurs ne renseigne pas sur l’écoute ; le volume n’est pas en cause, mais le mélange des voix.",
+   "fiche": {
+    "titre": "Besoins · 89 ans · EHPAD",
+    "texte": "Lui demander dans quelles conditions il entend le mieux et vérifier avec lui le bruit et sa place."
+   }
+  },
+  {
+   "id": "aepa-besoins-C14-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "89 ans · EHPAD · M. Petit, 89 ans, quitte une activité chant après quinze minutes. Il dit qu’il entend difficilement les paroles lorsque plusieurs voix parlent en même temps, mais souhaite revenir.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Réduire les bruits parasites, l’installer près de l’animateur et lui proposer les paroles écrites.",
+    "Monter le volume de la musique et du micro pour que les paroles dominent les conversations dans la salle.",
+    "Lui proposer de participer seulement aux quinze premières minutes, avant que le groupe ne devienne bruyant."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Moins de bruit, une place près de l’animateur et des paroles lisibles répondent à la gêne qu’il décrit. Monter le volume ajoute du bruit ; limiter sa présence réduit sa participation alors qu’il souhaite revenir.",
+   "fiche": {
+    "titre": "Besoins · 89 ans · EHPAD",
+    "texte": "Réduire les bruits parasites, l’installer près de l’animateur et lui proposer les paroles écrites."
+   }
+  },
+  {
+   "id": "aepa-besoins-C15-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "76 ans · centre social · Mme Roche, 76 ans, participe régulièrement à un atelier photo. Elle demande cette semaine à présenter ses clichés et à guider les débutants, car elle a longtemps pratiqué la photographie.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Elle pourrait souhaiter transmettre son expérience et voir ses compétences reconnues par le groupe.",
+    "Elle pourrait souhaiter approfondir sa propre pratique avec des exercices photo plus avancés.",
+    "Elle pourrait surtout chercher à créer davantage de liens avec les nouveaux participants de l’atelier."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Elle demande à présenter ses clichés et à guider les débutants : la piste de la transmission et de la reconnaissance s’appuie sur sa demande. Le perfectionnement ou les liens sociaux sont possibles, mais elle ne les exprime pas.",
+   "fiche": {
+    "titre": "Besoins · 76 ans · centre social",
+    "texte": "Elle pourrait souhaiter transmettre son expérience et voir ses compétences reconnues par le groupe."
+   }
+  },
+  {
+   "id": "aepa-besoins-C15-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "76 ans · centre social · Mme Roche, 76 ans, participe régulièrement à un atelier photo. Elle demande cette semaine à présenter ses clichés et à guider les débutants, car elle a longtemps pratiqué la photographie.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Lui demander quelle place elle souhaite prendre et vérifier si les débutants sont intéressés.",
+    "Vérifier si le programme de l’atelier prévoit déjà un temps de présentation des photos cette semaine.",
+    "Observer comment elle échange avec les débutants pendant les séances avant de lui confier un rôle."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Sa demande et l’intérêt des débutants sont les deux éléments utiles pour organiser ce rôle. Le programme prévu ou une période d’observation retardent la réponse à la demande claire d’une participante expérimentée.",
+   "fiche": {
+    "titre": "Besoins · 76 ans · centre social",
+    "texte": "Lui demander quelle place elle souhaite prendre et vérifier si les débutants sont intéressés."
+   }
+  },
+  {
+   "id": "aepa-besoins-C15-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "76 ans · centre social · Mme Roche, 76 ans, participe régulièrement à un atelier photo. Elle demande cette semaine à présenter ses clichés et à guider les débutants, car elle a longtemps pratiqué la photographie.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Lui proposer un temps de présentation et un rôle de guide qu’elle définit avec l’animateur.",
+    "Lui proposer d’exposer ses photos dans le hall du centre social pour valoriser son parcours.",
+    "Lui proposer de guider les débutants lors d’une séance spéciale organisée le mois prochain."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Définir son rôle avec elle répond à sa demande de cette semaine, dans un cadre clair. L’exposition valorise sans transmettre ; une séance le mois prochain reporte une demande actuelle.",
+   "fiche": {
+    "titre": "Besoins · 76 ans · centre social",
+    "texte": "Lui proposer un temps de présentation et un rôle de guide qu’elle définit avec l’animateur."
+   }
+  },
+  {
+   "id": "aepa-besoins-C16-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "91 ans · accueil de jour · À l’accueil de jour, M. Benali, 91 ans, hésite devant un jeu de mémoire. Il indique avoir mal dormi et souhaite plutôt discuter tranquillement avec deux personnes qu’il connaît.",
+   "enonce": "Quelle piste de besoin ou d’attente correspond le mieux aux indices ?",
+   "options": [
+    "Il pourrait avoir besoin de calme aujourd’hui et de partager un moment avec des personnes qu’il apprécie.",
+    "Il pourrait trouver le jeu de mémoire trop difficile ce jour-là et craindre de se mettre en échec devant les autres.",
+    "Il pourrait préférer une activité physique douce pour se réveiller après sa mauvaise nuit."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Il évoque sa mauvaise nuit et dit ce qu’il souhaite : du calme et une discussion avec des personnes connues. La crainte de l’échec ou l’activité physique sont des suppositions qui ne tiennent pas compte de sa demande.",
+   "fiche": {
+    "titre": "Besoins · 91 ans · accueil de jour",
+    "texte": "Il pourrait avoir besoin de calme aujourd’hui et de partager un moment avec des personnes qu’il apprécie."
+   }
+  },
+  {
+   "id": "aepa-besoins-C16-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "91 ans · accueil de jour · À l’accueil de jour, M. Benali, 91 ans, hésite devant un jeu de mémoire. Il indique avoir mal dormi et souhaite plutôt discuter tranquillement avec deux personnes qu’il connaît.",
+   "enonce": "Que faudrait-il vérifier en priorité avant de conclure ?",
+   "options": [
+    "Lui demander comment il se sent aujourd’hui et ce qui lui ferait du bien pendant ce temps d’activité.",
+    "Vérifier avec l’équipe s’il a déjà refusé le jeu de mémoire lors des séances précédentes.",
+    "Observer s’il réussit les premières questions du jeu avant de lui proposer, si besoin, une autre activité."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Il exprime sa fatigue et son souhait : il faut d’abord l’écouter. Ses refus passés ne disent rien d’aujourd’hui ; le faire commencer le jeu pour l’observer ignore ce qu’il vient de demander.",
+   "fiche": {
+    "titre": "Besoins · 91 ans · accueil de jour",
+    "texte": "Lui demander comment il se sent aujourd’hui et ce qui lui ferait du bien pendant ce temps d’activité."
+   }
+  },
+  {
+   "id": "aepa-besoins-C16-3",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "91 ans · accueil de jour · À l’accueil de jour, M. Benali, 91 ans, hésite devant un jeu de mémoire. Il indique avoir mal dormi et souhaite plutôt discuter tranquillement avec deux personnes qu’il connaît.",
+   "enonce": "Quelle adaptation professionnelle répond le mieux à la situation ?",
+   "options": [
+    "Lui proposer un temps d’échange calme avec ces deux personnes, et le jeu une autre fois s’il le souhaite.",
+    "Lui proposer de rester dans le jeu de mémoire avec un rôle plus léger, comme lire les questions.",
+    "Lui proposer de se reposer seul au salon, puis de rejoindre le groupe quand il se sentira mieux."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Cette proposition suit à la fois sa fatigue et son envie de discuter avec des proches. Un rôle dans le jeu le maintient dans une activité qu’il ne souhaite pas ; le repos seul oublie son envie de compagnie.",
+   "fiche": {
+    "titre": "Besoins · 91 ans · accueil de jour",
+    "texte": "Lui proposer un temps d’échange calme avec ces deux personnes, et le jeu une autre fois s’il le souhaite."
+   }
+  },
+  {
+   "id": "aepa-besoins-P01-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant refuse un jeu collectif. A : Lina, 4 ans, découvre le centre et serre son doudou ; elle observe le jeu. B : Chloé, 15 ans, connaît le centre et demande à choisir un thème qui la concerne.",
+   "enonce": "Quelle analyse compare le mieux ces deux situations ?",
+   "options": [
+    "Le refus est semblable, mais les indices orientent vers une familiarisation pour Lina et un besoin de choix pour Chloé.",
+    "Le refus est semblable, mais les indices orientent vers une timidité pour Lina et une opposition au cadre pour Chloé.",
+    "Le refus est semblable, et les indices orientent vers un besoin de repères communs aux deux, quel que soit l’âge."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Même refus, besoins différents : Lina découvre le lieu et serre son doudou, Chloé connaît le centre et demande à choisir. Parler d’opposition pour Chloé ignore sa proposition ; chercher des repères communs efface leurs indices propres.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Le refus est semblable, mais les indices orientent vers une familiarisation pour Lina et un besoin de choix pour Chloé."
+   }
+  },
+  {
+   "id": "aepa-besoins-P01-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant refuse un jeu collectif. A : Lina, 4 ans, découvre le centre et serre son doudou ; elle observe le jeu. B : Chloé, 15 ans, connaît le centre et demande à choisir un thème qui la concerne.",
+   "enonce": "Quelles réactions seraient les plus adaptées à ces deux situations ?",
+   "options": [
+    "Pour Lina, une entrée progressive près d’un adulte repère ; pour Chloé, une concertation cadrée sur le thème.",
+    "Pour Lina, un rôle simple dès le début du jeu ; pour Chloé, un rôle technique dans la réalisation de la vidéo.",
+    "Pour les deux, un temps d’observation du jeu, puis une proposition de participation progressive."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Chaque réponse suit les indices : réassurance pour Lina, choix pour Chloé. Un rôle immédiat ou technique ne répond ni à la nouveauté du lieu ni à la demande de choix ; une même réponse pour les deux ignore leurs différences.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Pour Lina, une entrée progressive près d’un adulte repère ; pour Chloé, une concertation cadrée sur le thème."
+   }
+  },
+  {
+   "id": "aepa-besoins-P02-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant se retire d’un atelier sonore. A : Hugo, 8 ans, est nouveau ; il dit avoir peur de chanter faux devant les autres. B : M. Petit, 89 ans, dit que les paroles sont difficiles à entendre dans le brouhaha.",
+   "enonce": "Quelle analyse compare le mieux ces deux situations ?",
+   "options": [
+    "Hugo pourrait craindre le regard des autres, tandis que M. Petit semble gêné par les conditions d’écoute.",
+    "Hugo et M. Petit pourraient tous deux manquer de confiance pour chanter devant le reste du groupe.",
+    "Hugo pourrait craindre le regard des autres, tandis que M. Petit pourrait ne pas connaître les chansons choisies."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Les deux se retirent, pour des raisons qu’ils donnent eux-mêmes : la peur de chanter faux pour Hugo, le brouhaha pour M. Petit. Leur prêter le même manque de confiance, ou supposer que M. Petit ignore les chansons, s’éloigne de leurs paroles.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Hugo pourrait craindre le regard des autres, tandis que M. Petit semble gêné par les conditions d’écoute."
+   }
+  },
+  {
+   "id": "aepa-besoins-P02-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant se retire d’un atelier sonore. A : Hugo, 8 ans, est nouveau ; il dit avoir peur de chanter faux devant les autres. B : M. Petit, 89 ans, dit que les paroles sont difficiles à entendre dans le brouhaha.",
+   "enonce": "Quelles réactions seraient les plus adaptées à ces deux situations ?",
+   "options": [
+    "Proposer à Hugo un rôle musical sans chant individuel exposé, et réduire les bruits parasites pour faciliter l’écoute de M. Petit.",
+    "Proposer à Hugo une répétition préparatoire en petit groupe, et installer M. Petit à proximité du haut-parleur pendant les chansons.",
+    "Proposer aux deux participants une écoute individuelle des chansons au casque avant de leur permettre de rejoindre le groupe."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Un rôle sans chant exposé répond à la peur d’Hugo, et moins de bruit répond à la gêne de M. Petit. Une répétition expose encore Hugo et le haut-parleur n’enlève pas le brouhaha ; le casque isole les deux participants du groupe.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Proposer à Hugo un rôle musical sans chant individuel exposé, et réduire les bruits parasites pour faciliter l’écoute de M. Petit."
+   }
+  },
+  {
+   "id": "aepa-besoins-P03-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant demande de l’aide pendant un atelier. A : Maya, 3 ans, peine à saisir de petites pièces et risque de les porter à la bouche. B : Mme Diallo, 82 ans, aime cuisiner mais ses mains sont douloureuses avec certains ustensiles.",
+   "enonce": "Quelle analyse compare le mieux ces deux situations ?",
+   "options": [
+    "Pour Maya, il faut adapter la taille et la sécurité du matériel ; pour Mme Diallo, écouter ses choix d’ustensiles.",
+    "Pour Maya comme pour Mme Diallo, il faut surtout un adulte à côté pour réaliser les gestes difficiles.",
+    "Pour Maya, il faut surtout des encouragements ; pour Mme Diallo, des recettes demandant moins de gestes."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Les deux demandent de l’aide pour des raisons différentes : un risque lié aux petites pièces pour Maya, une douleur avec certains ustensiles pour Mme Diallo, qui sait ce qui lui convient. Faire à leur place ou simplifier réduit leur autonomie sans traiter la cause.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Pour Maya, il faut adapter la taille et la sécurité du matériel ; pour Mme Diallo, écouter ses choix d’ustensiles."
+   }
+  },
+  {
+   "id": "aepa-besoins-P03-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant demande de l’aide pendant un atelier. A : Maya, 3 ans, peine à saisir de petites pièces et risque de les porter à la bouche. B : Mme Diallo, 82 ans, aime cuisiner mais ses mains sont douloureuses avec certains ustensiles.",
+   "enonce": "Quelles réactions seraient les plus adaptées à ces deux situations ?",
+   "options": [
+    "Pour Maya, des pièces plus grosses et sûres ; pour Mme Diallo, des ustensiles qu’elle choisit elle-même.",
+    "Pour Maya, une activité de tri des perles ; pour Mme Diallo, un rôle de conseil pendant la préparation du plat.",
+    "Pour les deux, un même matériel à prise large, plus facile à saisir pour toutes les mains."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Adapter le matériel à chacune leur permet d’agir : sécurité pour Maya, confort et choix pour Mme Diallo. Le tri ou le conseil les éloignent du geste ; un même matériel pour les deux suppose un besoin identique.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Pour Maya, des pièces plus grosses et sûres ; pour Mme Diallo, des ustensiles qu’elle choisit elle-même."
+   }
+  },
+  {
+   "id": "aepa-besoins-P04-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant refuse une prise de parole publique. A : Yasmine, 8 ans, dit craindre les moqueries pendant un jeu coopératif. B : Amir, 13 ans, souhaite partager son texte mais uniquement de façon anonyme.",
+   "enonce": "Quelle analyse compare le mieux ces deux situations ?",
+   "options": [
+    "Yasmine pourrait craindre le jugement du groupe ; Amir exprime une préférence claire pour préserver son intimité.",
+    "Yasmine et Amir pourraient tous deux manquer d’assurance à l’oral et avoir besoin de s’entraîner.",
+    "Yasmine pourrait manquer d’idées à proposer ; Amir pourrait douter de la qualité de son texte."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Yasmine parle de moqueries, Amir demande l’anonymat : les deux refus n’ont pas le même sens. Un manque d’assurance, d’idées ou de confiance dans son texte ne correspond pas à ce qu’ils ont dit.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Yasmine pourrait craindre le jugement du groupe ; Amir exprime une préférence claire pour préserver son intimité."
+   }
+  },
+  {
+   "id": "aepa-besoins-P04-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant refuse une prise de parole publique. A : Yasmine, 8 ans, dit craindre les moqueries pendant un jeu coopératif. B : Amir, 13 ans, souhaite partager son texte mais uniquement de façon anonyme.",
+   "enonce": "Quelles réactions seraient les plus adaptées à ces deux situations ?",
+   "options": [
+    "Offrir à Yasmine un rôle progressif dans un cadre respectueux, et à Amir une lecture anonyme.",
+    "Proposer aux deux un entraînement à l’oral en petit groupe avant la restitution collective.",
+    "Proposer à Yasmine de travailler en binôme, et à Amir de lire son texte à un seul camarade de confiance."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Le rôle progressif agit sur la crainte de Yasmine, la lecture anonyme respecte le choix d’Amir. Un entraînement à l’oral vise une prise de parole qu’ils n’ont pas demandée ; lire à un camarade ne respecte pas l’anonymat voulu par Amir.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Offrir à Yasmine un rôle progressif dans un cadre respectueux, et à Amir une lecture anonyme."
+   }
+  },
+  {
+   "id": "aepa-besoins-P05-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant paraît fatigué et ralentit le groupe. A : Noé, 5 ans, s’agite après une longue séance de motricité et demande à bouger différemment. B : M. Benali, 91 ans, dit avoir mal dormi et souhaite un moment calme pour discuter.",
+   "enonce": "Quelle analyse compare le mieux ces deux situations ?",
+   "options": [
+    "Noé semble avoir besoin de varier le mouvement ; M. Benali exprime une envie de repos et de conversation.",
+    "Noé et M. Benali pourraient tous deux être fatigués et avoir besoin d’une pause au calme.",
+    "Noé pourrait chercher l’attention de l’adulte ; M. Benali pourrait trouver l’activité proposée trop difficile."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Le ralentissement est commun, mais Noé demande à bouger autrement et M. Benali à se reposer en discutant. Les croire tous deux fatigués ignore la demande de Noé ; la recherche d’attention ou la difficulté ne s’appuient sur aucune de leurs paroles.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Noé semble avoir besoin de varier le mouvement ; M. Benali exprime une envie de repos et de conversation."
+   }
+  },
+  {
+   "id": "aepa-besoins-P05-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant paraît fatigué et ralentit le groupe. A : Noé, 5 ans, s’agite après une longue séance de motricité et demande à bouger différemment. B : M. Benali, 91 ans, dit avoir mal dormi et souhaite un moment calme pour discuter.",
+   "enonce": "Quelles réactions seraient les plus adaptées à ces deux situations ?",
+   "options": [
+    "Raccourcir et varier l’activité pour Noé ; proposer à M. Benali un échange calme, comme il le souhaite.",
+    "Proposer aux deux une pause calme, puis une reprise de l’activité prévue au même rythme.",
+    "Proposer à Noé un rôle d’aide auprès de l’animateur, et à M. Benali une version plus courte du jeu prévu."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Chaque réponse suit la demande exprimée. Une pause calme pour tous contredit l’envie de bouger de Noé ; raccourcir le jeu pour M. Benali le maintient dans une activité qu’il ne souhaite pas.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Raccourcir et varier l’activité pour Noé ; proposer à M. Benali un échange calme, comme il le souhaite."
+   }
+  },
+  {
+   "id": "aepa-besoins-P06-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant veut décider de l’organisation. A : Un groupe de 10 ans souhaite discuter les règles d’un grand jeu. B : Mme Roche, 76 ans, veut transmettre son expérience photo aux autres participants.",
+   "enonce": "Quelle analyse compare le mieux ces deux situations ?",
+   "options": [
+    "Les enfants pourraient vouloir participer à une décision collective ; Mme Roche propose de transmettre une compétence.",
+    "Les enfants et Mme Roche pourraient tous deux chercher à prendre la direction de l’activité.",
+    "Les enfants pourraient trouver le jeu trop facile ; Mme Roche pourrait s’ennuyer dans l’atelier photo."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Les enfants demandent à décider ensemble des règles, Mme Roche à partager son expérience. Parler de prise de direction déforme leurs demandes ; l’ennui ou la facilité ne sont pas exprimés.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Les enfants pourraient vouloir participer à une décision collective ; Mme Roche propose de transmettre une compétence."
+   }
+  },
+  {
+   "id": "aepa-besoins-P06-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant veut décider de l’organisation. A : Un groupe de 10 ans souhaite discuter les règles d’un grand jeu. B : Mme Roche, 76 ans, veut transmettre son expérience photo aux autres participants.",
+   "enonce": "Quelles réactions seraient les plus adaptées à ces deux situations ?",
+   "options": [
+    "Organiser une discussion sur les règles avec les enfants, et définir avec Mme Roche un rôle de transmission.",
+    "Noter les idées des enfants pour le prochain grand jeu, et proposer à Mme Roche d’exposer ses photos.",
+    "Faire voter les enfants sur une règle, et confier à Mme Roche l’animation complète de la séance photo suivante."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Chaque demande reçoit une réponse cadrée et immédiate. Reporter les idées ou exposer les photos ne répond pas aux demandes ; un vote rapide oublie la sécurité, et une séance entière dépasse ce que Mme Roche a demandé.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Organiser une discussion sur les règles avec les enfants, et définir avec Mme Roche un rôle de transmission."
+   }
+  },
+  {
+   "id": "aepa-besoins-P07-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant cesse de contribuer à une tâche collective. A : Maxime, 7 ans, a peur de faire perdre son équipe après deux échecs au relais. B : Salomé, 16 ans, organise une affiche mais se sent débordée avant un examen.",
+   "enonce": "Quelle analyse compare le mieux ces deux situations ?",
+   "options": [
+    "Maxime craint de décevoir son équipe ; Salomé semble surtout manquer de temps à cause de ses révisions.",
+    "Maxime et Salomé pourraient tous deux manquer de confiance dans leurs propres capacités.",
+    "Maxime pourrait avoir besoin d’entraînement technique ; Salomé, de conseils pour réaliser plus vite l’affiche."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Un même retrait, deux causes exprimées : la peur de faire perdre pour Maxime, la surcharge liée à l’examen pour Salomé. Le manque de confiance ne correspond pas à Salomé ; des conseils techniques ne répondent à aucune des deux causes.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Maxime craint de décevoir son équipe ; Salomé semble surtout manquer de temps à cause de ses révisions."
+   }
+  },
+  {
+   "id": "aepa-besoins-P07-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Un participant cesse de contribuer à une tâche collective. A : Maxime, 7 ans, a peur de faire perdre son équipe après deux échecs au relais. B : Salomé, 16 ans, organise une affiche mais se sent débordée avant un examen.",
+   "enonce": "Quelles réactions seraient les plus adaptées à ces deux situations ?",
+   "options": [
+    "Proposer à Maxime un essai sans enjeu de score, et répartir autrement les tâches de Salomé avec l’équipe.",
+    "Proposer à Maxime de chronométrer le relais, et confier l’affiche de Salomé à un autre jeune.",
+    "Montrer à Maxime le bon geste du relais, et proposer à Salomé une affiche plus simple et plus rapide à réaliser."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Chaque réponse traite la cause exprimée tout en gardant le jeune dans le projet. Chronométrer ou retirer l’affiche les met à l’écart ; la démonstration et la simplification ne répondent ni à la peur ni à la surcharge.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Proposer à Maxime un essai sans enjeu de score, et répartir autrement les tâches de Salomé avec l’équipe."
+   }
+  },
+  {
+   "id": "aepa-besoins-P08-1",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Deux personnes réclament une modification de l’activité. A : Sam, 5 ans, veut changer de rôle au cours d’un jeu imaginaire qui crée un conflit. B : Nassim, 14 ans, veut arrêter un jeu de rôle après une remarque humiliante d’un camarade.",
+   "enonce": "Quelle analyse compare le mieux ces deux situations ?",
+   "options": [
+    "Sam pourrait avoir besoin d’une médiation sur les rôles ; Nassim semble demander une protection face à une remarque humiliante.",
+    "Sam et Nassim vivent tous deux un désaccord ordinaire de jeu, que les participants peuvent régler entre eux.",
+    "Sam pourrait avoir besoin de diriger le jeu ; Nassim pourrait avoir besoin d’une pause avant de reprendre."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Les deux situations sont relationnelles, mais une remarque humiliante n’est pas un simple désaccord : elle appelle l’intervention de l’adulte. Sam ne veut pas diriger, il refuse qu’on lui impose un chef ; une pause ne traite pas la remarque faite à Nassim.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Sam pourrait avoir besoin d’une médiation sur les rôles ; Nassim semble demander une protection face à une remarque humiliante."
+   }
+  },
+  {
+   "id": "aepa-besoins-P08-2",
+   "atelier": "besoins",
+   "type": "qcm",
+   "contexte": "Deux personnes réclament une modification de l’activité. A : Sam, 5 ans, veut changer de rôle au cours d’un jeu imaginaire qui crée un conflit. B : Nassim, 14 ans, veut arrêter un jeu de rôle après une remarque humiliante d’un camarade.",
+   "enonce": "Quelles réactions seraient les plus adaptées à ces deux situations ?",
+   "options": [
+    "Aider Sam à négocier les rôles ; rappeler la règle du respect et laisser Nassim choisir comment participer.",
+    "Proposer à Sam un tirage au sort des rôles ; proposer à Nassim un rôle moins visible dans le jeu.",
+    "Laisser Sam et son camarade trouver seuls un accord ; proposer à Nassim une courte pause avant de reprendre le jeu."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Sam a besoin d’une médiation, Nassim d’une intervention sur le respect. Le tirage au sort et la pause évitent le dialogue ; un rôle moins visible adapte Nassim au lieu de traiter la remarque.",
+   "fiche": {
+    "titre": "Comparer deux publics",
+    "texte": "Aider Sam à négocier les rôles ; rappeler la règle du respect et laisser Nassim choisir comment participer."
+   }
+  },
+  {
+   "id": "aepa-fait-1da38bc2",
+   "atelier": "fait",
+   "type": "tri",
+   "contexte": "Mme L., 84 ans, reste assise à l'écart pendant l'activité.",
+   "enonce": "Classe chaque phrase : fait observable, hypothèse ou jugement ?",
+   "categories": [
+    "Fait observable",
+    "Hypothèse",
+    "Jugement"
+   ],
+   "elements": [
+    {
+     "texte": "Mme L. est assise seule depuis le début.",
+     "categorie": 0
+    },
+    {
+     "texte": "Elle ne veut voir personne.",
+     "categorie": 1
+    },
+    {
+     "texte": "Elle est de mauvaise humeur.",
+     "categorie": 2
+    },
+    {
+     "texte": "Elle regarde plusieurs fois le groupe.",
+     "categorie": 0
+    },
+    {
+     "texte": "Elle est peut-être fatiguée.",
+     "categorie": 1
+    },
+    {
+     "texte": "Elle ne fait aucun effort.",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Décrire les faits avant de formuler une hypothèse. Un jugement n’est pas une observation professionnelle.",
+   "fiche": {
+    "titre": "Fait, hypothèse, jugement",
+    "texte": "Fait = ce que je vois ou entends. Hypothèse = une piste à vérifier (« peut-être »). Jugement = une opinion, à éviter."
+   }
+  },
+  {
+   "id": "aepa-fait-de244777",
+   "atelier": "fait",
+   "type": "tri",
+   "contexte": "Hugo parle peu et regarde souvent la porte pendant un jeu.",
+   "enonce": "Classe chaque phrase : fait observable, hypothèse ou jugement ?",
+   "categories": [
+    "Fait observable",
+    "Hypothèse",
+    "Jugement"
+   ],
+   "elements": [
+    {
+     "texte": "Hugo parle moins que les autres aujourd'hui.",
+     "categorie": 0
+    },
+    {
+     "texte": "Il veut sûrement rentrer.",
+     "categorie": 1
+    },
+    {
+     "texte": "Il est impoli.",
+     "categorie": 2
+    },
+    {
+     "texte": "Il regarde la porte plusieurs fois.",
+     "categorie": 0
+    },
+    {
+     "texte": "Il est peut-être inquiet.",
+     "categorie": 1
+    },
+    {
+     "texte": "Il n'aime jamais participer.",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Décrire les faits avant de formuler une hypothèse. Un jugement n’est pas une observation professionnelle.",
+   "fiche": {
+    "titre": "Fait, hypothèse, jugement",
+    "texte": "Fait = ce que je vois ou entends. Hypothèse = une piste à vérifier (« peut-être »). Jugement = une opinion, à éviter."
+   }
+  },
+  {
+   "id": "aepa-look-c84be4f4",
+   "atelier": "look",
+   "type": "multi",
+   "contexte": "Dans un atelier de création en résidence autonomie, Mme B. dit : « Je ne participerai pas aujourd’hui, mes mains me font mal ». L’animateur envisage de lui proposer une participation différente.",
+   "enonce": "Quelles informations dois-tu regarder avant d’agir ? Sélectionne toutes les bonnes réponses.",
+   "options": [
+    "Ce que Mme B. souhaite faire ou ne pas faire aujourd’hui",
+    "Une possibilité d’observer ou de participer sans manipulation douloureuse",
+    "Le type de matériau et les gestes demandés",
+    "Les disponibilités de la salle pour l’atelier du mois prochain",
+    "Les préférences musicales du reste de l’équipe",
+    "Les capacités utiles à cette activité, sans poser soi-même un diagnostic",
+    "Le programme d’une sortie prévue la semaine prochaine"
+   ],
+   "bonnes": [
+    0,
+    1,
+    2,
+    5
+   ],
+   "pourquoi": "Repérer les informations utiles (la personne, ses souhaits, le matériel, la sécurité) avant de décider.",
+   "fiche": {
+    "titre": "Que dois-je regarder ?",
+    "texte": "Ce que Mme B. souhaite faire ou ne pas faire aujourd’hui · Une possibilité d’observer ou de participer sans manipulation douloureuse · Le type de matériau et les gestes demandés · Les capacités utiles à cette activité, sans poser soi-même un diagnostic"
+   }
+  },
+  {
+   "id": "aepa-look-5620b849",
+   "atelier": "look",
+   "type": "multi",
+   "contexte": "Dans un ACM, 18 enfants de 6 à 8 ans vont quitter le centre pour rejoindre un parc. La pluie est annoncée et le trajet comprend une traversée de route.",
+   "enonce": "Quelles informations dois-tu regarder avant d’agir ? Sélectionne toutes les bonnes réponses.",
+   "options": [
+    "L’itinéraire et les conditions de traversée",
+    "La météo et une solution de repli",
+    "Les effectifs et l’organisation de l’encadrement",
+    "Le thème du goûter prévu le lendemain",
+    "Les informations sanitaires pertinentes et les protocoles applicables",
+    "Le nombre de tables de la salle qui restera vide aujourd’hui",
+    "La décoration du centre pour la fête à venir"
+   ],
+   "bonnes": [
+    0,
+    1,
+    2,
+    4
+   ],
+   "pourquoi": "Repérer les informations utiles (la personne, ses souhaits, le matériel, la sécurité) avant de décider.",
+   "fiche": {
+    "titre": "Que dois-je regarder ?",
+    "texte": "L’itinéraire et les conditions de traversée · La météo et une solution de repli · Les effectifs et l’organisation de l’encadrement · Les informations sanitaires pertinentes et les protocoles applicables"
+   }
+  },
+  {
+   "id": "aepa-look-e0508947",
+   "atelier": "look",
+   "type": "multi",
+   "contexte": "Lors d’un jeu coopératif, deux adolescents réclament le même rôle et se coupent la parole. Le reste du groupe attend et une participante ne dit plus rien.",
+   "enonce": "Quelles informations dois-tu regarder avant d’agir ? Sélectionne toutes les bonnes réponses.",
+   "options": [
+    "Les règles initiales de répartition des rôles",
+    "Les préférences exprimées et les attentes des deux adolescents",
+    "La place laissée à la participante silencieuse",
+    "La liste du matériel nécessaire à un autre atelier",
+    "Une rotation ou une alternative de répartition possible",
+    "Les horaires de réservation du gymnase le mois prochain",
+    "Les capacités réelles de l’équipe à adapter l’organisation"
+   ],
+   "bonnes": [
+    0,
+    1,
+    2,
+    4,
+    6
+   ],
+   "pourquoi": "Repérer les informations utiles (la personne, ses souhaits, le matériel, la sécurité) avant de décider.",
+   "fiche": {
+    "titre": "Que dois-je regarder ?",
+    "texte": "Les règles initiales de répartition des rôles · Les préférences exprimées et les attentes des deux adolescents · La place laissée à la participante silencieuse · Une rotation ou une alternative de répartition possible · Les capacités réelles de l’équipe à adapter l’organisation"
+   }
+  },
+  {
+   "id": "aepa-look-3df503af",
+   "atelier": "look",
+   "type": "multi",
+   "contexte": "Au cours d’un atelier en EHPAD, la moitié des participants n’entend pas clairement les consignes à cause d’une porte ouverte sur un couloir bruyant.",
+   "enonce": "Quelles informations dois-tu regarder avant d’agir ? Sélectionne toutes les bonnes réponses.",
+   "options": [
+    "L’origine du bruit et les conditions acoustiques",
+    "Les besoins de compréhension et la façon de vérifier la consigne",
+    "La possibilité d’isoler la salle du bruit",
+    "L’organisation de la sortie au théâtre programmée demain",
+    "L’emplacement de l’animateur et son articulation",
+    "La date de remplacement prévue du mobilier l’année prochaine",
+    "Le résultat de l’atelier de cuisine de la veille"
+   ],
+   "bonnes": [
+    0,
+    1,
+    2,
+    4
+   ],
+   "pourquoi": "Repérer les informations utiles (la personne, ses souhaits, le matériel, la sécurité) avant de décider.",
+   "fiche": {
+    "titre": "Que dois-je regarder ?",
+    "texte": "L’origine du bruit et les conditions acoustiques · Les besoins de compréhension et la façon de vérifier la consigne · La possibilité d’isoler la salle du bruit · L’emplacement de l’animateur et son articulation"
+   }
+  },
+  {
+   "id": "aepa-chain-2852968d",
+   "atelier": "chain",
+   "type": "ordre",
+   "contexte": "En EHPAD, M. Samir participe volontiers mais a du mal à saisir de petits objets.",
+   "enonce": "Remets la démarche dans l’ordre : de l’observation à l’évaluation.",
+   "elements": [
+    {
+     "texte": "M. Samir lâche régulièrement de petits objets lorsqu'il les manipule.",
+     "info": "Observation"
+    },
+    {
+     "texte": "Besoin moteur : travailler la motricité fine.",
+     "info": "Besoin"
+    },
+    {
+     "texte": "Entretenir les capacités de manipulation et encourager la participation.",
+     "info": "Objectif"
+    },
+    {
+     "texte": "À l’issue de l’atelier, M. Samir enfile jusqu’à six grosses perles avec le niveau d’aide convenu.",
+     "info": "Critère de réussite"
+    },
+    {
+     "texte": "Proposer un atelier d'enfilage avec du matériel adapté.",
+     "info": "Activité"
+    },
+    {
+     "texte": "Compter le nombre de perles enfilées de façon autonome.",
+     "info": "Évaluation"
+    }
+   ],
+   "pourquoi": "Observation → besoin → objectif → critère → activité → évaluation : chaque étape s’appuie sur la précédente.",
+   "fiche": {
+    "titre": "La démarche du projet d’activité",
+    "texte": "Observer → identifier le besoin → formuler l’objectif → choisir l’activité → évaluer."
+   }
+  },
+  {
+   "id": "aepa-chain-88110b54",
+   "atelier": "chain",
+   "type": "ordre",
+   "contexte": "Deux enfants restent souvent en retrait pendant les jeux collectifs.",
+   "enonce": "Remets la démarche dans l’ordre : de l’observation à l’évaluation.",
+   "elements": [
+    {
+     "texte": "Deux enfants restent à l'écart pendant plusieurs jeux de groupe.",
+     "info": "Observation"
+    },
+    {
+     "texte": "Besoin social : créer/favoriser des liens avec les autres.",
+     "info": "Besoin"
+    },
+    {
+     "texte": "Favoriser la participation au groupe.",
+     "info": "Objectif"
+    },
+    {
+     "texte": "Les enfants sont capables de participer 10 minutes à un jeu avec 3 camarades.",
+     "info": "Critère de réussite"
+    },
+    {
+     "texte": "Proposer un petit jeu coopératif avec rôles simples.",
+     "info": "Activité"
+    },
+    {
+     "texte": "Observer la durée et la qualité de leur participation au groupe.",
+     "info": "Évaluation"
+    }
+   ],
+   "pourquoi": "Observation → besoin → objectif → critère → activité → évaluation : chaque étape s’appuie sur la précédente.",
+   "fiche": {
+    "titre": "La démarche du projet d’activité",
+    "texte": "Observer → identifier le besoin → formuler l’objectif → choisir l’activité → évaluer."
+   }
+  },
+  {
+   "id": "aepa-chain-699c92b1",
+   "atelier": "chain",
+   "type": "ordre",
+   "contexte": "Une résidente comprend les consignes mais oublie rapidement la suite des étapes.",
+   "enonce": "Remets la démarche dans l’ordre : de l’observation à l’évaluation.",
+   "elements": [
+    {
+     "texte": "La résidente redemande plusieurs fois l'étape suivante.",
+     "info": "Observation"
+    },
+    {
+     "texte": "Besoin cognitif : stimuler la mémoire et le repérage dans une séquence.",
+     "info": "Besoin"
+    },
+    {
+     "texte": "Stimuler la mémorisation.",
+     "info": "Objectif"
+    },
+    {
+     "texte": "À la fin de la séance, la résidente retrouve trois étapes d’une séquence de quatre à l’aide du support choisi.",
+     "info": "Critère de réussite"
+    },
+    {
+     "texte": "Proposer une activité séquencée avec supports visuels.",
+     "info": "Activité"
+    },
+    {
+     "texte": "Noter le nombre d'étapes rappelées sans aide.",
+     "info": "Évaluation"
+    }
+   ],
+   "pourquoi": "Observation → besoin → objectif → critère → activité → évaluation : chaque étape s’appuie sur la précédente.",
+   "fiche": {
+    "titre": "La démarche du projet d’activité",
+    "texte": "Observer → identifier le besoin → formuler l’objectif → choisir l’activité → évaluer."
+   }
+  },
+  {
+   "id": "aepa-evo-2a14a784",
+   "atelier": "evo",
+   "type": "qcm",
+   "contexte": "Dans un accueil de loisirs, tu encadres douze enfants de 7 ans pendant un atelier de création.",
+   "enonce": "Imprévu : Deux enfants terminent très vite et commencent à gêner leurs voisins. Que fais-tu ?",
+   "options": [
+    "Les envoyer patienter dans le couloir pour que les autres puissent finir au calme.",
+    "Prévoir une variante ou une mission complémentaire sans les mettre à l’écart.",
+    "Leur demander de recommencer entièrement leur travail pour gagner en soin et en précision."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "L’adaptation donne une place active aux enfants sans les isoler.",
+   "fiche": {
+    "titre": "Face à l’imprévu",
+    "texte": "L’adaptation donne une place active aux enfants sans les isoler."
+   }
+  },
+  {
+   "id": "aepa-evo-d252d7e4",
+   "atelier": "evo",
+   "type": "qcm",
+   "contexte": "Dans un accueil de loisirs, tu encadres douze enfants de 7 ans pendant un atelier de création.",
+   "enonce": "Imprévu : Un enfant se moque de la création d’un camarade, qui baisse la tête et cesse de travailler. Que fais-tu ?",
+   "options": [
+    "Ne rien dire pour ne pas interrompre l’atelier et laisser les enfants régler cela entre eux.",
+    "Intervenir sur les paroles et soutenir l’enfant sans l’exposer davantage.",
+    "Proposer au groupe de voter pour la plus jolie création afin de relancer la motivation."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "La dignité et le sentiment de sécurité conditionnent la participation.",
+   "fiche": {
+    "titre": "Face à l’imprévu",
+    "texte": "La dignité et le sentiment de sécurité conditionnent la participation."
+   }
+  },
+  {
+   "id": "aepa-evo-1c7478ef",
+   "atelier": "evo",
+   "type": "qcm",
+   "contexte": "Dans un accueil de loisirs, tu encadres douze enfants de 7 ans pendant un atelier de création.",
+   "enonce": "Imprévu : Les ciseaux à bouts ronds manquent pour terminer le travail en petits groupes. Que fais-tu ?",
+   "options": [
+    "Organiser une rotation des outils et adapter les étapes.",
+    "Donner la priorité aux enfants les plus rapides pour que le travail avance plus vite.",
+    "Supprimer l’activité et passer à un jeu libre, sans chercher d’aménagement."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Une organisation différente peut préserver l’objectif et l’équité.",
+   "fiche": {
+    "titre": "Face à l’imprévu",
+    "texte": "Une organisation différente peut préserver l’objectif et l’équité."
+   }
+  },
+  {
+   "id": "aepa-evo-4ce11f41",
+   "atelier": "evo",
+   "type": "qcm",
+   "contexte": "Dans une résidence autonomie, tu animes un jeu de ballon doux en petit groupe.",
+   "enonce": "Imprévu : Un participant lance la balle avec beaucoup de force ; sa voisine semble inquiète. Que fais-tu ?",
+   "options": [
+    "Maintenir les mêmes règles pour tous sans intervenir, puisque le jeu est déjà lancé.",
+    "Adapter distance, ballon et consigne en tenant compte de chacun.",
+    "Écarter définitivement le participant du jeu pour rassurer sa voisine."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Une adaptation matérielle protège sans humilier.",
+   "fiche": {
+    "titre": "Face à l’imprévu",
+    "texte": "Une adaptation matérielle protège sans humilier."
+   }
+  },
+  {
+   "id": "aepa-evo-9fdccf63",
+   "atelier": "evo",
+   "type": "qcm",
+   "contexte": "Dans une résidence autonomie, tu animes un jeu de ballon doux en petit groupe.",
+   "enonce": "Imprévu : Une participante se fatigue et demande à se reposer. Que fais-tu ?",
+   "options": [
+    "Lui demander de terminer la manche pour ne pas pénaliser son équipe.",
+    "Proposer une pause ou une place différente selon son souhait.",
+    "Ignorer sa demande pour que tous les joueurs soient traités de la même façon."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Le rythme et le consentement de la personne priment.",
+   "fiche": {
+    "titre": "Face à l’imprévu",
+    "texte": "Le rythme et le consentement de la personne priment."
+   }
+  },
+  {
+   "id": "aepa-evo-011e1858",
+   "atelier": "evo",
+   "type": "qcm",
+   "contexte": "Dans une résidence autonomie, tu animes un jeu de ballon doux en petit groupe.",
+   "enonce": "Imprévu : Deux participants ne comprennent plus les règles de circulation de la balle. Que fais-tu ?",
+   "options": [
+    "Accélérer le rythme du jeu pour maintenir l’attention du groupe.",
+    "Reformuler et montrer une démonstration courte.",
+    "Les exclure du prochain tour le temps qu’ils comprennent seuls en regardant."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Une consigne claire et une démonstration facilitent l’accès à l’activité.",
+   "fiche": {
+    "titre": "Face à l’imprévu",
+    "texte": "Une consigne claire et une démonstration facilitent l’accès à l’activité."
+   }
+  },
+  {
+   "id": "aepa-evo-388dc5f6",
+   "atelier": "evo",
+   "type": "qcm",
+   "contexte": "Un groupe d’adolescents prépare une exposition collective au centre social.",
+   "enonce": "Imprévu : Deux jeunes veulent décider seuls de toute la répartition des tâches. Que fais-tu ?",
+   "options": [
+    "Répartir avec le groupe les responsabilités selon des choix explicités.",
+    "Les laisser imposer leurs décisions aux autres puisqu’ils sont les plus motivés.",
+    "Confier la répartition de toutes les tâches à l’adulte pour éviter les conflits."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "La participation suppose de laisser une place à chaque jeune.",
+   "fiche": {
+    "titre": "Face à l’imprévu",
+    "texte": "La participation suppose de laisser une place à chaque jeune."
+   }
+  },
+  {
+   "id": "aepa-evo-4445d90d",
+   "atelier": "evo",
+   "type": "qcm",
+   "contexte": "Un groupe d’adolescents prépare une exposition collective au centre social.",
+   "enonce": "Imprévu : Une adolescente refuse que sa photo soit affichée. Que fais-tu ?",
+   "options": [
+    "Afficher la photo malgré tout, car le projet est collectif et déjà annoncé.",
+    "Remplacer discrètement sa photo par une autre sans en parler avec elle.",
+    "Respecter ce refus et rechercher une autre façon de contribuer."
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "L’image et les choix individuels doivent être respectés.",
+   "fiche": {
+    "titre": "Face à l’imprévu",
+    "texte": "L’image et les choix individuels doivent être respectés."
+   }
+  },
+  {
+   "id": "aepa-evo-acc96ec7",
+   "atelier": "evo",
+   "type": "qcm",
+   "contexte": "Un groupe d’adolescents prépare une exposition collective au centre social.",
+   "enonce": "Imprévu : La salle réservée n’est plus disponible la veille de l’événement. Que fais-tu ?",
+   "options": [
+    "Annuler définitivement l’événement sans consulter personne, faute de salle.",
+    "Consulter l’équipe et les jeunes pour adapter format, lieu ou date.",
+    "Installer quand même les œuvres dans le couloir, sans demander d’autorisation."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Revoir les moyens avec les acteurs permet de préserver l’intention du projet.",
+   "fiche": {
+    "titre": "Face à l’imprévu",
+    "texte": "Revoir les moyens avec les acteurs permet de préserver l’intention du projet."
+   }
+  },
+  {
+   "id": "aepa-just-1f696666",
+   "atelier": "just",
+   "type": "qcm",
+   "contexte": "Une enfant de 6 ans refuse de toucher une matière collante et dit que cela la dégoûte.",
+   "enonce": "Quelle réponse professionnelle choisis-tu ?",
+   "options": [
+    "Insister doucement pour qu’elle touche la matière, afin de développer son courage face au dégoût.",
+    "Respecter son refus et proposer un outil ou une autre manière d’explorer."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "La participation doit être consentie ; l’outil ou l’alternative permet de poursuivre sans contrainte.",
+   "fiche": {
+    "titre": "Je justifie",
+    "texte": "La participation doit être consentie ; l’outil ou l’alternative permet de poursuivre sans contrainte."
+   }
+  },
+  {
+   "id": "aepa-just-87e3b564",
+   "atelier": "just",
+   "type": "qcm",
+   "contexte": "Une résidente apprécie un jeu, mais n’entend pas une consigne longue donnée devant le groupe.",
+   "enonce": "Quelle réponse professionnelle choisis-tu ?",
+   "options": [
+    "Reformuler face à elle et vérifier la compréhension à l’aide d’un exemple.",
+    "Lui demander d’observer les autres joueurs jusqu’à ce qu’elle comprenne sans aide."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "La communication est adaptée aux capacités sensorielles tout en préservant l’autonomie.",
+   "fiche": {
+    "titre": "Je justifie",
+    "texte": "La communication est adaptée aux capacités sensorielles tout en préservant l’autonomie."
+   }
+  },
+  {
+   "id": "aepa-just-a2803ab8",
+   "atelier": "just",
+   "type": "qcm",
+   "contexte": "Pendant un match entre adolescents, un jeune est toujours choisi en dernier et s’isole.",
+   "enonce": "Quelle réponse professionnelle choisis-tu ?",
+   "options": [
+    "Éviter d’aborder le sujet pour ne pas lui faire remarquer qu’il est choisi en dernier.",
+    "Changer l’organisation des équipes et garantir à chacun une place valorisée."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "La méthode de constitution du groupe doit prévenir la mise à l’écart.",
+   "fiche": {
+    "titre": "Je justifie",
+    "texte": "La méthode de constitution du groupe doit prévenir la mise à l’écart."
+   }
+  },
+  {
+   "id": "aepa-just-35eafd4e",
+   "atelier": "just",
+   "type": "qcm",
+   "contexte": "Un enfant veut essayer de ranger le matériel seul, mais il est plus lent que le groupe.",
+   "enonce": "Quelle réponse professionnelle choisis-tu ?",
+   "options": [
+    "Le laisser essayer dans un cadre sûr, puis proposer une aide ajustée.",
+    "Finir le rangement immédiatement à sa place pour que le groupe respecte l’horaire."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "L’autonomie se construit en laissant l’enfant agir avec une aide proportionnée.",
+   "fiche": {
+    "titre": "Je justifie",
+    "texte": "L’autonomie se construit en laissant l’enfant agir avec une aide proportionnée."
+   }
+  },
+  {
+   "id": "aepa-just-ea5d2c16",
+   "atelier": "just",
+   "type": "qcm",
+   "contexte": "Dans un EHPAD, une participante refuse d’être photographiée pour l’affiche de l’atelier.",
+   "enonce": "Quelle réponse professionnelle choisis-tu ?",
+   "options": [
+    "Respecter son refus et chercher une image sans elle.",
+    "Faire la photo en promettant de ne pas la publier tout de suite."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Le droit à l’image et l’expression du consentement s’appliquent au cadre de l’animation.",
+   "fiche": {
+    "titre": "Je justifie",
+    "texte": "Le droit à l’image et l’expression du consentement s’appliquent au cadre de l’animation."
+   }
+  },
+  {
+   "id": "aepa-just-97ef6f94",
+   "atelier": "just",
+   "type": "qcm",
+   "contexte": "Au parc, la pluie rend glissante une zone utilisée pour un jeu d’équilibre.",
+   "enonce": "Quelle réponse professionnelle choisis-tu ?",
+   "options": [
+    "Poursuivre le jeu d’équilibre en rappelant aux enfants de faire bien attention.",
+    "Suspendre l’exercice à risque et utiliser un repli adapté."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "La sécurité physique impose de réévaluer les conditions réelles.",
+   "fiche": {
+    "titre": "Je justifie",
+    "texte": "La sécurité physique impose de réévaluer les conditions réelles."
+   }
+  },
+  {
+   "id": "aepa-just-18f4f2ea",
+   "atelier": "just",
+   "type": "qcm",
+   "contexte": "Une personne âgée souhaite raconter un souvenir, mais le groupe commence à rire de son récit.",
+   "enonce": "Quelle réponse professionnelle choisis-tu ?",
+   "options": [
+    "Rappeler le respect et laisser à la personne le choix de poursuivre ou non.",
+    "Lui demander de raccourcir son récit pour éviter les réactions moqueuses du groupe."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "La dignité et la sécurité affective priment sur l’enchaînement prévu.",
+   "fiche": {
+    "titre": "Je justifie",
+    "texte": "La dignité et la sécurité affective priment sur l’enchaînement prévu."
+   }
+  },
+  {
+   "id": "aepa-just-6383bd9b",
+   "atelier": "just",
+   "type": "qcm",
+   "contexte": "Des adolescents veulent choisir les rôles d’une animation, mais deux prennent toutes les décisions.",
+   "enonce": "Quelle réponse professionnelle choisis-tu ?",
+   "options": [
+    "Interdire toute initiative aux adolescents pour que la séance reste équitable entre eux.",
+    "Organiser une décision collective avec une répartition transparente des rôles."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Le pouvoir d’agir se construit avec des règles de participation explicites.",
+   "fiche": {
+    "titre": "Je justifie",
+    "texte": "Le pouvoir d’agir se construit avec des règles de participation explicites."
+   }
+  },
+  {
+   "id": "aepa-just-94bd88b2",
+   "atelier": "just",
+   "type": "qcm",
+   "contexte": "Un enfant confie à l’animateur une information personnelle sans vouloir que le groupe la connaisse.",
+   "enonce": "Quelle réponse professionnelle choisis-tu ?",
+   "options": [
+    "En parler devant le groupe pour trouver une solution collective et montrer à l’enfant qu’il peut compter sur tout le monde.",
+    "Accueillir la parole avec discrétion et la transmettre, si sa protection l’exige, aux seules personnes habilitées."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Respecter la confidentialité sans promettre le secret lorsque la protection nécessite un relais.",
+   "fiche": {
+    "titre": "Je justifie",
+    "texte": "Respecter la confidentialité sans promettre le secret lorsque la protection nécessite un relais."
+   }
+  },
+  {
+   "id": "aepa-just-74bae1b3",
+   "atelier": "just",
+   "type": "qcm",
+   "contexte": "Une résidente veut préparer elle-même le matériel d’un atelier malgré des gestes plus lents.",
+   "enonce": "Quelle réponse professionnelle choisis-tu ?",
+   "options": [
+    "Vérifier avec elle les conditions de sécurité et lui laisser la responsabilité qu’elle souhaite assumer.",
+    "Préparer le matériel à sa place pour lui éviter toute fatigue et garantir que l’atelier commence à l’heure."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "L’animation participative valorise les capacités préservées.",
+   "fiche": {
+    "titre": "Je justifie",
+    "texte": "L’animation participative valorise les capacités préservées."
+   }
+  },
+  {
+   "id": "aepa-struct-8700171f",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "Le projet pédagogique de l’ACM prévoit que les enfants de 8 à 10 ans prennent des initiatives. Pendant la préparation d’une exposition, l’équipe souhaite choisir une organisation cohérente avec cette orientation.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "L’adulte choisit seul le thème, les rôles et les réalisations, puis explique aux enfants comment présenter l’exposition aux familles.",
+    "Les enfants proposent un thème, choisissent leurs réalisations et se répartissent des responsabilités adaptées ; l’équipe fixe le cadre de sécurité.",
+    "On supprime la phase de préparation encadrée pour laisser aux enfants une liberté totale d’organisation, l’équipe restant simple spectatrice."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Le projet pédagogique appelle une participation réelle des enfants, organisée dans un cadre éducatif et sécurisant.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "Le projet pédagogique appelle une participation réelle des enfants, organisée dans un cadre éducatif et sécurisant."
+   }
+  },
+  {
+   "id": "aepa-struct-9ceb470e",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "Le projet d’animation d’une résidence autonomie vise à renforcer les échanges entre personnes âgées. Plusieurs résidents se disent intéressés par la culture locale.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "Programmer un questionnaire individuel sur la culture locale, que chaque résident remplit seul dans sa chambre puis rend à l’équipe.",
+    "Proposer un atelier de récits et de photos du quartier où les participants échangent leurs expériences et choisissent leur rôle.",
+    "Choisir une activité de mémoire sur le quartier, préparée par l’équipe sans consultation des résidents ni temps d’échange entre eux."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Le choix de l’activité doit servir explicitement la vie relationnelle et respecter les souhaits exprimés.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "Le choix de l’activité doit servir explicitement la vie relationnelle et respecter les souhaits exprimés."
+   }
+  },
+  {
+   "id": "aepa-struct-653a13e5",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "Le projet éducatif de l’organisateur valorise la citoyenneté. Les adolescents souhaitent s’impliquer dans la vie de leur quartier.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "Organiser avec eux une enquête de voisinage et une restitution aux partenaires, en vérifiant les autorisations et le cadre de sortie.",
+    "Leur faire recopier puis apprendre les règles de citoyenneté affichées dans la structure, avant d’envisager une action dans le quartier.",
+    "Laisser l’animateur décider seul de l’action de quartier et de la communication, les adolescents étant ensuite chargés de l’exécuter."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "L’activité fait vivre l’exercice des droits citoyens en donnant une place concrète aux jeunes et aux partenaires.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "L’activité fait vivre l’exercice des droits citoyens en donnant une place concrète aux jeunes et aux partenaires."
+   }
+  },
+  {
+   "id": "aepa-struct-d731d55c",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "Le projet pédagogique d’un accueil de loisirs prévoit l’inclusion. Un enfant participe avec difficulté aux jeux exigeant une manipulation précise.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "Le laisser regarder les autres jouer à chaque partie, sans lui demander son avis, pour lui éviter de se sentir en échec.",
+    "Retirer les jeux de manipulation précise de toute la programmation du groupe, pour que plus personne ne soit en difficulté.",
+    "Prévoir des supports plus faciles à saisir et plusieurs rôles accessibles, en demandant à l’enfant ce qui lui convient."
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "L’orientation d’inclusion se traduit par des adaptations et par la participation choisie de l’enfant.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "L’orientation d’inclusion se traduit par des adaptations et par la participation choisie de l’enfant."
+   }
+  },
+  {
+   "id": "aepa-struct-3d75b1a5",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "Une structure pour personnes âgées veut préserver l’autonomie de ses résidents. Une participante souhaite préparer elle-même une partie d’un atelier culinaire.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "Lui confier une tâche adaptée qu’elle choisit, vérifier les conditions de sécurité et l’aider seulement si elle en a besoin.",
+    "Réaliser l’intégralité de la recette à sa place pour gagner du temps, puis l’inviter à goûter et à commenter le résultat.",
+    "Écarter la participante de la préparation à cause de son âge et lui proposer de regarder l’atelier depuis la table voisine."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "La cohérence avec le projet tient à l’autonomie réelle, soutenue et sécurisée, et non à une simple activité occupante.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "La cohérence avec le projet tient à l’autonomie réelle, soutenue et sécurisée, et non à une simple activité occupante."
+   }
+  },
+  {
+   "id": "aepa-struct-077c64b0",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "L’équipe de l’ACM souhaite développer la coopération. Pendant un projet de construction collective, certains enfants ne trouvent pas leur place.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "Récompenser le groupe qui termine sa construction le premier, afin de stimuler l’engagement et l’envie de réussir ensemble.",
+    "Organiser des tâches interdépendantes et une rotation accessible des responsabilités pour que chacun contribue.",
+    "Laisser les enfants les plus habiles finir seuls la construction à la place des autres, pour garantir un beau résultat."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "On relie le besoin de coopération au choix précis des modalités de l’activité.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "On relie le besoin de coopération au choix précis des modalités de l’activité."
+   }
+  },
+  {
+   "id": "aepa-struct-957696fe",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "Le projet de la structure encourage l’accès à la culture pour des adultes âgés. Plusieurs participants souhaitent visiter la médiathèque, mais deux fatiguent rapidement lors des déplacements.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "Annuler la visite pour tout le groupe, sans demander leur avis aux participants, afin de ne pas mettre en difficulté les deux personnes fatiguées.",
+    "Maintenir le trajet prévu sans aménagement pour respecter le programme, en demandant aux deux participants de suivre le rythme du groupe.",
+    "Construire avec eux un parcours accessible, des pauses et éventuellement une alternative, après vérification du lieu et des moyens."
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Le projet culturel reste pertinent à condition de rendre sa réalisation accessible et participative.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "Le projet culturel reste pertinent à condition de rendre sa réalisation accessible et participative."
+   }
+  },
+  {
+   "id": "aepa-struct-3e9d948f",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "Un accueil périscolaire veut développer les responsabilités des 6-8 ans. L’équipe prévoit un atelier jardinage hebdomadaire.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "Faire assurer par l’adulte l’installation et le rangement du jardin, les enfants se contentant de regarder les plantes pousser.",
+    "Confier aux enfants des responsabilités adaptées (arrosage, observation, rangement) et une organisation guidée.",
+    "Ne donner aucune consigne ni répartition des tâches, pour que les enfants développent leur autonomie par eux-mêmes."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Responsabiliser suppose de permettre des décisions et des actions adaptées à l’âge.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "Responsabiliser suppose de permettre des décisions et des actions adaptées à l’âge."
+   }
+  },
+  {
+   "id": "aepa-struct-401b5b8a",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "Une structure souhaite soutenir les relations intergénérationnelles. Des enfants et des personnes âgées vont préparer un événement ensemble.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "Séparer les deux publics dans des salles différentes pour que chacun réalise son activité à son rythme, sans échange.",
+    "Faire les préparatifs entre professionnels, puis présenter le résultat final aux enfants et aux personnes âgées réunis.",
+    "Prévoir des binômes volontaires, des tâches complémentaires et des moments de transmission entre générations."
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Le projet doit créer de véritables interactions, pas seulement réunir les publics au même endroit.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "Le projet doit créer de véritables interactions, pas seulement réunir les publics au même endroit."
+   }
+  },
+  {
+   "id": "aepa-struct-2bd85a5b",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "Le projet pédagogique valorise le respect de la diversité. Une activité de présentation des cultures familiales est proposée à des adolescents.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "Permettre une participation volontaire et des formes d’expression variées, sans obligation de dévoiler une information intime.",
+    "Demander à chacun de raconter publiquement son histoire familiale, pour que le groupe découvre la diversité de ses origines.",
+    "Classer les présentations selon l’originalité des origines familiales, afin de valoriser les cultures les moins connues du groupe."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Le respect de la dignité et de la vie privée doit se retrouver dans le choix même de la démarche.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "Le respect de la dignité et de la vie privée doit se retrouver dans le choix même de la démarche."
+   }
+  },
+  {
+   "id": "aepa-struct-849899c9",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "Une maison de quartier veut favoriser la participation des familles à la vie du centre. Une équipe d’animateurs organise une fête de quartier.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "Présenter aux familles le programme décidé par l’équipe au moment de la fête, en les invitant à venir nombreuses le jour même.",
+    "Constituer avec les familles un petit comité de propositions et choisir des tâches qu’elles souhaitent réellement prendre en charge.",
+    "Confier toute l’organisation de la fête aux familles sans accompagnement de l’équipe, pour les responsabiliser."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "La participation est une modalité de conception et de réalisation du projet, non une simple présence à la fête.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "La participation est une modalité de conception et de réalisation du projet, non une simple présence à la fête."
+   }
+  },
+  {
+   "id": "aepa-struct-6ca0c272",
+   "atelier": "struct",
+   "type": "qcm",
+   "contexte": "Le projet de la structure prévoit une sensibilisation au développement durable. Les jeunes imaginent une semaine de jeux sur le thème des déchets.",
+   "enonce": "Quelle organisation est cohérente avec le projet de la structure ?",
+   "options": [
+    "Organiser un concours de vitesse entre équipes, sans lien avec la consommation ni le tri, pour garantir une ambiance dynamique.",
+    "Réaliser seul des affiches sur le tri des déchets, puis demander au public de les regarder lors d’une exposition installée dans le hall d’accueil.",
+    "Construire avec les jeunes un diagnostic simple des déchets du lieu, puis une animation de sensibilisation adaptée aux résultats."
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "L’activité choisie doit être reliée au diagnostic, au projet et à la participation du public.",
+   "fiche": {
+    "titre": "Du projet de structure à l’activité",
+    "texte": "L’activité choisie doit être reliée au diagnostic, au projet et à la participation du public."
+   }
+  },
+  {
+   "id": "aepa-sec-c49057ab",
+   "atelier": "sec",
+   "type": "tri",
+   "enonce": "À quelle sécurité correspond chaque action ?",
+   "categories": [
+    "Sécurité physique",
+    "Sécurité affective",
+    "Sécurité morale"
+   ],
+   "elements": [
+    {
+     "texte": "Dégager les zones de circulation.",
+     "categorie": 0
+    },
+    {
+     "texte": "Vérifier la stabilité du matériel.",
+     "categorie": 0
+    },
+    {
+     "texte": "Éviter de mettre une personne en échec.",
+     "categorie": 1
+    },
+    {
+     "texte": "Permettre d'observer avant de participer.",
+     "categorie": 1
+    },
+    {
+     "texte": "Faire respecter un vocabulaire correct.",
+     "categorie": 2
+    },
+    {
+     "texte": "Protéger la confidentialité.",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Physique : le corps et l’environnement. Affective : se sentir en confiance, accueilli·e, respecté·e. Morale : les valeurs, les règles, la dignité.",
+   "fiche": {
+    "titre": "Les 3 sécurités",
+    "texte": "Physique (corps, matériel, lieux) · Affective (confiance, émotions) · Morale (valeurs, règles, dignité)."
+   }
+  },
+  {
+   "id": "aepa-sec-f2df93b3",
+   "atelier": "sec",
+   "type": "tri",
+   "enonce": "À quelle sécurité correspond chaque action ?",
+   "categories": [
+    "Sécurité physique",
+    "Sécurité affective",
+    "Sécurité morale"
+   ],
+   "elements": [
+    {
+     "texte": "Adapter l'effort aux capacités.",
+     "categorie": 0
+    },
+    {
+     "texte": "Compter le groupe lors des déplacements.",
+     "categorie": 0
+    },
+    {
+     "texte": "Respecter le refus d'une personne.",
+     "categorie": 1
+    },
+    {
+     "texte": "Constituer les équipes sans humiliation.",
+     "categorie": 1
+    },
+    {
+     "texte": "Respecter croyances et histoire.",
+     "categorie": 2
+    },
+    {
+     "texte": "Interdire moqueries et discriminations.",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Physique : le corps et l’environnement. Affective : se sentir en confiance, accueilli·e, respecté·e. Morale : les valeurs, les règles, la dignité.",
+   "fiche": {
+    "titre": "Les 3 sécurités",
+    "texte": "Physique (corps, matériel, lieux) · Affective (confiance, émotions) · Morale (valeurs, règles, dignité)."
+   }
+  },
+  {
+   "id": "aepa-sec-3ea4793a",
+   "atelier": "sec",
+   "type": "tri",
+   "enonce": "À quelle sécurité correspond chaque action ?",
+   "categories": [
+    "Sécurité physique",
+    "Sécurité affective",
+    "Sécurité morale"
+   ],
+   "elements": [
+    {
+     "texte": "Sécuriser les objets coupants ou chauds.",
+     "categorie": 0
+    },
+    {
+     "texte": "Tenir compte des allergies connues.",
+     "categorie": 0
+    },
+    {
+     "texte": "Valoriser l'effort.",
+     "categorie": 1
+    },
+    {
+     "texte": "Adapter sans infantiliser.",
+     "categorie": 1
+    },
+    {
+     "texte": "Respecter le droit à l'image.",
+     "categorie": 2
+    },
+    {
+     "texte": "Ne pas infantiliser une personne âgée.",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Physique : le corps et l’environnement. Affective : se sentir en confiance, accueilli·e, respecté·e. Morale : les valeurs, les règles, la dignité.",
+   "fiche": {
+    "titre": "Les 3 sécurités",
+    "texte": "Physique (corps, matériel, lieux) · Affective (confiance, émotions) · Morale (valeurs, règles, dignité)."
+   }
+  },
+  {
+   "id": "aepa-sec-7e175a69",
+   "atelier": "sec",
+   "type": "tri",
+   "enonce": "À quelle sécurité correspond chaque action ?",
+   "categories": [
+    "Sécurité physique",
+    "Sécurité affective",
+    "Sécurité morale"
+   ],
+   "elements": [
+    {
+     "texte": "Prévoir hydratation et pauses.",
+     "categorie": 0
+    },
+    {
+     "texte": "Délimiter clairement l'espace.",
+     "categorie": 0
+    },
+    {
+     "texte": "Ne pas forcer un contact sensoriel.",
+     "categorie": 1
+    },
+    {
+     "texte": "Accueillir une émotion sans moquerie.",
+     "categorie": 1
+    },
+    {
+     "texte": "Répartir les rôles équitablement.",
+     "categorie": 2
+    },
+    {
+     "texte": "Respecter l'intimité.",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Physique : le corps et l’environnement. Affective : se sentir en confiance, accueilli·e, respecté·e. Morale : les valeurs, les règles, la dignité.",
+   "fiche": {
+    "titre": "Les 3 sécurités",
+    "texte": "Physique (corps, matériel, lieux) · Affective (confiance, émotions) · Morale (valeurs, règles, dignité)."
+   }
+  },
+  {
+   "id": "aepa-sec-9f89c126",
+   "atelier": "sec",
+   "type": "tri",
+   "enonce": "À quelle sécurité correspond chaque action ?",
+   "categories": [
+    "Sécurité physique",
+    "Sécurité affective",
+    "Sécurité morale"
+   ],
+   "elements": [
+    {
+     "texte": "Éloigner les câbles des zones de passage.",
+     "categorie": 0
+    },
+    {
+     "texte": "Interrompre si les conditions deviennent dangereuses.",
+     "categorie": 0
+    },
+    {
+     "texte": "Donner des consignes rassurantes.",
+     "categorie": 1
+    },
+    {
+     "texte": "Préserver l'estime de soi.",
+     "categorie": 1
+    },
+    {
+     "texte": "Éviter toute stigmatisation.",
+     "categorie": 2
+    },
+    {
+     "texte": "Préserver la dignité.",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Physique : le corps et l’environnement. Affective : se sentir en confiance, accueilli·e, respecté·e. Morale : les valeurs, les règles, la dignité.",
+   "fiche": {
+    "titre": "Les 3 sécurités",
+    "texte": "Physique (corps, matériel, lieux) · Affective (confiance, émotions) · Morale (valeurs, règles, dignité)."
+   }
+  },
+  {
+   "id": "aepa-sec-3f4e8730",
+   "atelier": "sec",
+   "type": "tri",
+   "enonce": "À quelle sécurité correspond chaque action ?",
+   "categories": [
+    "Sécurité physique",
+    "Sécurité affective",
+    "Sécurité morale"
+   ],
+   "elements": [
+    {
+     "texte": "Adapter la taille du matériel.",
+     "categorie": 0
+    },
+    {
+     "texte": "Vérifier l'état du sol.",
+     "categorie": 0
+    },
+    {
+     "texte": "Respecter le rythme de chacun.",
+     "categorie": 1
+    },
+    {
+     "texte": "Créer un climat où l'erreur est acceptable.",
+     "categorie": 1
+    },
+    {
+     "texte": "Rappeler les règles de respect.",
+     "categorie": 2
+    },
+    {
+     "texte": "Veiller aux propos discriminatoires.",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Physique : le corps et l’environnement. Affective : se sentir en confiance, accueilli·e, respecté·e. Morale : les valeurs, les règles, la dignité.",
+   "fiche": {
+    "titre": "Les 3 sécurités",
+    "texte": "Physique (corps, matériel, lieux) · Affective (confiance, émotions) · Morale (valeurs, règles, dignité)."
+   }
+  },
+  {
+   "id": "aepa-sec-c5278fed",
+   "atelier": "sec",
+   "type": "tri",
+   "enonce": "À quelle sécurité correspond chaque action ?",
+   "categories": [
+    "Sécurité physique",
+    "Sécurité affective",
+    "Sécurité morale"
+   ],
+   "elements": [
+    {
+     "texte": "Prévoir l'accès à la trousse de secours.",
+     "categorie": 0
+    },
+    {
+     "texte": "Maintenir une visibilité suffisante sur le groupe.",
+     "categorie": 0
+    },
+    {
+     "texte": "Ne jamais laisser un danger matériel sans surveillance.",
+     "categorie": 0
+    },
+    {
+     "texte": "Proposer une aide sans faire à la place.",
+     "categorie": 1
+    },
+    {
+     "texte": "Éviter les comparaisons humiliantes.",
+     "categorie": 1
+    },
+    {
+     "texte": "Prévoir une alternative.",
+     "categorie": 1
+    },
+    {
+     "texte": "Respecter les choix de la personne.",
+     "categorie": 2
+    },
+    {
+     "texte": "Demander l'accord avant une photo.",
+     "categorie": 2
+    },
+    {
+     "texte": "Ne pas utiliser une information personnelle pour faire rire.",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Physique : le corps et l’environnement. Affective : se sentir en confiance, accueilli·e, respecté·e. Morale : les valeurs, les règles, la dignité.",
+   "fiche": {
+    "titre": "Les 3 sécurités",
+    "texte": "Physique (corps, matériel, lieux) · Affective (confiance, émotions) · Morale (valeurs, règles, dignité)."
+   }
+  },
+  {
+   "id": "aepa-project-24138f72",
+   "atelier": "project",
+   "type": "ordre",
+   "enonce": "Remets les 7 étapes de la démarche de projet dans l’ordre.",
+   "elements": [
+    {
+     "texte": "Recueil de données (connaissance du public, observations…)"
+    },
+    {
+     "texte": "Analyse des besoins : mise en évidence d’un ou plusieurs besoins"
+    },
+    {
+     "texte": "Identification des objectifs généraux et opérationnels"
+    },
+    {
+     "texte": "Identification des partenaires"
+    },
+    {
+     "texte": "Planification du projet"
+    },
+    {
+     "texte": "Mise en œuvre"
+    },
+    {
+     "texte": "Évaluation et réajustement"
+    }
+   ],
+   "pourquoi": "Recueil de données → analyse des besoins → objectifs → partenaires → planification → mise en œuvre → évaluation et réajustement.",
+   "fiche": {
+    "titre": "Les 7 étapes du projet",
+    "texte": "Recueil de données (connaissance du public, observations…) → Analyse des besoins : mise en évidence d’un ou plusieurs besoins → Identification des objectifs généraux et opérationnels → Identification des partenaires → Planification du projet → Mise en œuvre → Évaluation et réajustement"
+   }
+  },
+  {
+   "id": "aepa-project-a953c50b",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Observer le public et recueillir des informations utiles.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "2. Analyse des besoins",
+    "4. Identification des partenaires",
+    "6. Mise en œuvre"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Cette action relève de l’étape 1 : Recueil de données (connaissance du public, observations…).",
+   "fiche": {
+    "titre": "Étape 1 · Recueil de données",
+    "texte": "Observer le public et recueillir des informations utiles."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-908f0644",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Consulter des documents sur les caractéristiques du public.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "3. Identification des objectifs généraux et opérationnels",
+    "5. Planification du projet",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Cette action relève de l’étape 1 : Recueil de données (connaissance du public, observations…).",
+   "fiche": {
+    "titre": "Étape 1 · Recueil de données",
+    "texte": "Consulter des documents sur les caractéristiques du public."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-c7754d6f",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Questionner le public sur ses attentes et ses habitudes.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "2. Analyse des besoins",
+    "4. Identification des partenaires",
+    "6. Mise en œuvre"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Cette action relève de l’étape 1 : Recueil de données (connaissance du public, observations…).",
+   "fiche": {
+    "titre": "Étape 1 · Recueil de données",
+    "texte": "Questionner le public sur ses attentes et ses habitudes."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-176f3e88",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Croiser les observations pour mettre en évidence un besoin prioritaire.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "2. Analyse des besoins",
+    "3. Identification des objectifs généraux et opérationnels",
+    "5. Planification du projet",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Cette action relève de l’étape 2 : Analyse des besoins : mise en évidence d’un ou plusieurs besoins.",
+   "fiche": {
+    "titre": "Étape 2 · Analyse des besoins",
+    "texte": "Croiser les observations pour mettre en évidence un besoin prioritaire."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-ece67631",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Distinguer une envie exprimée d’un besoin repéré.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "2. Analyse des besoins",
+    "4. Identification des partenaires",
+    "6. Mise en œuvre"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Cette action relève de l’étape 2 : Analyse des besoins : mise en évidence d’un ou plusieurs besoins.",
+   "fiche": {
+    "titre": "Étape 2 · Analyse des besoins",
+    "texte": "Distinguer une envie exprimée d’un besoin repéré."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-922aa235",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Hiérarchiser plusieurs besoins observés.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "2. Analyse des besoins",
+    "3. Identification des objectifs généraux et opérationnels",
+    "5. Planification du projet",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Cette action relève de l’étape 2 : Analyse des besoins : mise en évidence d’un ou plusieurs besoins.",
+   "fiche": {
+    "titre": "Étape 2 · Analyse des besoins",
+    "texte": "Hiérarchiser plusieurs besoins observés."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-d81a33cb",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Formuler un objectif général cohérent avec le besoin.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "3. Identification des objectifs généraux et opérationnels",
+    "4. Identification des partenaires",
+    "6. Mise en œuvre"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Cette action relève de l’étape 3 : Identification des objectifs généraux et opérationnels.",
+   "fiche": {
+    "titre": "Étape 3 · Identification des objectifs généraux et opérationnels",
+    "texte": "Formuler un objectif général cohérent avec le besoin."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-f23cc16c",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Décliner l’objectif général en objectifs opérationnels.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "2. Analyse des besoins",
+    "3. Identification des objectifs généraux et opérationnels",
+    "5. Planification du projet",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Cette action relève de l’étape 3 : Identification des objectifs généraux et opérationnels.",
+   "fiche": {
+    "titre": "Étape 3 · Identification des objectifs généraux et opérationnels",
+    "texte": "Décliner l’objectif général en objectifs opérationnels."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-d5d8c700",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Choisir des indicateurs liés aux objectifs opérationnels.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "3. Identification des objectifs généraux et opérationnels",
+    "4. Identification des partenaires",
+    "6. Mise en œuvre"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Cette action relève de l’étape 3 : Identification des objectifs généraux et opérationnels.",
+   "fiche": {
+    "titre": "Étape 3 · Identification des objectifs généraux et opérationnels",
+    "texte": "Choisir des indicateurs liés aux objectifs opérationnels."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-a66ea0d1",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Repérer une association locale pouvant contribuer au projet.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "2. Analyse des besoins",
+    "4. Identification des partenaires",
+    "5. Planification du projet",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Cette action relève de l’étape 4 : Identification des partenaires.",
+   "fiche": {
+    "titre": "Étape 4 · Identification des partenaires",
+    "texte": "Repérer une association locale pouvant contribuer au projet."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-716e4e1d",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Identifier les professionnels ou services à associer.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "3. Identification des objectifs généraux et opérationnels",
+    "4. Identification des partenaires",
+    "6. Mise en œuvre"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Cette action relève de l’étape 4 : Identification des partenaires.",
+   "fiche": {
+    "titre": "Étape 4 · Identification des partenaires",
+    "texte": "Identifier les professionnels ou services à associer."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-573df0a2",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Définir ce que chaque partenaire peut apporter.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "2. Analyse des besoins",
+    "4. Identification des partenaires",
+    "5. Planification du projet",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Cette action relève de l’étape 4 : Identification des partenaires.",
+   "fiche": {
+    "titre": "Étape 4 · Identification des partenaires",
+    "texte": "Définir ce que chaque partenaire peut apporter."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-111a537e",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Construire le calendrier du projet.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "3. Identification des objectifs généraux et opérationnels",
+    "5. Planification du projet",
+    "6. Mise en œuvre"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Cette action relève de l’étape 5 : Planification du projet.",
+   "fiche": {
+    "titre": "Étape 5 · Planification du projet",
+    "texte": "Construire le calendrier du projet."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-46518734",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Prévoir les activités, le matériel, les espaces et les rôles.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "2. Analyse des besoins",
+    "4. Identification des partenaires",
+    "5. Planification du projet",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Cette action relève de l’étape 5 : Planification du projet.",
+   "fiche": {
+    "titre": "Étape 5 · Planification du projet",
+    "texte": "Prévoir les activités, le matériel, les espaces et les rôles."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-f4b7182f",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Organiser les moyens nécessaires avant le lancement.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "3. Identification des objectifs généraux et opérationnels",
+    "5. Planification du projet",
+    "6. Mise en œuvre"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Cette action relève de l’étape 5 : Planification du projet.",
+   "fiche": {
+    "titre": "Étape 5 · Planification du projet",
+    "texte": "Organiser les moyens nécessaires avant le lancement."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-2d110531",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Présenter les consignes et lancer les activités prévues.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "2. Analyse des besoins",
+    "4. Identification des partenaires",
+    "6. Mise en œuvre",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Cette action relève de l’étape 6 : Mise en œuvre.",
+   "fiche": {
+    "titre": "Étape 6 · Mise en œuvre",
+    "texte": "Présenter les consignes et lancer les activités prévues."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-3ce1aece",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Adapter la mise en œuvre aux réactions du public.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "3. Identification des objectifs généraux et opérationnels",
+    "5. Planification du projet",
+    "6. Mise en œuvre"
+   ],
+   "bonnes": [
+    3
+   ],
+   "pourquoi": "Cette action relève de l’étape 6 : Mise en œuvre.",
+   "fiche": {
+    "titre": "Étape 6 · Mise en œuvre",
+    "texte": "Adapter la mise en œuvre aux réactions du public."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-4f0314f6",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Coordonner l’équipe pendant le déroulement du projet.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "2. Analyse des besoins",
+    "4. Identification des partenaires",
+    "6. Mise en œuvre",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Cette action relève de l’étape 6 : Mise en œuvre.",
+   "fiche": {
+    "titre": "Étape 6 · Mise en œuvre",
+    "texte": "Coordonner l’équipe pendant le déroulement du projet."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-bf7bb7fc",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Recueillir l’avis du public et les observations de l’équipe.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "3. Identification des objectifs généraux et opérationnels",
+    "5. Planification du projet",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    3
+   ],
+   "pourquoi": "Cette action relève de l’étape 7 : Évaluation et réajustement.",
+   "fiche": {
+    "titre": "Étape 7 · Évaluation et réajustement",
+    "texte": "Recueillir l’avis du public et les observations de l’équipe."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-89276249",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Comparer les résultats aux objectifs fixés.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "2. Analyse des besoins",
+    "4. Identification des partenaires",
+    "6. Mise en œuvre",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    3
+   ],
+   "pourquoi": "Cette action relève de l’étape 7 : Évaluation et réajustement.",
+   "fiche": {
+    "titre": "Étape 7 · Évaluation et réajustement",
+    "texte": "Comparer les résultats aux objectifs fixés."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-project-95a584b8",
+   "atelier": "project",
+   "type": "qcm",
+   "contexte": "Décider des modifications à apporter au projet.",
+   "enonce": "À quelle étape du projet correspond cette action ?",
+   "options": [
+    "1. Recueil de données",
+    "3. Identification des objectifs généraux et opérationnels",
+    "5. Planification du projet",
+    "7. Évaluation et réajustement"
+   ],
+   "bonnes": [
+    3
+   ],
+   "pourquoi": "Cette action relève de l’étape 7 : Évaluation et réajustement.",
+   "fiche": {
+    "titre": "Étape 7 · Évaluation et réajustement",
+    "texte": "Décider des modifications à apporter au projet."
+   },
+   "ordreFixe": true
+  },
+  {
+   "id": "aepa-sortie-93cc24c5",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Préparer le départ · Tu prépares une sortie de douze enfants de 7 ans vers un parc. Une enfant dispose d’un PAI connu de la direction, et le groupe doit être de retour avant le déjeuner.",
+   "enonce": "Quelle préparation professionnelle est nécessaire avant de quitter la structure ?",
+   "options": [
+    "Vérifier trajet, météo, effectifs et encadrement, besoins et protocoles dont le PAI, contacts d’urgence, moyens de communication, autorisations et trousse adaptée.",
+    "Prendre le plan du parc et la liste des enfants : la météo, les contacts et la trousse seront vérifiés sur place à l’arrivée du groupe.",
+    "Emporter les numéros des parents et le traitement de l’enfant concernée par le PAI, en communiquant ses informations médicales à tous les adultes présents."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Une sortie exige une préparation coordonnée du trajet, du public, des risques, des documents et moyens d’alerte requis. Les données médicales ne sont transmises qu’aux personnes habilitées.",
+   "fiche": {
+    "titre": "En sortie · Préparer le départ",
+    "texte": "Une sortie exige une préparation coordonnée du trajet, du public, des risques, des documents et moyens d’alerte requis. Les données médicales ne sont transmises qu’aux personnes habilitées."
+   }
+  },
+  {
+   "id": "aepa-sortie-069f3752",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Le comptage · Au départ d’une sortie, tu comptes quinze enfants. Après une visite librement guidée dans un lieu culturel, une collègue propose de repartir immédiatement sans recompter.",
+   "enonce": "Quelle conduite adopter ?",
+   "options": [
+    "Repartir dès que les enfants affirment que tout le monde est là, puisqu’ils connaissent bien les membres de leur groupe.",
+    "Recompter au point de rassemblement avant chaque nouveau départ et vérifier avec les adultes responsables des sous-groupes.",
+    "Demander au plus grand enfant de recompter le groupe pendant que les adultes préparent le départ."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Le comptage doit être organisé à chaque étape sensible ; il ne peut reposer seulement sur la mémoire du public.",
+   "fiche": {
+    "titre": "En sortie · Le comptage",
+    "texte": "Le comptage doit être organisé à chaque étape sensible ; il ne peut reposer seulement sur la mémoire du public."
+   }
+  },
+  {
+   "id": "aepa-sortie-63aea25c",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Traverser une chaussée · Un groupe de dix enfants de 6 ans doit traverser une route. Un passage pour piétons est disponible à 25 mètres, avec une bonne visibilité et un trafic intermittent.",
+   "enonce": "Comment préparer cette traversée ?",
+   "options": [
+    "Traverser directement au plus court, en groupe serré, puisque la visibilité est bonne et que le trafic reste intermittent sur cette route.",
+    "Faire traverser les premiers enfants avec un adulte au passage piéton, pendant que les autres courent les rejoindre dès que la voie leur paraît libre.",
+    "Rejoindre le passage piéton, rassembler le groupe hors chaussée, vérifier circulation et signalisation, faire traverser sous la surveillance des adultes, puis recompter."
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Article R. 412-37 : lorsqu’un passage est situé à moins de 50 mètres, les piétons doivent l’utiliser. La sécurité de la traversée reste à vérifier.",
+   "fiche": {
+    "titre": "En sortie · Traverser une chaussée",
+    "texte": "Article R. 412-37 : lorsqu’un passage est situé à moins de 50 mètres, les piétons doivent l’utiliser. La sécurité de la traversée reste à vérifier."
+   }
+  },
+  {
+   "id": "aepa-sortie-2a3c5a0e",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Marcher sur un trottoir · Une partie du trajet se fait sur un trottoir assez étroit, au bord d’une route circulée. Plusieurs enfants se mettent spontanément trois de front et débordent vers la chaussée.",
+   "enonce": "Quelle organisation est adaptée ?",
+   "options": [
+    "Adapter la formation à la largeur du trottoir, maintenir le groupe sur l’espace piéton et répartir la surveillance des adultes.",
+    "Autoriser les enfants à marcher trois de front pour préserver les échanges, en leur rappelant simplement de rester attentifs aux voitures.",
+    "Faire marcher le groupe en file sur le bord de la chaussée, afin de laisser le trottoir étroit libre pour les autres piétons."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Le trottoir praticable est prioritaire ; la formation doit empêcher les débordements et permettre l’encadrement.",
+   "fiche": {
+    "titre": "En sortie · Marcher sur un trottoir",
+    "texte": "Le trottoir praticable est prioritaire ; la formation doit empêcher les débordements et permettre l’encadrement."
+   }
+  },
+  {
+   "id": "aepa-sortie-8889d1f5",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Sans trottoir · file indienne · Hors agglomération, sur un tronçon sans trottoir ni accotement praticable, un groupe organisé doit exceptionnellement marcher en file indienne après vérification du risque routier et de l’absence d’itinéraire plus sûr.",
+   "enonce": "Quel côté prévoit le Code de la route dans cette configuration, sauf danger particulier ou circonstances particulières ?",
+   "options": [
+    "Le bord droit dans le sens de la marche, systématiquement.",
+    "Le bord gauche de la chaussée dans le sens de la marche.",
+    "Le milieu de la chaussée pour mieux voir les véhicules."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Article R. 412-42 II : en colonne par un, un groupement organisé circule hors agglomération sur le bord gauche, sauf danger ou circonstances particulières. Un itinéraire plus sûr reste préférable.",
+   "fiche": {
+    "titre": "En sortie · Sans trottoir · file indienne",
+    "texte": "Article R. 412-42 II : en colonne par un, un groupement organisé circule hors agglomération sur le bord gauche, sauf danger ou circonstances particulières. Un itinéraire plus sûr reste préférable."
+   }
+  },
+  {
+   "id": "aepa-sortie-31f5cd39",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Sans trottoir · deux par deux · Hors agglomération, un groupe organisé doit utiliser exceptionnellement une route sans trottoir. La formation retenue est de deux personnes de front, avec une visibilité suffisante et une emprise bien contrôlée.",
+   "enonce": "Quelle règle de placement s’applique à ce groupement organisé, contrairement à la file indienne ?",
+   "options": [
+    "Sur le bord gauche face aux véhicules, exactement comme un piéton isolé, puisque le groupe voit ainsi arriver la circulation de face.",
+    "Au centre de la voie, en occupant toute la largeur de la chaussée, pour obliger les véhicules à ralentir et à attendre que le groupe soit passé.",
+    "Sur le bord droit dans le sens de la marche, en laissant libre au moins la moitié gauche de la chaussée et en respectant les règles des éléments de colonne."
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Article R. 412-42 I à III : la formation à plusieurs de front suit le bord droit et doit laisser libre au moins la moitié gauche. Les éléments de colonne ne dépassent pas 20 m et sont séparés d’au moins 50 m.",
+   "fiche": {
+    "titre": "En sortie · Sans trottoir · deux par deux",
+    "texte": "Article R. 412-42 I à III : la formation à plusieurs de front suit le bord droit et doit laisser libre au moins la moitié gauche. Les éléments de colonne ne dépassent pas 20 m et sont séparés d’au moins 50 m."
+   }
+  },
+  {
+   "id": "aepa-sortie-c9fe73b5",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Visibilité insuffisante · Une sortie se prolonge et un groupe organisé doit encore parcourir un tronçon sans trottoir à la tombée de la nuit. Les adultes réalisent que les moyens de signalisation prévus sont absents.",
+   "enonce": "Que faut-il décider ?",
+   "options": [
+    "Ne pas engager le groupe sur la chaussée sans dispositif sûr ; chercher un autre itinéraire ou moyen, et appliquer l’éclairage prescrit des colonnes si la circulation est inévitable.",
+    "Poursuivre rapidement le trajet en serrant le groupe sur le bord de la route, pour limiter au maximum le temps passé dehors dans l’obscurité.",
+    "Demander aux enfants de lever la main quand une voiture arrive et compter sur les vêtements clairs des adultes pour être vus des conducteurs."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Article R. 412-42 IV : les colonnes sur chaussée doivent être signalées en cas de visibilité insuffisante, notamment avec les feux avant et arrière prescrits.",
+   "fiche": {
+    "titre": "En sortie · Visibilité insuffisante",
+    "texte": "Article R. 412-42 IV : les colonnes sur chaussée doivent être signalées en cas de visibilité insuffisante, notamment avec les feux avant et arrière prescrits."
+   }
+  },
+  {
+   "id": "aepa-sortie-baeee485",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Météo · Une sortie au parc est prévue avec vingt enfants. Une alerte annonce des orages au moment de la séance. Le programme comporte un grand jeu sous des arbres.",
+   "enonce": "Quelle réaction adopter ?",
+   "options": [
+    "Maintenir la sortie et le grand jeu parce que le programme a déjà été annoncé aux enfants et aux familles.",
+    "Réévaluer les risques avec le responsable, modifier ou reporter la sortie et prévoir un repli adapté.",
+    "Sortir au parc comme prévu et ne revenir à la structure que si les enfants commencent à avoir peur de l’orage."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "L’anticipation météo et le repli préviennent les risques. Une promesse d’activité ne justifie pas de s’exposer au danger.",
+   "fiche": {
+    "titre": "En sortie · Météo",
+    "texte": "L’anticipation météo et le repli préviennent les risques. Une promesse d’activité ne justifie pas de s’exposer au danger."
+   }
+  },
+  {
+   "id": "aepa-sortie-62a30492",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Absence au point de rendez-vous · Après un temps d’activité au musée, tu comptes treize enfants alors que quatorze étaient présents au départ. Une animatrice propose de chercher seule sans prévenir l’équipe.",
+   "enonce": "Quelle conduite prioritaire adopter ?",
+   "options": [
+    "Envoyer deux enfants parmi les plus grands chercher leur camarade dans les salles du musée qu’ils viennent de visiter.",
+    "Attendre le départ du bus avec le groupe pour voir si l’enfant revient de lui-même au point de rendez-vous.",
+    "Sécuriser les treize enfants, coordonner les adultes et déclencher sans tarder le protocole de recherche et d’alerte de la structure."
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Ne pas exposer le reste du groupe. Les actions de recherche, d’information et d’alerte doivent suivre la procédure d’urgence et être coordonnées.",
+   "fiche": {
+    "titre": "En sortie · Absence au point de rendez-vous",
+    "texte": "Ne pas exposer le reste du groupe. Les actions de recherche, d’information et d’alerte doivent suivre la procédure d’urgence et être coordonnées."
+   }
+  },
+  {
+   "id": "aepa-sortie-baab4e3f",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Médicaments et PAI · Avant une sortie, une animatrice découvre qu’un enfant concerné par un PAI ne dispose pas de la prise en charge ou du matériel que le protocole prévoit. Le départ est imminent.",
+   "enonce": "Quelle décision est la plus sûre ?",
+   "options": [
+    "Alerter le responsable, vérifier le PAI et la procédure, et différer le départ de l’enfant ou du groupe tant que sa sécurité n’est pas garantie.",
+    "Partir comme prévu en demandant à l’enfant d’éviter les activités fatigantes et de prévenir immédiatement un adulte s’il se sent mal pendant la sortie.",
+    "Partir en remplaçant les consignes écrites du protocole par ce dont les camarades de l’enfant se souviennent de son traitement habituel."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "L’animateur applique le protocole prévu avec les personnes habilitées. Il ne décide pas seul d’une adaptation médicale.",
+   "fiche": {
+    "titre": "En sortie · Médicaments et PAI",
+    "texte": "L’animateur applique le protocole prévu avec les personnes habilitées. Il ne décide pas seul d’une adaptation médicale."
+   }
+  },
+  {
+   "id": "aepa-sortie-fe3536bf",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Respect du public · Pendant une sortie à la médiathèque, une adolescente refuse d’être prise en photo. D’autres participants souhaitent publier des images de la visite.",
+   "enonce": "Comment respecter sa décision ?",
+   "options": [
+    "Photographier tout le groupe, elle comprise, puis masquer son visage plus tard sur les images avant de les publier.",
+    "Respecter son refus, faire les prises de vue sans l’inclure et vérifier les autorisations nécessaires avant toute diffusion.",
+    "Lui demander de quitter l’activité pendant toutes les prises de vue, pour que les autres puissent publier leurs photos librement."
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "La sortie engage aussi les sécurités affective et morale : respect, consentement, confidentialité et droit à l’image.",
+   "fiche": {
+    "titre": "En sortie · Respect du public",
+    "texte": "La sortie engage aussi les sécurités affective et morale : respect, consentement, confidentialité et droit à l’image."
+   }
+  },
+  {
+   "id": "aepa-sortie-68c73dff",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "Fatigue et accessibilité · Une sortie culturelle avec des résidents âgés prévoit un trajet de vingt minutes. Une participante indique qu’elle ne pourra probablement pas parcourir la dernière pente sans pause.",
+   "enonce": "Que prévoir avant le départ ?",
+   "options": [
+    "Refuser sa participation à la sortie pour protéger le reste du groupe, et lui proposer de rester à la résidence ce jour-là.",
+    "Maintenir le parcours tel qu’il est prévu : elle verra sur place si elle arrive à monter la pente sans aide.",
+    "Échanger avec elle et l’équipe, vérifier l’accessibilité, les pauses et une solution adaptée sans décider à sa place."
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "La prévention de la fatigue et l’accessibilité sont compatibles avec le choix et la dignité des participants.",
+   "fiche": {
+    "titre": "En sortie · Fatigue et accessibilité",
+    "texte": "La prévention de la fatigue et l’accessibilité sont compatibles avec le choix et la dignité des participants."
+   }
+  },
+  {
+   "id": "aepa-vocab-ad994341",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Pendant un atelier de perles, une enfant ajuste ses doigts pour saisir de petits objets.",
+   "enonce": "Que signifie « Motricité fine » ?",
+   "options": [
+    "Capacité à réaliser des gestes précis avec les mains et les doigts.",
+    "Capacité à courir, sauter et coordonner les grands mouvements du corps entier.",
+    "Capacité à comprendre une histoire et à en retenir les étapes principales."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Motricité fine : Capacité à réaliser des gestes précis avec les mains et les doigts.",
+   "fiche": {
+    "titre": "Motricité fine",
+    "texte": "Capacité à réaliser des gestes précis avec les mains et les doigts."
+   }
+  },
+  {
+   "id": "aepa-vocab-5610dc11",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Au cours d’un parcours, les enfants courent, sautent et gardent leur équilibre.",
+   "enonce": "Que signifie « Motricité globale » ?",
+   "options": [
+    "Mobilisation coordonnée du corps dans les mouvements d’ensemble.",
+    "Précision des petits gestes réalisés avec les doigts, comme découper ou enfiler.",
+    "Transmission orale ou écrite des informations importantes à l’équipe."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Motricité globale : Mobilisation coordonnée du corps dans les mouvements d’ensemble.",
+   "fiche": {
+    "titre": "Motricité globale",
+    "texte": "Mobilisation coordonnée du corps dans les mouvements d’ensemble."
+   }
+  },
+  {
+   "id": "aepa-vocab-27413fae",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Une animation sollicite la mémoire, l’attention et la capacité à résoudre un problème.",
+   "enonce": "Que signifie « Fonctions cognitives » ?",
+   "options": [
+    "Fonctions mentales telles que l’attention, la mémoire et le raisonnement.",
+    "Ensemble des mouvements des bras et des jambes nécessaires aux déplacements.",
+    "Relations entretenues entre les familles, l’équipe et la direction de la structure."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Fonctions cognitives : Fonctions mentales telles que l’attention, la mémoire et le raisonnement.",
+   "fiche": {
+    "titre": "Fonctions cognitives",
+    "texte": "Fonctions mentales telles que l’attention, la mémoire et le raisonnement."
+   }
+  },
+  {
+   "id": "aepa-vocab-c3301ea1",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Dans un jeu collectif, des adolescents apprennent à coopérer, négocier et trouver leur place.",
+   "enonce": "Que signifie « Socialisation » ?",
+   "options": [
+    "Processus par lequel une personne apprend et participe aux relations et règles de la vie sociale.",
+    "Répartition équitable du matériel d’atelier entre les participants de chaque activité.",
+    "Mesure de l’endurance physique des participants au cours d’activités sportives."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Socialisation : Processus par lequel une personne apprend et participe aux relations et règles de la vie sociale.",
+   "fiche": {
+    "titre": "Socialisation",
+    "texte": "Processus par lequel une personne apprend et participe aux relations et règles de la vie sociale."
+   }
+  },
+  {
+   "id": "aepa-vocab-5f3a61b7",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "L’organisateur d’un accueil collectif définit ses valeurs et ses grandes finalités éducatives.",
+   "enonce": "Que signifie « Projet éducatif » ?",
+   "options": [
+    "Orientations et finalités éducatives formulées par l’organisateur de l’accueil.",
+    "Programme détaillé d’un atelier, avec son déroulement minute par minute.",
+    "Feuille de présence quotidienne signée par les familles à l’arrivée des enfants."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Projet éducatif : Orientations et finalités éducatives formulées par l’organisateur de l’accueil.",
+   "fiche": {
+    "titre": "Projet éducatif",
+    "texte": "Orientations et finalités éducatives formulées par l’organisateur de l’accueil."
+   }
+  },
+  {
+   "id": "aepa-vocab-2a071257",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Une équipe d’animation précise comment elle mettra en œuvre les orientations éducatives dans son accueil.",
+   "enonce": "Que signifie « Projet pédagogique » ?",
+   "options": [
+    "Déclinaison opérationnelle des orientations éducatives dans l’organisation et les méthodes de l’équipe.",
+    "Bilan comptable des dépenses et des recettes d’une activité en fin de séjour.",
+    "Liste des sorties du mois avec leurs horaires, leurs lieux et le nombre de places."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Projet pédagogique : Déclinaison opérationnelle des orientations éducatives dans l’organisation et les méthodes de l’équipe.",
+   "fiche": {
+    "titre": "Projet pédagogique",
+    "texte": "Déclinaison opérationnelle des orientations éducatives dans l’organisation et les méthodes de l’équipe."
+   }
+  },
+  {
+   "id": "aepa-vocab-589e4b80",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "L’équipe prévoit plusieurs séances cohérentes pour encourager les liens entre résidents.",
+   "enonce": "Que signifie « Projet d’animation » ?",
+   "options": [
+    "Ensemble d’actions articulées autour d’intentions, de besoins et d’objectifs d’animation.",
+    "Consigne écrite expliquant aux participants les règles d’un jeu précis.",
+    "Inventaire des meubles et du matériel de la structure, mis à jour chaque année."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Projet d’animation : Ensemble d’actions articulées autour d’intentions, de besoins et d’objectifs d’animation.",
+   "fiche": {
+    "titre": "Projet d’animation",
+    "texte": "Ensemble d’actions articulées autour d’intentions, de besoins et d’objectifs d’animation."
+   }
+  },
+  {
+   "id": "aepa-vocab-3ae8be18",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Un animateur prépare un atelier cuisine précis en indiquant le public, les objectifs, le matériel et le déroulement.",
+   "enonce": "Que signifie « Projet d’activité » ?",
+   "options": [
+    "Préparation structurée d’une activité précise avec ses objectifs, moyens et modalités.",
+    "Valeurs éducatives générales que l’organisateur défend dans l’ensemble de ses accueils.",
+    "Planning annuel de tous les salariés, avec leurs congés et leurs horaires."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Projet d’activité : Préparation structurée d’une activité précise avec ses objectifs, moyens et modalités.",
+   "fiche": {
+    "titre": "Projet d’activité",
+    "texte": "Préparation structurée d’une activité précise avec ses objectifs, moyens et modalités."
+   }
+  },
+  {
+   "id": "aepa-vocab-7678779c",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "L’équipe souhaite renforcer la coopération entre les enfants d’un accueil de loisirs.",
+   "enonce": "Que signifie « Objectif général » ?",
+   "options": [
+    "Intention large donnant le sens de l’action, à décliner en objectifs plus précis.",
+    "Nombre de participants présents à la fin de l’activité, noté sur la fiche de bilan.",
+    "Horaires de nettoyage et de rangement de la salle après chaque séance."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Objectif général : Intention large donnant le sens de l’action, à décliner en objectifs plus précis.",
+   "fiche": {
+    "titre": "Objectif général",
+    "texte": "Intention large donnant le sens de l’action, à décliner en objectifs plus précis."
+   }
+  },
+  {
+   "id": "aepa-vocab-070a0abd",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Lors d’un jeu coopératif, l’équipe prévoit que chaque enfant participe au moins une fois à une décision de groupe.",
+   "enonce": "Que signifie « Objectif opérationnel » ?",
+   "options": [
+    "Résultat ou comportement précis visé par l’activité, à relier à un indicateur d’évaluation.",
+    "Liste des personnes chargées du rangement et de la vérification du matériel.",
+    "Opinion générale de l’animateur sur l’ambiance du groupe, donnée à la fin de la séance."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Objectif opérationnel : Résultat ou comportement précis visé par l’activité, à relier à un indicateur d’évaluation.",
+   "fiche": {
+    "titre": "Objectif opérationnel",
+    "texte": "Résultat ou comportement précis visé par l’activité, à relier à un indicateur d’évaluation."
+   }
+  },
+  {
+   "id": "aepa-vocab-561f4353",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Pendant un atelier, l’animateur relève combien de participants ont pris la parole.",
+   "enonce": "Que signifie « Indicateur d’évaluation » ?",
+   "options": [
+    "Élément concret recueilli pour apprécier l’atteinte d’un objectif.",
+    "Valeur éducative générale qui guide l’ensemble des actions de la structure.",
+    "Technique de décoration utilisée pour mettre en valeur une réalisation."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Indicateur d’évaluation : Élément concret recueilli pour apprécier l’atteinte d’un objectif.",
+   "fiche": {
+    "titre": "Indicateur d’évaluation",
+    "texte": "Élément concret recueilli pour apprécier l’atteinte d’un objectif."
+   }
+  },
+  {
+   "id": "aepa-vocab-279ddd49",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Avant un jeu de parcours, l’animateur écarte un obstacle dangereux et vérifie le sol.",
+   "enonce": "Que signifie « Sécurité physique » ?",
+   "options": [
+    "Prévention des atteintes corporelles et des accidents.",
+    "Prévention des moqueries et des paroles blessantes entre participants.",
+    "Respect des opinions et des convictions de chacun au sein du groupe."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Sécurité physique : Prévention des atteintes corporelles et des accidents.",
+   "fiche": {
+    "titre": "Sécurité physique",
+    "texte": "Prévention des atteintes corporelles et des accidents."
+   }
+  },
+  {
+   "id": "aepa-vocab-5c8d0c41",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Une enfant a peur de se tromper devant les autres ; l’animateur propose un essai à l’écart des regards.",
+   "enonce": "Que signifie « Sécurité affective » ?",
+   "options": [
+    "Préservation du bien-être émotionnel, du sentiment de confiance et de l’estime de soi.",
+    "Contrôle de la température des aliments et de la chaîne du froid lors des repas.",
+    "Vérification de l’inventaire des jeux et de leur état avant chaque utilisation."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Sécurité affective : Préservation du bien-être émotionnel, du sentiment de confiance et de l’estime de soi.",
+   "fiche": {
+    "titre": "Sécurité affective",
+    "texte": "Préservation du bien-être émotionnel, du sentiment de confiance et de l’estime de soi."
+   }
+  },
+  {
+   "id": "aepa-vocab-c65beb68",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Un animateur intervient lorsqu’un adolescent subit des paroles humiliantes et discriminatoires.",
+   "enonce": "Que signifie « Sécurité morale » ?",
+   "options": [
+    "Respect de la dignité, des valeurs et des droits de chaque personne.",
+    "Mise aux normes des équipements et contrôle régulier des installations.",
+    "Comptage du matériel après utilisation et signalement des objets manquants."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Sécurité morale : Respect de la dignité, des valeurs et des droits de chaque personne.",
+   "fiche": {
+    "titre": "Sécurité morale",
+    "texte": "Respect de la dignité, des valeurs et des droits de chaque personne."
+   }
+  },
+  {
+   "id": "aepa-vocab-f82e74a8",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Les participants proposent des idées, choisissent certains rôles et contribuent à une activité.",
+   "enonce": "Que signifie « Démarche participative » ?",
+   "options": [
+    "Méthode laissant au public une place réelle dans les choix et la réalisation.",
+    "Méthode où le public exécute avec soin des tâches décidées à l’avance par l’adulte.",
+    "Méthode d’évaluation réservée aux professionnels, sans avis des participants."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Démarche participative : Méthode laissant au public une place réelle dans les choix et la réalisation.",
+   "fiche": {
+    "titre": "Démarche participative",
+    "texte": "Méthode laissant au public une place réelle dans les choix et la réalisation."
+   }
+  },
+  {
+   "id": "aepa-vocab-b22a0ac4",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Avant une sortie, un enfant a un protocole d’accueil lié à une situation de santé connue des responsables.",
+   "enonce": "Que signifie « PAI » ?",
+   "options": [
+    "Projet d’accueil individualisé prévoyant les aménagements nécessaires selon les modalités applicables.",
+    "Programme annuel d’intervention sportive fixant les activités physiques proposées à chaque groupe.",
+    "Planning des activités intergénérationnelles organisées avec les résidences du quartier."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "PAI : Projet d’accueil individualisé prévoyant les aménagements nécessaires selon les modalités applicables.",
+   "fiche": {
+    "titre": "PAI",
+    "texte": "Projet d’accueil individualisé prévoyant les aménagements nécessaires selon les modalités applicables."
+   }
+  },
+  {
+   "id": "aepa-vocab-e24109ad",
+   "atelier": "vocab",
+   "type": "qcm",
+   "contexte": "Après un premier atelier, l’équipe raccourcit les consignes parce que plusieurs participants avaient perdu le fil.",
+   "enonce": "Que signifie « Réajustement » ?",
+   "options": [
+    "Modification argumentée d’une action à partir d’observations et de retours.",
+    "Maintien du programme prévu malgré les difficultés, pour garder des repères stables.",
+    "Remplacement d’un professionnel absent, sans analyse du déroulement de la séance."
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Réajustement : Modification argumentée d’une action à partir d’observations et de retours.",
+   "fiche": {
+    "titre": "Réajustement",
+    "texte": "Modification argumentée d’une action à partir d’observations et de retours."
+   }
+  },
+  {
+   "id": "aepa-sortie-acm-01",
+   "atelier": "sortie",
+   "type": "qcm",
+   "ordreFixe": true,
+   "contexte": "📋 Vacances scolaires · Tu prépares une journée en accueil de loisirs extrascolaire avec des enfants de 4 et 5 ans.",
+   "enonce": "Quel est le taux minimal d’encadrement pour ces enfants de moins de 6 ans ?",
+   "options": [
+    "1 animateur pour 5 enfants",
+    "1 animateur pour 8 enfants",
+    "1 animateur pour 12 enfants",
+    "1 animateur pour 14 enfants"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "En accueil de loisirs extrascolaire (vacances scolaires), il faut au minimum 1 animateur pour 8 mineurs de moins de 6 ans, et 1 pour 12 à partir de 6 ans. Ce sont des minimums : la direction peut prévoir davantage selon l’activité. Attention : le mercredi en semaine scolaire relève du périscolaire.",
+   "fiche": {
+    "titre": "Taux d’encadrement en accueil de loisirs",
+    "texte": "Extrascolaire (vacances) : 1/8 avant 6 ans, 1/12 à partir de 6 ans. Périscolaire (dont le mercredi en semaine scolaire) : 1/8 et 1/12 si l’accueil dure plus de 5 heures consécutives, sinon 1/10 et 1/14. Des taux assouplis existent dans le cadre d’un projet éducatif territorial (PEdT)."
+   },
+   "meta": {
+    "ajout": "programme-2026-11",
+    "reference": "AEPA S.3.1.B1 ; CASF art. R227-1, R227-15 et R227-16"
+   }
+  },
+  {
+   "id": "aepa-sortie-acm-02",
+   "atelier": "sortie",
+   "type": "qcm",
+   "ordreFixe": true,
+   "contexte": "🧮 Accueil de loisirs extrascolaire, vacances · 20 enfants de 4 ans partent au parc pour la journée.",
+   "enonce": "Combien d’animateurs faut-il au minimum pour encadrer ce groupe ?",
+   "options": [
+    "2 animateurs",
+    "3 animateurs",
+    "4 animateurs",
+    "5 animateurs"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Pour des enfants de moins de 6 ans en extrascolaire, il faut 1 animateur pour 8 enfants. 20 ÷ 8 = 2,5 : on arrondit toujours au-dessus, donc 3 animateurs au minimum. Avec 2, chaque adulte aurait 10 enfants, ce qui dépasse le taux.",
+   "fiche": {
+    "titre": "Calculer l’encadrement",
+    "texte": "Nombre d’enfants ÷ taux, puis arrondir au nombre entier supérieur. Exemple : 20 enfants de 4 ans ÷ 8 = 2,5 → 3 animateurs minimum."
+   },
+   "meta": {
+    "ajout": "programme-2026-11",
+    "reference": "AEPA S.3.1.B1"
+   }
+  },
+  {
+   "id": "aepa-sortie-acm-03",
+   "atelier": "sortie",
+   "type": "qcm",
+   "contexte": "👥 Composition de l’équipe · La directrice d’un accueil de loisirs constitue son équipe de 10 animateurs pour l’été.",
+   "enonce": "Que prévoit la réglementation sur la qualification de l’équipe d’animation ?",
+   "options": [
+    "Au moins la moitié des animateurs doit avoir le BAFA ou un diplôme équivalent",
+    "Tous les animateurs doivent obligatoirement avoir le BAFA complet avant d’encadrer un groupe d’enfants",
+    "La qualification est libre : il suffit que la directrice soit diplômée pour que l’accueil soit déclaré",
+    "Au moins un animateur sur quatre doit être diplômé, les autres pouvant tous être sans aucun diplôme"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "En accueil collectif de mineurs, au moins 50 % des animateurs doivent être titulaires du BAFA ou d’un diplôme équivalent (comme le Bac Pro AEPA dans certaines conditions) ; les animateurs sans qualification ne peuvent pas dépasser 20 % de l’équipe. Les autres peuvent être stagiaires BAFA.",
+   "fiche": {
+    "titre": "Qualification de l’équipe",
+    "texte": "Au moins 50 % de diplômés (BAFA ou équivalent), au plus 20 % sans qualification, le reste en stage. La direction vérifie les diplômes avant l’accueil."
+   },
+   "meta": {
+    "ajout": "programme-2026-11",
+    "reference": "AEPA S.3.1.B1 ; CASF art. R227-12"
+   }
+  },
+  {
+   "id": "aepa-sortie-acm-04",
+   "atelier": "sortie",
+   "type": "multi",
+   "contexte": "✅ Avant le départ · Pendant les vacances scolaires, ton accueil de loisirs extrascolaire organise une sortie en car pour 24 enfants de 7 à 9 ans.",
+   "enonce": "Quelles vérifications font partie de la préparation réglementaire ? Choisis-en 3.",
+   "options": [
+    "Le nombre d’animateurs est suffisant pour l’âge et l’effectif des enfants",
+    "Les besoins particuliers sont connus (PAI, traitements) et la trousse est prête",
+    "La liste des enfants présents est à jour et les autorisations nécessaires sont réunies",
+    "Les enfants ont tous le même âge, condition indispensable pour partir en car",
+    "Chaque animateur a son propre véhicule pour suivre le car en cas de besoin"
+   ],
+   "bonnes": [
+    0,
+    1,
+    2
+   ],
+   "explications": [
+    "Oui : 24 enfants de plus de 6 ans en extrascolaire, c’est au moins 2 animateurs (1 pour 12).",
+    "Oui : les protocoles et traitements voyagent avec le groupe.",
+    "Oui : on part et on revient avec une liste nominative, et les autorisations prévues par la structure.",
+    "Non : un groupe peut réunir des âges différents ; l’encadrement s’adapte aux plus jeunes.",
+    "Non : ce n’est pas une règle ; l’équipe voyage avec le groupe et garde un moyen de communication."
+   ],
+   "pourquoi": "Avant toute sortie : encadrement conforme (âges, effectif), besoins particuliers et trousse, liste à jour et autorisations, trajet et moyens d’alerte. La direction valide l’organisation.",
+   "fiche": {
+    "titre": "Check-list réglementaire d’une sortie",
+    "texte": "Effectif et taux d’encadrement · qualifications · PAI, traitements, trousse · liste nominative et autorisations · transport et moyens d’alerte · validation par la direction."
+   },
+   "meta": {
+    "ajout": "programme-2026-11",
+    "reference": "AEPA S.3.1.B1"
+   }
+  }
+ ],
+ "version": 1,
+ "vraiFaux": [
+  {
+   "id": "vf-aepa-01",
+   "atelier": "besoins",
+   "concept": "familiarisation",
+   "affirmation": "Un enfant qui découvre un groupe peut observer le jeu près d’un adulte repère avant de décider d’y participer.",
+   "vrai": true,
+   "correction": "Une entrée progressive respecte son besoin de se familiariser et son rythme."
+  },
+  {
+   "id": "vf-aepa-02",
+   "atelier": "sortie",
+   "concept": "taux-extrascolaire-moins-6",
+   "affirmation": "En accueil de loisirs extrascolaire, 20 enfants de 4 ans demandent au minimum trois animateurs.",
+   "vrai": true,
+   "correction": "Le taux est de 1 pour 8 avant 6 ans : 20 ÷ 8 = 2,5, on arrondit à 3 animateurs."
+  },
+  {
+   "id": "vf-aepa-03",
+   "atelier": "sec",
+   "concept": "participation-regles",
+   "affirmation": "Des jeunes peuvent participer à la définition des règles d’un grand jeu, dans les limites fixées par la sécurité.",
+   "vrai": true,
+   "correction": "Construire les règles ensemble est possible, à condition que le cadre de sécurité reste garanti par l’adulte."
+  },
+  {
+   "id": "vf-aepa-04",
+   "atelier": "besoins",
+   "concept": "consentement",
+   "affirmation": "Une résidente peut refuser l’atelier prévu et choisir une autre activité adaptée à ses souhaits.",
+   "vrai": true,
+   "correction": "Respecter son consentement et son pouvoir de décision fait partie de l’accompagnement."
+  },
+  {
+   "id": "vf-aepa-05",
+   "atelier": "sortie",
+   "concept": "taux-extrascolaire-plus-6",
+   "affirmation": "En accueil de loisirs extrascolaire, un seul animateur peut encadrer 24 enfants de 7 à 9 ans.",
+   "vrai": false,
+   "correction": "Le taux est de 1 pour 12 à partir de 6 ans : il faut deux animateurs pour 24 enfants."
+  },
+  {
+   "id": "vf-aepa-06",
+   "atelier": "sortie",
+   "concept": "periscolaire-mercredi",
+   "affirmation": "Un accueil de loisirs organisé le mercredi d’une semaine d’école relève de l’extrascolaire.",
+   "vrai": false,
+   "correction": "Depuis 2018, le mercredi en semaine d’école relève du périscolaire."
+  },
+  {
+   "id": "vf-aepa-07",
+   "atelier": "besoins",
+   "concept": "partage-consenti",
+   "affirmation": "Quand un adolescent veut partager son texte anonymement, l’animateur doit lui demander de le lire devant le groupe.",
+   "vrai": false,
+   "correction": "L’animateur respecte la façon de partager choisie par le jeune, par exemple une lecture anonyme."
+  },
+  {
+   "id": "vf-aepa-08",
+   "atelier": "sortie",
+   "concept": "periscolaire-duree",
+   "affirmation": "En accueil périscolaire, le taux minimal d’encadrement est le même pour un accueil de trois heures et pour un accueil de six heures.",
+   "vrai": false,
+   "correction": "Au-delà de cinq heures consécutives, le taux devient plus exigeant (1 pour 8 avant 6 ans, 1 pour 12 après, hors projet éducatif territorial)."
+  }
+ ],
+ "cas": [
+  {
+   "id": "cas-aepa-affiche-conflit-01",
+   "icone": "🖍️",
+   "titre": "Le feutre disputé",
+   "lieu": "Accueil de loisirs · 15 h 15",
+   "role": "Tu es élève en stage d’animation, avec l’équipe.",
+   "objectif": "Apaiser un conflit, écouter les deux enfants, relancer l’activité avec eux.",
+   "avertissement": "Situation sans blessure. En cas de blessure, de violence qui continue ou de mise en danger : arrêter l’activité, mettre en sécurité et prévenir le ou la responsable.",
+   "personnage": "🧒",
+   "indicateurs": [
+    {
+     "id": "apaisement",
+     "label": "Retour au calme"
+    },
+    {
+     "id": "ecoute",
+     "label": "Écoute des deux enfants"
+    },
+    {
+     "id": "participation",
+     "label": "Coopération et réajustement"
+    }
+   ],
+   "refs": {
+    "AEPA C3.2.1": "Animer une activité en garantissant la sécurité",
+    "AEPA C3.2.2": "Gérer le groupe, écouter, faire de la médiation, adapter l’activité",
+    "AEPA C3.2.3": "Évaluer et réajuster son action selon les réactions du public",
+    "AEPA S3.2 C3": "Communication, prévention et médiation des conflits"
+   },
+   "depart": "intro",
+   "noeuds": {
+    "intro": {
+     "type": "scene",
+     "titre": "L’affiche du quartier",
+     "texte": "Tu animes un atelier d’affiche avec ton équipe. Lina, 9 ans, et Yanis, 10 ans, veulent le même feutre. Yanis le tire des mains de Lina. Elle crie ; les autres enfants s’arrêtent.",
+     "suite": "d1"
+    },
+    "d1": {
+     "type": "decision",
+     "titre": "Apaiser",
+     "texte": "Lina serre les poings. Yanis garde le feutre. Tout le groupe regarde.",
+     "question": "Que fais-tu d’abord ?",
+     "indice": "D’abord le calme et la sécurité. Savoir qui a raison viendra après.",
+     "aRetenir": "L’animateur sécurise et calme la situation sans humilier les enfants.",
+     "choix": [
+      {
+       "id": "a",
+       "texte": "Je m’approche calmement, je fais poser le feutre et j’invite chacun à reculer un peu.",
+       "qualite": "juste",
+       "retour": "Oui : tu arrêtes la tension sans désigner de coupable et tu gardes le groupe en sécurité.",
+       "consequence": "Le feutre est posé sur la table. Les deux enfants se calment ; les autres reprennent avec d’autres feutres.",
+       "refs": [
+        "AEPA C3.2.1",
+        "AEPA C3.2.2"
+       ],
+       "gain": "apaisement",
+       "suite": "suite_calme"
+      },
+      {
+       "id": "b",
+       "texte": "J’emmène Lina faire une pause avec moi pendant que Yanis continue.",
+       "qualite": "partiel",
+       "retour": "Une pause peut aider, mais pas seulement pour Lina : Yanis garde le feutre et la dispute n’est pas réglée. Les deux enfants doivent être traités de la même façon.",
+       "consequence": "Lina proteste : « C’est pas juste ! » Une collègue reprend le groupe ; tu proposes la pause aux deux enfants.",
+       "refs": [
+        "AEPA C3.2.2"
+       ],
+       "suite": "suite_guidee"
+      },
+      {
+       "id": "c",
+       "texte": "Je demande à un autre enfant de décider à qui revient le feutre.",
+       "qualite": "a-revoir",
+       "retour": "Faire arbitrer par un camarade peut aggraver le conflit. C’est l’adulte qui sécurise et rappelle les règles.",
+       "consequence": "L’enfant choisi est gêné et refuse. Ta collègue fait poser le feutre et t’aide à ramener le calme.",
+       "refs": [
+        "AEPA C3.2.2"
+       ],
+       "suite": "suite_guidee"
+      }
+     ]
+    },
+    "suite_calme": {
+     "type": "scene",
+     "titre": "Le groupe reprend",
+     "texte": "Lina et Yanis sont prêts à parler. Tu te mets à leur hauteur, en gardant un œil sur le reste du groupe.",
+     "suite": "d2"
+    },
+    "suite_guidee": {
+     "type": "scene",
+     "titre": "Le cadre est rétabli",
+     "texte": "Avec ta collègue, tu as arrêté la dispute. Lina et Yanis sont prêts à expliquer ce qui s’est passé.",
+     "suite": "d2"
+    },
+    "d2": {
+     "type": "decision",
+     "titre": "Écouter",
+     "texte": "Lina : « Il ne me laisse jamais choisir ! » Yanis : « On devait écrire le titre maintenant ! »",
+     "question": "Comment les écoutes-tu ?",
+     "indice": "Laisse parler les deux enfants. Cherche ce que chacun veut vraiment.",
+     "aRetenir": "Écouter sans accuser permet de comprendre le désaccord avant de chercher une solution.",
+     "choix": [
+      {
+       "id": "a",
+       "texte": "Je donne la parole à chacun, je redis avec mes mots ce que j’ai compris, puis je leur demande ce qu’ils veulent faire.",
+       "qualite": "juste",
+       "retour": "Tu écoutes les deux sans conclure trop vite. Tu comprends d’où vient le désaccord.",
+       "consequence": "Lina veut choisir les couleurs ; Yanis veut finir le titre. Ce sont deux envies différentes, pas un « méchant » et une « victime ».",
+       "refs": [
+        "AEPA C3.2.2",
+        "AEPA S3.2 C3"
+       ],
+       "gain": "ecoute",
+       "suite": "suite_compris"
+      },
+      {
+       "id": "b",
+       "texte": "Chacun raconte sa version, puis je donne le feutre à celui qui l’avait en premier.",
+       "qualite": "partiel",
+       "retour": "Écouter chacun, c’est bien. Mais donner le feutre sans chercher ce qu’ils veulent ne règle pas le désaccord : il reviendra.",
+       "consequence": "Yanis boude, Lina aussi. Tu découvres qu’ils veulent tous les deux participer au titre.",
+       "refs": [
+        "AEPA C3.2.2"
+       ],
+       "suite": "suite_aider"
+      },
+      {
+       "id": "c",
+       "texte": "Je fais voter le groupe pour savoir lequel des deux a eu tort.",
+       "qualite": "a-revoir",
+       "retour": "Un vote sur « qui a tort » expose les enfants au jugement des autres. Préfère l’écoute et la médiation, à l’écart du groupe.",
+       "consequence": "Ta collègue arrête le vote. Tu reprends l’échange à l’écart avec Lina et Yanis.",
+       "refs": [
+        "AEPA C3.2.2",
+        "AEPA S3.2 C3"
+       ],
+       "suite": "suite_aider"
+      }
+     ]
+    },
+    "suite_compris": {
+     "type": "scene",
+     "titre": "Une solution est possible",
+     "texte": "Lina veut choisir les couleurs, Yanis veut écrire le titre. Le groupe attend de reprendre l’affiche.",
+     "suite": "d3"
+    },
+    "suite_aider": {
+     "type": "scene",
+     "titre": "Les envies se précisent",
+     "texte": "Avec ton aide, les enfants finissent par dire ce qu’ils veulent : choisir les couleurs et écrire le titre.",
+     "suite": "d3"
+    },
+    "d3": {
+     "type": "decision",
+     "titre": "Relancer l’activité",
+     "texte": "Il reste vingt minutes. Tous les enfants doivent pouvoir participer.",
+     "question": "Comment proposes-tu de continuer ?",
+     "indice": "Une solution trouvée avec eux, faisable, où chacun participe.",
+     "aRetenir": "L’animateur aide les enfants à trouver un accord réaliste, puis vérifie qu’il fonctionne.",
+     "choix": [
+      {
+       "id": "a",
+       "texte": "Je leur propose de se partager deux rôles, puis de faire le point dans quelques minutes.",
+       "qualite": "juste",
+       "retour": "Très bien : la décision est partagée et tu prévois de réajuster si besoin.",
+       "consequence": "Lina choisit les couleurs, Yanis commence le titre. Dix minutes plus tard, ils demandent à échanger.",
+       "refs": [
+        "AEPA C3.2.2",
+        "AEPA C3.2.3"
+       ],
+       "gain": "participation",
+       "suite": "fin_partage"
+      },
+      {
+       "id": "b",
+       "texte": "Je décide moi-même qui fait quoi, puis je vérifie que chacun est d’accord.",
+       "qualite": "partiel",
+       "retour": "L’activité repart, mais un choix construit avec les enfants développerait davantage leur autonomie.",
+       "consequence": "Le travail reprend. Plus tard, tu proposes à Lina et Yanis d’échanger leurs rôles.",
+       "refs": [
+        "AEPA C3.2.2",
+        "AEPA C3.2.3"
+       ],
+       "suite": "fin_accompagnee"
+      },
+      {
+       "id": "c",
+       "texte": "Je leur rends le feutre et je les laisse trouver une solution seuls, sans intervenir.",
+       "qualite": "a-revoir",
+       "retour": "Juste après une dispute, l’adulte accompagne la recherche d’un accord et observe la reprise. Il ne laisse pas les enfants seuls avec le problème.",
+       "consequence": "La dispute recommence. Avec ta collègue, tu proposes des rôles et un moment pour en reparler.",
+       "refs": [
+        "AEPA C3.2.2",
+        "AEPA C3.2.3"
+       ],
+       "suite": "fin_accompagnee"
+      }
+     ]
+    },
+    "fin_partage": {
+     "type": "fin",
+     "icone": "🎨",
+     "titre": "L’affiche avance",
+     "texte": "L’atelier a repris. Lina et Yanis ont trouvé chacun leur place ; tu observes si l’accord tient et tu adaptes si besoin."
+    },
+    "fin_accompagnee": {
+     "type": "fin",
+     "icone": "🤝",
+     "titre": "Le groupe repart avec ton aide",
+     "texte": "L’atelier a repris grâce au cadre posé par l’équipe. La prochaine fois, associe davantage les enfants aux décisions."
+    }
+   },
+   "aRetenir": "Sécuriser sans humilier → écouter les besoins de chacun → construire une solution avec eux → vérifier qu’elle marche."
+  }
+ ]
+}

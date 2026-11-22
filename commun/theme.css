@@ -1,0 +1,145 @@
+/* =====================================================================
+   Labo Pro Gutenberg : charte commune
+   ---------------------------------------------------------------------
+   Chaque page pose data-filiere="portail|assp|aepa" sur <html>.
+   Les couleurs de filière sont exposées en variables :
+     --filiere        couleur principale (boutons, bandeau). Texte blanc ≥ 4,5:1
+     --filiere-fonce  survol, texte coloré sur fond clair
+     --filiere-clair  fonds teintés
+     --filiere-rgb    pour rgba(var(--filiere-rgb), .15)
+   Pour ajouter une filière : copier un bloc [data-filiere="…"] ci-dessous.
+   ===================================================================== */
+
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("polices/atkinson-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("polices/atkinson-700.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+
+:root {
+  --gutenberg: #6247e8;
+  --gutenberg-rgb: 98, 71, 232;
+  --filiere: var(--gutenberg);
+  --filiere-fonce: #4a31c9;
+  --filiere-clair: #efecff;
+  --filiere-rgb: var(--gutenberg-rgb);
+  --filiere-nom: "Labo Pro";
+
+  --lp-fond: #f6f7fb;
+  --lp-carte: #ffffff;
+  --lp-texte: #1d2233;
+  --lp-doux: #586074;
+  --lp-bord: #e3e5ee;
+  --lp-ok: #0b7a4f;
+  --lp-ok-clair: #e5f6ee;
+  --lp-erreur: #b3261e;
+  --lp-erreur-clair: #fdecea;
+  --lp-or: #b7791f;
+  --lp-rayon: 16px;
+  --lp-police: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --lp-zone-tactile: 44px;
+}
+
+[data-filiere="assp"] {
+  --filiere: #0b7a75;
+  --filiere-fonce: #075c58;
+  --filiere-clair: #e3f4f2;
+  --filiere-rgb: 11, 122, 117;
+  --filiere-nom: "ASSP";
+}
+[data-filiere="aepa"] {
+  --filiere: #c2410c;
+  --filiere-fonce: #9a330a;
+  --filiere-clair: #fff0e8;
+  --filiere-rgb: 194, 65, 12;
+  --filiere-nom: "AEPA";
+}
+
+/* Mode sombre : pages nouvelles uniquement (portail, jeu) via .lp-page */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="clair"]) .lp-page,
+  :root:not([data-theme="clair"]) body.lp-page {
+    --lp-fond: #12141c;
+    --lp-carte: #1d2030;
+    --lp-texte: #eef0f7;
+    --lp-doux: #a8aec2;
+    --lp-bord: #30344a;
+    --lp-ok-clair: #12352a;
+    --lp-erreur-clair: #3d1a18;
+    --filiere-clair: rgba(var(--filiere-rgb), .22);
+  }
+}
+:root[data-theme="sombre"] .lp-page {
+  --lp-fond: #12141c; --lp-carte: #1d2030; --lp-texte: #eef0f7; --lp-doux: #a8aec2; --lp-bord: #30344a;
+  --lp-ok-clair: #12352a; --lp-erreur-clair: #3d1a18; --filiere-clair: rgba(var(--filiere-rgb), .22);
+}
+
+/* ---------- Mode lecture DYS (toutes les pages) ---------- */
+html[data-dys] body,
+html[data-dys] button,
+html[data-dys] input,
+html[data-dys] textarea,
+html[data-dys] select {
+  font-family: "Atkinson Hyperlegible", var(--lp-police) !important;
+  letter-spacing: .035em !important;
+  word-spacing: .12em !important;
+}
+html[data-dys] body { line-height: 1.7 !important; }
+html[data-dys] p, html[data-dys] li { text-align: left !important; }
+html[data-dys] h1, html[data-dys] h2, html[data-dys] h3 { letter-spacing: .01em !important; }
+
+/* ---------- Bandeau de filière (ajouté en haut de chaque labo) ---------- */
+.lp-bandeau {
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 6px max(12px, env(safe-area-inset-left)) 6px max(12px, env(safe-area-inset-right));
+  padding-top: max(6px, env(safe-area-inset-top));
+  background: var(--filiere);
+  color: #fff;
+  font: 600 14px/1.3 var(--lp-police);
+  letter-spacing: 0;
+}
+.lp-bandeau a, .lp-bandeau button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.45);
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.lp-bandeau a:hover, .lp-bandeau button:hover { background: rgba(255,255,255,.24); }
+.lp-bandeau a:focus-visible, .lp-bandeau button:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+.lp-bandeau .lp-filiere {
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+.lp-bandeau .lp-filiere small { font-weight: 600; letter-spacing: 0; text-transform: none; opacity: .9; margin-left: 6px; }
+.lp-bandeau a.lp-jouer { background: #fff; color: var(--filiere-fonce); border-color: #fff; font-weight: 800; }
+.lp-bandeau [aria-pressed="true"] { background: #fff; color: var(--filiere-fonce); }
+@media (max-width: 560px) {
+  .lp-bandeau { font-size: 13px; gap: 6px; }
+  .lp-bandeau .lp-filiere small, .lp-bandeau .lp-masque-mobile { display: none; }
+  .lp-bandeau a, .lp-bandeau button { padding: 4px 10px; }
+}
+@media print { .lp-bandeau { display: none; } }
+
+/* Texte lu par les lecteurs d'écran mais invisible */
+.visuellement-cache { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Schéma joint à une question (champ « image » des items) : toucher pour agrandir */
+.schema-q { margin: 10px 0 4px; text-align: center; }
+.schema-q .schema-zoom { display: block; width: 100%; padding: 6px; border: 1px solid var(--lp-bord); border-radius: var(--lp-rayon); background: #fff; cursor: zoom-in; }
+.schema-q img { display: block; width: 100%; max-height: 46vh; object-fit: contain; margin: 0 auto; }
+.schema-q figcaption { font-size: .8rem; color: var(--lp-doux); margin-top: 4px; }
+.lp-schema-plein { position: fixed; inset: 0; z-index: 1000; background: rgba(10, 14, 24, .88); display: flex; align-items: center; justify-content: center; padding: 12px; cursor: zoom-out; border: 0; width: 100%; }
+.lp-schema-plein img { max-width: 100%; max-height: 100%; background: #fff; border-radius: 10px; }

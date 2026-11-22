@@ -1,0 +1,1414 @@
+{
+  "lieu": {
+    "id": "bio-soins",
+    "nom": "Centre de soins",
+    "icone": "🩹",
+    "couleur": "#f59e0b"
+  },
+  "ateliers": [
+    {
+      "id": "bio-peau",
+      "titre": "La peau",
+      "icone": "🧴",
+      "programme": "Bloc 2 · La peau : structure, flores, évolution, plaies, brûlures, escarres, érythème fessier · Bloc 4 · Gale, pédiculose"
+    },
+    {
+      "id": "bio-locomoteur",
+      "titre": "Os et muscles",
+      "icone": "🦴",
+      "programme": "Bloc 3 · Le système locomoteur et ses pathologies, TMS"
+    },
+    {
+      "id": "bio-digestif",
+      "titre": "Digestion et dents",
+      "icone": "🍎",
+      "programme": "Bloc 4 · L’appareil digestif, dentition, spécificités selon l’âge, troubles digestifs"
+    },
+    {
+      "id": "bio-rein",
+      "titre": "Reins et urines",
+      "icone": "💧",
+      "programme": "Bloc 2 · L’appareil excréteur, néphron, ECBU, ionogramme, infections urinaires, incontinences, insuffisance rénale"
+    }
+  ],
+  "items": [
+    {
+      "id": "bio-peau-01",
+      "atelier": "bio-peau",
+      "type": "tri",
+      "enonce": "Dans quelle couche de la peau se trouve chaque élément ?",
+      "categories": [
+        "Épiderme",
+        "Derme",
+        "Hypoderme"
+      ],
+      "icones": [
+        "🧱",
+        "🕸️",
+        "🧈"
+      ],
+      "elements": [
+        {
+          "texte": "Couche cornée (cellules mortes en surface)",
+          "categorie": 0
+        },
+        {
+          "texte": "Mélanocytes (pigment qui protège du soleil)",
+          "categorie": 0
+        },
+        {
+          "texte": "Vaisseaux sanguins et terminaisons nerveuses",
+          "categorie": 1
+        },
+        {
+          "texte": "Glandes sudoripares et sébacées",
+          "categorie": 1
+        },
+        {
+          "texte": "Racine des poils",
+          "categorie": 1
+        },
+        {
+          "texte": "Cellules graisseuses (réserve et isolation)",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "L’épiderme n’a pas de vaisseaux : il se nourrit grâce au derme. Le derme apporte vaisseaux, nerfs et glandes. L’hypoderme est un coussin de graisse.",
+      "fiche": {
+        "titre": "Structure de la peau",
+        "texte": "Épiderme (surface, couche cornée, mélanocytes, sans vaisseaux) / derme (vaisseaux, nerfs, glandes sudoripares et sébacées, poils) / hypoderme (graisse)."
+      }
+    },
+    {
+      "id": "bio-peau-02",
+      "atelier": "bio-peau",
+      "type": "multi",
+      "enonce": "Quelles sont les fonctions de la peau ? Choisis-en 4.",
+      "options": [
+        "🛡️ Protéger contre les microbes, les chocs et les UV",
+        "✋ Percevoir le toucher, la douleur, le chaud et le froid",
+        "☀️ Fabriquer de la vitamine D grâce au soleil",
+        "🌡️ Réguler la température (sueur, vaisseaux)",
+        "🍽️ Absorber les nutriments des aliments pour nourrir tout l’organisme"
+      ],
+      "bonnes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explications": [
+        "Oui.",
+        "Oui : c’est un organe des sens.",
+        "Oui : utile pour les os.",
+        "Oui : la sueur rafraîchit en s’évaporant.",
+        "Non : c’est le rôle de l’intestin grêle."
+      ],
+      "pourquoi": "La peau est le plus grand organe du corps. Elle a aussi un rôle de réserve (graisse de l’hypoderme) et un peu d’élimination (sueur).",
+      "fiche": {
+        "titre": "Fonctions de la peau",
+        "texte": "Protection (barrière, UV), thermorégulation, sensibilité, synthèse de vitamine D, réserve, élimination (sueur)."
+      }
+    },
+    {
+      "id": "bio-peau-03",
+      "atelier": "bio-peau",
+      "type": "tri",
+      "enonce": "Flore résidente ou flore transitoire ?",
+      "categories": [
+        "Flore résidente",
+        "Flore transitoire"
+      ],
+      "icones": [
+        "🏠",
+        "🧳"
+      ],
+      "elements": [
+        {
+          "texte": "Vit en permanence sur notre peau",
+          "categorie": 0
+        },
+        {
+          "texte": "Nous protège en occupant la place des microbes dangereux",
+          "categorie": 0
+        },
+        {
+          "texte": "Acquise en touchant des personnes, des objets, des surfaces",
+          "categorie": 1
+        },
+        {
+          "texte": "Peut contenir des microbes pathogènes et se transmettre",
+          "categorie": 1
+        },
+        {
+          "texte": "Facilement éliminée par la friction hydroalcoolique",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "L’hygiène des mains vise surtout la flore transitoire. On préserve la flore résidente avec des savons doux, un bon séchage et une crème si la peau est abîmée.",
+      "fiche": {
+        "titre": "Flores cutanées",
+        "texte": "Résidente : permanente, protectrice, à préserver (savon doux, séchage, hydratation). Transitoire : acquise par contact, peut être pathogène, éliminée par la friction hydroalcoolique."
+      }
+    },
+    {
+      "id": "bio-peau-04",
+      "atelier": "bio-peau",
+      "type": "qcm",
+      "contexte": "🧓 Mme Ginette, 89 ans · Sa peau est fine, sèche, et un simple frottement la marque.",
+      "enonce": "Pourquoi la peau de la personne âgée demande-t-elle des soins particuliers ?",
+      "options": [
+        "Elle ne contient plus de nerfs, donc la personne ne sent plus du tout la douleur",
+        "Elle fabrique beaucoup plus de sébum et transpire davantage qu’à l’âge adulte",
+        "Elle est plus fine, plus sèche, moins élastique et cicatrise plus lentement",
+        "Elle devient plus épaisse et plus résistante : il faut donc frotter fort à la toilette"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Gestes adaptés : toilette douce, séchage soigneux sans frotter (plis), hydratation, observation quotidienne. Chez le nourrisson aussi, la peau est fine et absorbe facilement les produits : on limite les produits appliqués.",
+      "fiche": {
+        "titre": "Peau et âges de la vie",
+        "texte": "Nourrisson : fine, perméable, fragile. Personne âgée : fine, sèche, moins élastique, cicatrise plus lentement, sensibilité diminuée. Observer : couleur, chaleur, lésions, tout changement inhabituel, et transmettre. Le pli cutané seul n’est pas un signe fiable de déshydratation chez la personne âgée."
+      }
+    },
+    {
+      "id": "bio-peau-05",
+      "atelier": "bio-peau",
+      "type": "qcm",
+      "enonce": "Que faut-il suspecter et transmettre rapidement ?",
+      "options": [
+        "Une simple fatigue passagère, qui se réglera avec du repos",
+        "Une allergie de peau, à signaler au médecin pour un traitement local",
+        "Rien de particulier : boire moins est normal à son âge",
+        "Une possible déshydratation, à faire évaluer par l’équipe soignante"
+      ],
+      "bonnes": [
+        3
+      ],
+      "pourquoi": "Ces signes réunis évoquent une déshydratation. Chez la personne âgée, aucun signe isolé ne suffit : le pli cutané, par exemple, est peu fiable, car la peau perd naturellement son élasticité avec l’âge. Elle ressent aussi moins la soif : on propose à boire régulièrement, on observe et on transmet tout changement.",
+      "fiche": {
+        "titre": "Déshydratation de la personne âgée",
+        "texte": "Signes à observer ensemble : boit peu, urines rares et foncées, bouche sèche, fatigue, somnolence ou confusion inhabituelle. Le pli cutané seul n’est pas fiable à cet âge. Proposer à boire régulièrement, observer, transmettre vite."
+      },
+      "contexte": "🧓 Mme Ginette, 89 ans · Depuis deux jours, elle boit beaucoup moins, urine très peu et paraît inhabituellement somnolente."
+    },
+    {
+      "id": "bio-peau-06",
+      "atelier": "bio-peau",
+      "type": "multi",
+      "contexte": "🛏️ M. Fernand, 87 ans · Alité, il bouge très peu. Au niveau du bas du dos (sacrum), tu observes une rougeur qui ne disparaît pas quand tu appuies dessus.",
+      "enonce": "Quelles mesures préviennent l’aggravation de cette escarre débutante ? Choisis-en 4.",
+      "options": [
+        "🍲 Veiller à une bonne alimentation et à l’hydratation",
+        "🧻 Garder la peau propre et sèche, et transmettre l’observation",
+        "💆 Masser énergiquement la rougeur pour relancer la circulation du sang",
+        "🔄 Changer de position régulièrement (toutes les 2 à 3 heures, selon le plan de soins)",
+        "🛏️ Utiliser le matelas et les coussins de prévention prévus"
+      ],
+      "bonnes": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explications": [
+        "Oui : la dénutrition favorise les escarres.",
+        "Oui : l’humidité (urines, sueur) fragilise la peau.",
+        "Non ! On ne masse jamais une zone rouge : cela aggrave les lésions.",
+        "Oui : on supprime la pression sur les zones d’appui.",
+        "Oui : ils répartissent les pressions."
+      ],
+      "pourquoi": "L’escarre est une lésion causée par une compression prolongée de la peau entre un os et le support (lit, fauteuil) : le sang ne circule plus, les tissus meurent. Zones à risque : sacrum, talons, hanches, fesses, omoplates, arrière de la tête.",
+      "fiche": {
+        "titre": "Escarres",
+        "texte": "Compression prolongée → manque de sang → nécrose. Stade 1 : rougeur qui ne blanchit pas à la pression. Prévention : changements de position, matériel adapté, nutrition, hydratation, peau propre et sèche, observation."
+      }
+    },
+    {
+      "id": "bio-peau-07",
+      "atelier": "bio-peau",
+      "type": "tri",
+      "enonce": "De quel degré est chaque brûlure ?",
+      "categories": [
+        "1ᵉʳ degré",
+        "2ᵉ degré",
+        "3ᵉ degré"
+      ],
+      "icones": [
+        "🌞",
+        "🫧",
+        "⬜"
+      ],
+      "elements": [
+        {
+          "texte": "Rougeur douloureuse, comme un coup de soleil",
+          "categorie": 0
+        },
+        {
+          "texte": "Cloques (phlyctènes) et douleur vive",
+          "categorie": 1
+        },
+        {
+          "texte": "Peau blanche, brune ou noirâtre, cartonnée, peu ou pas douloureuse",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "Plus le degré est élevé, plus la brûlure est profonde. Une brûlure du 3ᵉ degré peut être peu douloureuse, car les terminaisons nerveuses sont détruites. Premier geste, la « règle des 15 » : refroidir sous une eau tempérée (environ 15 °C), à environ 15 cm, pendant au moins 15 minutes, sans glace. Attention au refroidissement du corps chez l’enfant ou si la brûlure est étendue. Ne pas percer les cloques.",
+      "fiche": {
+        "titre": "Brûlures",
+        "texte": "1ᵉʳ degré : rougeur. 2ᵉ degré : cloques. 3ᵉ degré : destruction profonde (peau blanche ou noire, cartonnée, peu douloureuse). Règle des 15 : eau ≈ 15 °C, à 15 cm, au moins 15 min, sans glace. Pas de corps gras, ne pas percer les cloques. Avis médical si la brûlure est étendue, profonde, sur le visage, les mains, les plis ou les organes génitaux, ou chez un enfant ou une personne âgée."
+      }
+    },
+    {
+      "id": "bio-peau-08",
+      "atelier": "bio-peau",
+      "type": "multi",
+      "contexte": "👶 Raphaël, 9 mois · Ses fesses sont rouges et irritées au moment du change.",
+      "enonce": "Quels gestes aident à soigner et prévenir l’érythème fessier ? Choisis-en 3.",
+      "options": [
+        "🧼 Nettoyer à l’eau et au savon doux, puis bien sécher en tamponnant",
+        "🔒 Serrer davantage la couche",
+        "🔁 Changer la couche plus souvent",
+        "🌬️ Laisser les fesses à l’air quelques minutes quand c’est possible",
+        "🧽 Frotter fort avec des lingettes parfumées"
+      ],
+      "bonnes": [
+        0,
+        2,
+        3
+      ],
+      "explications": [
+        "Oui : l’humidité entretient l’irritation.",
+        "Non : cela favorise la macération.",
+        "Oui : on limite le contact avec l’urine et les selles.",
+        "Oui : l’air aide la peau à cicatriser.",
+        "Non : le frottement et le parfum irritent."
+      ],
+      "pourquoi": "L’érythème fessier est une irritation due à l’humidité, à l’urine, aux selles et aux frottements. Une crème protectrice (selon les protocoles et l’accord des parents) peut compléter. Transmettre s’il y a des boutons ou si ça ne s’améliore pas.",
+      "fiche": {
+        "titre": "Érythème fessier",
+        "texte": "Irritation du siège : urine, selles, macération, frottements. Changes fréquents, eau + savon doux, séchage par tamponnement, air libre, crème protectrice selon protocole."
+      }
+    },
+    {
+      "id": "bio-peau-09",
+      "atelier": "bio-peau",
+      "type": "tri",
+      "enonce": "Gale ou pédiculose (poux) ?",
+      "categories": [
+        "Gale",
+        "Poux"
+      ],
+      "icones": [
+        "🕷️",
+        "🪲"
+      ],
+      "elements": [
+        {
+          "texte": "Due à un acarien qui creuse des sillons dans la peau",
+          "categorie": 0
+        },
+        {
+          "texte": "Démangeaisons surtout la nuit, entre les doigts, aux poignets",
+          "categorie": 0
+        },
+        {
+          "texte": "On traite en même temps la personne et ses contacts proches, et on lave le linge à 60 °C",
+          "categorie": 0
+        },
+        {
+          "texte": "Insecte qui vit dans les cheveux et pond des lentes",
+          "categorie": 1
+        },
+        {
+          "texte": "Se transmet surtout par contact tête contre tête",
+          "categorie": 1
+        },
+        {
+          "texte": "On vérifie l’entourage, mais on ne traite que les personnes qui ont des poux vivants",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Ces deux parasitoses sont très fréquentes en collectivité et n’ont rien à voir avec un manque de propreté : on informe sans stigmatiser. Gale : la personne et ses contacts proches sont traités en même temps, selon l’avis médical. Poux : pas de traitement « au cas où » pour les personnes sans poux.",
+      "fiche": {
+        "titre": "Gale et poux",
+        "texte": "Gale : acarien (Sarcoptes scabiei), démangeaisons nocturnes, contact peau à peau ; traiter en même temps la personne et ses contacts proches, linge à 60 °C, précautions contact. Poux : insecte, lentes ; traitement + peigne fin pour les personnes qui ont des poux ; vérifier l’entourage, pas de traitement préventif."
+      }
+    },
+    {
+      "id": "bio-locomoteur-01",
+      "atelier": "bio-locomoteur",
+      "type": "tri",
+      "contexte": "💀 Le squelette de la salle de bio s’appelle Oscar. Aide-le à ranger ses os !",
+      "enonce": "Os long, os court ou os plat ?",
+      "categories": [
+        "Os long",
+        "Os court",
+        "Os plat"
+      ],
+      "icones": [
+        "🦴",
+        "🎲",
+        "🍽️"
+      ],
+      "elements": [
+        {
+          "texte": "Fémur (cuisse)",
+          "categorie": 0
+        },
+        {
+          "texte": "Humérus (bras)",
+          "categorie": 0
+        },
+        {
+          "texte": "Os du poignet (carpe)",
+          "categorie": 1
+        },
+        {
+          "texte": "Os de la cheville (tarse)",
+          "categorie": 1
+        },
+        {
+          "texte": "Os du crâne",
+          "categorie": 2
+        },
+        {
+          "texte": "Omoplate et sternum",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "Le squelette adulte compte 206 os. Les os longs servent de leviers pour les mouvements ; les os plats protègent (crâne, cage thoracique) ; les os courts donnent de la souplesse.",
+      "fiche": {
+        "titre": "Types d’os",
+        "texte": "Longs : fémur, humérus, tibia (leviers). Courts : carpe, tarse. Plats : crâne, omoplate, sternum, côtes (protection). Adulte : 206 os."
+      }
+    },
+    {
+      "id": "bio-locomoteur-02",
+      "atelier": "bio-locomoteur",
+      "type": "qcm",
+      "enonce": "Dans un os long d’enfant, quelle zone permet à l’os de grandir en longueur ?",
+      "options": [
+        "Le cartilage de croissance (de conjugaison), entre la diaphyse et l’épiphyse",
+        "Le périoste, l’enveloppe fibreuse qui entoure l’os et le fait grandir en longueur",
+        "La moelle jaune, située au centre de la diaphyse, qui fabrique le nouvel os",
+        "Le cartilage articulaire, qui recouvre l’épiphyse au niveau de l’articulation"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "Os long : diaphyse (corps, avec la moelle jaune au centre), épiphyses (extrémités, os spongieux avec moelle rouge), cartilage articulaire, périoste (enveloppe). Le cartilage de croissance disparaît à la fin de la croissance.",
+      "fiche": {
+        "titre": "L’os long",
+        "texte": "Diaphyse (moelle jaune), épiphyses (os spongieux, moelle rouge qui fabrique les cellules du sang), périoste, cartilage articulaire, cartilage de croissance chez l’enfant."
+      }
+    },
+    {
+      "id": "bio-locomoteur-03",
+      "atelier": "bio-locomoteur",
+      "type": "multi",
+      "enonce": "Quels facteurs favorisent une bonne croissance osseuse chez l’enfant ? Choisis-en 4.",
+      "options": [
+        "🥛 Le calcium (produits laitiers…)",
+        "🥤 Les boissons sucrées à volonté",
+        "☀️ La vitamine D (soleil, supplémentation chez le bébé)",
+        "😴 Un sommeil suffisant (hormone de croissance)",
+        "⚽ L’activité physique"
+      ],
+      "bonnes": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "explications": [
+        "Oui : principal minéral de l’os.",
+        "Non.",
+        "Oui : elle permet d’absorber le calcium.",
+        "Oui : l’hormone de croissance est surtout sécrétée en sommeil profond.",
+        "Oui : l’os se renforce quand il travaille."
+      ],
+      "pourquoi": "La croissance dépend d’hormones (hormone de croissance, hormones thyroïdiennes, hormones sexuelles à la puberté), d’une alimentation suffisante (protéines, calcium, vitamine D), du sommeil et de l’activité physique.",
+      "fiche": {
+        "titre": "Croissance osseuse",
+        "texte": "Hormones (croissance, thyroïde, sexuelles), calcium, vitamine D, protéines, activité physique, sommeil."
+      }
+    },
+    {
+      "id": "bio-locomoteur-04",
+      "atelier": "bio-locomoteur",
+      "type": "tri",
+      "enonce": "Quel type de muscle ?",
+      "categories": [
+        "Strié squelettique",
+        "Lisse",
+        "Cardiaque"
+      ],
+      "icones": [
+        "💪",
+        "🌊",
+        "❤️"
+      ],
+      "elements": [
+        {
+          "texte": "Biceps",
+          "categorie": 0
+        },
+        {
+          "texte": "Se contracte de façon volontaire",
+          "categorie": 0
+        },
+        {
+          "texte": "Paroi de l’estomac et de l’intestin",
+          "categorie": 1
+        },
+        {
+          "texte": "Paroi des vaisseaux sanguins",
+          "categorie": 1
+        },
+        {
+          "texte": "Myocarde : strié mais involontaire",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "Muscles striés squelettiques : volontaires, attachés aux os par les tendons. Muscles lisses : involontaires, dans les organes. Le cœur est un muscle strié particulier qui bat tout seul.",
+      "fiche": {
+        "titre": "3 types de muscles",
+        "texte": "Striés squelettiques (volontaires). Lisses (involontaires, viscères, vaisseaux). Cardiaque (strié, involontaire). Propriétés : excitabilité, contractilité, élasticité, tonicité."
+      }
+    },
+    {
+      "id": "bio-locomoteur-05",
+      "atelier": "bio-locomoteur",
+      "type": "qcm",
+      "contexte": "💪 Lucas plie le coude pour porter son sac.",
+      "enonce": "Que font le biceps et le triceps pendant cette flexion ?",
+      "options": [
+        "Les deux se contractent en même temps pour additionner leur force de traction",
+        "Aucun des deux ne travaille : c’est l’articulation du coude qui se plie seule",
+        "Le triceps se contracte et pousse l’avant-bras, pendant que le biceps se relâche",
+        "Le biceps se contracte et le triceps se relâche (muscles antagonistes)"
+      ],
+      "bonnes": [
+        3
+      ],
+      "pourquoi": "Un muscle ne peut que tirer. Pour la flexion, le biceps se contracte ; pour l’extension, c’est le triceps. L’articulation du coude sert de charnière.",
+      "fiche": {
+        "titre": "Muscles antagonistes",
+        "texte": "Flexion du coude : biceps contracté, triceps relâché. Extension : l’inverse. Les tendons relient les muscles aux os ; l’articulation est la charnière."
+      }
+    },
+    {
+      "id": "bio-locomoteur-06",
+      "atelier": "bio-locomoteur",
+      "type": "tri",
+      "enonce": "Articulation fixe, semi-mobile ou mobile ?",
+      "categories": [
+        "Fixe",
+        "Semi-mobile (cartilagineuse)",
+        "Mobile (synoviale)"
+      ],
+      "icones": [
+        "🔒",
+        "↔️",
+        "🔄"
+      ],
+      "elements": [
+        {
+          "texte": "Sutures entre les os du crâne de l’adulte",
+          "categorie": 0
+        },
+        {
+          "texte": "Articulations entre les vertèbres (disques)",
+          "categorie": 1
+        },
+        {
+          "texte": "Genou",
+          "categorie": 2
+        },
+        {
+          "texte": "Épaule",
+          "categorie": 2
+        },
+        {
+          "texte": "Contient une capsule et un liquide, la synovie",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "Chez le nourrisson, les os du crâne sont séparés par des sutures encore souples. Là où plusieurs sutures se rejoignent, il reste des espaces de membrane : les fontanelles, qui se ferment peu à peu. L’articulation synoviale associe cartilage, capsule, synovie et ligaments.",
+      "fiche": {
+        "titre": "Articulations",
+        "texte": "Fixes : sutures du crâne. Semi-mobiles : vertèbres (disques). Mobiles (synoviales) : genou, épaule, hanche ; cartilage, capsule, synovie, ligaments."
+      }
+    },
+    {
+      "id": "bio-locomoteur-07",
+      "atelier": "bio-locomoteur",
+      "type": "tri",
+      "enonce": "Quelle pathologie ?",
+      "categories": [
+        "Ostéoporose",
+        "Arthrose",
+        "Arthrite",
+        "Entorse",
+        "Luxation"
+      ],
+      "icones": [
+        "🧽",
+        "⚙️",
+        "🔥",
+        "🦶",
+        "💥"
+      ],
+      "elements": [
+        {
+          "texte": "L’os devient fragile et poreux (fréquent après la ménopause)",
+          "categorie": 0
+        },
+        {
+          "texte": "Usure du cartilage, douleur aggravée par le mouvement",
+          "categorie": 1
+        },
+        {
+          "texte": "Inflammation de l’articulation, douleur même au repos et la nuit",
+          "categorie": 2
+        },
+        {
+          "texte": "Lésion des ligaments, souvent à la cheville",
+          "categorie": 3
+        },
+        {
+          "texte": "Les os de l’articulation se déboîtent (ex. : épaule)",
+          "categorie": 4
+        }
+      ],
+      "pourquoi": "Astuce : « -ose » évoque souvent l’usure ou la dégénérescence (arthrose), « -ite » l’inflammation (arthrite). L’ostéoporose expose aux fractures du col du fémur, du poignet, des vertèbres.",
+      "fiche": {
+        "titre": "Pathologies ostéo-articulaires",
+        "texte": "Ostéoporose : os fragile → fractures. Arthrose : usure du cartilage. Arthrite : inflammation. Entorse : ligaments. Luxation : déboîtement. Fracture : rupture de l’os."
+      }
+    },
+    {
+      "id": "bio-locomoteur-08",
+      "atelier": "bio-locomoteur",
+      "type": "tri",
+      "enonce": "Quelle déformation de la colonne vertébrale ?",
+      "categories": [
+        "Scoliose",
+        "Cyphose",
+        "Lordose"
+      ],
+      "icones": [
+        "〰️",
+        "🐢",
+        "🌙"
+      ],
+      "elements": [
+        {
+          "texte": "Déviation latérale de la colonne, avec rotation des vertèbres",
+          "categorie": 0
+        },
+        {
+          "texte": "À repérer et à surveiller surtout pendant la croissance (adolescence)",
+          "categorie": 0
+        },
+        {
+          "texte": "Dos rond, courbure exagérée du haut du dos",
+          "categorie": 1
+        },
+        {
+          "texte": "Creusement exagéré du bas du dos (région lombaire)",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "La colonne a des courbures naturelles ; c’est leur accentuation, ou une déviation sur le côté, qui pose problème. Une bonne posture et un sac porté sur les deux épaules limitent certaines douleurs de dos, mais ne préviennent pas la scoliose : l’essentiel est de la repérer tôt et de la faire suivre.",
+      "fiche": {
+        "titre": "Déformations du dos",
+        "texte": "Scoliose : déviation latérale + rotation des vertèbres, à repérer et suivre pendant la croissance. Cyphose : dos rond. Lordose : cambrure lombaire exagérée."
+      }
+    },
+    {
+      "id": "bio-locomoteur-09",
+      "atelier": "bio-locomoteur",
+      "type": "multi",
+      "contexte": "🧑‍⚕️ Tu aides chaque jour plusieurs personnes à se lever et à se laver. Ta collègue a mal au dos et au poignet depuis des semaines.",
+      "enonce": "Qu’est-ce qui favorise les troubles musculosquelettiques (TMS) ? Choisis-en 3.",
+      "options": [
+        "🏋️ Le port de charges lourdes et les efforts",
+        "🔁 Les gestes répétitifs",
+        "🦽 Utiliser les aides techniques (lève-personne, verticalisateur)",
+        "🤝 Travailler à deux quand c’est nécessaire",
+        "🙇 Les postures contraignantes (dos penché, torsions)"
+      ],
+      "bonnes": [
+        0,
+        1,
+        4
+      ],
+      "explications": [
+        "Oui.",
+        "Oui.",
+        "Non : ce sont des moyens de prévention !",
+        "Non : c’est aussi de la prévention.",
+        "Oui."
+      ],
+      "pourquoi": "Les TMS touchent les muscles, tendons et nerfs (lombalgie, tendinite de l’épaule, syndrome du canal carpien). Ce sont les premières maladies professionnelles. La démarche PRAP 2S t’apprend à les prévenir.",
+      "fiche": {
+        "titre": "TMS",
+        "texte": "Atteintes des muscles, tendons, nerfs liées aux gestes répétitifs, efforts, postures. Ex. : lombalgie, tendinite, canal carpien. Prévention : aides techniques, travail à deux, gestes et postures (PRAP 2S)."
+      }
+    },
+    {
+      "id": "bio-locomoteur-10",
+      "atelier": "bio-locomoteur",
+      "type": "tri",
+      "contexte": "🦴 Au labo, Dr Zoom montre un fémur coupé dans sa longueur.",
+      "enonce": "Légende l’os long : à quelle partie correspond chaque description ?",
+      "categories": [
+        "Épiphyse",
+        "Diaphyse",
+        "Cartilage articulaire",
+        "Périoste"
+      ],
+      "icones": [
+        "🔘",
+        "📏",
+        "🧊",
+        "🧥"
+      ],
+      "elements": [
+        {
+          "texte": "Extrémité de l’os, en os spongieux, avec de la moelle rouge qui fabrique les cellules du sang",
+          "categorie": 0
+        },
+        {
+          "texte": "Corps de l’os, en os compact, avec la moelle jaune au centre",
+          "categorie": 1
+        },
+        {
+          "texte": "Couche lisse qui recouvre le bout de l’os et permet un glissement sans frottement",
+          "categorie": 2
+        },
+        {
+          "texte": "Membrane qui entoure l’os ; elle permet sa croissance en épaisseur et sa réparation après une fracture",
+          "categorie": 3
+        }
+      ],
+      "pourquoi": "Un os long (fémur, humérus…) a un corps, la diaphyse, et deux extrémités, les épiphyses. Chez l’enfant, le cartilage de croissance, entre diaphyse et épiphyse, permet à l’os de s’allonger. Le périoste, riche en vaisseaux et en nerfs, explique pourquoi une fracture est si douloureuse.",
+      "fiche": {
+        "titre": "Légender l’os long",
+        "texte": "Épiphyses (os spongieux, moelle rouge), diaphyse (os compact, moelle jaune), cartilage articulaire (glissement), périoste (enveloppe : croissance en épaisseur, réparation), cartilage de croissance chez l’enfant."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-locomoteur-11",
+      "atelier": "bio-locomoteur",
+      "type": "tri",
+      "enonce": "Quel type de fracture ?",
+      "categories": [
+        "Fracture fermée",
+        "Fracture ouverte",
+        "Fracture « en bois vert »"
+      ],
+      "icones": [
+        "🦵",
+        "🩸",
+        "🌿"
+      ],
+      "elements": [
+        {
+          "texte": "La peau est intacte au-dessus de l’os cassé",
+          "categorie": 0
+        },
+        {
+          "texte": "Une plaie communique avec l’os cassé, même si l’os n’est pas visible : risque d’infection et de saignement",
+          "categorie": 1
+        },
+        {
+          "texte": "On protège la plaie (pansement stérile si possible), sans mobiliser le membre, et on alerte",
+          "categorie": 1
+        },
+        {
+          "texte": "L’os plie et se fissure d’un seul côté, sans se rompre complètement",
+          "categorie": 2
+        },
+        {
+          "texte": "Fréquente chez l’enfant, dont les os sont plus souples",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "Une fracture est une rupture de l’os. La fracture ouverte est plus grave : une plaie fait communiquer l’os cassé avec l’extérieur, même quand l’os ne se voit pas, d’où le risque d’infection et de saignement. Chez l’enfant, l’os encore souple se fissure souvent sans se casser complètement. Toute suspicion de fracture : ne pas mobiliser, alerter, avis médical et radiographie.",
+      "fiche": {
+        "titre": "Les fractures",
+        "texte": "Fermée : peau intacte. Ouverte : une plaie communique avec la fracture (os pas forcément visible) → infection, saignement. En bois vert : fissure incomplète, chez l’enfant. Signes : douleur vive, gonflement, déformation, impossibilité de bouger. Ne pas mobiliser, alerter."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-locomoteur-12",
+      "atelier": "bio-locomoteur",
+      "type": "multi",
+      "contexte": "🧓 M. Marcel, 82 ans · Il a chuté dans sa chambre. Il a très mal à la hanche ; sa jambe paraît plus courte et tournée vers l’extérieur.",
+      "enonce": "Que fais-tu ? Choisis-en 3.",
+      "options": [
+        "🛑 Ne pas le relever et ne pas bouger sa jambe : on la laisse dans la position trouvée",
+        "🦵 Remettre sa jambe bien droite dans l’axe pour le soulager",
+        "🚶 L’aider à se lever doucement pour voir s’il peut marcher jusqu’au lit",
+        "📞 Alerter immédiatement l’équipe soignante (ou le 15)",
+        "🧣 Le couvrir, le rassurer et rester près de lui en le surveillant"
+      ],
+      "bonnes": [
+        0,
+        3,
+        4
+      ],
+      "explications": [
+        "Oui : bouger un membre fracturé aggrave les lésions et la douleur.",
+        "Non : on ne réaligne jamais un membre qui semble fracturé.",
+        "Non : surtout pas.",
+        "Oui : c’est une urgence.",
+        "Oui : le froid, la peur et la douleur aggravent son état."
+      ],
+      "pourquoi": "Douleur vive, jambe raccourcie et tournée vers l’extérieur font suspecter une fracture du col du fémur, fréquente chez la personne âgée à cause de l’ostéoporose. On ne relève pas la personne et on ne mobilise pas le membre : on immobilise dans la position trouvée, on alerte et on surveille.",
+      "fiche": {
+        "titre": "Suspicion de fracture",
+        "texte": "Signes : douleur vive, gonflement, déformation, impossibilité de bouger ; jambe raccourcie et tournée vers l’extérieur = col du fémur. Conduite : ne pas relever, ne pas mobiliser, alerter, couvrir, rassurer, surveiller, transmettre."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-digestif-01",
+      "atelier": "bio-digestif",
+      "type": "ordre",
+      "contexte": "🍎 Tu es une bouchée de pomme. L’aventure commence dans la bouche de Zoé…",
+      "enonce": "Remets ton voyage dans l’ordre.",
+      "elements": [
+        {
+          "texte": "Bouche : mastication et salive"
+        },
+        {
+          "texte": "Pharynx puis œsophage"
+        },
+        {
+          "texte": "Estomac : brassage et suc gastrique acide"
+        },
+        {
+          "texte": "Intestin grêle : fin de la digestion et absorption des nutriments"
+        },
+        {
+          "texte": "Gros intestin (côlon) : réabsorption de l’eau"
+        },
+        {
+          "texte": "Rectum puis anus : élimination des selles"
+        }
+      ],
+      "pourquoi": "Les glandes annexes aident la digestion : glandes salivaires, foie (bile, qui aide à digérer les graisses) et pancréas (suc pancréatique). Dans l’intestin grêle, les nutriments traversent les villosités : le glucose et les acides aminés passent dans le sang ; une grande partie des lipides passe d’abord dans la lymphe.",
+      "fiche": {
+        "titre": "Le tube digestif",
+        "texte": "Bouche → pharynx → œsophage → estomac → intestin grêle (absorption vers le sang et la lymphe) → gros intestin (eau) → rectum → anus. Glandes annexes : salivaires, foie (bile), pancréas."
+      }
+    },
+    {
+      "id": "bio-digestif-02",
+      "atelier": "bio-digestif",
+      "type": "qcm",
+      "enonce": "Dans quel organe la plupart des nutriments passent-ils dans le sang ?",
+      "options": [
+        "L’intestin grêle",
+        "La vessie",
+        "Le gros intestin (côlon)",
+        "L’estomac"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "L’intestin grêle mesure plusieurs mètres et sa paroi est couverte de replis et de villosités : une immense surface d’échange pour absorber les nutriments.",
+      "fiche": {
+        "titre": "Absorption",
+        "texte": "Intestin grêle : villosités = grande surface d’échange → les nutriments passent dans le sang et la lymphe."
+      }
+    },
+    {
+      "id": "bio-digestif-03",
+      "atelier": "bio-digestif",
+      "type": "tri",
+      "enonce": "Quel type de dent pour chaque rôle ?",
+      "categories": [
+        "Incisives",
+        "Canines",
+        "Prémolaires et molaires"
+      ],
+      "icones": [
+        "✂️",
+        "🐺",
+        "⚙️"
+      ],
+      "elements": [
+        {
+          "texte": "Couper les aliments",
+          "categorie": 0
+        },
+        {
+          "texte": "Déchirer les aliments",
+          "categorie": 1
+        },
+        {
+          "texte": "Broyer et écraser les aliments",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "Dentition temporaire (de lait) : 20 dents, la première vers 6 mois. Dentition définitive : jusqu’à 32 dents, à partir de 6 ans environ (la « dent de 6 ans » est une molaire). Les 4 dents de sagesse peuvent manquer ou ne jamais sortir : beaucoup d’adultes ont 28 dents.",
+      "fiche": {
+        "titre": "Les dents",
+        "texte": "Incisives (couper), canines (déchirer), prémolaires et molaires (broyer). Temporaire : 20 dents. Définitive : jusqu’à 32 dents (28 sans les dents de sagesse). Structure : émail, dentine, pulpe, racine."
+      }
+    },
+    {
+      "id": "bio-digestif-04",
+      "atelier": "bio-digestif",
+      "type": "ordre",
+      "enonce": "Remets l’évolution d’une carie dans l’ordre.",
+      "elements": [
+        {
+          "texte": "La plaque dentaire se forme : les bactéries transforment les sucres en acides"
+        },
+        {
+          "texte": "L’émail est attaqué : tache, petit trou indolore"
+        },
+        {
+          "texte": "La dentine est touchée : sensibilité au chaud, au froid, au sucré"
+        },
+        {
+          "texte": "La pulpe est atteinte : douleur intense (rage de dents)"
+        },
+        {
+          "texte": "Abcès possible si l’infection s’étend"
+        }
+      ],
+      "pourquoi": "Prévention : se brosser les dents 2 fois par jour avec un dentifrice fluoré, limiter le grignotage sucré, consulter régulièrement le dentiste. Chez le bébé : pas de biberon de lait ou de jus pour s’endormir.",
+      "fiche": {
+        "titre": "La carie",
+        "texte": "Plaque dentaire (bactéries + sucres → acides) → émail → dentine → pulpe → abcès. Prévention : brossage 2×/jour, fluor, moins de sucre, dentiste."
+      }
+    },
+    {
+      "id": "bio-digestif-05",
+      "atelier": "bio-digestif",
+      "type": "tri",
+      "enonce": "Spécificité du jeune enfant ou de la personne âgée ?",
+      "categories": [
+        "Jeune enfant",
+        "Personne âgée"
+      ],
+      "icones": [
+        "👶",
+        "🧓"
+      ],
+      "elements": [
+        {
+          "texte": "Estomac de petite taille : repas petits et fréquents",
+          "categorie": 0
+        },
+        {
+          "texte": "Se déshydrate très vite en cas de diarrhée",
+          "categorie": 0
+        },
+        {
+          "texte": "Enzymes digestives pas encore toutes matures",
+          "categorie": 0
+        },
+        {
+          "texte": "Moins de salive, problèmes de dents ou de prothèse",
+          "categorie": 1
+        },
+        {
+          "texte": "Transit ralenti : constipation fréquente",
+          "categorie": 1
+        },
+        {
+          "texte": "Sensation de soif diminuée",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Ces spécificités expliquent tes gestes professionnels : fractionner les repas du bébé, surveiller son hydratation, adapter les textures et proposer à boire souvent à la personne âgée.",
+      "fiche": {
+        "titre": "Digestion et âges",
+        "texte": "Jeune enfant : petit estomac, immaturité, déshydratation rapide. Personne âgée : moins de salive, dents fragiles, constipation, soif diminuée → hydrater et adapter les textures."
+      }
+    },
+    {
+      "id": "bio-digestif-06",
+      "atelier": "bio-digestif",
+      "type": "multi",
+      "contexte": "🤢 Plusieurs enfants de la crèche ont des vomissements et de la diarrhée. On parle d’une gastro-entérite.",
+      "enonce": "Quelles mesures sont adaptées ? Choisis-en 3.",
+      "options": [
+        "🧼 Renforcer l’hygiène des mains et le nettoyage des surfaces et des jouets",
+        "🍟 Proposer un repas copieux et gras pour « caler l’estomac » et compenser les pertes",
+        "👀 Surveiller les signes de déshydratation, prévenir les parents et transmettre",
+        "💧 Proposer souvent à boire, en petites quantités, de préférence une solution de réhydratation orale (SRO), selon le protocole",
+        "🤝 Continuer à partager les jouets sans les nettoyer, pour ne pas exclure les enfants malades"
+      ],
+      "bonnes": [
+        0,
+        2,
+        3
+      ],
+      "explications": [
+        "Oui : la transmission est surtout féco-orale (mains, objets).",
+        "Non : un repas gras est mal toléré et peut aggraver les vomissements.",
+        "Oui : somnolence, yeux creux, couches sèches, perte de poids.",
+        "Oui : le risque principal chez le jeune enfant, c’est la déshydratation. La SRO compense l’eau et les sels perdus ; elle s’achète sans ordonnance.",
+        "Non : les jouets non nettoyés transmettent le virus."
+      ],
+      "pourquoi": "La gastro-entérite est le plus souvent virale (rotavirus, norovirus) et très contagieuse. Chez le nourrisson, une déshydratation peut devenir grave en quelques heures : un enfant qui somnole, refuse de boire, vomit tout ou a des couches sèches doit être vu rapidement par un médecin, sans attendre.",
+      "fiche": {
+        "titre": "Gastro-entérite",
+        "texte": "Souvent virale, très contagieuse (mains, objets). Vomissements, diarrhée, parfois fièvre. Risque : déshydratation (nourrisson, personne âgée). SRO en petites quantités répétées + hygiène des mains et des surfaces. Signes d’alerte → avis médical rapide."
+      }
+    },
+    {
+      "id": "bio-digestif-07",
+      "atelier": "bio-digestif",
+      "type": "multi",
+      "contexte": "🧓 M. Lucien, 86 ans · Il a tendance à être constipé. Aujourd’hui, il va bien : ni douleur ni vomissement.",
+      "enonce": "Quelles habitudes aident à prévenir la constipation ? Choisis-en 3.",
+      "options": [
+        "💧 Boire suffisamment",
+        "🍞 Supprimer les légumes",
+        "🚶 Bouger, marcher selon ses capacités",
+        "🛏️ Rester allongé toute la journée",
+        "🥦 Manger des fibres (fruits, légumes, céréales complètes)"
+      ],
+      "bonnes": [
+        0,
+        2,
+        4
+      ],
+      "explications": [
+        "Oui.",
+        "Non.",
+        "Oui : le mouvement stimule l’intestin.",
+        "Non.",
+        "Oui."
+      ],
+      "pourquoi": "On respecte aussi ses habitudes et son intimité aux toilettes. Une constipation inhabituelle avec douleurs au ventre, vomissements, ventre gonflé ou arrêt des gaz doit être signalée rapidement à l’équipe soignante.",
+      "fiche": {
+        "titre": "Constipation",
+        "texte": "Fréquente chez la personne âgée (transit lent, peu de boisson, immobilité, médicaments). Prévention : eau, fibres, activité, horaires réguliers, intimité respectée. Alerte : douleurs, vomissements, ventre gonflé, arrêt des gaz → transmettre vite."
+      }
+    },
+    {
+      "id": "bio-digestif-08",
+      "atelier": "bio-digestif",
+      "type": "tri",
+      "contexte": "🧑‍🔬 Dr Zoom, 42 ans · « Suivons un sandwich : pain, jambon, beurre. Qui découpe quoi ? »",
+      "enonce": "Associe chaque enzyme et chaque produit obtenu à la famille d’aliments qu’il concerne.",
+      "categories": [
+        "Glucides (amidon du pain)",
+        "Protéines (jambon)",
+        "Lipides (beurre)"
+      ],
+      "icones": [
+        "🍞",
+        "🥩",
+        "🧈"
+      ],
+      "elements": [
+        {
+          "texte": "Amylases (salive, suc pancréatique) : amidon → maltose",
+          "categorie": 0
+        },
+        {
+          "texte": "Enzymes de l’intestin grêle : maltose → glucose",
+          "categorie": 0
+        },
+        {
+          "texte": "Protéases (suc gastrique, suc pancréatique) : protéines → peptides",
+          "categorie": 1
+        },
+        {
+          "texte": "Peptidases de l’intestin : peptides → acides aminés",
+          "categorie": 1
+        },
+        {
+          "texte": "La bile disperse les graisses en fines gouttelettes",
+          "categorie": 2
+        },
+        {
+          "texte": "Lipase (suc pancréatique) : lipides → acides gras et monoglycérides",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "Les enzymes digestives découpent les grosses molécules des aliments en plusieurs étapes, jusqu’aux nutriments, assez petits pour traverser la paroi de l’intestin grêle. Chaque enzyme agit sur un seul type de molécule. La bile n’est pas une enzyme : elle disperse les graisses pour faciliter le travail de la lipase.",
+      "fiche": {
+        "titre": "Enzymes digestives",
+        "texte": "Amidon → (amylases) → maltose → (enzymes intestinales) → glucose. Protéines → (protéases) → peptides → (peptidases) → acides aminés. Lipides → (bile + lipase) → acides gras et monoglycérides. Une enzyme = un type de molécule, en plusieurs étapes."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-digestif-09",
+      "atelier": "bio-digestif",
+      "type": "tri",
+      "contexte": "🔬 Au microscope, une villosité de l’intestin grêle : au centre, des capillaires sanguins et un petit vaisseau lymphatique.",
+      "enonce": "Après l’absorption, par où passe chaque nutriment ?",
+      "categories": [
+        "Surtout dans le sang",
+        "D’abord dans la lymphe"
+      ],
+      "icones": [
+        "🩸",
+        "💛"
+      ],
+      "elements": [
+        {
+          "texte": "Glucose",
+          "categorie": 0
+        },
+        {
+          "texte": "Acides aminés",
+          "categorie": 0
+        },
+        {
+          "texte": "Eau et sels minéraux",
+          "categorie": 0
+        },
+        {
+          "texte": "La plupart des lipides (reconstitués en graisses dans les cellules de l’intestin)",
+          "categorie": 1
+        },
+        {
+          "texte": "Vitamines liposolubles (A, D, E, K), transportées avec les lipides",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Chaque villosité contient des capillaires sanguins et un vaisseau lymphatique (le chylifère). Le glucose et les acides aminés partent dans le sang, d’abord vers le foie. Dans les cellules de l’intestin, la plupart des lipides absorbés sont reconstitués en graisses, emballées dans de petites particules (les chylomicrons) qui passent dans la lymphe, puis rejoignent le sang près du cœur. Certains petits acides gras passent directement dans le sang.",
+      "fiche": {
+        "titre": "Devenir des nutriments",
+        "texte": "Villosité = capillaires sanguins + vaisseau lymphatique. Sang : glucose, acides aminés, eau, sels minéraux (→ foie). Lymphe : la plupart des lipides (reconstitués en graisses, transportés en chylomicrons) et les vitamines A, D, E, K."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-rein-01",
+      "atelier": "bio-rein",
+      "type": "ordre",
+      "enonce": "Remets dans l’ordre le trajet de l’urine.",
+      "elements": [
+        {
+          "texte": "Reins : fabrication de l’urine"
+        },
+        {
+          "texte": "Uretères"
+        },
+        {
+          "texte": "Vessie : stockage"
+        },
+        {
+          "texte": "Urètre : évacuation"
+        }
+      ],
+      "pourquoi": "Astuce : uretÈRES (2, un par rein) avant urÈTRE (1, la sortie). L’urètre de la femme est court, ce qui favorise les infections urinaires.",
+      "fiche": {
+        "titre": "Appareil excréteur",
+        "texte": "2 reins → 2 uretères → vessie → urètre. Uretères AVANT la vessie, urètre APRÈS."
+      }
+    },
+    {
+      "id": "bio-rein-02",
+      "atelier": "bio-rein",
+      "type": "multi",
+      "enonce": "Quels sont les rôles du rein ? Choisis-en 4.",
+      "options": [
+        "🚮 Éliminer les déchets du sang (urée, créatinine)",
+        "🩺 Participer au contrôle de la pression artérielle",
+        "🍔 Digérer les graisses du repas en fabriquant de la bile",
+        "💧 Régler la quantité d’eau et de sels de l’organisme",
+        "🔴 Stimuler la fabrication des globules rouges (hormone EPO)"
+      ],
+      "bonnes": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explications": [
+        "Oui.",
+        "Oui.",
+        "Non : la bile est fabriquée par le foie ; avec le suc pancréatique, elle permet la digestion des graisses.",
+        "Oui : il participe à l’homéostasie.",
+        "Oui."
+      ],
+      "pourquoi": "Le rein est un filtre et un régulateur de l’homéostasie. Il active aussi la vitamine D.",
+      "fiche": {
+        "titre": "Rôles du rein",
+        "texte": "Épuration (urée, créatinine), équilibre eau et sels (homéostasie), pression artérielle, EPO (globules rouges), activation de la vitamine D."
+      }
+    },
+    {
+      "id": "bio-rein-03",
+      "atelier": "bio-rein",
+      "type": "tri",
+      "enonce": "Quelle partie du néphron fait quoi ?",
+      "categories": [
+        "Glomérule",
+        "Tubule"
+      ],
+      "icones": [
+        "🧶",
+        "🔁"
+      ],
+      "elements": [
+        {
+          "texte": "Filtre le sang : formation de l’urine primitive",
+          "categorie": 0
+        },
+        {
+          "texte": "Réabsorbe l’eau, le glucose et les sels utiles",
+          "categorie": 1
+        },
+        {
+          "texte": "Sécrète certaines substances dans l’urine",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Chaque rein contient environ un million de néphrons. Le glomérule filtre beaucoup de liquide chaque jour, mais le tubule en récupère presque tout : on n’urine qu’environ 1,5 L par jour.",
+      "fiche": {
+        "titre": "Le néphron",
+        "texte": "Unité de fonctionnement du rein (≈ 1 million par rein). Glomérule : filtration. Tubule : réabsorption (eau, glucose, sels) et sécrétion → urine définitive."
+      }
+    },
+    {
+      "id": "bio-rein-04",
+      "atelier": "bio-rein",
+      "type": "qcm",
+      "contexte": "🔥 Mme Sophie, 32 ans · Brûlures en urinant, envies d’uriner très fréquentes. Le médecin prescrit un ECBU.",
+      "enonce": "À quoi sert cet examen ?",
+      "options": [
+        "Mesurer la quantité de sucre dans les urines pour dépister un diabète déséquilibré",
+        "Doser le sodium et le potassium des urines, comme un ionogramme, pour évaluer les reins",
+        "Rechercher une infection urinaire et identifier la bactérie en cause, avec un antibiogramme si nécessaire",
+        "Compter les chromosomes des cellules urinaires pour dépister une anomalie génétique"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "ECBU = examen cytobactériologique des urines. On recueille les urines « en milieu de jet » après une toilette intime, dans un flacon stérile, pour ne pas contaminer l’échantillon. Si une bactérie est trouvée, l’antibiogramme indique quels antibiotiques sont efficaces contre elle. L’ionogramme, lui, dose les ions (sodium, potassium…).",
+      "fiche": {
+        "titre": "ECBU et ionogramme",
+        "texte": "ECBU : recherche d’infection urinaire, identification de la bactérie, antibiogramme si besoin ; recueil en milieu de jet après toilette, flacon stérile. Ionogramme : dosage des ions (Na⁺, K⁺, Cl⁻…)."
+      }
+    },
+    {
+      "id": "bio-rein-05",
+      "atelier": "bio-rein",
+      "type": "multi",
+      "enonce": "Comment prévenir les infections urinaires ? Choisis-en 3.",
+      "options": [
+        "🚱 Boire moins pour aller moins souvent aux toilettes",
+        "🚽 Ne pas se retenir d’uriner",
+        "💧 Boire suffisamment",
+        "🧴 Faire des toilettes intimes très fréquentes avec des produits agressifs",
+        "🧻 S’essuyer d’avant en arrière"
+      ],
+      "bonnes": [
+        1,
+        2,
+        4
+      ],
+      "explications": [
+        "Non !",
+        "Oui : l’urine stagnante favorise les bactéries.",
+        "Oui : on « rince » la vessie.",
+        "Non : on détruit la flore protectrice.",
+        "Oui : on évite d’amener les bactéries intestinales (E. coli) vers l’urètre."
+      ],
+      "pourquoi": "La bactérie la plus souvent en cause est Escherichia coli, qui vient de l’intestin. Les femmes sont plus touchées (urètre court). Chez la personne âgée, une infection peut donner des signes inhabituels (fatigue, confusion, chute), mais ces signes ont bien d’autres causes possibles : on observe, on transmet, et c’est le médecin qui fait le diagnostic.",
+      "fiche": {
+        "titre": "Infection urinaire",
+        "texte": "Souvent E. coli. Brûlures, envies fréquentes, parfois fièvre ; chez la personne âgée, signes parfois inhabituels : observer et transmettre. Prévention : boire, ne pas se retenir, hygiène d’avant en arrière."
+      }
+    },
+    {
+      "id": "bio-rein-06",
+      "atelier": "bio-rein",
+      "type": "multi",
+      "contexte": "🧓 Mme Odette, 84 ans · Elle a des fuites urinaires et a honte. Elle a décidé de ne presque plus boire.",
+      "enonce": "Quelles réponses professionnelles sont adaptées ? Choisis-en 3.",
+      "options": [
+        "⏰ Lui proposer d’aller aux toilettes à heures régulières",
+        "🙊 En parler devant les autres résidents pour plaisanter",
+        "🤝 L’écouter avec discrétion et respect, sans la juger",
+        "🚱 L’encourager à boire encore moins",
+        "💧 Lui expliquer qu’il faut continuer à boire et transmettre la situation à l’équipe"
+      ],
+      "bonnes": [
+        0,
+        2,
+        4
+      ],
+      "explications": [
+        "Oui : on anticipe les besoins.",
+        "Non : atteinte à la dignité.",
+        "Oui : l’incontinence touche à l’intimité et à l’estime de soi.",
+        "Non.",
+        "Oui : boire moins expose à la déshydratation et aux infections urinaires."
+      ],
+      "pourquoi": "L’incontinence urinaire est une perte involontaire d’urine (à l’effort, par urgence…). On préserve la dignité : protections adaptées, toilettes accessibles, aide à la mobilité, discrétion.",
+      "fiche": {
+        "titre": "Incontinence urinaire",
+        "texte": "Perte involontaire d’urine. Ne jamais réduire les boissons pour éviter les fuites ; respecter seulement une éventuelle restriction prescrite par le médecin. Accompagnement régulier aux toilettes, protections adaptées, hygiène de la peau, respect et discrétion, transmission."
+      }
+    },
+    {
+      "id": "bio-rein-07",
+      "atelier": "bio-rein",
+      "type": "qcm",
+      "enonce": "M. Henri a une insuffisance rénale chronique avancée. Ses reins ne filtrent presque plus son sang. Quel traitement peut compenser la perte de leur fonction ?",
+      "options": [
+        "Le vaccin contre la grippe chaque année",
+        "La dialyse, ou une greffe de rein",
+        "Des antibiotiques au long cours",
+        "Un régime riche en protéines"
+      ],
+      "bonnes": [
+        1
+      ],
+      "pourquoi": "L’hémodialyse filtre le sang avec une machine, en général 3 séances par semaine. La dialyse péritonéale utilise le péritoine comme filtre, le plus souvent chaque jour. Les deux éliminent les déchets et l’excès d’eau, mais ne remplacent pas toutes les fonctions du rein (hormones, par exemple). La greffe peut rendre une fonction rénale plus complète. Causes fréquentes d’insuffisance rénale : diabète et hypertension, d’où l’importance de les prévenir et de les surveiller.",
+      "fiche": {
+        "titre": "Insuffisance rénale",
+        "texte": "Les reins ne filtrent plus assez : déchets et eau s’accumulent. Causes fréquentes : diabète, HTA. Traitements : régime adapté, dialyse (épure le sang, mais ne remplace pas toutes les fonctions du rein), greffe."
+      }
+    },
+    {
+      "id": "bio-rein-08",
+      "atelier": "bio-rein",
+      "type": "tri",
+      "contexte": "📝 Tu aides M. Paul, 78 ans, après sa toilette. Avant de vider l’urinal, tu observes ses urines.",
+      "enonce": "Observation habituelle ou observation à transmettre ?",
+      "categories": [
+        "Habituel",
+        "À transmettre"
+      ],
+      "icones": [
+        "✅",
+        "📣"
+      ],
+      "elements": [
+        {
+          "texte": "Urines jaune clair, limpides",
+          "categorie": 0
+        },
+        {
+          "texte": "Environ 1,5 L d’urines par jour chez l’adulte",
+          "categorie": 0
+        },
+        {
+          "texte": "Urines foncées et peu abondantes",
+          "categorie": 1
+        },
+        {
+          "texte": "Urines troubles, avec une odeur forte",
+          "categorie": 1
+        },
+        {
+          "texte": "Urines rouges ou présence de sang",
+          "categorie": 1
+        },
+        {
+          "texte": "Brûlures ou douleurs en urinant",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Observer les urines fait partie de la surveillance quotidienne. Des urines foncées et rares peuvent signaler un manque de boisson ; troubles et malodorantes, une infection possible ; du sang doit toujours être signalé. Tu ne poses pas de diagnostic : tu observes, tu notes et tu transmets à l’équipe.",
+      "fiche": {
+        "titre": "Observer les urines",
+        "texte": "Habituel : jaune clair, limpides, ≈ 1,5 L/jour (adulte). À transmettre : urines foncées et rares, troubles, odeur forte, sang, douleurs ou brûlures, changement de quantité."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-locomoteur-13",
+      "atelier": "bio-locomoteur",
+      "type": "tri",
+      "enonce": "Associe chaque propriété du muscle à sa définition.",
+      "categories": [
+        "Excitabilité",
+        "Contractilité",
+        "Élasticité",
+        "Extensibilité"
+      ],
+      "icones": [
+        "⚡",
+        "💪",
+        "🔄",
+        "↔️"
+      ],
+      "elements": [
+        {
+          "texte": "Il réagit à une stimulation, par exemple un message nerveux",
+          "categorie": 0
+        },
+        {
+          "texte": "Il se raccourcit et tire sur l’os auquel il est attaché",
+          "categorie": 1
+        },
+        {
+          "texte": "Il reprend sa forme de départ après avoir été étiré",
+          "categorie": 2
+        },
+        {
+          "texte": "Il peut s’allonger quand on l’étire",
+          "categorie": 3
+        }
+      ],
+      "pourquoi": "Le muscle reçoit l’ordre du nerf (excitabilité), se raccourcit (contractilité), peut être étiré (extensibilité) puis revient à sa forme de départ, comme un élastique (élasticité).",
+      "fiche": {
+        "titre": "Les 4 propriétés du muscle",
+        "texte": "Excitabilité : réagir à un stimulus. Contractilité : se raccourcir. Extensibilité : s’allonger quand on l’étire. Élasticité : reprendre sa forme."
+      },
+      "meta": {
+        "ajout": "programme-2026-11"
+      }
+    },
+    {
+      "id": "bio-locomoteur-14",
+      "atelier": "bio-locomoteur",
+      "type": "qcm",
+      "contexte": "🧘 Pendant une séance, le kiné étire doucement le muscle de la cuisse de M. Durand. Quand il relâche, le muscle reprend sa longueur de départ.",
+      "enonce": "Quelle propriété du muscle permet ce retour à la longueur de départ ?",
+      "options": [
+        "L’excitabilité",
+        "La contractilité",
+        "L’élasticité",
+        "L’extensibilité"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Pendant l’étirement, le muscle s’allonge : c’est l’extensibilité. Quand le kiné relâche, il revient à sa longueur de départ, comme un élastique : c’est l’élasticité.",
+      "fiche": {
+        "titre": "Élasticité ou extensibilité ?",
+        "texte": "Extensibilité : le muscle s’allonge quand on l’étire. Élasticité : il revient ensuite à sa forme de départ."
+      },
+      "meta": {
+        "ajout": "programme-2026-11"
+      }
+    }
+  ]
+}

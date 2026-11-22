@@ -1,0 +1,749 @@
+{
+  "lieu": {
+    "id": "bio-maternite",
+    "nom": "La Maternité",
+    "icone": "🤰",
+    "couleur": "#ec4899"
+  },
+  "ateliers": [
+    {
+      "id": "bio-reproduction",
+      "titre": "Appareils génitaux",
+      "icone": "🧬",
+      "programme": "Bloc 4 · Appareils génitaux, hormones, gamètes, puberté, ménopause, contraception, IST"
+    },
+    {
+      "id": "bio-grossesse",
+      "titre": "Grossesse et naissance",
+      "icone": "🍼",
+      "programme": "Bloc 4 · Fécondation, gestation, hygiène de la grossesse, accouchement, toxoplasmose congénitale"
+    }
+  ],
+  "items": [
+    {
+      "id": "bio-reproduction-01",
+      "atelier": "bio-reproduction",
+      "type": "tri",
+      "enonce": "Associe chaque organe féminin à son rôle.",
+      "categories": [
+        "Ovaires",
+        "Trompes",
+        "Utérus",
+        "Vagin"
+      ],
+      "icones": [
+        "🥚",
+        "🛣️",
+        "🏠",
+        "🚪"
+      ],
+      "elements": [
+        {
+          "texte": "Produisent les ovules et les hormones (œstrogènes, progestérone)",
+          "categorie": 0
+        },
+        {
+          "texte": "Lieu de la fécondation",
+          "categorie": 1
+        },
+        {
+          "texte": "Accueille et protège l’embryon puis le fœtus",
+          "categorie": 2
+        },
+        {
+          "texte": "Sa muqueuse (endomètre) s’épaissit puis s’élimine lors des règles",
+          "categorie": 2
+        },
+        {
+          "texte": "Organe de l’accouplement, conduit vers l’extérieur",
+          "categorie": 3
+        }
+      ],
+      "pourquoi": "Les ovaires sont les gonades (glandes sexuelles) féminines. Le col de l’utérus fait le lien entre l’utérus et le vagin.",
+      "fiche": {
+        "titre": "Appareil génital féminin",
+        "texte": "Ovaires (ovules, œstrogènes, progestérone) → trompes (fécondation) → utérus (endomètre, nidation, grossesse) → col → vagin."
+      }
+    },
+    {
+      "id": "bio-reproduction-02",
+      "atelier": "bio-reproduction",
+      "type": "ordre",
+      "enonce": "Remets dans l’ordre le trajet des spermatozoïdes.",
+      "elements": [
+        {
+          "texte": "Testicules : fabrication (spermatogenèse)"
+        },
+        {
+          "texte": "Épididyme : maturation et stockage"
+        },
+        {
+          "texte": "Canal déférent"
+        },
+        {
+          "texte": "Vésicules séminales et prostate : ajout du liquide séminal"
+        },
+        {
+          "texte": "Urètre : sortie par le pénis"
+        }
+      ],
+      "pourquoi": "Dès la puberté, les testicules fabriquent des spermatozoïdes en continu et sécrètent la testostérone. Le sperme = spermatozoïdes + liquide séminal (vésicules séminales et prostate).",
+      "fiche": {
+        "titre": "Appareil génital masculin",
+        "texte": "Testicules (spermatozoïdes, testostérone) → épididyme → canal déférent → vésicules séminales + prostate → urètre."
+      }
+    },
+    {
+      "id": "bio-reproduction-03",
+      "atelier": "bio-reproduction",
+      "type": "tri",
+      "enonce": "Ovule ou spermatozoïde ?",
+      "categories": [
+        "Ovule",
+        "Spermatozoïde"
+      ],
+      "icones": [
+        "🌕",
+        "🏊"
+      ],
+      "elements": [
+        {
+          "texte": "Grosse cellule immobile",
+          "categorie": 0
+        },
+        {
+          "texte": "Contient toujours un chromosome X",
+          "categorie": 0
+        },
+        {
+          "texte": "En général un seul libéré par cycle",
+          "categorie": 0
+        },
+        {
+          "texte": "Petite cellule mobile grâce à un flagelle",
+          "categorie": 1
+        },
+        {
+          "texte": "Porte un chromosome X ou Y : c’est lui qui détermine le sexe chromosomique (XX ou XY)",
+          "categorie": 1
+        },
+        {
+          "texte": "Produit par millions, en continu dès la puberté",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Les gamètes ne contiennent que 23 chromosomes (la moitié). À la fécondation, on retrouve 46 chromosomes. Dans la situation habituelle, l’ovule apporte un X et le spermatozoïde un X ou un Y : on obtient XX ou XY. Des variations, plus rares, existent.",
+      "fiche": {
+        "titre": "Les gamètes",
+        "texte": "23 chromosomes chacun. Ovule : gros, immobile, X. Spermatozoïde : petit, mobile (flagelle), X ou Y → sexe chromosomique (XX ou XY, le plus souvent). Fécondation → 46 chromosomes."
+      }
+    },
+    {
+      "id": "bio-reproduction-04",
+      "atelier": "bio-reproduction",
+      "type": "ordre",
+      "enonce": "Remets dans l’ordre les étapes d’un cycle théorique de 28 jours.",
+      "elements": [
+        {
+          "texte": "Règles : l’endomètre s’élimine ; au même moment, dans l’ovaire, la phase folliculaire commence",
+          "info": "J1"
+        },
+        {
+          "texte": "Phase folliculaire : un follicule mûrit, les œstrogènes augmentent et l’endomètre se reconstruit",
+          "info": "≈ J1 à J13"
+        },
+        {
+          "texte": "Ovulation : l’ovaire libère un ovule (ovocyte)",
+          "info": "≈ J14"
+        },
+        {
+          "texte": "Phase lutéale : le corps jaune produit de la progestérone ; sans grossesse, les hormones chutent et de nouvelles règles arrivent",
+          "info": "≈ J15 à J28"
+        }
+      ],
+      "pourquoi": "Le cycle de l’ovaire et celui de l’utérus se déroulent en même temps : la phase folliculaire commence dès le 1ᵉʳ jour des règles. Ce cycle est commandé par le cerveau : l’hypothalamus agit sur l’hypophyse, qui libère FSH et LH. La durée du cycle varie d’une femme à l’autre ; 28 jours est un modèle.",
+      "fiche": {
+        "titre": "Cycle menstruel",
+        "texte": "J1 = 1ᵉʳ jour des règles = début de la phase folliculaire (œstrogènes, reconstruction de l’endomètre) → ovulation (≈ J14 dans un cycle de 28 jours, pic de LH) → phase lutéale (corps jaune, progestérone) → sans grossesse, chute des hormones et nouvelles règles. Cycles de l’ovaire et de l’utérus simultanés."
+      }
+    },
+    {
+      "id": "bio-reproduction-05",
+      "atelier": "bio-reproduction",
+      "type": "tri",
+      "enonce": "Puberté, ménopause ou vieillissement hormonal masculin ?",
+      "categories": [
+        "Puberté",
+        "Ménopause",
+        "Vieillissement hormonal masculin"
+      ],
+      "icones": [
+        "🌱",
+        "🍂",
+        "🧔"
+      ],
+      "elements": [
+        {
+          "texte": "Augmentation des hormones sexuelles, apparition des caractères sexuels secondaires",
+          "categorie": 0
+        },
+        {
+          "texte": "Arrêt définitif des règles, lié à la fin de l’activité des follicules de l’ovaire, vers 50 ans",
+          "categorie": 1
+        },
+        {
+          "texte": "Bouffées de chaleur, risque accru d’ostéoporose",
+          "categorie": 1
+        },
+        {
+          "texte": "Baisse possible, lente et progressive, de la testostérone chez l’homme",
+          "categorie": 2
+        }
+      ],
+      "pourquoi": "Les variations hormonales rythment la vie : la puberté démarre la fonction de reproduction, la ménopause l’arrête chez la femme. Chez l’homme, il n’y a pas d’arrêt équivalent : la baisse de testostérone, quand elle existe, est lente. Le mot « andropause » est donc trompeur.",
+      "fiche": {
+        "titre": "Hormones et âges de la vie",
+        "texte": "Puberté : hormones ↑, caractères sexuels secondaires. Ménopause (≈ 50 ans) : arrêt définitif des règles, œstrogènes ↓ (bouffées de chaleur, ostéoporose). Homme : baisse possible et progressive de la testostérone, sans équivalent de la ménopause."
+      }
+    },
+    {
+      "id": "bio-reproduction-06",
+      "atelier": "bio-reproduction",
+      "type": "multi",
+      "enonce": "Quelles méthodes de contraception d’urgence existent ? Choisis-en 2.",
+      "pourquoi": "Plus la contraception d’urgence est prise tôt, plus elle est efficace. Après un rapport à risque, on pense aussi au dépistage des IST : seul le préservatif protège des IST. L’infirmière scolaire peut aussi délivrer la contraception d’urgence.",
+      "fiche": {
+        "titre": "Contraception d’urgence",
+        "texte": "Comprimé : au plus vite, jusqu’à 72 h ou 120 h selon le médicament ; gratuit et sans ordonnance en pharmacie. DIU au cuivre : dans les 5 jours, posé par un professionnel. Penser au dépistage des IST."
+      },
+      "contexte": "🧑‍🎓 Lina, 17 ans · Le préservatif s’est déchiré hier soir. Elle en parle à l’infirmière du lycée.",
+      "options": [
+        "💊 Le comprimé de contraception d’urgence, à prendre au plus tôt (jusqu’à 3 ou 5 jours selon le médicament)",
+        "💉 Une injection d’antibiotiques à l’infirmerie, dans les 72 heures après le rapport",
+        "🔧 La pose d’un DIU au cuivre par un professionnel, dans les 5 jours",
+        "🚿 Une douche vaginale le plus tôt possible pour éliminer les spermatozoïdes"
+      ],
+      "bonnes": [
+        0,
+        2
+      ],
+      "explications": [
+        "Oui : disponible en pharmacie, gratuitement et sans ordonnance, aussi pour les mineures.",
+        "Non : les antibiotiques n’empêchent pas une grossesse.",
+        "Oui : c’est la méthode d’urgence la plus efficace.",
+        "Non : aucune efficacité, et elle abîme la flore vaginale."
+      ]
+    },
+    {
+      "id": "bio-reproduction-07",
+      "atelier": "bio-reproduction",
+      "type": "tri",
+      "enonce": "IST due à une bactérie ou à un virus ?",
+      "categories": [
+        "Bactérie",
+        "Virus"
+      ],
+      "icones": [
+        "🦠",
+        "👾"
+      ],
+      "elements": [
+        {
+          "texte": "Chlamydia (souvent sans symptôme, risque de stérilité)",
+          "categorie": 0
+        },
+        {
+          "texte": "Syphilis",
+          "categorie": 0
+        },
+        {
+          "texte": "Gonococcie",
+          "categorie": 0
+        },
+        {
+          "texte": "VIH",
+          "categorie": 1
+        },
+        {
+          "texte": "Papillomavirus (HPV), lié au cancer du col de l’utérus",
+          "categorie": 1
+        },
+        {
+          "texte": "Herpès génital",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Les IST bactériennes se soignent par antibiotiques ; les virales se traitent mais certaines ne se guérissent pas (VIH). Beaucoup sont silencieuses : le dépistage est essentiel. Des vaccins existent contre l’HPV et l’hépatite B.",
+      "fiche": {
+        "titre": "IST",
+        "texte": "Bactériennes : chlamydia, gonococcie, syphilis (antibiotiques). Virales : VIH, HPV, herpès, hépatite B. Prévention : préservatif, dépistage, vaccins (HPV, hépatite B)."
+      }
+    },
+    {
+      "id": "bio-reproduction-08",
+      "atelier": "bio-reproduction",
+      "type": "multi",
+      "enonce": "Quels moyens de prévention des IST sont efficaces ? Choisis-en 3.",
+      "options": [
+        "🚿 Une douche ou une toilette intime juste après le rapport",
+        "💊 La pilule contraceptive, prise tous les jours sans oubli",
+        "💉 La vaccination contre le papillomavirus et l’hépatite B",
+        "🛡️ Le préservatif (externe ou interne)",
+        "🧪 Le dépistage régulier, pour soi et son ou sa partenaire"
+      ],
+      "bonnes": [
+        2,
+        3,
+        4
+      ],
+      "explications": [
+        "Non : aucune protection.",
+        "Non : elle évite la grossesse mais pas les IST.",
+        "Oui.",
+        "Oui.",
+        "Oui : beaucoup d’IST sont sans symptôme."
+      ],
+      "pourquoi": "Le dépistage est gratuit dans de nombreux centres (CeGIDD, centres de santé sexuelle). Parler de prévention sans juger fait partie de l’éducation à la santé (bloc 4).",
+      "fiche": {
+        "titre": "Prévenir les IST",
+        "texte": "Préservatif + dépistage + vaccins (HPV, hépatite B). La pilule ne protège pas des IST."
+      }
+    },
+    {
+      "id": "bio-reproduction-09",
+      "atelier": "bio-reproduction",
+      "type": "tri",
+      "contexte": "💬 Atelier santé au lycée · Des élèves de 2de posent des questions sur la contraception.",
+      "enonce": "Méthode hormonale ou méthode sans hormone ?",
+      "categories": [
+        "Méthode hormonale",
+        "Méthode sans hormone"
+      ],
+      "icones": [
+        "💊",
+        "🛡️"
+      ],
+      "elements": [
+        {
+          "texte": "Pilule œstroprogestative",
+          "categorie": 0
+        },
+        {
+          "texte": "Implant contraceptif (sous la peau du bras)",
+          "categorie": 0
+        },
+        {
+          "texte": "DIU hormonal",
+          "categorie": 0
+        },
+        {
+          "texte": "DIU au cuivre",
+          "categorie": 1
+        },
+        {
+          "texte": "Préservatif externe ou interne (protège aussi des IST)",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Les méthodes hormonales agissent surtout en bloquant l’ovulation (pilule, implant) ou en rendant le passage des spermatozoïdes difficile (DIU hormonal). Le DIU au cuivre agit dans l’utérus, sans hormone. Seul le préservatif protège aussi des IST. Le choix se fait avec un professionnel de santé.",
+      "fiche": {
+        "titre": "Contraception",
+        "texte": "Hormonales : pilule, implant, DIU hormonal, anneau, patch. Sans hormone : DIU au cuivre, préservatif (seule protection contre les IST). Choix avec un médecin, une sage-femme ou en centre de santé sexuelle."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-grossesse-01",
+      "atelier": "bio-grossesse",
+      "type": "ordre",
+      "enonce": "Remets dans l’ordre les étapes du début de la grossesse.",
+      "elements": [
+        {
+          "texte": "Ovulation : l’ovule est capté par la trompe"
+        },
+        {
+          "texte": "Fécondation dans la trompe : un seul spermatozoïde entre dans l’ovule"
+        },
+        {
+          "texte": "Cellule-œuf (46 chromosomes) qui se divise en migrant vers l’utérus"
+        },
+        {
+          "texte": "Nidation : l’embryon s’implante dans la muqueuse de l’utérus (≈ 7ᵉ jour)"
+        },
+        {
+          "texte": "Embryon (jusqu’à 2 mois), puis fœtus"
+        }
+      ],
+      "pourquoi": "La fécondation est la fusion d’un ovule et d’un spermatozoïde. Après la nidation, le placenta se forme et produit l’hormone hCG, détectée par les tests de grossesse.",
+      "fiche": {
+        "titre": "De la fécondation à l’embryon",
+        "texte": "Fécondation (trompe) → cellule-œuf → divisions → nidation dans l’utérus (≈ 7ᵉ jour) → embryon (jusqu’à 8 semaines) → fœtus. hCG = test de grossesse."
+      }
+    },
+    {
+      "id": "bio-grossesse-02",
+      "atelier": "bio-grossesse",
+      "type": "tri",
+      "enonce": "Dans le placenta, qui passe dans quel sens ?",
+      "categories": [
+        "De la mère vers le fœtus",
+        "Du fœtus vers la mère"
+      ],
+      "icones": [
+        "⬇️",
+        "⬆️"
+      ],
+      "elements": [
+        {
+          "texte": "Dioxygène (O₂)",
+          "categorie": 0
+        },
+        {
+          "texte": "Nutriments (glucose, acides aminés…)",
+          "categorie": 0
+        },
+        {
+          "texte": "Certains anticorps (protection du bébé)",
+          "categorie": 0
+        },
+        {
+          "texte": "Malheureusement aussi : alcool, nicotine, certains médicaments",
+          "categorie": 0
+        },
+        {
+          "texte": "Dioxyde de carbone (CO₂)",
+          "categorie": 1
+        },
+        {
+          "texte": "Déchets (urée)",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Normalement, le sang de la mère et celui du fœtus restent séparés : les échanges se font à travers une fine barrière dans le placenta (de petits passages de cellules restent possibles). Le placenta n’est pas une barrière parfaite : alcool, tabac, médicaments et certains microbes peuvent passer.",
+      "fiche": {
+        "titre": "Le placenta",
+        "texte": "Échanges à travers la barrière placentaire ; les deux circulations restent normalement séparées. Mère → fœtus : O₂, nutriments, anticorps (et aussi alcool, nicotine, médicaments). Fœtus → mère : CO₂, déchets. Produit des hormones (hCG)."
+      }
+    },
+    {
+      "id": "bio-grossesse-03",
+      "atelier": "bio-grossesse",
+      "type": "multi",
+      "contexte": "🤰 Inaya, 27 ans · Enceinte de 3 mois, elle te demande des conseils pour bien vivre sa grossesse.",
+      "enonce": "Quels conseils d’hygiène de vie sont justes ? Choisis-en 4.",
+      "options": [
+        "🥗 Une alimentation variée et équilibrée",
+        "🧀 Éviter les aliments à risque de listériose : certains fromages au lait cru, charcuteries prêtes à consommer (pâtés, rillettes…), poissons fumés",
+        "🍸 Un petit verre de temps en temps, ce n’est pas grave",
+        "🚭 Arrêter le tabac (avec de l’aide si besoin)",
+        "🚫🍷 Zéro alcool pendant toute la grossesse"
+      ],
+      "bonnes": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explications": [
+        "Oui.",
+        "Oui : la listériose est dangereuse pour le fœtus. Une cuisson suffisante détruit la bactérie.",
+        "Non : aucune quantité d’alcool n’est sans risque pendant la grossesse.",
+        "Oui : le tabac diminue l’oxygénation du fœtus.",
+        "Oui : l’alcool passe le placenta et peut provoquer des troubles graves chez l’enfant."
+      ],
+      "pourquoi": "Autres conseils : activité physique adaptée, repos, suivi médical régulier, prévention de la toxoplasmose si elle n’est pas immunisée, pas de médicament sans avis médical.",
+      "fiche": {
+        "titre": "Hygiène de la grossesse",
+        "texte": "Zéro alcool, zéro tabac, alimentation équilibrée, précautions contre la listériose (aliments à risque, cuisson suffisante) et la toxoplasmose, activité adaptée, sommeil, aucun médicament sans avis, suivi médical."
+      }
+    },
+    {
+      "id": "bio-grossesse-04",
+      "atelier": "bio-grossesse",
+      "type": "multi",
+      "enonce": "Quels examens font partie du suivi d’une grossesse ? Choisis-en 3.",
+      "options": [
+        "🖥️ Les échographies (environ une par trimestre)",
+        "🧠 Un électroencéphalogramme mensuel pour surveiller le fœtus",
+        "👩‍⚕️ Des consultations prénatales régulières",
+        "🩸 Des prises de sang (groupe sanguin, toxoplasmose, rubéole…)",
+        "🦷 Un détartrage chez le dentiste chaque semaine"
+      ],
+      "bonnes": [
+        0,
+        2,
+        3
+      ],
+      "explications": [
+        "Oui : elles suivent la croissance et dépistent des anomalies.",
+        "Non.",
+        "Oui : elles sont obligatoires et prises en charge.",
+        "Oui : on vérifie notamment l’immunité contre certaines infections dangereuses pour le fœtus.",
+        "Non (même si un bilan dentaire est conseillé)."
+      ],
+      "pourquoi": "La grossesse doit être déclarée avant la fin du 3ᵉ mois. Le suivi est noté dans le dossier de suivi (carnet de santé de maternité). Il permet de dépister tôt les complications (diabète gestationnel, hypertension…).",
+      "fiche": {
+        "titre": "Suivi de grossesse",
+        "texte": "Déclaration avant la fin du 3ᵉ mois, consultations prénatales obligatoires, 3 échographies, prises de sang (groupe, rhésus, sérologies toxoplasmose, rubéole…), dépistage du diabète gestationnel si besoin."
+      }
+    },
+    {
+      "id": "bio-grossesse-05",
+      "atelier": "bio-grossesse",
+      "type": "qcm",
+      "contexte": "🐱 Clara, 30 ans · Enceinte, sa sérologie montre qu’elle n’est pas immunisée contre la toxoplasmose. Elle a un chat.",
+      "enonce": "Quel conseil lui donner ?",
+      "options": [
+        "Faire changer la litière par un proche (ou mettre des gants), bien cuire la viande, laver fruits et légumes et ses mains ; prise de sang mensuelle",
+        "Prendre des antibiotiques en prévention pendant toute la grossesse et faire vacciner son chat contre la toxoplasmose",
+        "Manger de la viande saignante et des crudités non lavées pour s’immuniser progressivement, comme avec un vaccin naturel",
+        "Abandonner son chat immédiatement, désinfecter toute la maison à l’eau de Javel et éviter les animaux jusqu’à l’accouchement"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "La toxoplasmose est due à un protozoaire (Toxoplasma gondii), transmis par la viande mal cuite, les crudités mal lavées et les déjections de chat. Une contamination pendant la grossesse peut atteindre le fœtus (cerveau, yeux).",
+      "fiche": {
+        "titre": "Prévenir la toxoplasmose",
+        "texte": "Viande bien cuite, fruits et légumes lavés, mains lavées, gants pour jardiner et pour la litière (ou la faire changer). Femme non immunisée : sérologie mensuelle."
+      }
+    },
+    {
+      "id": "bio-grossesse-06",
+      "atelier": "bio-grossesse",
+      "type": "qcm",
+      "enonce": "Toxoplasmose et grossesse : quelle affirmation est juste ?",
+      "options": [
+        "En début de grossesse, la transmission au fœtus est plus rare mais les atteintes sont plus graves ; en fin de grossesse, c’est l’inverse",
+        "La toxoplasmose ne traverse pas le placenta : elle peut rendre la mère malade, mais le fœtus reste protégé pendant toute la grossesse",
+        "Plus la contamination est tardive, plus les atteintes sont graves, car le cerveau et les yeux du fœtus sont alors presque formés",
+        "Le risque de transmission et la gravité des atteintes restent les mêmes tout au long de la grossesse, du premier au dernier mois"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "Lors d’une première infection de la mère, le risque de transmission au fœtus augmente au fil de la grossesse ; mais plus l’infection du fœtus est précoce, plus les atteintes peuvent être graves. D’où une surveillance pendant toute la grossesse, puis chez le nouveau-né.",
+      "fiche": {
+        "titre": "Toxoplasmose congénitale",
+        "texte": "Contamination précoce : transmission rare mais atteintes graves (cerveau, yeux). Tardive : transmission plus fréquente, atteintes moins graves (souvent oculaires). Dépistage et surveillance mensuelle."
+      }
+    },
+    {
+      "id": "bio-grossesse-07",
+      "atelier": "bio-grossesse",
+      "type": "ordre",
+      "enonce": "Remets dans l’ordre les étapes de l’accouchement.",
+      "elements": [
+        {
+          "texte": "Début du travail : contractions régulières qui commencent à modifier le col (parfois perte des eaux)"
+        },
+        {
+          "texte": "Poursuite du travail : le col se dilate peu à peu, jusqu’à dilatation complète (environ 10 cm)"
+        },
+        {
+          "texte": "Expulsion : naissance du bébé"
+        },
+        {
+          "texte": "Délivrance : expulsion du placenta"
+        }
+      ],
+      "pourquoi": "La dilatation fait partie du travail : ce sont les contractions qui ouvrent le col. C’est la phase la plus longue, surtout pour un premier bébé. La délivrance a lieu peu après la naissance et est surveillée de près (risque d’hémorragie).",
+      "fiche": {
+        "titre": "Accouchement",
+        "texte": "Travail : contractions qui modifient puis dilatent le col (jusqu’à ≈ 10 cm) → expulsion (naissance) → délivrance (placenta, surveillance du saignement)."
+      }
+    },
+    {
+      "id": "bio-grossesse-08",
+      "atelier": "bio-grossesse",
+      "type": "qcm",
+      "enonce": "À la naissance, à terme, quelles sont environ la taille et le poids d’un bébé ?",
+      "options": [
+        "35 cm et 1,2 kg",
+        "25 cm et 800 g",
+        "50 cm et 3,3 kg",
+        "70 cm et 6,5 kg"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Le fœtus grandit surtout pendant le 2ᵉ trimestre et prend surtout du poids pendant le 3ᵉ. Une naissance avant 37 semaines d’aménorrhée est dite prématurée.",
+      "fiche": {
+        "titre": "Croissance du fœtus",
+        "texte": "À terme : ≈ 50 cm, ≈ 3,3 kg. Taille : surtout au 2ᵉ trimestre ; poids : surtout au 3ᵉ. Prématuré : avant 37 SA."
+      }
+    },
+    {
+      "id": "bio-grossesse-09",
+      "atelier": "bio-grossesse",
+      "type": "tri",
+      "enonce": "Période embryonnaire ou période fœtale ?",
+      "categories": [
+        "Période embryonnaire (8 premières semaines)",
+        "Période fœtale (jusqu’à la naissance)"
+      ],
+      "icones": [
+        "🌱",
+        "👶"
+      ],
+      "elements": [
+        {
+          "texte": "Les organes se mettent en place",
+          "categorie": 0
+        },
+        {
+          "texte": "Le cœur commence à battre",
+          "categorie": 0
+        },
+        {
+          "texte": "Période la plus sensible aux toxiques (alcool, médicaments, infections)",
+          "categorie": 0
+        },
+        {
+          "texte": "Les organes grandissent et mûrissent",
+          "categorie": 1
+        },
+        {
+          "texte": "La mère commence à sentir les mouvements du bébé",
+          "categorie": 1
+        },
+        {
+          "texte": "Le bébé prend surtout du poids",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Pendant la période embryonnaire, tous les organes se forment : un toxique peut alors provoquer des malformations, souvent avant même que la grossesse soit connue. Pendant la période fœtale, les organes grandissent et mûrissent ; les mouvements sont ressentis vers le 4ᵉ ou 5ᵉ mois.",
+      "fiche": {
+        "titre": "Embryon et fœtus",
+        "texte": "Embryon (8 premières semaines de développement) : mise en place des organes, cœur qui bat, grande sensibilité aux toxiques. Fœtus : croissance et maturation, mouvements ressentis vers 4–5 mois, prise de poids au 3ᵉ trimestre."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-grossesse-10",
+      "atelier": "bio-grossesse",
+      "type": "multi",
+      "contexte": "🤰 Mme Awa, 34 ans · Enceinte de 7 mois, elle est accueillie au foyer où tu travailles. Elle te dit qu’elle sent beaucoup moins son bébé bouger depuis ce matin.",
+      "enonce": "Quels signes doivent la faire orienter sans attendre vers la maternité ou un médecin ? Choisis-en 4.",
+      "options": [
+        "👶 Le bébé bouge beaucoup moins que d’habitude",
+        "🍽️ Plus d’appétit que d’habitude",
+        "🌡️ De la fièvre",
+        "🥱 Une petite fatigue en fin de journée",
+        "🩸 Des saignements",
+        "💧 Une perte de liquide (perte des eaux)"
+      ],
+      "bonnes": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "explications": [
+        "Oui : il faut vérifier que le bébé va bien.",
+        "Non : habituel pendant la grossesse.",
+        "Oui : une infection peut être dangereuse pour le bébé.",
+        "Non : fréquent et sans gravité si cela reste léger.",
+        "Oui : toujours à signaler pendant la grossesse.",
+        "Oui : même sans contraction."
+      ],
+      "pourquoi": "Ces signes peuvent révéler une complication (bébé en difficulté, infection, accouchement prématuré). Ton rôle : ne pas banaliser, l’inviter à contacter la maternité sans attendre (le 15 si elle va mal), et transmettre à ton équipe. Autres signes d’alerte : maux de tête intenses, troubles de la vue, contractions avant terme.",
+      "fiche": {
+        "titre": "Grossesse : signes d’alerte",
+        "texte": "Moins de mouvements du bébé, saignements, fièvre, perte de liquide, contractions avant terme, maux de tête intenses, troubles de la vue → maternité sans attendre (15 si urgence). Observer, orienter, transmettre."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-reproduction-10",
+      "atelier": "bio-reproduction",
+      "type": "qcm",
+      "contexte": "📈 Document : un cycle menstruel de 28 jours (valeurs moyennes, qui varient selon les femmes et les cycles).",
+      "enonce": "D’après le document, vers quel jour du cycle a lieu l’ovulation ?",
+      "image": {
+        "src": "schemas/cycle-menstruel.webp",
+        "alt": "Graphique d’un cycle menstruel moyen de 28 jours : évolution de l’ovaire, de la température du corps, des hormones (hormone folliculo-stimulante, hormone lutéinisante, estradiol, progestérone) et de la muqueuse de l’utérus, jour par jour."
+      },
+      "options": [
+        "Vers le 1ᵉʳ jour",
+        "Vers le 7ᵉ jour",
+        "Vers le 14ᵉ jour",
+        "Vers le 21ᵉ jour"
+      ],
+      "bonnes": [
+        2
+      ],
+      "ordreFixe": true,
+      "pourquoi": "La bande grise « Ovulation » se trouve vers le 14ᵉ jour, entre la phase folliculaire et la phase lutéale. C’est une moyenne : la date varie d’une femme à l’autre et d’un cycle à l’autre. Le 1ᵉʳ jour est le début des règles ; vers le 21ᵉ jour, la progestérone est au plus haut.",
+      "fiche": {
+        "titre": "L’ovulation",
+        "texte": "Vers le 14ᵉ jour d’un cycle moyen de 28 jours (variable). Avant : phase folliculaire. Après : phase lutéale (corps jaune, progestérone)."
+      },
+      "meta": {
+        "ajout": "programme-2026-11"
+      }
+    },
+    {
+      "id": "bio-reproduction-11",
+      "atelier": "bio-reproduction",
+      "type": "qcm",
+      "contexte": "📈 Document : un cycle menstruel de 28 jours (valeurs moyennes, qui varient selon les femmes et les cycles).",
+      "enonce": "Comment évolue la température basale (prise au réveil, au repos, dans les mêmes conditions) après l’ovulation ?",
+      "image": {
+        "src": "schemas/cycle-menstruel.webp",
+        "alt": "Graphique d’un cycle menstruel moyen de 28 jours : évolution de l’ovaire, de la température du corps, des hormones (hormone folliculo-stimulante, hormone lutéinisante, estradiol, progestérone) et de la muqueuse de l’utérus, jour par jour."
+      },
+      "options": [
+        "Elle baisse nettement et reste basse jusqu’aux règles suivantes",
+        "Elle monte un peu et reste haute pendant la phase lutéale",
+        "Elle ne change pas : la température ne dépend pas du cycle",
+        "Elle monte de 2 °C, comme une forte fièvre, puis redescend"
+      ],
+      "bonnes": [
+        1
+      ],
+      "pourquoi": "Sur la courbe, la température passe d’environ 36,2 °C à environ 36,8 °C juste après l’ovulation, puis reste en plateau pendant la phase lutéale. Cette hausse est due à la progestérone. Elle redescend à la fin du cycle, avant les règles.",
+      "fiche": {
+        "titre": "Température et cycle",
+        "texte": "Sous l’effet de la progestérone, la température basale monte de quelques dixièmes de degré après l’ovulation et reste en plateau jusqu’à la fin du cycle. On ne le voit qu’après coup : cela ne permet pas de prévoir l’ovulation avec certitude."
+      },
+      "meta": {
+        "ajout": "programme-2026-11"
+      }
+    },
+    {
+      "id": "bio-reproduction-12",
+      "atelier": "bio-reproduction",
+      "type": "qcm",
+      "contexte": "📈 Document : un cycle menstruel de 28 jours (valeurs moyennes, qui varient selon les femmes et les cycles).",
+      "enonce": "Sur le document, le pic de quelle hormone précède l’ovulation et la déclenche ?",
+      "image": {
+        "src": "schemas/cycle-menstruel.webp",
+        "alt": "Graphique d’un cycle menstruel moyen de 28 jours : évolution de l’ovaire, de la température du corps, des hormones (hormone folliculo-stimulante, hormone lutéinisante, estradiol, progestérone) et de la muqueuse de l’utérus, jour par jour."
+      },
+      "options": [
+        "La progestérone",
+        "L’hormone folliculo-stimulante (FSH)",
+        "L’hormone lutéinisante (LH)",
+        "L’estradiol"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "La courbe verte de l’hormone lutéinisante (LH) monte brusquement vers le 13ᵉ-14ᵉ jour : c’est le pic de LH. Il précède de peu l’ovulation et la déclenche. Juste avant, la hausse de l’estradiol a provoqué ce pic. La progestérone augmente après l’ovulation.",
+      "fiche": {
+        "titre": "Le pic de LH",
+        "texte": "Hausse de l’estradiol → pic de LH (hormone lutéinisante) → ovulation, environ une journée plus tard. Puis le corps jaune produit la progestérone."
+      },
+      "meta": {
+        "ajout": "programme-2026-11"
+      }
+    }
+  ]
+}

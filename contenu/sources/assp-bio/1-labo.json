@@ -1,0 +1,997 @@
+{
+ "lieu": {
+  "id": "bio-labo",
+  "nom": "Le Labo",
+  "icone": "🔬",
+  "couleur": "#6366f1"
+ },
+ "ateliers": [
+  {
+   "id": "bio-corps",
+   "titre": "Le corps humain",
+   "icone": "🧍",
+   "programme": "Bloc 2 · L’organisation générale du corps humain"
+  },
+  {
+   "id": "bio-cellule",
+   "titre": "Cellule et génétique",
+   "icone": "🧫",
+   "programme": "Bloc 4 · La cellule, caryotype, hérédité, maladies génétiques, cancers"
+  }
+ ],
+ "items": [
+  {
+   "id": "bio-corps-01",
+   "atelier": "bio-corps",
+   "type": "ordre",
+   "contexte": "🧑‍🔬 Dr Zoom, 42 ans · Elle te tend son microscope : « On part du plus petit pour arriver au corps entier ! »",
+   "enonce": "Range les niveaux d’organisation du plus petit au plus grand.",
+   "elements": [
+    {
+     "texte": "Molécule (ex. : ADN, eau)"
+    },
+    {
+     "texte": "Cellule (ex. : neurone)"
+    },
+    {
+     "texte": "Tissu (ex. : tissu musculaire)"
+    },
+    {
+     "texte": "Organe (ex. : cœur)"
+    },
+    {
+     "texte": "Appareil ou système (ex. : appareil cardiovasculaire)"
+    },
+    {
+     "texte": "Organisme (le corps entier)"
+    }
+   ],
+   "pourquoi": "Des molécules forment les cellules ; des cellules semblables forment un tissu ; plusieurs tissus forment un organe ; des organes qui travaillent ensemble forment un appareil ; tous les appareils forment l’organisme.",
+   "fiche": {
+    "titre": "Les niveaux d’organisation",
+    "texte": "Molécule → cellule → tissu → organe → appareil → organisme. Astuce : comme des poupées russes, chaque niveau contient le précédent."
+   }
+  },
+  {
+   "id": "bio-corps-02",
+   "atelier": "bio-corps",
+   "type": "qcm",
+   "enonce": "Quelle est la différence entre anatomie et physiologie ?",
+   "options": [
+    "L’anatomie concerne surtout les animaux, la physiologie concerne le corps de l’être humain",
+    "Ce sont deux mots savants pour désigner exactement la même discipline médicale",
+    "L’anatomie étudie les maladies des organes, la physiologie étudie l’effet des médicaments",
+    "L’anatomie étudie la structure du corps, la physiologie étudie son fonctionnement"
+   ],
+   "bonnes": [
+    3
+   ],
+   "pourquoi": "Anatomie = « comment c’est fait » (forme, position des organes). Physiologie = « comment ça marche » (le rôle et le fonctionnement).",
+   "fiche": {
+    "titre": "Anatomie / physiologie",
+    "texte": "Anatomie : la structure (forme, place des organes). Physiologie : le fonctionnement. Exemple : l’anatomie du cœur = 4 cavités ; sa physiologie = pomper le sang."
+   }
+  },
+  {
+   "id": "bio-corps-03",
+   "atelier": "bio-corps",
+   "type": "tri",
+   "enonce": "Quel type de tissu domine dans chaque exemple ?",
+   "categories": [
+    "Tissu épithélial",
+    "Tissu conjonctif",
+    "Tissu musculaire",
+    "Tissu nerveux"
+   ],
+   "icones": [
+    "🧱",
+    "🦴",
+    "💪",
+    "⚡"
+   ],
+   "elements": [
+    {
+     "texte": "Les cellules de l’épiderme (surface de la peau)",
+     "categorie": 0
+    },
+    {
+     "texte": "La couche qui tapisse l’intérieur de l’intestin",
+     "categorie": 0
+    },
+    {
+     "texte": "Le tissu osseux",
+     "categorie": 1
+    },
+    {
+     "texte": "Le sang",
+     "categorie": 1
+    },
+    {
+     "texte": "Le tissu adipeux (graisse)",
+     "categorie": 1
+    },
+    {
+     "texte": "Les fibres musculaires du biceps",
+     "categorie": 2
+    },
+    {
+     "texte": "Le myocarde (muscle du cœur)",
+     "categorie": 2
+    },
+    {
+     "texte": "Les neurones du cerveau",
+     "categorie": 3
+    }
+   ],
+   "pourquoi": "Épithélial : revêtement et glandes. Conjonctif : soutien et liaison (os, cartilage, sang, graisse). Musculaire : contraction. Nerveux : transmission de messages. Attention : un organe (cœur, cerveau, intestin) contient toujours plusieurs tissus ; ici, on classe le tissu qui domine.",
+   "fiche": {
+    "titre": "Les 4 tissus",
+    "texte": "Épithélial = recouvrir. Conjonctif = soutenir, relier (os, sang, graisse). Musculaire = se contracter. Nerveux = transmettre l’information. Un organe = plusieurs tissus."
+   }
+  },
+  {
+   "id": "bio-corps-04",
+   "atelier": "bio-corps",
+   "type": "qcm",
+   "contexte": "🌡️ Mme Rose, 81 ans · EHPAD. L’infirmière explique : « Son corps lutte pour garder sa température autour de 37 °C, même s’il fait chaud dans la chambre. »",
+   "enonce": "Comment s’appelle cette capacité du corps à garder son milieu intérieur stable ?",
+   "options": [
+    "L’homéostasie",
+    "La digestion",
+    "La mitose",
+    "L’anaphylaxie"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "L’homéostasie, c’est le maintien constant du milieu intérieur : température (~37 °C), glycémie (~1 g/L), quantité d’eau, pH du sang… Chez la personne âgée, ces régulations sont moins efficaces : vigilance en cas de canicule !",
+   "fiche": {
+    "titre": "Homéostasie",
+    "texte": "Maintien constant du milieu intérieur : température ≈ 37 °C, glycémie ≈ 1 g/L, eau, pH sanguin ≈ 7,4. Moins efficace chez le nourrisson et la personne âgée."
+   }
+  },
+  {
+   "id": "bio-corps-05",
+   "atelier": "bio-corps",
+   "type": "tri",
+   "enonce": "À quel appareil appartient chacune de ces structures ?",
+   "categories": [
+    "Appareil digestif",
+    "Appareil respiratoire",
+    "Appareil cardiovasculaire",
+    "Appareil excréteur"
+   ],
+   "icones": [
+    "🍎",
+    "🫁",
+    "❤️",
+    "💧"
+   ],
+   "elements": [
+    {
+     "texte": "Estomac",
+     "categorie": 0
+    },
+    {
+     "texte": "Foie",
+     "categorie": 0
+    },
+    {
+     "texte": "Trachée",
+     "categorie": 1
+    },
+    {
+     "texte": "Alvéoles pulmonaires",
+     "categorie": 1
+    },
+    {
+     "texte": "Aorte",
+     "categorie": 2
+    },
+    {
+     "texte": "Veine cave",
+     "categorie": 2
+    },
+    {
+     "texte": "Rein",
+     "categorie": 3
+    },
+    {
+     "texte": "Vessie",
+     "categorie": 3
+    }
+   ],
+   "pourquoi": "Un appareil regroupe des organes et des structures (comme les alvéoles, minuscules sacs au bout des bronches) qui travaillent pour une même fonction : digérer, respirer, faire circuler le sang, éliminer les déchets par l’urine.",
+   "fiche": {
+    "titre": "Appareils et organes",
+    "texte": "Digestif : bouche → anus + foie, pancréas. Respiratoire : nez → alvéoles. Cardiovasculaire : cœur + vaisseaux. Excréteur : reins, uretères, vessie, urètre."
+   }
+  },
+  {
+   "id": "bio-corps-06",
+   "atelier": "bio-corps",
+   "type": "qcm",
+   "enonce": "Les grandes fonctions de l’organisme sont souvent classées en trois familles. Lesquelles ?",
+   "options": [
+    "Relation, nutrition, reproduction",
+    "Mouvement, langage, alimentation",
+    "Respiration, digestion, sommeil et repos",
+    "Squelette, musculature, système nerveux"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Relation (système nerveux, sens, muscles et squelette), nutrition (digestion, respiration, circulation, excrétion) et reproduction (appareils génitaux).",
+   "fiche": {
+    "titre": "3 grandes fonctions",
+    "texte": "RELATION : percevoir, bouger, communiquer. NUTRITION : apporter énergie et O₂, éliminer les déchets. REPRODUCTION : donner la vie."
+   }
+  },
+  {
+   "id": "bio-corps-07",
+   "atelier": "bio-corps",
+   "type": "multi",
+   "contexte": "🏃 Léa, 16 ans · Elle sprinte pour attraper le bus. Plusieurs appareils travaillent ensemble !",
+   "enonce": "Quels appareils accélèrent pour fournir plus d’O₂ et d’énergie à ses muscles ? Choisis-en 2.",
+   "options": [
+    "❤️ L’appareil cardiovasculaire (son cœur bat plus vite)",
+    "🫁 L’appareil respiratoire (elle respire plus vite)",
+    "🍽️ L’appareil digestif (il accélère la digestion pour donner plus de nutriments pendant le sprint)",
+    "💧 L’appareil urinaire (il filtre davantage pour apporter plus de dioxygène aux muscles)"
+   ],
+   "bonnes": [
+    0,
+    1
+   ],
+   "explications": [
+    "Oui : le sang transporte plus vite l’O₂ et les nutriments jusqu’aux muscles.",
+    "Oui : plus d’O₂ entre dans le sang au niveau des poumons.",
+    "Non : pendant un effort bref, la digestion ralentit ; le sang est envoyé en priorité vers les muscles.",
+    "Non : les reins filtrent le sang pour éliminer les déchets ; ils n’apportent pas d’O₂ aux muscles."
+   ],
+   "pourquoi": "Les appareils sont reliés entre eux : pendant un effort, respiration et circulation accélèrent ensemble pour nourrir les muscles. Le système nerveux coordonne le tout.",
+   "fiche": {
+    "titre": "Des appareils qui coopèrent",
+    "texte": "Effort → muscles qui ont besoin d’O₂ → respiration ↑ + fréquence cardiaque ↑. Le système nerveux commande, le sang transporte."
+   }
+  },
+  {
+   "id": "bio-corps-08",
+   "atelier": "bio-corps",
+   "type": "qcm",
+   "enonce": "Quel système coordonne et commande les autres appareils grâce à des messages électriques très rapides ?",
+   "options": [
+    "L’appareil digestif",
+    "Le système nerveux",
+    "La peau",
+    "Le squelette"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Le système nerveux (cerveau, moelle épinière, nerfs) reçoit les informations, les analyse et envoie des ordres. Les hormones (système endocrinien) coordonnent aussi, mais plus lentement.",
+   "fiche": {
+    "titre": "Le chef d’orchestre",
+    "texte": "Système nerveux = messages nerveux rapides. Système hormonal = messages chimiques plus lents (ex. : insuline). Les deux coordonnent l’organisme."
+   }
+  },
+  {
+   "id": "bio-cellule-01",
+   "atelier": "bio-cellule",
+   "type": "tri",
+   "contexte": "🧫 Bienvenue dans la cellule ! Chaque élément a un métier.",
+   "enonce": "Associe chaque élément de la cellule à son rôle.",
+   "categories": [
+    "Noyau",
+    "Mitochondrie",
+    "Ribosome",
+    "Membrane"
+   ],
+   "icones": [
+    "🧠",
+    "🔋",
+    "🏭",
+    "🚪"
+   ],
+   "elements": [
+    {
+     "texte": "Contient l’ADN, l’information génétique",
+     "categorie": 0
+    },
+    {
+     "texte": "Dirige l’activité de la cellule",
+     "categorie": 0
+    },
+    {
+     "texte": "Produit l’énergie (respiration cellulaire)",
+     "categorie": 1
+    },
+    {
+     "texte": "Fabrique les protéines",
+     "categorie": 2
+    },
+    {
+     "texte": "Délimite la cellule",
+     "categorie": 3
+    },
+    {
+     "texte": "Contrôle les échanges avec l’extérieur",
+     "categorie": 3
+    }
+   ],
+   "pourquoi": "Noyau = le cerveau (ADN). Mitochondrie = la centrale électrique (énergie). Ribosome = l’usine à protéines. Membrane = la porte qui trie ce qui entre et sort.",
+   "fiche": {
+    "titre": "La cellule en 4 métiers",
+    "texte": "🧠 Noyau : ADN, commande. 🔋 Mitochondrie : énergie. 🏭 Ribosome : protéines. 🚪 Membrane cytoplasmique : limite et échanges sélectifs."
+   }
+  },
+  {
+   "id": "bio-cellule-02",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "enonce": "La mitose, c’est…",
+   "options": [
+    "La division d’une cellule en deux cellules filles identiques",
+    "La mort programmée d’une cellule âgée ou abîmée",
+    "La digestion d’un microbe par un globule blanc dans le sang",
+    "La fusion d’un ovule et d’un spermatozoïde lors de la fécondation"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Grâce à la mitose, une cellule mère donne deux cellules filles avec exactement les mêmes chromosomes (46 chez l’humain). C’est ainsi que l’on grandit et que l’on cicatrise.",
+   "fiche": {
+    "titre": "Mitose",
+    "texte": "1 cellule mère → 2 cellules filles identiques (46 chromosomes chacune). Sert à la croissance, au renouvellement et à la réparation des tissus."
+   }
+  },
+  {
+   "id": "bio-cellule-03",
+   "atelier": "bio-cellule",
+   "type": "ordre",
+   "enonce": "Remets les phases de la mitose dans l’ordre.",
+   "elements": [
+    {
+     "texte": "Prophase : les chromosomes se condensent et deviennent visibles",
+     "info": "P"
+    },
+    {
+     "texte": "Métaphase : les chromosomes s’alignent au milieu de la cellule",
+     "info": "M"
+    },
+    {
+     "texte": "Anaphase : les chromatides se séparent vers les deux pôles",
+     "info": "A"
+    },
+    {
+     "texte": "Télophase : deux noyaux se forment, la cellule se coupe en deux",
+     "info": "T"
+    }
+   ],
+   "pourquoi": "Astuce mémo : « P-MAT » → Prophase, Métaphase, Anaphase, Télophase. Métaphase = Milieu ; Anaphase = Arrachement vers les pôles.",
+   "fiche": {
+    "titre": "Les phases de la mitose",
+    "texte": "P-MAT : Prophase (condensation) → Métaphase (Milieu) → Anaphase (séparation vers les pôles) → Télophase (2 noyaux, 2 cellules)."
+   }
+  },
+  {
+   "id": "bio-cellule-04",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "🧬 Au labo de génétique, un médecin montre une photo où les chromosomes sont classés par paires.",
+   "enonce": "Comment s’appelle ce document et combien de chromosomes compte une cellule humaine normale ?",
+   "options": [
+    "Un caryotype : 46 chromosomes (23 paires)",
+    "Un antibiogramme : 48 chromosomes",
+    "Un caryotype : 23 chromosomes (12 paires)",
+    "Un électrocardiogramme : 46 chromosomes"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Le caryotype classe les chromosomes par paires : 22 paires d’autosomes + 1 paire de chromosomes sexuels (XX chez la femme, XY chez l’homme). Il permet de repérer une anomalie du nombre ou de la forme.",
+   "fiche": {
+    "titre": "Caryotype",
+    "texte": "Photo des chromosomes classés par paires. Humain : 46 = 22 paires d’autosomes + XX (femme) ou XY (homme). Sert à repérer une anomalie (ex. : trisomie 21)."
+   }
+  },
+  {
+   "id": "bio-cellule-05",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "enonce": "Sur un caryotype, on observe trois chromosomes 21 au lieu de deux. De quelle anomalie s’agit-il ?",
+   "options": [
+    "Hémophilie",
+    "Diabète de type 1",
+    "Trisomie 21",
+    "Mucoviscidose"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "La trisomie 21 est une anomalie chromosomique : 47 chromosomes au lieu de 46, avec un chromosome 21 en trop. Les autres sont des maladies dues à un gène (mucoviscidose, hémophilie) ou une maladie auto-immune (diabète de type 1).",
+   "fiche": {
+    "titre": "Trisomie 21",
+    "texte": "Anomalie chromosomique : 3 chromosomes 21 → 47 chromosomes. Dépistage proposé pendant la grossesse ; caryotype pour confirmer."
+   }
+  },
+  {
+   "id": "bio-cellule-06",
+   "atelier": "bio-cellule",
+   "type": "tri",
+   "enonce": "Quel mode de transmission correspond à chaque description ?",
+   "categories": [
+    "Autosomique dominante",
+    "Autosomique récessive",
+    "Liée au chromosome X"
+   ],
+   "icones": [
+    "🅰️",
+    "🅱️",
+    "❎"
+   ],
+   "elements": [
+    {
+     "texte": "Un seul allèle malade suffit pour être atteint",
+     "categorie": 0
+    },
+    {
+     "texte": "La maladie se retrouve souvent sur plusieurs générations d’une même famille",
+     "categorie": 0
+    },
+    {
+     "texte": "Deux parents porteurs sains peuvent avoir un enfant malade",
+     "categorie": 1
+    },
+    {
+     "texte": "Exemple : la mucoviscidose",
+     "categorie": 1
+    },
+    {
+     "texte": "Touche surtout les garçons, la mère est souvent conductrice",
+     "categorie": 2
+    },
+    {
+     "texte": "Exemple : l’hémophilie",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "Dominante : un seul allèle suffit, la maladie se transmet souvent d’une génération à l’autre (mais pas toujours). Récessive : il faut deux allèles malades, la maladie est souvent cachée (parents porteurs sains). Liée à l’X : les garçons n’ont qu’un X, un seul allèle malade suffit chez eux.",
+   "fiche": {
+    "titre": "Modes d’hérédité",
+    "texte": "Dominante : 1 allèle suffit (souvent plusieurs générations atteintes). Récessive : 2 allèles (parents porteurs sains ; ex. mucoviscidose, drépanocytose). Liée à l’X : surtout les garçons (ex. hémophilie, daltonisme)."
+   }
+  },
+  {
+   "id": "bio-cellule-07",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "enonce": "Quelle proposition définit correctement un gène et un allèle ?",
+   "options": [
+    "Un gène est une portion d’ADN portant une information génétique ; un allèle est une version de ce gène",
+    "Un gène est un chromosome entier ; un allèle est la cellule qui contient ce chromosome",
+    "Un gène est une protéine ; un allèle est la paire de chromosomes qui fabrique cette protéine",
+    "Un gène est une paire de chromosomes ; un allèle est l’ensemble des gènes d’une personne"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Le gène est un « mode d’emploi » écrit dans l’ADN des chromosomes. Il existe en versions différentes : les allèles. Beaucoup de caractères, comme la couleur des yeux, dépendent de plusieurs gènes à la fois.",
+   "fiche": {
+    "titre": "Gène et allèle",
+    "texte": "Gène = portion d’ADN qui porte une information (souvent : fabriquer une protéine). Allèle = version d’un gène. On reçoit un allèle de chaque parent. Un caractère peut dépendre de plusieurs gènes."
+   }
+  },
+  {
+   "id": "bio-cellule-08",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "enonce": "Toutes les maladies génétiques sont-elles héréditaires ?",
+   "options": [
+    "Non : elle vient d’une anomalie d’un gène ou d’un chromosome, et elle n’est héréditaire que si un parent la transmet",
+    "Non : les maladies génétiques sont dues à des microbes attrapés, et les héréditaires sont transmises par les parents",
+    "Oui : elles passent toutes des parents aux enfants, et on peut toutes les soigner avec des antibiotiques adaptés",
+    "Oui : génétique et héréditaire veulent dire la même chose, car une anomalie de l’ADN vient forcément de l’un des deux parents"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Exemple : la trisomie 21 est génétique (anomalie de chromosome) mais n’est en général pas héritée des parents ; elle survient au moment de la formation des cellules reproductrices.",
+   "fiche": {
+    "titre": "Génétique ≠ héréditaire",
+    "texte": "Génétique : anomalie d’un gène ou d’un chromosome. Héréditaire : transmise des parents aux enfants. Le conseil génétique informe les familles sur le risque de transmission."
+   }
+  },
+  {
+   "id": "bio-cellule-09",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "👶 Noé, 3 jours · Maternité. La sage-femme pique doucement son talon et dépose quelques gouttes de sang sur un buvard.",
+   "enonce": "À quoi sert ce test ?",
+   "options": [
+    "À dépister tôt certaines maladies rares (génétiques notamment) pour les traiter",
+    "À prévoir la couleur future de ses yeux et d’autres caractères héréditaires",
+    "À vérifier qu’il a bien reçu ses premiers vaccins obligatoires à la maternité",
+    "À mesurer sa glycémie pour dépister au plus tôt un diabète de type 2 chez le bébé"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "C’est le dépistage néonatal (test de Guthrie) : il recherche des maladies rares comme la phénylcétonurie, l’hypothyroïdie congénitale ou la mucoviscidose. Pris en charge tôt, l’enfant évite des complications graves.",
+   "fiche": {
+    "titre": "Dépistage néonatal",
+    "texte": "Vers le 3ᵉ jour : gouttes de sang au talon sur buvard (test de Guthrie). Dépiste des maladies rares (phénylcétonurie, hypothyroïdie, mucoviscidose…) pour traiter tôt."
+   }
+  },
+  {
+   "id": "bio-cellule-10",
+   "atelier": "bio-cellule",
+   "type": "multi",
+   "enonce": "Quelles caractéristiques décrivent une cellule cancéreuse ? Choisis-en 3.",
+   "options": [
+    "🦠 C’est toujours un microbe venu de l’extérieur",
+    "🔁 Elle se multiplie de façon anarchique, sans contrôle",
+    "♾️ Elle ne meurt pas quand elle le devrait",
+    "😴 Elle arrête de se diviser",
+    "🧭 Elle peut envahir les tissus voisins et migrer"
+   ],
+   "bonnes": [
+    1,
+    2,
+    4
+   ],
+   "explications": [
+    "Non : c’est une cellule de notre corps devenue anormale.",
+    "Oui : elle échappe aux signaux qui règlent la division.",
+    "Oui : elle échappe à la mort cellulaire programmée.",
+    "Non : au contraire, elle se divise sans arrêt.",
+    "Oui : c’est ce qui permet la formation de métastases."
+   ],
+   "pourquoi": "Un cancer est une maladie de nos propres cellules : elles se divisent sans contrôle, forment une tumeur maligne, envahissent les tissus et peuvent essaimer à distance.",
+   "fiche": {
+    "titre": "Cellule cancéreuse",
+    "texte": "Multiplication anarchique, ne meurt pas, perd sa spécialisation, envahit les tissus voisins. Tumeur maligne ≠ tumeur bénigne (localisée, sans métastase)."
+   }
+  },
+  {
+   "id": "bio-cellule-11",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "enonce": "Qu’est-ce qu’une métastase ?",
+   "options": [
+    "Une tumeur secondaire formée à distance par des cellules cancéreuses venues par le sang ou la lymphe",
+    "Une phase de la mitose pendant laquelle les chromosomes se séparent vers les deux pôles",
+    "Une tumeur bénigne qui reste au même endroit et ne grossit plus avec le temps",
+    "Un médicament de chimiothérapie qui bloque la multiplication des cellules cancéreuses dans tout le corps"
+   ],
+   "bonnes": [
+    0
+   ],
+   "pourquoi": "Des cellules se détachent de la tumeur d’origine, circulent dans le sang ou la lymphe et forment une nouvelle tumeur ailleurs (os, foie, poumons…). D’où l’intérêt du dépistage précoce.",
+   "fiche": {
+    "titre": "Métastase",
+    "texte": "Cellules cancéreuses qui migrent (sang, lymphe) et forment une tumeur secondaire à distance. Dépister tôt = traiter avant les métastases."
+   }
+  },
+  {
+   "id": "bio-cellule-12",
+   "atelier": "bio-cellule",
+   "type": "tri",
+   "contexte": "🎗️ Mme Nadia, 52 ans · Elle t’explique les étapes de son parcours de soins contre un cancer du sein.",
+   "enonce": "Quel traitement correspond à chaque description ?",
+   "categories": [
+    "Chirurgie",
+    "Chimiothérapie",
+    "Radiothérapie",
+    "Hormonothérapie",
+    "Immunothérapie"
+   ],
+   "icones": [
+    "🔪",
+    "💉",
+    "☢️",
+    "⚖️",
+    "🛡️"
+   ],
+   "elements": [
+    {
+     "texte": "Retirer la tumeur au bloc opératoire",
+     "categorie": 0
+    },
+    {
+     "texte": "Des médicaments qui circulent dans tout le corps et détruisent les cellules qui se divisent vite",
+     "categorie": 1
+    },
+    {
+     "texte": "Des rayons dirigés sur la zone de la tumeur pour détruire les cellules cancéreuses",
+     "categorie": 2
+    },
+    {
+     "texte": "Bloquer certaines hormones qui stimulent la tumeur (ex. : certains cancers du sein ou de la prostate)",
+     "categorie": 3
+    },
+    {
+     "texte": "Aider le système immunitaire à reconnaître et attaquer les cellules cancéreuses",
+     "categorie": 4
+    }
+   ],
+   "pourquoi": "Les traitements sont souvent associés et choisis par l’équipe médicale selon le type de cancer et son stade : chirurgie et radiothérapie agissent sur une zone précise ; chimiothérapie, hormonothérapie et immunothérapie agissent dans tout l’organisme.",
+   "fiche": {
+    "titre": "Traitements des cancers",
+    "texte": "Locaux : chirurgie (retirer), radiothérapie (rayons). Généraux : chimiothérapie (détruit les cellules qui se divisent vite), hormonothérapie (bloque les hormones), immunothérapie (stimule les défenses). Souvent associés."
+   },
+   "meta": {
+    "ajout": "relecture-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-13",
+   "atelier": "bio-cellule",
+   "type": "multi",
+   "contexte": "🧣 M. André, 67 ans · Il reçoit une chimiothérapie. Tu l’accompagnes à domicile : il est très fatigué, a des nausées et perd ses cheveux.",
+   "enonce": "Quelles attitudes sont adaptées ? Choisis-en 3.",
+   "options": [
+    "📝 Transmettre à l’infirmier·e ou au médecin les signes observés : fièvre, vomissements, fatigue inhabituelle",
+    "💊 Lui conseiller d’arrêter son traitement s’il se sent trop mal",
+    "👂 L’écouter, respecter son rythme et l’aider à se reposer",
+    "🍽️ Insister pour qu’il finisse son assiette, même s’il a la nausée",
+    "🧼 Renforcer l’hygiène des mains et éviter qu’il côtoie des personnes malades"
+   ],
+   "bonnes": [
+    0,
+    2,
+    4
+   ],
+   "explications": [
+    "Oui : la fièvre sous chimiothérapie doit être signalée sans attendre (risque d’infection grave).",
+    "Non : seul le médecin décide d’adapter ou d’arrêter un traitement.",
+    "Oui : la fatigue est un effet fréquent du traitement ; l’accompagnement s’adapte.",
+    "Non : on propose des petites quantités, à son goût, sans forcer.",
+    "Oui : la chimiothérapie peut diminuer les globules blancs, donc les défenses."
+   ],
+   "pourquoi": "La chimiothérapie agit sur les cellules qui se divisent vite : les cellules cancéreuses, mais aussi celles des cheveux, du tube digestif et de la moelle osseuse (globules blancs). D’où la fatigue, les nausées, la chute des cheveux et le risque d’infection. Le professionnel ASSP observe, accompagne et transmet ; le traitement relève de l’équipe médicale.",
+   "fiche": {
+    "titre": "Chimiothérapie : accompagner",
+    "texte": "Effets fréquents : fatigue, nausées, chute des cheveux, baisse des globules blancs (infections). Rôle ASSP : écouter, adapter, hygiène des mains, transmettre. Fièvre = alerter vite."
+   },
+   "meta": {
+    "ajout": "relecture-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-14",
+   "atelier": "bio-cellule",
+   "type": "tri",
+   "contexte": "🔬 Deux schémas côte à côte : une cellule humaine et une bactérie. À toi de les légender !",
+   "enonce": "Cet élément se trouve dans quelle cellule ?",
+   "categories": [
+    "Cellule humaine seulement",
+    "Bactérie seulement",
+    "Les deux"
+   ],
+   "icones": [
+    "🧍",
+    "🦠",
+    "🤝"
+   ],
+   "elements": [
+    {
+     "texte": "Un noyau entouré d’une enveloppe, qui contient l’ADN",
+     "categorie": 0
+    },
+    {
+     "texte": "Des mitochondries",
+     "categorie": 0
+    },
+    {
+     "texte": "Un chromosome libre dans le cytoplasme, sans noyau",
+     "categorie": 1
+    },
+    {
+     "texte": "Une paroi rigide autour de la membrane (chez presque toutes)",
+     "categorie": 1
+    },
+    {
+     "texte": "Une membrane cytoplasmique",
+     "categorie": 2
+    },
+    {
+     "texte": "Des ribosomes",
+     "categorie": 2
+    },
+    {
+     "texte": "Du cytoplasme",
+     "categorie": 2
+    }
+   ],
+   "pourquoi": "La cellule humaine est eucaryote : son ADN est enfermé dans un noyau, et elle possède des organites comme les mitochondries. La bactérie est procaryote : pas de noyau, son chromosome baigne dans le cytoplasme, et presque toutes ont une paroi. Les deux ont une membrane, du cytoplasme et des ribosomes.",
+   "fiche": {
+    "titre": "Eucaryote ou procaryote",
+    "texte": "Cellule humaine (eucaryote) : noyau, mitochondries. Bactérie (procaryote) : pas de noyau, chromosome libre, paroi (presque toujours). Communs : membrane, cytoplasme, ribosomes."
+   },
+   "meta": {
+    "ajout": "relecture-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-15",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "🧬 Au labo de génétique, on a réalisé le caryotype A d’un nouveau-né (schéma simplifié).",
+   "enonce": "Quelle anomalie observes-tu sur ce caryotype ?",
+   "image": {
+    "src": "schemas/caryotype-trisomie21.webp",
+    "alt": "Caryotype schématique A : chromosomes humains rangés par paires, numérotés de 1 à 22, puis les chromosomes sexuels. Le centromère de chaque chromosome est marqué d’un point rouge."
+   },
+   "options": [
+    "Il manque un chromosome X à la paire sexuelle",
+    "Le chromosome 1 est en trois exemplaires",
+    "La paire 21 compte trois chromosomes",
+    "Aucune : toutes les paires sont normales"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Chaque paire compte normalement 2 chromosomes. Ici, la case 21 en contient 3 : c’est une trisomie 21. La paire sexuelle XY est normale chez un garçon.",
+   "fiche": {
+    "titre": "Lire un caryotype",
+    "texte": "Compter les chromosomes de chaque paire : 2 = normal, 3 = trisomie, 1 seul = monosomie. Dernière paire : XX = fille, XY = garçon."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-16",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "🧬 Au labo de génétique, on a réalisé le caryotype A d’un nouveau-né (schéma simplifié).",
+   "enonce": "Combien de chromosomes compte ce caryotype ?",
+   "image": {
+    "src": "schemas/caryotype-trisomie21.webp",
+    "alt": "Caryotype schématique A : chromosomes humains rangés par paires, numérotés de 1 à 22, puis les chromosomes sexuels. Le centromère de chaque chromosome est marqué d’un point rouge."
+   },
+   "options": [
+    "46",
+    "47",
+    "45",
+    "23"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "22 paires d’autosomes = 44 chromosomes, + 1 chromosome 21 en trop = 45, + les chromosomes sexuels X et Y = 47. On l’écrit 47,XY,+21.",
+   "fiche": {
+    "titre": "Nombre de chromosomes",
+    "texte": "Normal : 46 (22 paires d’autosomes + XX ou XY). Trisomie : 47 (un chromosome en trop). Monosomie : 45 (un chromosome en moins)."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-17",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "🧬 Au labo de génétique, on a réalisé le caryotype A d’un nouveau-né (schéma simplifié).",
+   "enonce": "Ce nouveau-né est-il une fille ou un garçon ?",
+   "image": {
+    "src": "schemas/caryotype-trisomie21.webp",
+    "alt": "Caryotype schématique A : chromosomes humains rangés par paires, numérotés de 1 à 22, puis les chromosomes sexuels. Le centromère de chaque chromosome est marqué d’un point rouge."
+   },
+   "options": [
+    "Une fille : il y a deux chromosomes X",
+    "On ne peut pas le savoir avec un caryotype",
+    "Une fille : la trisomie 21 touche les filles",
+    "Un garçon : il y a un X et un Y"
+   ],
+   "bonnes": [
+    3
+   ],
+   "pourquoi": "La dernière paire porte les chromosomes sexuels : un X et un Y (le Y est petit). XY = garçon. La trisomie 21 touche aussi bien les filles que les garçons.",
+   "fiche": {
+    "titre": "Chromosomes sexuels",
+    "texte": "XX = fille, XY = garçon. Le chromosome Y est petit. Il se lit sur la dernière paire du caryotype."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-18",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "🧬 Une adolescente de 15 ans est suivie pour une petite taille et une puberté qui ne démarre pas. Voici son caryotype B (schéma simplifié).",
+   "enonce": "Quelle anomalie montre ce caryotype ?",
+   "image": {
+    "src": "schemas/caryotype-turner.webp",
+    "alt": "Caryotype schématique B : chromosomes humains rangés par paires, numérotés de 1 à 22, puis les chromosomes sexuels. Le centromère de chaque chromosome est marqué d’un point rouge."
+   },
+   "options": [
+    "Un chromosome 21 en trop",
+    "Un seul chromosome sexuel : un X",
+    "Deux chromosomes X et un Y",
+    "Il manque une paire entière d’autosomes"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Les 22 paires d’autosomes sont complètes. Mais la dernière case ne contient qu’un seul chromosome : un X, sans second X ni Y.",
+   "fiche": {
+    "titre": "Lire un caryotype",
+    "texte": "Compter les chromosomes de chaque paire : 2 = normal, 3 = trisomie, 1 seul = monosomie. Dernière paire : XX = fille, XY = garçon."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-19",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "🧬 Une adolescente de 15 ans est suivie pour une petite taille et une puberté qui ne démarre pas. Voici son caryotype B (schéma simplifié).",
+   "enonce": "Combien de chromosomes compte ce caryotype, et comment s’appelle cette anomalie ?",
+   "image": {
+    "src": "schemas/caryotype-turner.webp",
+    "alt": "Caryotype schématique B : chromosomes humains rangés par paires, numérotés de 1 à 22, puis les chromosomes sexuels. Le centromère de chaque chromosome est marqué d’un point rouge."
+   },
+   "options": [
+    "47 chromosomes : trisomie 21 (syndrome de Down)",
+    "45 chromosomes : monosomie X (syndrome de Turner)",
+    "46 chromosomes : caryotype féminin normal",
+    "45 chromosomes : trisomie X, car il y a un X en trop"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "44 autosomes + un seul X = 45 chromosomes. Il manque un chromosome sexuel : c’est une monosomie X, appelée syndrome de Turner (45,X). Elle concerne environ 1 fille sur 2 500.",
+   "fiche": {
+    "titre": "Syndrome de Turner",
+    "texte": "Syndrome de Turner : anomalie des chromosomes sexuels, le plus souvent 45,X (il existe aussi des formes en mosaïque). Petite taille fréquente, retard de puberté ou insuffisance ovarienne possibles ; certaines filles ont une puberté spontanée. Diagnostic par le caryotype, suivi médical spécialisé."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-20",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "🧬 Une adolescente de 15 ans est suivie pour une petite taille et une puberté qui ne démarre pas. Voici son caryotype B (schéma simplifié).",
+   "enonce": "Pourquoi cette personne est-elle de sexe féminin ?",
+   "image": {
+    "src": "schemas/caryotype-turner.webp",
+    "alt": "Caryotype schématique B : chromosomes humains rangés par paires, numérotés de 1 à 22, puis les chromosomes sexuels. Le centromère de chaque chromosome est marqué d’un point rouge."
+   },
+   "options": [
+    "Parce qu’elle a deux chromosomes X",
+    "Parce qu’il lui manque un chromosome 21",
+    "Parce qu’elle n’a pas de chromosome Y",
+    "Parce que sa dernière paire contient un Y"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "Dans le développement habituel, c’est un gène porté par le chromosome Y (le gène SRY) qui oriente vers le sexe masculin. Avec un seul X et pas de Y, le développement suit la voie féminine. Elle n’a pas deux X : elle n’en a qu’un.",
+   "fiche": {
+    "titre": "Le rôle du chromosome Y",
+    "texte": "Dans la différenciation habituelle, le gène SRY, porté par le chromosome Y, oriente le développement vers le sexe masculin. Sans ce signal, le développement suit la voie féminine (XX, ou 45,X dans le syndrome de Turner). Il existe des variations du développement sexuel."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-21",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "🌳 Madame Martin (III-1) consulte au service de génétique : plusieurs personnes de sa famille ont la même maladie héréditaire. Voici l’arbre de sa famille. On étudie une maladie due à un seul gène : toute personne qui possède l’allèle responsable est malade, et on ne tient pas compte des mutations nouvelles.",
+   "enonce": "Ses parents, II-1 et II-2, sont malades, mais elle est saine. Que peux-tu en conclure ?",
+   "image": {
+    "src": "schemas/arbre-genealogique.webp",
+    "alt": "Arbre généalogique sur trois générations. Génération I : I-1 femme malade et I-2 homme sain, parents de II-2 et II-3. Génération II : II-1 femme malade et II-2 homme malade, parents de III-1 ; II-3 homme sain et II-4 femme saine, parents de III-2. Génération III : III-1 femme saine (Madame Martin) et III-2 homme sain."
+   },
+   "options": [
+    "L’allèle de la maladie est récessif",
+    "L’allèle de la maladie est dominant",
+    "La maladie ne se transmet pas",
+    "Madame Martin est forcément porteuse de l’allèle malade"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Si l’allèle était récessif, les deux parents malades n’auraient que des allèles malades : tous leurs enfants seraient malades. Or Madame Martin est saine. Chaque parent porte donc un allèle malade et un allèle normal, et l’allèle malade suffit à donner la maladie : il est dominant.",
+   "fiche": {
+    "titre": "Repérer un allèle dominant",
+    "texte": "Deux parents malades ont un enfant sain → l’allèle de la maladie est dominant, et les deux parents sont hétérozygotes."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-22",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "🌳 Madame Martin (III-1) consulte au service de génétique : plusieurs personnes de sa famille ont la même maladie héréditaire. Voici l’arbre de sa famille. On étudie une maladie due à un seul gène : toute personne qui possède l’allèle responsable est malade, et on ne tient pas compte des mutations nouvelles.",
+   "enonce": "Son père, II-2, est malade et sa fille III-1 est saine. Où est situé le gène de la maladie ?",
+   "image": {
+    "src": "schemas/arbre-genealogique.webp",
+    "alt": "Arbre généalogique sur trois générations. Génération I : I-1 femme malade et I-2 homme sain, parents de II-2 et II-3. Génération II : II-1 femme malade et II-2 homme malade, parents de III-1 ; II-3 homme sain et II-4 femme saine, parents de III-2. Génération III : III-1 femme saine (Madame Martin) et III-2 homme sain."
+   },
+   "options": [
+    "Sur le chromosome X",
+    "Sur un autosome",
+    "Sur le chromosome Y",
+    "On ne peut rien dire avec cet arbre"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Un père donne toujours son chromosome X à ses filles. Si l’allèle dominant malade était sur le X, toutes les filles d’un père malade seraient malades. Or III-1 est saine : le gène n’est pas sur le X. Il n’est pas sur le Y non plus, car des femmes sont malades. Il est sur un autosome : la transmission est autosomique dominante.",
+   "fiche": {
+    "titre": "Autosomique ou lié à l’X ?",
+    "texte": "Dominant lié à l’X : toutes les filles d’un père malade sont malades. Un père malade a une fille saine → gène sur un autosome."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-23",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "🌳 Madame Martin (III-1) consulte au service de génétique : plusieurs personnes de sa famille ont la même maladie héréditaire. Voici l’arbre de sa famille. On étudie une maladie due à un seul gène : toute personne qui possède l’allèle responsable est malade, et on ne tient pas compte des mutations nouvelles.",
+   "enonce": "Madame Martin risque-t-elle de transmettre l’allèle de la maladie à ses enfants ?",
+   "image": {
+    "src": "schemas/arbre-genealogique.webp",
+    "alt": "Arbre généalogique sur trois générations. Génération I : I-1 femme malade et I-2 homme sain, parents de II-2 et II-3. Génération II : II-1 femme malade et II-2 homme malade, parents de III-1 ; II-3 homme sain et II-4 femme saine, parents de III-2. Génération III : III-1 femme saine (Madame Martin) et III-2 homme sain."
+   },
+   "options": [
+    "Oui, une fois sur deux, car ses deux parents sont malades",
+    "Non : elle est saine, donc elle n’a pas l’allèle malade",
+    "Oui, une fois sur quatre, car elle est porteuse saine",
+    "Oui, mais seulement si elle a un garçon"
+   ],
+   "bonnes": [
+    1
+   ],
+   "pourquoi": "Dans ce modèle, un seul allèle malade suffit pour être malade. Madame Martin est saine : ses deux allèles sont normaux, elle ne peut pas transmettre l’allèle malade. Si son conjoint était malade, le risque viendrait de lui. Dans la réalité, certaines maladies dominantes ne s’expriment pas chez tous les porteurs : l’absence de symptômes ne suffit pas toujours à exclure l’allèle.",
+   "fiche": {
+    "titre": "Maladie dominante : qui la transmet ?",
+    "texte": "Maladie autosomique dominante, quand tout porteur est malade : une personne saine a deux allèles normaux et ne transmet pas la maladie. En réalité, certains porteurs restent sans symptômes : le conseil génétique le vérifie."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  },
+  {
+   "id": "bio-cellule-24",
+   "atelier": "bio-cellule",
+   "type": "qcm",
+   "contexte": "🌳 Madame Martin (III-1) consulte au service de génétique : plusieurs personnes de sa famille ont la même maladie héréditaire. Voici l’arbre de sa famille. On étudie une maladie due à un seul gène : toute personne qui possède l’allèle responsable est malade, et on ne tient pas compte des mutations nouvelles.",
+   "enonce": "On note M l’allèle malade (dominant) et n l’allèle normal. Quel est le génotype de son père, II-2 ?",
+   "image": {
+    "src": "schemas/arbre-genealogique.webp",
+    "alt": "Arbre généalogique sur trois générations. Génération I : I-1 femme malade et I-2 homme sain, parents de II-2 et II-3. Génération II : II-1 femme malade et II-2 homme malade, parents de III-1 ; II-3 homme sain et II-4 femme saine, parents de III-2. Génération III : III-1 femme saine (Madame Martin) et III-2 homme sain."
+   },
+   "options": [
+    "(M//M)",
+    "(n//n)",
+    "(M//n)",
+    "On ne peut pas le savoir"
+   ],
+   "bonnes": [
+    2
+   ],
+   "pourquoi": "II-2 est malade : il a au moins un allèle M. Il a une fille saine, de génotype (n//n) : il lui a donné un allèle n. Il est donc (M//n), hétérozygote. Sa conjointe II-1 aussi.",
+   "fiche": {
+    "titre": "Trouver un génotype",
+    "texte": "Malade avec un enfant sain → hétérozygote (M//n). Sain dans une maladie dominante → (n//n)."
+   },
+   "meta": {
+    "ajout": "programme-2026-11"
+   }
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr" data-filiere="portail">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Labo Pro Gutenberg</title>
+<meta name="description" content="Laboratoires numériques interactifs et mode jeu pour les élèves de la filière professionnelle du lycée Gutenberg de Créteil.">
+<meta name="theme-color" content="#6247e8">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="commun/icones/icone.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="commun/icones/icone-180.png">
+<link rel="stylesheet" href="commun/theme.css">
+<script src="commun/bandeau.js" data-bandeau="non"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--lp-fond); color: var(--lp-texte); font: 17px/1.5 var(--lp-police); }
+  main { max-width: 1000px; margin: 0 auto; padding: max(28px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 40px max(16px, env(safe-area-inset-left)); }
+  .haut { display: flex; align-items: flex-start; gap: 16px; justify-content: space-between; margin-bottom: 28px; }
+  .marque { display: flex; align-items: center; gap: 14px; }
+  .marque img { width: 56px; height: 56px; border-radius: 14px; flex: none; }
+  h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); margin: 0; line-height: 1.15; }
+  .lead { color: var(--lp-doux); margin: 4px 0 0; }
+  .dys { flex: none; min-height: 44px; padding: 8px 14px; border-radius: 99px; border: 1.5px solid var(--lp-bord); background: var(--lp-carte); color: var(--lp-texte); font: inherit; font-weight: 700; cursor: pointer; }
+  .dys[aria-pressed="true"] { background: var(--gutenberg); border-color: var(--gutenberg); color: #fff; }
+  .filieres { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+  .filiere { border-radius: 20px; overflow: hidden; background: var(--lp-carte); border: 1px solid var(--lp-bord); display: flex; flex-direction: column; }
+  .filiere-tete { background: var(--filiere); color: #fff; padding: 20px; }
+  .filiere-tete .tag { font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; opacity: .92; }
+  .filiere-tete h2 { margin: 4px 0 4px; font-size: 1.45rem; }
+  .filiere-tete p { margin: 0; opacity: .95; }
+  .filiere-corps { padding: 16px; display: grid; gap: 10px; flex: 1; align-content: start; }
+  .acces { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 14px; text-decoration: none; color: var(--lp-texte); border: 1.5px solid var(--lp-bord); min-height: 64px; transition: border-color .15s, background .15s; }
+  .acces:hover { border-color: var(--filiere); background: var(--filiere-clair); }
+  .acces:focus-visible { outline: 3px solid var(--filiere); outline-offset: 2px; }
+  .acces .ico { font-size: 1.7rem; flex: none; }
+  .acces strong { display: block; }
+  .acces span span { color: var(--lp-doux); font-size: .9rem; }
+  .acces.jeu { background: var(--filiere); border-color: var(--filiere); color: #fff; }
+  .acces.jeu span span { color: rgba(255,255,255,.9); }
+  .acces.jeu:hover { background: var(--filiere-fonce); }
+  .prof { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; padding: 16px 20px; border-radius: 16px; background: var(--lp-carte); border: 1px dashed var(--lp-bord); }
+  .prof p { margin: 0; color: var(--lp-doux); }
+  .prof a { font-weight: 700; color: var(--gutenberg); }
+  footer { margin-top: 32px; color: var(--lp-doux); font-size: .9rem; text-align: center; }
+  @media (prefers-color-scheme: dark) { .prof a { color: #b3a6ff; } }
+</style>
+</head>
+<body class="lp-page">
+<main>
+  <header class="haut">
+    <div class="marque">
+      <img src="commun/icones/icone-192.png" alt="">
+      <div>
+        <h1>Labo Pro Gutenberg</h1>
+        <p class="lead">Ateliers numériques et mode jeu de la filière professionnelle</p>
+      </div>
+    </div>
+    <button class="dys" type="button" data-lp-dys aria-pressed="false" title="Police et espacements adaptés à la lecture">Aa <span class="visuellement-cache">Lecture DYS</span></button>
+  </header>
+
+  <div class="filieres">
+    <section class="filiere" data-filiere="assp" aria-labelledby="t-assp">
+      <div class="filiere-tete">
+        <span class="tag">Bac Pro ASSP</span>
+        <h2 id="t-assp">Accompagnement, soins et services à la personne</h2>
+        <p>Petite enfance de 0 à 3 ans</p>
+      </div>
+      <div class="filiere-corps">
+        <a class="acces jeu" href="jeu/?f=assp"><span class="ico">🎮</span><span><strong>Mode jeu</strong><span>Défis, missions, fiches à collectionner</span></span></a>
+        <a class="acces" href="laboassp/"><span class="ico">🧪</span><span><strong>Laboratoire ASSP</strong><span>13 ateliers interactifs</span></span></a>
+        <a class="acces" href="laboassp/biologie.html"><span class="ico">🧬</span><span><strong>Labo de biologie</strong><span>Tout le programme de biologie et microbiologie</span></span></a>
+      </div>
+    </section>
+
+    <section class="filiere" data-filiere="aepa" aria-labelledby="t-aepa">
+      <div class="filiere-tete">
+        <span class="tag">Bac Pro AEPA</span>
+        <h2 id="t-aepa">Animation – enfance et personnes âgées</h2>
+        <p>Besoins des publics, projet d’animation, sécurité</p>
+      </div>
+      <div class="filiere-corps">
+        <a class="acces jeu" href="jeu/?f=aepa"><span class="ico">🎮</span><span><strong>Mode jeu</strong><span>Défis, missions, fiches à collectionner</span></span></a>
+        <a class="acces" href="laboaepa/"><span class="ico">🧪</span><span><strong>Laboratoire AEPA</strong><span>14 ateliers interactifs</span></span></a>
+      </div>
+    </section>
+  </div>
+
+  <div class="prof">
+    <p>👩‍🏫 Espace enseignant : suivez la progression de vos élèves à partir de leurs codes de sauvegarde.</p>
+    <a href="prof/">Tableau de bord de la classe →</a>
+  </div>
+
+  <footer>Lycée Gutenberg · Créteil · Aucune donnée n’est envoyée : la progression reste sur l’appareil de l’élève.</footer>
+</main>
+<script>
+  document.querySelectorAll('[data-lp-dys]').forEach(function (b) {
+    b.setAttribute('aria-pressed', String(document.documentElement.hasAttribute('data-dys')));
+    b.addEventListener('click', window.LaboPro.basculerDys);
+  });
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('sw.js').catch(function () {});
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mode jeu · Labo Pro Gutenberg</title>
+<meta name="description" content="Entraîne-toi en jouant : défis, missions, fiches mémo à collectionner et badges de maîtrise.">
+<meta name="theme-color" content="#6247e8">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../commun/icones/icone.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../commun/icones/icone-180.png">
+<link rel="stylesheet" href="../commun/theme.css">
+<link rel="stylesheet" href="jeu.css">
+<script>
+  // Filière choisie par l'adresse (?f=assp) : posée avant l'affichage pour éviter un flash de couleur.
+  (function () {
+    var f = new URLSearchParams(location.search).get('f');
+    if (f && /^[a-z]+$/.test(f)) document.documentElement.setAttribute('data-filiere', f);
+    try { if (localStorage.getItem('lp-dys') === '1') document.documentElement.setAttribute('data-dys', ''); } catch (e) {}
+  })();
+</script>
+<script src="../commun/bandeau.js" data-bandeau="non"></script>
+</head>
+<body class="lp-page">
+<a class="lien-evitement" href="#app">Aller au contenu</a>
+<div id="app" tabindex="-1" aria-live="off"><p class="chargement">Chargement…</p></div>
+<div id="annonces" class="visuellement-cache" aria-live="polite"></div>
+<noscript><p style="padding:16px">Le mode jeu a besoin de JavaScript.</p></noscript>
+<script type="module" src="app.js"></script>
+</body>
+</html>

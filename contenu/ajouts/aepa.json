@@ -1,0 +1,116 @@
+{
+  "items": [
+    {
+      "id": "aepa-sortie-acm-01",
+      "atelier": "sortie",
+      "type": "qcm",
+      "ordreFixe": true,
+      "contexte": "📋 Vacances scolaires · Tu prépares une journée en accueil de loisirs extrascolaire avec des enfants de 4 et 5 ans.",
+      "enonce": "Quel est le taux minimal d’encadrement pour ces enfants de moins de 6 ans ?",
+      "options": [
+        "1 animateur pour 5 enfants",
+        "1 animateur pour 8 enfants",
+        "1 animateur pour 12 enfants",
+        "1 animateur pour 14 enfants"
+      ],
+      "bonnes": [
+        1
+      ],
+      "pourquoi": "En accueil de loisirs extrascolaire (vacances scolaires), il faut au minimum 1 animateur pour 8 mineurs de moins de 6 ans, et 1 pour 12 à partir de 6 ans. Ce sont des minimums : la direction peut prévoir davantage selon l’activité. Attention : le mercredi en semaine scolaire relève du périscolaire.",
+      "fiche": {
+        "titre": "Taux d’encadrement en accueil de loisirs",
+        "texte": "Extrascolaire (vacances) : 1/8 avant 6 ans, 1/12 à partir de 6 ans. Périscolaire (dont le mercredi en semaine scolaire) : 1/8 et 1/12 si l’accueil dure plus de 5 heures consécutives, sinon 1/10 et 1/14. Des taux assouplis existent dans le cadre d’un projet éducatif territorial (PEdT)."
+      },
+      "meta": {
+        "ajout": "programme-2026-11",
+        "reference": "AEPA S.3.1.B1 ; CASF art. R227-1, R227-15 et R227-16"
+      }
+    },
+    {
+      "id": "aepa-sortie-acm-02",
+      "atelier": "sortie",
+      "type": "qcm",
+      "ordreFixe": true,
+      "contexte": "🧮 Accueil de loisirs extrascolaire, vacances · 20 enfants de 4 ans partent au parc pour la journée.",
+      "enonce": "Combien d’animateurs faut-il au minimum pour encadrer ce groupe ?",
+      "options": [
+        "2 animateurs",
+        "3 animateurs",
+        "4 animateurs",
+        "5 animateurs"
+      ],
+      "bonnes": [
+        1
+      ],
+      "pourquoi": "Pour des enfants de moins de 6 ans en extrascolaire, il faut 1 animateur pour 8 enfants. 20 ÷ 8 = 2,5 : on arrondit toujours au-dessus, donc 3 animateurs au minimum. Avec 2, chaque adulte aurait 10 enfants, ce qui dépasse le taux.",
+      "fiche": {
+        "titre": "Calculer l’encadrement",
+        "texte": "Nombre d’enfants ÷ taux, puis arrondir au nombre entier supérieur. Exemple : 20 enfants de 4 ans ÷ 8 = 2,5 → 3 animateurs minimum."
+      },
+      "meta": {
+        "ajout": "programme-2026-11",
+        "reference": "AEPA S.3.1.B1"
+      }
+    },
+    {
+      "id": "aepa-sortie-acm-03",
+      "atelier": "sortie",
+      "type": "qcm",
+      "contexte": "👥 Composition de l’équipe · La directrice d’un accueil de loisirs constitue son équipe de 10 animateurs pour l’été.",
+      "enonce": "Que prévoit la réglementation sur la qualification de l’équipe d’animation ?",
+      "options": [
+        "Au moins la moitié des animateurs doit avoir le BAFA ou un diplôme équivalent",
+        "Tous les animateurs doivent obligatoirement avoir le BAFA complet avant d’encadrer un groupe d’enfants",
+        "La qualification est libre : il suffit que la directrice soit diplômée pour que l’accueil soit déclaré",
+        "Au moins un animateur sur quatre doit être diplômé, les autres pouvant tous être sans aucun diplôme"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "En accueil collectif de mineurs, au moins 50 % des animateurs doivent être titulaires du BAFA ou d’un diplôme équivalent (comme le Bac Pro AEPA dans certaines conditions) ; les animateurs sans qualification ne peuvent pas dépasser 20 % de l’équipe. Les autres peuvent être stagiaires BAFA.",
+      "fiche": {
+        "titre": "Qualification de l’équipe",
+        "texte": "Au moins 50 % de diplômés (BAFA ou équivalent), au plus 20 % sans qualification, le reste en stage. La direction vérifie les diplômes avant l’accueil."
+      },
+      "meta": {
+        "ajout": "programme-2026-11",
+        "reference": "AEPA S.3.1.B1 ; CASF art. R227-12"
+      }
+    },
+    {
+      "id": "aepa-sortie-acm-04",
+      "atelier": "sortie",
+      "type": "multi",
+      "contexte": "✅ Avant le départ · Pendant les vacances scolaires, ton accueil de loisirs extrascolaire organise une sortie en car pour 24 enfants de 7 à 9 ans.",
+      "enonce": "Quelles vérifications font partie de la préparation réglementaire ? Choisis-en 3.",
+      "options": [
+        "Le nombre d’animateurs est suffisant pour l’âge et l’effectif des enfants",
+        "Les besoins particuliers sont connus (PAI, traitements) et la trousse est prête",
+        "La liste des enfants présents est à jour et les autorisations nécessaires sont réunies",
+        "Les enfants ont tous le même âge, condition indispensable pour partir en car",
+        "Chaque animateur a son propre véhicule pour suivre le car en cas de besoin"
+      ],
+      "bonnes": [
+        0,
+        1,
+        2
+      ],
+      "explications": [
+        "Oui : 24 enfants de plus de 6 ans en extrascolaire, c’est au moins 2 animateurs (1 pour 12).",
+        "Oui : les protocoles et traitements voyagent avec le groupe.",
+        "Oui : on part et on revient avec une liste nominative, et les autorisations prévues par la structure.",
+        "Non : un groupe peut réunir des âges différents ; l’encadrement s’adapte aux plus jeunes.",
+        "Non : ce n’est pas une règle ; l’équipe voyage avec le groupe et garde un moyen de communication."
+      ],
+      "pourquoi": "Avant toute sortie : encadrement conforme (âges, effectif), besoins particuliers et trousse, liste à jour et autorisations, trajet et moyens d’alerte. La direction valide l’organisation.",
+      "fiche": {
+        "titre": "Check-list réglementaire d’une sortie",
+        "texte": "Effectif et taux d’encadrement · qualifications · PAI, traitements, trousse · liste nominative et autorisations · transport et moyens d’alerte · validation par la direction."
+      },
+      "meta": {
+        "ajout": "programme-2026-11",
+        "reference": "AEPA S.3.1.B1"
+      }
+    }
+  ]
+}

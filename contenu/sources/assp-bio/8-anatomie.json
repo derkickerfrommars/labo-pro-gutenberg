@@ -1,0 +1,717 @@
+{
+  "lieu": {
+    "id": "bio-anatomie",
+    "nom": "L’Amphi d’anatomie",
+    "icone": "🦴",
+    "couleur": "#0ea5e9"
+  },
+  "ateliers": [
+    {
+      "id": "bio-schemas-circulation",
+      "titre": "Schémas : cœur, sang, respiration, cellule",
+      "icone": "🫀",
+      "programme": "Légender les schémas du cœur, de la circulation, de l’appareil respiratoire, de la cellule et du chromosome"
+    },
+    {
+      "id": "bio-schemas-nerfs",
+      "titre": "Schémas : nerfs, sens et peau",
+      "icone": "🧠",
+      "programme": "Légender les schémas du neurone, du système nerveux, de la moelle épinière, de l’œil, de l’oreille et de la peau"
+    },
+    {
+      "id": "bio-schemas-corps",
+      "titre": "Schémas : os, digestion, rein, reproduction",
+      "icone": "🦴",
+      "programme": "Légender les schémas de l’os, du squelette, du crâne, de l’appareil digestif, de la dent, de l’appareil urinaire, des appareils génitaux et du sein"
+    }
+  ],
+  "items": [],
+  "schemas": [
+    {
+      "id": "coeur",
+      "atelier": "bio-schemas-circulation",
+      "titre": "Le cœur (coupe frontale)",
+      "alt": "Coupe du cœur avec ses quatre cavités, ses valves et les gros vaisseaux, numérotés de 1 à 13.",
+      "legende": {
+        "1": "l’oreillette droite",
+        "2": "l’oreillette gauche",
+        "3": "la veine cave supérieure",
+        "4": "l’aorte",
+        "5": "l’artère pulmonaire",
+        "6": "les veines pulmonaires",
+        "7": "la valve mitrale",
+        "8": "la valve sigmoïde aortique",
+        "9": "le ventricule gauche",
+        "10": "le ventricule droit",
+        "11": "la veine cave inférieure",
+        "12": "la valve tricuspide",
+        "13": "la valve sigmoïde pulmonaire"
+      },
+      "questions": {
+        "1": "Elle reçoit le sang pauvre en dioxygène ramené par les veines caves.",
+        "2": "Elle reçoit le sang riche en dioxygène qui revient des poumons par les veines pulmonaires.",
+        "4": "Elle part du ventricule gauche et distribue le sang riche en dioxygène à tout le corps.",
+        "5": "Elle conduit le sang pauvre en dioxygène du ventricule droit vers les poumons.",
+        "9": "Sa paroi est la plus épaisse : il propulse le sang dans la grande circulation.",
+        "12": "Placée entre l’oreillette droite et le ventricule droit, elle empêche le sang de refluer."
+      }
+    },
+    {
+      "id": "circulatoire",
+      "atelier": "bio-schemas-circulation",
+      "titre": "La circulation sanguine",
+      "alt": "Schéma de la double circulation sanguine : cœur, poumons, organes et vaisseaux, numérotés de 1 à 12.",
+      "legende": {
+        "1": "le réseau capillaire des organes supérieurs",
+        "2": "la veine cave supérieure",
+        "3": "l’artère pulmonaire",
+        "4": "la veine cave inférieure",
+        "5": "l’oreillette droite",
+        "6": "le ventricule droit",
+        "7": "l’aorte",
+        "8": "les poumons",
+        "9": "la veine pulmonaire",
+        "10": "l’oreillette gauche",
+        "11": "le ventricule gauche",
+        "12": "le réseau capillaire des organes inférieurs"
+      },
+      "questions": {
+        "8": "C’est là que le sang se recharge en dioxygène et rejette le CO₂ : c’est la petite circulation.",
+        "9": "Elle ramène le sang riche en dioxygène des poumons vers l’oreillette gauche.",
+        "7": "Elle part du ventricule gauche : c’est le départ de la grande circulation.",
+        "12": "Dans ces fins vaisseaux, le sang échange dioxygène, nutriments et déchets avec les cellules."
+      }
+    },
+    {
+      "id": "respiratoire",
+      "atelier": "bio-schemas-circulation",
+      "titre": "L’appareil respiratoire",
+      "alt": "Appareil respiratoire de face : voies respiratoires supérieures et inférieures, poumons et diaphragme, numérotés de 1 à 13.",
+      "legende": {
+        "1": "les voies respiratoires supérieures",
+        "2": "les fosses nasales",
+        "3": "le pharynx",
+        "4": "l’épiglotte",
+        "5": "le larynx",
+        "6": "la partie thoracique de l’appareil respiratoire",
+        "7": "la trachée",
+        "8": "les anneaux cartilagineux de la trachée",
+        "9": "le poumon gauche",
+        "10": "les bronches",
+        "11": "les bronchioles",
+        "12": "la plèvre",
+        "13": "le diaphragme"
+      },
+      "questions": {
+        "2": "Elles réchauffent, humidifient et filtrent l’air inspiré.",
+        "4": "Elle ferme le larynx pendant la déglutition et évite les fausses routes.",
+        "7": "Ce conduit, maintenu ouvert par des anneaux de cartilage, mène l’air jusqu’aux bronches.",
+        "11": "Ces fines ramifications se terminent par les alvéoles, où se font les échanges gazeux.",
+        "13": "C’est le principal muscle de l’inspiration : en se contractant, il s’abaisse."
+      },
+      "incompatibles": {
+        "1": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "6": [
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13"
+        ],
+        "7": [
+          "8"
+        ],
+        "10": [
+          "11"
+        ],
+        "3": [
+          "4"
+        ]
+      }
+    },
+    {
+      "id": "cellule",
+      "atelier": "bio-schemas-circulation",
+      "titre": "La cellule animale",
+      "alt": "Cellule animale en coupe avec ses organites, numérotés de 1 à 13.",
+      "legende": {
+        "1": "le nucléole",
+        "2": "le noyau",
+        "3": "les ribosomes",
+        "4": "une vésicule",
+        "5": "le réticulum endoplasmique granuleux",
+        "6": "l’appareil de Golgi",
+        "7": "le cytosquelette",
+        "8": "le réticulum endoplasmique lisse",
+        "9": "les mitochondries",
+        "10": "la vacuole",
+        "11": "le cytosol",
+        "12": "les lysosomes",
+        "13": "les centrioles"
+      },
+      "questions": {
+        "2": "Il contient l’ADN, le programme génétique de la cellule.",
+        "9": "Elles produisent l’énergie de la cellule grâce à la respiration cellulaire.",
+        "6": "Il modifie, trie et emballe les protéines avant leur envoi.",
+        "11": "C’est le liquide dans lequel baignent les organites."
+      },
+      "incompatibles": {
+        "2": [
+          "1"
+        ]
+      }
+    },
+    {
+      "id": "chromosome",
+      "atelier": "bio-schemas-circulation",
+      "titre": "Le chromosome",
+      "alt": "Chromosome dédoublé en forme de X, numéroté de 1 à 5.",
+      "legende": {
+        "1": "une chromatide",
+        "2": "le centromère",
+        "3": "le bras court",
+        "4": "le bras long",
+        "5": "le chromosome"
+      },
+      "questions": {
+        "2": "C’est le point où les deux chromatides sont reliées."
+      },
+      "incompatibles": {
+        "5": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      }
+    },
+    {
+      "id": "neurone",
+      "atelier": "bio-schemas-nerfs",
+      "titre": "Le neurone",
+      "alt": "Neurone avec son corps cellulaire, ses dendrites et son axone entouré de myéline, numérotés de 1 à 8.",
+      "legende": {
+        "1": "le noyau",
+        "2": "l’axone",
+        "3": "la gaine de myéline",
+        "4": "la cellule de Schwann",
+        "5": "l’arborisation terminale",
+        "6": "un nœud de Ranvier",
+        "7": "le corps cellulaire",
+        "8": "une dendrite"
+      },
+      "questions": {
+        "8": "Ces courts prolongements reçoivent les messages venant d’autres neurones.",
+        "2": "Ce long prolongement conduit le message nerveux loin du corps cellulaire.",
+        "3": "Elle isole l’axone et accélère la conduction du message nerveux.",
+        "5": "C’est l’extrémité de l’axone, au niveau de laquelle se forment les synapses."
+      },
+      "incompatibles": {
+        "3": [
+          "4"
+        ]
+      }
+    },
+    {
+      "id": "systemenerveux",
+      "atelier": "bio-schemas-nerfs",
+      "titre": "Le système nerveux",
+      "alt": "Système nerveux de face : encéphale, moelle épinière et nerfs, numérotés de 1 à 8.",
+      "legende": {
+        "1": "l’encéphale",
+        "2": "le cerveau",
+        "3": "le cervelet",
+        "4": "le tronc cérébral",
+        "5": "un nerf rachidien",
+        "6": "la moelle épinière",
+        "7": "la queue de cheval",
+        "8": "le nerf sciatique"
+      },
+      "questions": {
+        "3": "Il coordonne les mouvements et contrôle l’équilibre.",
+        "4": "Il relie le cerveau à la moelle épinière et commande des fonctions vitales comme la respiration.",
+        "6": "Protégée dans la colonne vertébrale, elle conduit les messages entre l’encéphale et le corps.",
+        "8": "C’est le plus gros nerf du corps ; il innerve la jambe."
+      },
+      "incompatibles": {
+        "1": [
+          "2",
+          "3",
+          "4"
+        ]
+      }
+    },
+    {
+      "id": "moelle",
+      "atelier": "bio-schemas-nerfs",
+      "titre": "La moelle épinière (coupe transversale)",
+      "alt": "Coupe transversale de la moelle épinière avec les méninges et les racines des nerfs, numérotée de 1 à 11.",
+      "legende": {
+        "1": "la pie-mère",
+        "2": "l’arachnoïde",
+        "3": "la dure-mère",
+        "4": "les méninges",
+        "5": "le canal de l’épendyme",
+        "6": "la substance blanche",
+        "7": "la racine antérieure",
+        "8": "le nerf rachidien",
+        "9": "le ganglion rachidien",
+        "10": "la racine postérieure",
+        "11": "la substance grise"
+      },
+      "questions": {
+        "11": "En forme de papillon au centre, elle contient les corps cellulaires des neurones.",
+        "4": "Ces trois enveloppes protègent la moelle épinière et l’encéphale ; leur infection est une méningite.",
+        "9": "Ce renflement de la racine postérieure contient les corps cellulaires des neurones sensitifs."
+      },
+      "incompatibles": {
+        "4": [
+          "1",
+          "2",
+          "3"
+        ],
+        "8": [
+          "7",
+          "9",
+          "10"
+        ]
+      }
+    },
+    {
+      "id": "oeil",
+      "atelier": "bio-schemas-nerfs",
+      "titre": "L’œil (coupe)",
+      "alt": "Coupe de l’œil : enveloppes, cornée, iris, cristallin, rétine et nerf optique, numérotés de 1 à 14.",
+      "legende": {
+        "1": "la sclérotique",
+        "2": "la choroïde",
+        "3": "le canal de Schlemm",
+        "4": "la zonule de Zinn",
+        "5": "la cornée",
+        "6": "l’iris",
+        "7": "la pupille",
+        "8": "l’humeur aqueuse",
+        "9": "la chambre postérieure",
+        "10": "le corps ciliaire",
+        "11": "le cristallin",
+        "12": "le corps vitré",
+        "13": "la rétine",
+        "14": "le nerf optique"
+      },
+      "questions": {
+        "5": "Cette membrane transparente, à l’avant de l’œil, laisse entrer la lumière.",
+        "6": "Ce muscle coloré règle le diamètre de la pupille.",
+        "11": "Cette lentille change de forme pour faire la mise au point : c’est l’accommodation.",
+        "13": "Elle contient les cellules sensibles à la lumière (cônes et bâtonnets).",
+        "14": "Il transmet au cerveau les messages venus de la rétine."
+      },
+      "incompatibles": {
+        "8": [
+          "9"
+        ]
+      }
+    },
+    {
+      "id": "oreille",
+      "atelier": "bio-schemas-nerfs",
+      "titre": "L’oreille",
+      "alt": "Coupe de l’oreille externe, moyenne et interne, numérotée de 1 à 16.",
+      "legende": {
+        "1": "le pavillon",
+        "2": "le conduit auditif externe",
+        "4": "l’enclume",
+        "5": "les canaux semi-circulaires",
+        "10": "le nerf auditif",
+        "11": "la cochlée",
+        "13": "la trompe d’Eustache",
+        "15": "l’étrier",
+        "16": "le tympan"
+      },
+      "questions": {
+        "16": "Cette membrane vibre sous l’effet des sons et transmet les vibrations aux osselets.",
+        "11": "En forme d’escargot, elle contient les cellules de l’audition.",
+        "5": "Ils renseignent le cerveau sur les mouvements de la tête : ils participent à l’équilibre.",
+        "13": "Elle relie l’oreille moyenne au pharynx et équilibre la pression de part et d’autre du tympan."
+      }
+    },
+    {
+      "id": "peau",
+      "atelier": "bio-schemas-nerfs",
+      "titre": "La peau (coupe)",
+      "alt": "Coupe de la peau avec ses trois couches, un poil et ses glandes, numérotée de 1 à 11.",
+      "legende": {
+        "1": "le poil",
+        "2": "l’épiderme",
+        "3": "la couche cornée",
+        "4": "les vaisseaux sanguins",
+        "5": "le muscle horripilateur",
+        "6": "la glande sébacée",
+        "7": "le derme",
+        "8": "l’hypoderme",
+        "9": "le follicule pileux",
+        "11": "la glande sudoripare"
+      },
+      "questions": {
+        "2": "C’est la couche superficielle, sans vaisseaux sanguins, qui se renouvelle sans cesse.",
+        "7": "Cette couche contient les vaisseaux, les terminaisons nerveuses et les glandes.",
+        "8": "Cette couche profonde, riche en graisse, isole du froid et amortit les chocs.",
+        "6": "Elle produit le sébum, qui graisse le poil et protège la peau.",
+        "11": "Elle produit la sueur, qui participe à la régulation de la température."
+      },
+      "incompatibles": {
+        "1": [
+          "9"
+        ],
+        "7": [
+          "5",
+          "6"
+        ]
+      }
+    },
+    {
+      "id": "os",
+      "atelier": "bio-schemas-corps",
+      "titre": "L’os long",
+      "alt": "Os long (fémur) en coupe partielle, numéroté de 1 à 10.",
+      "legende": {
+        "1": "l’épiphyse",
+        "2": "la diaphyse",
+        "3": "le cartilage articulaire",
+        "4": "l’os compact",
+        "5": "l’os spongieux",
+        "6": "la ligne épiphysaire",
+        "7": "le périoste",
+        "8": "le canal médullaire",
+        "9": "la moelle jaune",
+        "10": "un vaisseau sanguin"
+      },
+      "questions": {
+        "1": "C’est l’extrémité renflée de l’os long.",
+        "2": "C’est le corps allongé de l’os long, entre les deux extrémités.",
+        "3": "Il recouvre l’extrémité de l’os et facilite le glissement dans l’articulation.",
+        "7": "Cette membrane recouvre l’os ; elle participe à sa croissance en épaisseur et à sa réparation."
+      },
+      "incompatibles": {
+        "1": [
+          "5"
+        ],
+        "2": [
+          "8",
+          "9"
+        ]
+      }
+    },
+    {
+      "id": "squelettesuperieur",
+      "atelier": "bio-schemas-corps",
+      "titre": "Le squelette du membre supérieur",
+      "alt": "Squelette de l’épaule, du bras et de la main, numéroté de 1 à 8.",
+      "legende": {
+        "1": "la clavicule",
+        "2": "la scapula",
+        "3": "l’humérus",
+        "6": "les os du carpe",
+        "7": "les métacarpiens",
+        "8": "les phalanges"
+      },
+      "questions": {
+        "1": "Cet os relie le sternum à l’épaule.",
+        "2": "Cet os plat de l’épaule s’appelait autrefois l’omoplate.",
+        "3": "C’est l’os du bras, entre l’épaule et le coude."
+      }
+    },
+    {
+      "id": "squeletteinferieur",
+      "atelier": "bio-schemas-corps",
+      "titre": "Le squelette du membre inférieur",
+      "alt": "Squelette du bassin, des jambes et des pieds, numéroté de 1 à 9.",
+      "legende": {
+        "1": "le sacrum",
+        "2": "le coccyx",
+        "3": "le fémur",
+        "4": "la patella",
+        "5": "le tibia",
+        "6": "la fibula",
+        "7": "le tarse",
+        "8": "le métatarse",
+        "9": "les phalanges"
+      },
+      "questions": {
+        "3": "C’est l’os de la cuisse, le plus long du corps.",
+        "4": "Cet os du genou s’appelait autrefois la rotule.",
+        "6": "Cet os fin, à l’extérieur de la jambe, s’appelait autrefois le péroné.",
+        "1": "Cet os de la base de la colonne est une zone fréquente d’escarre chez la personne alitée."
+      }
+    },
+    {
+      "id": "crane",
+      "atelier": "bio-schemas-corps",
+      "titre": "Le crâne (vue de profil)",
+      "alt": "Crâne vu de profil avec ses os colorés, numérotés de 1 à 11.",
+      "legende": {
+        "1": "l’os frontal",
+        "2": "l’os pariétal",
+        "3": "l’os nasal",
+        "7": "l’os occipital",
+        "8": "l’os temporal",
+        "9": "l’os zygomatique",
+        "10": "le maxillaire",
+        "11": "la mandibule"
+      },
+      "questions": {
+        "1": "C’est l’os du front.",
+        "7": "C’est l’os de l’arrière du crâne.",
+        "11": "C’est la mâchoire inférieure, le seul os mobile du crâne."
+      }
+    },
+    {
+      "id": "digestifsuperieur",
+      "atelier": "bio-schemas-corps",
+      "titre": "La bouche et le pharynx",
+      "alt": "Coupe de la tête et du cou montrant la bouche, les glandes salivaires, le pharynx et l’œsophage, numérotés de 1 à 11.",
+      "legende": {
+        "1": "la cavité buccale",
+        "2": "le palais",
+        "3": "la luette",
+        "4": "la langue",
+        "5": "les dents",
+        "6": "les glandes salivaires",
+        "7": "la glande sublinguale",
+        "8": "la glande submandibulaire",
+        "9": "la glande parotide",
+        "10": "le pharynx",
+        "11": "l’œsophage"
+      },
+      "questions": {
+        "9": "C’est la plus grosse glande salivaire, située sur le côté du visage, en avant et au-dessous de l’oreille ; sur cette vue de profil simplifiée, elle est dessinée en projection derrière la cavité buccale. Son inflammation est fréquente dans les oreillons.",
+        "10": "Ce carrefour est commun aux voies digestives et respiratoires.",
+        "11": "Ce conduit musculaire amène les aliments du pharynx à l’estomac."
+      },
+      "incompatibles": {
+        "6": [
+          "7",
+          "8",
+          "9"
+        ],
+        "1": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      }
+    },
+    {
+      "id": "digestifinferieur",
+      "atelier": "bio-schemas-corps",
+      "titre": "L’appareil digestif (abdomen)",
+      "alt": "Organes digestifs de l’abdomen, numérotés de 12 à 30.",
+      "legende": {
+        "12": "le foie",
+        "13": "la vésicule biliaire",
+        "14": "le canal cholédoque",
+        "15": "l’estomac",
+        "16": "le pancréas",
+        "19": "le duodénum",
+        "22": "l’appendice",
+        "24": "le côlon transverse",
+        "29": "le rectum",
+        "30": "l’anus"
+      },
+      "questions": {
+        "12": "Cet organe produit la bile et stocke le glucose sous forme de glycogène.",
+        "13": "Elle stocke la bile entre les repas.",
+        "15": "Cette poche brasse les aliments avec le suc gastrique, très acide.",
+        "16": "Il produit le suc pancréatique et des hormones (insuline, glucagon).",
+        "19": "C’est le début de l’intestin grêle, où arrivent la bile et le suc pancréatique."
+      }
+    },
+    {
+      "id": "dent",
+      "atelier": "bio-schemas-corps",
+      "titre": "La dent (coupe)",
+      "alt": "Coupe d’une molaire dans la gencive et l’os, numérotée de 1 à 11.",
+      "legende": {
+        "1": "la couronne",
+        "2": "le collet",
+        "3": "la racine",
+        "4": "l’émail",
+        "5": "la dentine",
+        "6": "la pulpe",
+        "7": "la gencive",
+        "8": "le cément",
+        "9": "l’os maxillaire",
+        "10": "l’artère dentaire",
+        "11": "le nerf"
+      },
+      "questions": {
+        "4": "C’est le tissu le plus dur du corps ; il recouvre la couronne.",
+        "6": "Elle contient les vaisseaux et les nerfs de la dent.",
+        "3": "C’est la partie de la dent ancrée dans l’os de la mâchoire."
+      },
+      "incompatibles": {
+        "1": [
+          "4",
+          "5",
+          "6"
+        ],
+        "3": [
+          "8",
+          "6"
+        ]
+      }
+    },
+    {
+      "id": "excreteur",
+      "atelier": "bio-schemas-corps",
+      "titre": "L’appareil urinaire",
+      "alt": "Appareil urinaire de face avec les reins, les uretères, la vessie et les gros vaisseaux, numérotés de 1 à 10.",
+      "legende": {
+        "1": "l’appareil urinaire",
+        "2": "un rein",
+        "3": "le bassinet",
+        "4": "l’uretère",
+        "5": "la vessie",
+        "6": "l’urètre",
+        "7": "la glande surrénale",
+        "8": "l’artère et la veine rénales",
+        "9": "la veine cave inférieure",
+        "10": "l’aorte abdominale"
+      },
+      "questions": {
+        "2": "Il filtre le sang et fabrique l’urine.",
+        "4": "Ce conduit amène l’urine du rein jusqu’à la vessie.",
+        "5": "Ce réservoir stocke l’urine entre deux mictions.",
+        "6": "Ce conduit évacue l’urine de la vessie vers l’extérieur.",
+        "7": "Posée sur le rein, elle produit des hormones comme l’adrénaline."
+      },
+      "incompatibles": {
+        "1": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      }
+    },
+    {
+      "id": "genitalhomme",
+      "atelier": "bio-schemas-corps",
+      "titre": "L’appareil génital masculin",
+      "alt": "Coupe sagittale du bassin masculin, numérotée de 1 à 18.",
+      "legende": {
+        "1": "la vessie",
+        "2": "la symphyse pubienne",
+        "3": "le pénis",
+        "4": "les corps caverneux",
+        "10": "les vésicules séminales",
+        "12": "la prostate",
+        "15": "le canal déférent",
+        "16": "l’épididyme",
+        "17": "le testicule",
+        "18": "le scrotum"
+      },
+      "questions": {
+        "17": "Il produit les spermatozoïdes et la testostérone.",
+        "16": "Situé au-dessus du testicule, il termine la maturation des spermatozoïdes.",
+        "15": "Ce conduit transporte les spermatozoïdes vers l’urètre.",
+        "12": "Cette glande, sous la vessie, produit une partie du liquide séminal."
+      },
+      "incompatibles": {
+        "3": [
+          "4"
+        ],
+        "18": [
+          "16",
+          "17"
+        ]
+      }
+    },
+    {
+      "id": "genitalfemme",
+      "atelier": "bio-schemas-corps",
+      "titre": "L’appareil génital féminin",
+      "alt": "Coupe sagittale du bassin féminin, numérotée de 1 à 19.",
+      "legende": {
+        "1": "la trompe utérine",
+        "3": "la vessie",
+        "4": "la symphyse pubienne",
+        "11": "l’ovaire",
+        "13": "l’utérus",
+        "15": "le col de l’utérus",
+        "16": "le rectum",
+        "17": "le vagin"
+      },
+      "questions": {
+        "11": "Il produit les ovocytes et des hormones (œstrogènes, progestérone).",
+        "1": "C’est le lieu habituel de la fécondation ; elle conduit l’ovocyte vers l’utérus.",
+        "13": "Cet organe creux et musclé accueille l’embryon puis le fœtus.",
+        "15": "Il fait le lien entre l’utérus et le vagin ; il se dilate pendant l’accouchement."
+      },
+      "incompatibles": {
+        "13": [
+          "15"
+        ]
+      }
+    },
+    {
+      "id": "sein",
+      "atelier": "bio-schemas-corps",
+      "titre": "Le sein (coupe)",
+      "alt": "Coupe du sein montrant la glande mammaire, les conduits et le tissu graisseux, numérotée de 1 à 8.",
+      "legende": {
+        "1": "la cage thoracique",
+        "2": "les muscles pectoraux",
+        "3": "les lobules",
+        "4": "le mamelon",
+        "5": "l’aréole",
+        "6": "un conduit galactophore",
+        "7": "le tissu adipeux",
+        "8": "la peau"
+      },
+      "questions": {
+        "3": "Ces petites glandes produisent le lait pendant l’allaitement.",
+        "6": "Ce canal conduit le lait jusqu’au mamelon.",
+        "7": "Ce tissu graisseux donne au sein l’essentiel de son volume."
+      }
+    },
+    {
+      "id": "muscle-strie",
+      "atelier": "bio-schemas-corps",
+      "titre": "Le muscle strié squelettique",
+      "alt": "Muscle vu de côté entre deux os, sa coupe transversale agrandie et un zoom sur quelques fibres, numérotés de 1 à 7.",
+      "legende": {
+        "1": "le tendon",
+        "2": "l’épimysium (enveloppe du muscle)",
+        "3": "un faisceau de fibres musculaires",
+        "4": "le périmysium (tissu autour des faisceaux)",
+        "5": "une fibre musculaire",
+        "6": "un vaisseau sanguin",
+        "7": "un nerf"
+      },
+      "questions": {
+        "1": "Il relie le muscle à l’os : quand le muscle se contracte, il tire sur l’os.",
+        "2": "Cette enveloppe de tissu conjonctif entoure tout le muscle.",
+        "3": "C’est un groupe de fibres musculaires, entouré de tissu conjonctif.",
+        "4": "Ce tissu conjonctif entoure chaque faisceau ; les vaisseaux et les nerfs y circulent.",
+        "5": "C’est la cellule du muscle : très longue, avec plusieurs noyaux, elle se contracte.",
+        "6": "Il apporte aux fibres le dioxygène et le glucose dont elles ont besoin pour se contracter.",
+        "7": "Il apporte au muscle le message nerveux qui commande sa contraction."
+      },
+      "incompatibles": {
+        "3": [
+          "4",
+          "5"
+        ]
+      }
+    }
+  ]
+}

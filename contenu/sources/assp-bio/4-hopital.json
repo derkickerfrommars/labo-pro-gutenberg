@@ -1,0 +1,1076 @@
+{
+  "lieu": {
+    "id": "bio-hopital",
+    "nom": "L’Hôpital",
+    "icone": "🚑",
+    "couleur": "#ef4444"
+  },
+  "ateliers": [
+    {
+      "id": "bio-coeur",
+      "titre": "Cœur et sang",
+      "icone": "❤️",
+      "programme": "Bloc 2 · Système cardiovasculaire, sang, lymphe, examens · Bloc 1 · AVC, AIT, infarctus"
+    },
+    {
+      "id": "bio-respi",
+      "titre": "Respiration",
+      "icone": "🫁",
+      "programme": "Bloc 4 · Appareil respiratoire : asthme, CO, tuberculose, bronchiolite, BPCO, tabagisme"
+    },
+    {
+      "id": "bio-glycemie",
+      "titre": "Glycémie et diabètes",
+      "icone": "🍬",
+      "programme": "Bloc 1 · Régulation de la glycémie, diabète de type 1 et de type 2"
+    }
+  ],
+  "items": [
+    {
+      "id": "bio-coeur-01",
+      "atelier": "bio-coeur",
+      "type": "ordre",
+      "contexte": "🩸 Tu es un globule rouge chargé d’O₂ qui sort du ventricule gauche. Bon voyage !",
+      "enonce": "Remets dans l’ordre ton tour complet du corps.",
+      "elements": [
+        {
+          "texte": "Ventricule gauche → aorte"
+        },
+        {
+          "texte": "Artères puis capillaires des organes : je donne mon O₂"
+        },
+        {
+          "texte": "Veines caves → oreillette droite"
+        },
+        {
+          "texte": "Ventricule droit → artère pulmonaire"
+        },
+        {
+          "texte": "Capillaires des poumons : je recharge de l’O₂, je lâche le CO₂"
+        },
+        {
+          "texte": "Veines pulmonaires → oreillette gauche → ventricule gauche"
+        }
+      ],
+      "pourquoi": "Deux circulations s’enchaînent : la grande circulation (systémique) part du cœur gauche vers tout le corps ; la petite circulation (pulmonaire) part du cœur droit vers les poumons.",
+      "fiche": {
+        "titre": "Double circulation",
+        "texte": "Systémique : VG → aorte → organes → veines caves → OD. Pulmonaire : VD → artère pulmonaire → poumons → veines pulmonaires → OG. Le cœur droit et le cœur gauche ne communiquent pas."
+      }
+    },
+    {
+      "id": "bio-coeur-02",
+      "atelier": "bio-coeur",
+      "type": "qcm",
+      "enonce": "Petit piège : quel vaisseau transporte du sang PAUVRE en dioxygène ?",
+      "options": [
+        "L’artère pulmonaire",
+        "L’aorte",
+        "Les veines pulmonaires",
+        "Les artères coronaires"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "Une artère part du cœur, une veine revient au cœur : ce n’est pas une question d’O₂ ! L’artère pulmonaire emmène le sang pauvre en O₂ du cœur droit vers les poumons.",
+      "fiche": {
+        "titre": "Artère ou veine ?",
+        "texte": "Artère = PART du cœur. Veine = REVIENT au cœur. L’artère pulmonaire porte du sang pauvre en O₂ ; les veines pulmonaires du sang riche en O₂. Capillaires = lieux d’échanges."
+      }
+    },
+    {
+      "id": "bio-coeur-03",
+      "atelier": "bio-coeur",
+      "type": "tri",
+      "enonce": "Quel rôle pour chaque élément du sang ?",
+      "categories": [
+        "Globules rouges (hématies)",
+        "Globules blancs (leucocytes)",
+        "Plaquettes",
+        "Plasma"
+      ],
+      "icones": [
+        "🔴",
+        "⚪",
+        "🩹",
+        "💧"
+      ],
+      "elements": [
+        {
+          "texte": "Transportent l’O₂ grâce à l’hémoglobine",
+          "categorie": 0
+        },
+        {
+          "texte": "N’ont pas de noyau",
+          "categorie": 0
+        },
+        {
+          "texte": "Défendent l’organisme contre les microbes",
+          "categorie": 1
+        },
+        {
+          "texte": "Arrêtent les saignements (coagulation)",
+          "categorie": 2
+        },
+        {
+          "texte": "Liquide jaune qui transporte nutriments, hormones, déchets",
+          "categorie": 3
+        },
+        {
+          "texte": "Représente un peu plus de la moitié du volume du sang",
+          "categorie": 3
+        }
+      ],
+      "pourquoi": "Le sang = plasma (≈ 55 %) + éléments figurés (≈ 45 %) : hématies, leucocytes, plaquettes. Ils sont fabriqués dans la moelle osseuse rouge.",
+      "fiche": {
+        "titre": "Composition du sang",
+        "texte": "Plasma ≈ 55 % (eau, nutriments, hormones, déchets). Hématies : O₂ (hémoglobine). Leucocytes : défense. Plaquettes : coagulation. Fabriqués dans la moelle rouge."
+      }
+    },
+    {
+      "id": "bio-coeur-04",
+      "atelier": "bio-coeur",
+      "type": "qcm",
+      "contexte": "📄 Résultat de NFS de Mme Diallo, 52 ans : leucocytes 15 × 10⁹/L (valeurs normales 4 à 10).",
+      "enonce": "Que peut indiquer ce résultat ?",
+      "options": [
+        "Une anémie : les leucocytes sont les globules rouges qui transportent l’oxygène",
+        "Un nombre élevé de globules blancs, souvent signe d’une infection ou d’une inflammation",
+        "Un résultat normal : un dépassement des valeurs de référence n’a pas d’importance",
+        "Un manque de plaquettes sanguines, ce qui expose la patiente à des saignements et à des bleus"
+      ],
+      "bonnes": [
+        1
+      ],
+      "pourquoi": "La numération-formule sanguine (NFS) compte les cellules du sang. Valeurs normales indicatives : hématies ≈ 4 à 5,5 × 10¹²/L, leucocytes 4 à 10 × 10⁹/L, plaquettes 150 à 400 × 10⁹/L. Seul le médecin interprète le résultat.",
+      "fiche": {
+        "titre": "NFS",
+        "texte": "Numération-formule sanguine. Normes indicatives : hématies 4-5,5 × 10¹²/L ; leucocytes 4-10 × 10⁹/L ; plaquettes 150-400 × 10⁹/L. Leucocytes ↑ : infection fréquente. Hémoglobine ↓ : anémie."
+      }
+    },
+    {
+      "id": "bio-coeur-05",
+      "atelier": "bio-coeur",
+      "type": "qcm",
+      "enonce": "Au cours d’un battement cardiaque, comment appelle-t-on la phase où les ventricules se contractent et éjectent le sang ?",
+      "options": [
+        "La fibrillation ventriculaire",
+        "La systole ventriculaire",
+        "La diastole ventriculaire",
+        "La systole auriculaire"
+      ],
+      "bonnes": [
+        1
+      ],
+      "pourquoi": "Le cycle cardiaque : systole auriculaire (les oreillettes remplissent les ventricules), systole ventriculaire (éjection dans les artères), diastole (relâchement, le cœur se remplit). Les valves empêchent le sang de refluer.",
+      "fiche": {
+        "titre": "Cycle cardiaque",
+        "texte": "Systole = contraction (éjection). Diastole = relâchement (remplissage). Les valves imposent un sens unique au sang. FC adulte au repos ≈ 60-100/min ; nouveau-né ≈ 120-160/min."
+      }
+    },
+    {
+      "id": "bio-coeur-06",
+      "atelier": "bio-coeur",
+      "type": "multi",
+      "contexte": "🩺 M. Morel, 63 ans · Tension mesurée à 165/100 mmHg à plusieurs reprises. Il dit : « Je me sens très bien pourtant ! »",
+      "enonce": "Quels facteurs favorisent l’hypertension artérielle ? Choisis-en 4.",
+      "options": [
+        "🍷 Une consommation excessive d’alcool",
+        "🍔 Le surpoids",
+        "🥦 Manger beaucoup de légumes",
+        "🛋️ La sédentarité",
+        "🧂 Une alimentation trop salée"
+      ],
+      "bonnes": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explications": [
+        "Oui : l’excès d’alcool fait monter la tension.",
+        "Oui.",
+        "Non : c’est même protecteur.",
+        "Oui : l’activité physique aide à faire baisser la tension.",
+        "Oui : le sel fait monter la pression artérielle."
+      ],
+      "pourquoi": "L’HTA est souvent silencieuse (le « tueur silencieux »), mais elle abîme les artères, le cœur, les reins et le cerveau (risque d’AVC). Autres facteurs : âge, hérédité, diabète. Le tabac, lui, abîme fortement les artères : il augmente beaucoup le risque cardiovasculaire et doit aussi être combattu. Traitement : hygiène de vie et médicaments prescrits.",
+      "fiche": {
+        "titre": "Hypertension artérielle",
+        "texte": "PA ≥ 140/90 mmHg de façon répétée. Souvent sans signe. Favorisée par : sel, surpoids, excès d’alcool, sédentarité, âge, hérédité. Le tabac aggrave fortement le risque cardiovasculaire. Complications : AVC, infarctus, insuffisance rénale."
+      }
+    },
+    {
+      "id": "bio-coeur-07",
+      "atelier": "bio-coeur",
+      "type": "qcm",
+      "contexte": "🗣️ Mme Lucette, 79 ans · Pendant le repas, sa bouche se déforme d’un côté, son bras droit retombe et elle n’arrive plus à parler correctement.",
+      "enonce": "Que penser et que faire ?",
+      "options": [
+        "Suspicion d’AVC : noter l’heure du début des signes et appeler immédiatement le 15",
+        "Elle est fatiguée par le repas : la coucher au calme et attendre que ça passe",
+        "Une fausse route : lui donner à boire par petites gorgées pour qu’elle récupère",
+        "Malaise passager : prendre sa tension et attendre la visite du médecin traitant demain"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "Retiens le message « VITE » : Visage paralysé, Inertie d’un membre, Trouble de la parole → En urgence, le 15. L’AVC est le plus souvent dû à un caillot qui bouche une artère du cerveau (AVC ischémique), plus rarement à une hémorragie. Chaque minute compte !",
+      "fiche": {
+        "titre": "AVC : VITE !",
+        "texte": "Visage déformé, Inertie (faiblesse) d’un bras ou d’une jambe, Trouble de la parole → En urgence : 15, noter l’heure. Ischémique (caillot, le plus fréquent) ou hémorragique."
+      }
+    },
+    {
+      "id": "bio-coeur-08",
+      "atelier": "bio-coeur",
+      "type": "qcm",
+      "enonce": "Les signes d’AVC de M. Henri ont disparu tout seuls au bout de 10 minutes. Que penser ?",
+      "options": [
+        "Tout va bien : les signes ont disparu seuls, il suffit de le noter dans le cahier de liaison",
+        "Il faut lui donner un antibiotique pour éviter que l’infection responsable ne revienne",
+        "C’est peut-être un AIT (accident ischémique transitoire) : c’est quand même une urgence, il annonce un risque d’AVC",
+        "C’était sûrement une réaction allergique alimentaire, qui a provoqué un gonflement passager du visage"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Un AIT est une obstruction brève d’une artère du cerveau : les signes régressent, mais le risque d’un véritable AVC dans les jours suivants est élevé. On appelle le 15 et on transmet.",
+      "fiche": {
+        "titre": "AIT",
+        "texte": "Accident ischémique transitoire : signes d’AVC qui disparaissent vite. Urgence quand même (signal d’alarme d’un AVC) : 15 + transmission."
+      }
+    },
+    {
+      "id": "bio-coeur-09",
+      "atelier": "bio-coeur",
+      "type": "qcm",
+      "contexte": "💔 M. Bernard, 58 ans, fumeur · Douleur forte dans la poitrine, « comme un étau », qui irradie dans le bras gauche et la mâchoire. Il est pâle et transpire.",
+      "enonce": "Quel accident suspecter ?",
+      "options": [
+        "Une entorse de l’épaule",
+        "Un reflux gastrique",
+        "Un infarctus du myocarde",
+        "Une crise d’asthme sévère"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "L’infarctus est l’obstruction d’une artère coronaire : une partie du muscle cardiaque n’est plus irriguée et se nécrose. Conduite à tenir : le mettre au repos (position semi-assise), appeler le 15, ne pas le laisser seul. Facteurs : tabac, HTA, cholestérol, diabète, sédentarité, stress.",
+      "fiche": {
+        "titre": "Infarctus du myocarde",
+        "texte": "Obstruction d’une artère coronaire → nécrose d’une partie du cœur. Douleur thoracique en étau, irradiant bras gauche et mâchoire, sueurs. Repos + 15 immédiatement."
+      }
+    },
+    {
+      "id": "bio-coeur-10",
+      "atelier": "bio-coeur",
+      "type": "multi",
+      "contexte": "🦵 Mme Simon, 70 ans · Alitée depuis une semaine après une opération. Pour l’instant, elle ne présente aucun signe de phlébite.",
+      "enonce": "Quelles mesures aident à prévenir la phlébite chez une personne alitée ? Choisis-en 3.",
+      "options": [
+        "💧 Une bonne hydratation",
+        "💆 Masser fort les mollets",
+        "🧦 Les bas de contention prescrits",
+        "🚶 Le lever et la mobilisation dès que possible, selon les consignes de l’équipe",
+        "🛌 Garder les jambes immobiles le plus longtemps possible"
+      ],
+      "bonnes": [
+        0,
+        2,
+        3
+      ],
+      "explications": [
+        "Oui : un sang moins épais coagule moins.",
+        "Non : on ne masse pas, surtout si une jambe devient douloureuse (risque de détacher un caillot).",
+        "Oui : la contention comprime les veines et aide le retour veineux.",
+        "Oui : le mouvement fait remonter le sang veineux.",
+        "Non : l’immobilité favorise le caillot."
+      ],
+      "pourquoi": "La phlébite (thrombose veineuse) est un caillot dans une veine, souvent du mollet. Le danger : qu’il migre jusqu’aux poumons (embolie pulmonaire). Si un mollet devient douloureux, chaud ou gonflé (surtout d’un seul côté) : on ne masse pas, on prévient tout de suite l’équipe soignante.",
+      "fiche": {
+        "titre": "Phlébite",
+        "texte": "Caillot dans une veine (mollet). Facteurs : alitement, chirurgie, âge, grossesse. Risque : embolie pulmonaire. Prévention : lever précoce, mobilisation, contention et anticoagulants prescrits, hydratation. Mollet douloureux, chaud, gonflé : ne pas masser, alerter aussitôt."
+      }
+    },
+    {
+      "id": "bio-coeur-11",
+      "atelier": "bio-coeur",
+      "type": "qcm",
+      "enonce": "Un Holter cardiaque, c’est…",
+      "options": [
+        "Une radio des poumons et du cœur réalisée à l’effort, sur un tapis de marche",
+        "Un vaccin contre les maladies du cœur, diffusé lentement par un petit boîtier porté sur la peau pendant 24 heures",
+        "Un électrocardiogramme enregistré 24 heures ou plus grâce à un petit boîtier, pendant la vie quotidienne",
+        "Une prise de sang répétée toutes les heures pendant 24 heures pour suivre le taux de sucre dans le sang"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "L’ECG enregistre l’activité électrique du cœur grâce à des électrodes collées sur la peau, en quelques minutes : c’est un examen essentiel en cas de douleur thoracique (suspicion d’infarctus). Le Holter enregistre l’ECG sur une longue durée, surtout pour repérer des troubles du rythme qui surviennent de temps en temps.",
+      "fiche": {
+        "titre": "ECG et Holter",
+        "texte": "ECG : activité électrique du cœur (électrodes, quelques minutes), utile devant une suspicion d’infarctus ou un trouble du rythme. Holter : ECG enregistré 24 h ou plus, surtout pour les troubles du rythme intermittents."
+      }
+    },
+    {
+      "id": "bio-coeur-12",
+      "atelier": "bio-coeur",
+      "type": "qcm",
+      "enonce": "La lymphe, c’est…",
+      "options": [
+        "Le liquide fabriqué par les reins et stocké dans la vessie avant d’être éliminé",
+        "Une hormone du pancréas qui circule dans le sang et fait baisser le taux de sucre",
+        "Un liquide issu du plasma, qui circule dans les vaisseaux lymphatiques, traverse les ganglions et rejoint le sang",
+        "Un autre nom du sang veineux, appauvri en oxygène, qui revient des organes vers le cœur par les deux veines caves"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "La lymphe draine le liquide entre les cellules, transporte les graisses absorbées par l’intestin et des globules blancs. Les ganglions la filtrent et participent à l’immunité.",
+      "fiche": {
+        "titre": "La lymphe",
+        "texte": "Liquide clair issu du plasma : draine les tissus, transporte graisses et lymphocytes, filtré par les ganglions, rejoint le sang. Rôle dans l’immunité."
+      }
+    },
+    {
+      "id": "bio-coeur-13",
+      "atelier": "bio-coeur",
+      "type": "qcm",
+      "contexte": "📄 M. Traoré, 74 ans · Il est essoufflé au moindre effort et très pâle. Sa NFS indique : hémoglobine 9 g/dL (valeurs de référence indicatives chez l’homme : 13 à 17 g/dL).",
+      "enonce": "Que montre ce résultat ?",
+      "options": [
+        "Un taux d’hémoglobine bas, qui évoque une anémie : c’est au médecin d’en chercher la cause",
+        "Une infection certaine, qu’il faut traiter rapidement par des antibiotiques",
+        "Un résultat normal, car les valeurs de référence ne s’appliquent pas après 70 ans",
+        "Un taux d’hémoglobine trop élevé, qui rend le sang épais et provoque l’essoufflement"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "L’hémoglobine, contenue dans les globules rouges, transporte l’O₂. Quand elle est basse (anémie), les organes reçoivent moins d’O₂ : fatigue, pâleur, essoufflement. Les causes sont variées (manque de fer, saignement, maladie…). Toi, tu observes et tu transmets ; le médecin interprète.",
+      "fiche": {
+        "titre": "Anémie",
+        "texte": "Hémoglobine sous les valeurs de référence (repères : ≈ 12 à 16 g/dL chez la femme, 13 à 17 g/dL chez l’homme). Signes : fatigue, pâleur, essoufflement. Interprétation et recherche de la cause : médecin."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-coeur-14",
+      "atelier": "bio-coeur",
+      "type": "tri",
+      "contexte": "📋 Relevé de pression artérielle (au repos) de plusieurs résidents de l’EHPAD, noté par l’infirmière.",
+      "enonce": "Classe chaque mesure.",
+      "categories": [
+        "Pression normale",
+        "Pression élevée (≥ 140/90)"
+      ],
+      "icones": [
+        "✅",
+        "⚠️"
+      ],
+      "elements": [
+        {
+          "texte": "120/75 mmHg",
+          "categorie": 0
+        },
+        {
+          "texte": "128/82 mmHg",
+          "categorie": 0
+        },
+        {
+          "texte": "165/100 mmHg",
+          "categorie": 1
+        },
+        {
+          "texte": "150/85 mmHg",
+          "categorie": 1
+        },
+        {
+          "texte": "135/95 mmHg",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "La pression artérielle s’écrit en deux chiffres : la systolique (quand le cœur se contracte) et la diastolique (quand il se relâche). On parle de pression élevée dès que l’un des deux dépasse le seuil : 140 pour le premier ou 90 pour le second (135/95 est donc élevée). Une seule mesure ne suffit pas pour parler d’hypertension : le médecin se base sur des mesures répétées.",
+      "fiche": {
+        "titre": "Lire une tension",
+        "texte": "Systolique / diastolique, en mmHg. Repère : élevée si ≥ 140 et/ou ≥ 90 au cabinet. Il suffit qu’un des deux chiffres dépasse. Diagnostic d’HTA : mesures répétées, par le médecin."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-coeur-15",
+      "atelier": "bio-coeur",
+      "type": "multi",
+      "contexte": "📞 Mme Lucette, 79 ans · Tu as reconnu des signes d’AVC et l’infirmière appelle le 15. Elle te demande ce que tu as observé.",
+      "enonce": "Quelles informations sont utiles à transmettre ? Choisis-en 3.",
+      "options": [
+        "👀 Les signes observés : bouche déformée, bras qui retombe, difficulté à parler",
+        "🤔 Ton avis sur la maladie dont elle souffre et sur le traitement qu’il faudrait lui donner",
+        "🍽️ Le menu détaillé de son repas de midi et ses plats préférés",
+        "💊 Ses traitements habituels (le classeur de soins, l’ordonnance)",
+        "⏰ L’heure à laquelle les premiers signes sont apparus (ou l’heure où elle a été vue normale pour la dernière fois)"
+      ],
+      "bonnes": [
+        0,
+        3,
+        4
+      ],
+      "explications": [
+        "Oui : on décrit ce qu’on a vu, avec des mots simples.",
+        "Non : on transmet des faits, on ne pose pas de diagnostic.",
+        "Non : sans intérêt ici.",
+        "Oui : par exemple, un anticoagulant change la prise en charge.",
+        "Oui : l’heure est capitale, certains traitements ne sont possibles que dans les premières heures."
+      ],
+      "pourquoi": "Une bonne transmission est factuelle, précise et datée : ce que tu as vu, à quelle heure, et les informations utiles (traitements, antécédents). Pour un AVC, l’heure de début des signes est l’information la plus importante.",
+      "fiche": {
+        "titre": "Transmettre une urgence",
+        "texte": "Faits observés, heure de début, traitements et antécédents connus. Pas d’interprétation ni de diagnostic. AVC : noter l’heure, appeler le 15, ne rien donner à boire ni à manger."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-coeur-16",
+      "atelier": "bio-coeur",
+      "type": "tri",
+      "contexte": "🫀 Le cœur en coupe : chaque partie a son rôle.",
+      "enonce": "Associe chaque structure du cœur à son rôle.",
+      "categories": [
+        "Oreillettes",
+        "Ventricules",
+        "Valvules",
+        "Cloison (septum)"
+      ],
+      "icones": [
+        "📥",
+        "💪",
+        "🚪",
+        "🧱"
+      ],
+      "elements": [
+        {
+          "texte": "Cavités du haut qui reçoivent le sang revenant par les veines",
+          "categorie": 0
+        },
+        {
+          "texte": "Cavités du bas, aux parois musclées, qui éjectent le sang dans les artères",
+          "categorie": 1
+        },
+        {
+          "texte": "Empêchent le sang de refluer : il circule toujours dans le même sens",
+          "categorie": 2
+        },
+        {
+          "texte": "Sépare le cœur droit (sang pauvre en O₂) du cœur gauche (sang riche en O₂)",
+          "categorie": 3
+        }
+      ],
+      "pourquoi": "Le cœur a 4 cavités : 2 oreillettes en haut, 2 ventricules en bas. Le ventricule gauche a la paroi la plus épaisse car il envoie le sang dans tout le corps. Les valvules font le bruit des battements (« toum-tac ») en se fermant.",
+      "fiche": {
+        "titre": "Le cœur en coupe",
+        "texte": "4 cavités : oreillettes (reçoivent), ventricules (éjectent). Valvules : sens unique. Cloison : sépare cœur droit et cœur gauche. VG = paroi la plus épaisse."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-respi-01",
+      "atelier": "bio-respi",
+      "type": "ordre",
+      "contexte": "🌬️ Tu es une molécule d’O₂ qui entre par le nez de Lucas. Direction : le sang !",
+      "enonce": "Remets ton trajet dans l’ordre.",
+      "elements": [
+        {
+          "texte": "Fosses nasales (l’air est réchauffé, humidifié, filtré)"
+        },
+        {
+          "texte": "Pharynx"
+        },
+        {
+          "texte": "Larynx (cordes vocales)"
+        },
+        {
+          "texte": "Trachée"
+        },
+        {
+          "texte": "Bronches puis bronchioles"
+        },
+        {
+          "texte": "Alvéoles pulmonaires : passage dans le sang"
+        }
+      ],
+      "pourquoi": "Les voies respiratoires conduisent l’air jusqu’aux alvéoles, minuscules sacs entourés de capillaires où se font les échanges gazeux.",
+      "fiche": {
+        "titre": "Voies respiratoires",
+        "texte": "Nez → pharynx → larynx → trachée → bronches → bronchioles → alvéoles. Le nez réchauffe, humidifie et filtre l’air."
+      }
+    },
+    {
+      "id": "bio-respi-02",
+      "atelier": "bio-respi",
+      "type": "tri",
+      "enonce": "Inspiration ou expiration (au repos) ?",
+      "categories": [
+        "Inspiration",
+        "Expiration"
+      ],
+      "icones": [
+        "⬇️",
+        "⬆️"
+      ],
+      "elements": [
+        {
+          "texte": "Le diaphragme se contracte et s’abaisse",
+          "categorie": 0
+        },
+        {
+          "texte": "Le volume de la cage thoracique augmente",
+          "categorie": 0
+        },
+        {
+          "texte": "C’est un mouvement actif (les muscles travaillent)",
+          "categorie": 0
+        },
+        {
+          "texte": "Le diaphragme se relâche et remonte",
+          "categorie": 1
+        },
+        {
+          "texte": "Le volume des poumons diminue, l’air est chassé",
+          "categorie": 1
+        },
+        {
+          "texte": "Au repos, c’est un mouvement passif",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Le diaphragme est le principal muscle de la respiration. Fréquence respiratoire au repos : environ 12 à 20/min chez l’adulte, plus rapide chez le nourrisson (30 à 60/min).",
+      "fiche": {
+        "titre": "Mécanique ventilatoire",
+        "texte": "Inspiration (active) : diaphragme se contracte et descend, thorax ↑. Expiration (passive au repos) : diaphragme remonte. FR adulte ≈ 12-20/min ; nourrisson ≈ 30-60/min."
+      }
+    },
+    {
+      "id": "bio-respi-03",
+      "atelier": "bio-respi",
+      "type": "qcm",
+      "enonce": "Au niveau des alvéoles, comment se font les échanges gazeux ?",
+      "options": [
+        "Grâce aux globules blancs, qui captent le CO₂ dans le sang et le rejettent dans l’alvéole",
+        "Par filtration active : l’alvéole pompe l’O₂ de l’air et le stocke dans sa paroi avant de le libérer",
+        "Par diffusion : l’O₂ passe de l’alvéole vers le sang, le CO₂ du sang vers l’alvéole",
+        "Par osmose : l’eau du sang entraîne l’O₂ et le CO₂ à travers la paroi de l’alvéole"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Chaque gaz passe de l’endroit où il est le plus concentré (pression partielle la plus élevée) vers l’endroit où il l’est le moins. Dans l’alvéole, l’air est riche en O₂ : l’O₂ passe dans le sang et se fixe sur l’hémoglobine. Le sang est riche en CO₂ : le CO₂ passe dans l’alvéole et est expiré. Dans les tissus, l’échange se fait dans l’autre sens.",
+      "fiche": {
+        "titre": "Échanges gazeux",
+        "texte": "Diffusion à travers la fine paroi des alvéoles et des capillaires, du plus concentré vers le moins concentré. O₂ : alvéole → sang (fixé sur l’hémoglobine). CO₂ : sang → alvéole → expiré."
+      }
+    },
+    {
+      "id": "bio-respi-04",
+      "atelier": "bio-respi",
+      "type": "qcm",
+      "contexte": "🏠 À domicile, M. et Mme Lopez ont tous les deux mal à la tête, des nausées et des vertiges depuis qu’ils ont allumé leur vieux chauffage d’appoint.",
+      "enonce": "Que suspecter et que faire ?",
+      "options": [
+        "Une gastro-entérite partagée : leur proposer une tisane, du repos et surveiller l’apparition d’une diarrhée",
+        "Une grippe attrapée à deux : rester au chaud près du chauffage, boire et attendre quelques jours",
+        "Une intoxication au monoxyde de carbone : aérer, faire sortir tout le monde, appeler le 15, le 18 ou le 112",
+        "Une allergie à la poussière du chauffage : fermer les fenêtres et le laisser tourner pour assainir la pièce"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Le CO est un gaz invisible, inodore, produit par une mauvaise combustion. Il se fixe sur l’hémoglobine bien plus fort que l’O₂ et empêche l’oxygénation : c’est une asphyxie. Prévention : entretien annuel des appareils, aération, détecteur.",
+      "fiche": {
+        "titre": "Monoxyde de carbone",
+        "texte": "Gaz invisible et inodore (mauvaise combustion). Prend la place de l’O₂ sur l’hémoglobine. Signes : maux de tête, nausées, vertiges, malaise, souvent plusieurs personnes. Aérer, sortir, appeler les secours."
+      }
+    },
+    {
+      "id": "bio-respi-05",
+      "atelier": "bio-respi",
+      "type": "qcm",
+      "contexte": "🌸 Yanis, 9 ans · Asthmatique, il siffle en respirant, tousse et a du mal à expirer après avoir couru au printemps.",
+      "enonce": "Que se passe-t-il dans ses bronches ?",
+      "options": [
+        "Elles sont infectées par le bacille de Koch : l’air passe mal ; on lui donne un sirop antitussif et on l’isole des autres enfants",
+        "Il a avalé de travers et un aliment gêne ses bronches : on lui donne à manger et à boire pour faire descendre ce qui bloque",
+        "Elles sont inflammées et se resserrent : l’air passe mal ; on l’aide à prendre son traitement de crise selon son protocole",
+        "Ses alvéoles sont détruites par le tabagisme passif : l’air reste bloqué ; on l’allonge à plat et on attend que la crise passe"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "L’asthme est une maladie inflammatoire chronique des bronches. Une crise est déclenchée par des allergènes, l’effort, le froid, la fumée… Le traitement de crise (bronchodilatateur inhalé, selon le PAI) ouvre les bronches. On prévient l’adulte responsable. On appelle le 15 tout de suite, sans attendre l’effet du traitement, en cas de signes de gravité : grosse difficulté à respirer, impossible de parler normalement, épuisement, lèvres bleutées, somnolence.",
+      "fiche": {
+        "titre": "Asthme",
+        "texte": "Inflammation chronique des bronches. Crise : bronches qui se resserrent, sifflements, toux, gêne à l’expiration. Déclencheurs : allergènes, effort, froid, fumée. Traitement de crise selon le PAI, prévenir l’adulte responsable. 15 immédiatement si signes de gravité ou pas d’amélioration."
+      }
+    },
+    {
+      "id": "bio-respi-06",
+      "atelier": "bio-respi",
+      "type": "multi",
+      "contexte": "👶 Hugo, 4 mois · En décembre à la crèche : il tousse, respire vite et a du mal à finir ses biberons. Le médecin parle de bronchiolite.",
+      "enonce": "Quelles mesures sont adaptées ? Choisis-en 3.",
+      "options": [
+        "🚬 Ce n’est pas grave de fumer dans la pièce",
+        "👃 Lavages de nez au sérum physiologique",
+        "🍼 Fractionner les biberons (plus petits et plus souvent)",
+        "🧼 Se laver les mains pour limiter la transmission aux autres bébés",
+        "💊 Des antibiotiques pour tous les enfants du groupe"
+      ],
+      "bonnes": [
+        1,
+        2,
+        3
+      ],
+      "explications": [
+        "Non : le tabac aggrave toutes les maladies respiratoires.",
+        "Oui : un nez dégagé facilite la respiration et les repas.",
+        "Oui : il se fatigue moins en mangeant.",
+        "Oui : la bronchiolite est surtout due à un virus (VRS), très contagieux par les mains et les gouttelettes.",
+        "Non : c’est un virus, les antibiotiques sont inutiles."
+      ],
+      "pourquoi": "Signes d’alerte à transmettre (consulter en urgence) : respiration très rapide ou difficile, enfant qui boit moins de la moitié de ses biberons, somnolence, coloration bleutée.",
+      "fiche": {
+        "titre": "Bronchiolite",
+        "texte": "Infection virale (souvent VRS) des petites bronches du nourrisson, en hiver. Lavages de nez, repas fractionnés, hygiène des mains. Alerte : respiration difficile, refus de boire, somnolence → consulter vite."
+      }
+    },
+    {
+      "id": "bio-respi-07",
+      "atelier": "bio-respi",
+      "type": "qcm",
+      "enonce": "Toux depuis plus de 3 semaines, fièvre le soir, sueurs nocturnes, amaigrissement : quelle maladie évoquer ?",
+      "options": [
+        "La tuberculose",
+        "L’arthrose cervicale",
+        "La presbytie précoce",
+        "La varicelle de l’adulte"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "La tuberculose est due au bacille de Koch (Mycobacterium tuberculosis), transmis par l’air. Elle se soigne par une association d’antibiotiques pendant plusieurs mois. Précautions « air » : masque FFP2 pour les soignants, masque chirurgical pour le patient.",
+      "fiche": {
+        "titre": "Tuberculose",
+        "texte": "Bacille de Koch, transmission aérienne. Toux prolongée, fièvre vespérale, sueurs nocturnes, amaigrissement. Traitement : antibiotiques plusieurs mois. Précautions air (FFP2). Vaccin BCG recommandé dans certaines situations."
+      }
+    },
+    {
+      "id": "bio-respi-08",
+      "atelier": "bio-respi",
+      "type": "qcm",
+      "contexte": "🚬 M. André, 67 ans · Ancien gros fumeur, il s’essouffle au moindre effort et tousse tous les matins depuis des années.",
+      "enonce": "Quelle maladie chronique est la plus probable ?",
+      "options": [
+        "Un AVC, c’est-à-dire un accident vasculaire cérébral",
+        "La BPCO (bronchopneumopathie chronique obstructive)",
+        "La bronchiolite du nourrisson, une infection virale saisonnière",
+        "Une otite moyenne chronique, avec écoulement d’oreille"
+      ],
+      "bonnes": [
+        1
+      ],
+      "pourquoi": "La BPCO réduit durablement le passage de l’air dans les bronches ; le tabac en est la cause principale. L’arrêt du tabac est la mesure la plus efficace, avec l’activité physique adaptée et la vaccination (grippe, pneumocoque).",
+      "fiche": {
+        "titre": "BPCO",
+        "texte": "Obstruction chronique et progressive des bronches, essentiellement due au tabac. Toux, crachats, essoufflement. Arrêter de fumer = 1ʳᵉ mesure."
+      }
+    },
+    {
+      "id": "bio-respi-09",
+      "atelier": "bio-respi",
+      "type": "multi",
+      "enonce": "Quels sont les effets du tabagisme sur l’appareil respiratoire ? Choisis-en 3.",
+      "options": [
+        "🧹 Il paralyse et détruit les cils qui nettoient les bronches",
+        "👶 Il protège le nourrisson contre la bronchiolite",
+        "🫁 Il favorise BPCO et cancer du poumon",
+        "💪 Il renforce les poumons des sportifs",
+        "🩸 Son monoxyde de carbone diminue le transport d’O₂ par le sang"
+      ],
+      "bonnes": [
+        0,
+        2,
+        4
+      ],
+      "explications": [
+        "Oui : d’où la « toux du fumeur ».",
+        "Non : le tabagisme passif aggrave les maladies respiratoires de l’enfant.",
+        "Oui.",
+        "Non.",
+        "Oui : le CO de la fumée se fixe sur l’hémoglobine."
+      ],
+      "pourquoi": "Le tabac contient des goudrons (cancérigènes), de la nicotine (dépendance) et du monoxyde de carbone. Le tabagisme passif est dangereux, surtout pour les enfants et pendant la grossesse.",
+      "fiche": {
+        "titre": "Tabac et respiration",
+        "texte": "Goudrons (cancers), nicotine (dépendance), CO (moins d’O₂ transporté), cils détruits. Risques : BPCO, cancer du poumon, infections. Tabagisme passif dangereux pour les enfants."
+      }
+    },
+    {
+      "id": "bio-respi-10",
+      "atelier": "bio-respi",
+      "type": "qcm",
+      "contexte": "🩺 Mme Petit, 82 ans · Elle respire vite et tousse depuis ce matin. Le saturomètre affiche SpO₂ 88 %. Hier, elle était à 96 %.",
+      "enonce": "Que fais-tu de cette mesure ?",
+      "options": [
+        "Rien de spécial : 88 %, c’est presque 100 %, et une légère baisse de saturation est habituelle chez une personne de cet âge",
+        "Je lui donne un sirop contre la toux et je la fais boire : quand la toux se calmera, sa respiration et sa saturation remonteront d’elles-mêmes",
+        "Je note la valeur dans le dossier et j’attends demain pour refaire la mesure, car le saturomètre se trompe souvent le matin",
+        "J’alerte tout de suite l’infirmière ou le médecin : cette chute de saturation est urgente (15 si détresse ou si personne n’est disponible)"
+      ],
+      "bonnes": [
+        3
+      ],
+      "pourquoi": "La SpO₂ (saturation en oxygène) indique la part de l’hémoglobine chargée en O₂. Elle est en général de 95 à 100 % chez une personne en bonne santé. Une chute nette par rapport à d’habitude, avec une respiration rapide, est un signal d’alerte majeur : alerte immédiate, et appel au 15 en cas de signes de détresse respiratoire ou si aucun soignant n’est disponible tout de suite.",
+      "fiche": {
+        "titre": "Saturation (SpO₂)",
+        "texte": "Mesure de l’O₂ fixé sur l’hémoglobine, par un saturomètre au doigt. Habituellement ≈ 95-100 %. Chute par rapport aux valeurs habituelles + respiration rapide : alerte immédiate, 15 si détresse."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-glycemie-01",
+      "atelier": "bio-glycemie",
+      "type": "qcm",
+      "enonce": "Qu’est-ce que la glycémie, et quelle est sa valeur normale à jeun ?",
+      "options": [
+        "Le taux de graisses (lipides) dans le sang : environ 5 g/L le matin à jeun",
+        "Le taux de glucose dans les urines : environ 10 g/L chez une personne à jeun",
+        "Le taux de glucose dans le sang : environ 0,70 à 1,10 g/L à jeun",
+        "Le nombre de globules rouges dans le sang : environ 1 g/L à jeun"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "La glycémie varie dans la journée : elle monte après un repas (glycémie postprandiale) puis redescend. La glycosurie, c’est la présence de glucose dans les urines : anormale, elle apparaît quand la glycémie est trop élevée.",
+      "fiche": {
+        "titre": "Glycémie",
+        "texte": "Glucose dans le sang. À jeun ≈ 0,70-1,10 g/L. Monte après les repas, redescend ensuite. Glycosurie = glucose dans les urines (anormal)."
+      }
+    },
+    {
+      "id": "bio-glycemie-02",
+      "atelier": "bio-glycemie",
+      "type": "tri",
+      "enonce": "Hormone qui fait baisser ou monter la glycémie ?",
+      "categories": [
+        "Hypoglycémiante (fait baisser)",
+        "Hyperglycémiante (fait monter)"
+      ],
+      "icones": [
+        "📉",
+        "📈"
+      ],
+      "elements": [
+        {
+          "texte": "Insuline",
+          "categorie": 0
+        },
+        {
+          "texte": "Glucagon",
+          "categorie": 1
+        },
+        {
+          "texte": "Adrénaline",
+          "categorie": 1
+        },
+        {
+          "texte": "Cortisol",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "L’insuline est la SEULE hormone qui fait baisser la glycémie. Elle est fabriquée par les cellules bêta des îlots de Langerhans du pancréas. Le glucagon, aussi fabriqué par le pancréas (cellules alpha), fait l’inverse.",
+      "fiche": {
+        "titre": "Hormones de la glycémie",
+        "texte": "📉 Insuline (seule hypoglycémiante) : cellules β du pancréas. 📈 Glucagon (cellules α du pancréas), adrénaline, cortisol (glandes surrénales)."
+      }
+    },
+    {
+      "id": "bio-glycemie-03",
+      "atelier": "bio-glycemie",
+      "type": "ordre",
+      "contexte": "🍝 Midi : Emma, 17 ans, vient de manger des pâtes. Suis le sucre !",
+      "enonce": "Remets les étapes de la régulation dans l’ordre.",
+      "elements": [
+        {
+          "texte": "Le glucose des aliments passe dans le sang : la glycémie monte"
+        },
+        {
+          "texte": "Le pancréas détecte la hausse et libère de l’insuline"
+        },
+        {
+          "texte": "L’insuline fait entrer le glucose dans les cellules et le stocker (foie, muscles)"
+        },
+        {
+          "texte": "La glycémie revient à sa valeur normale"
+        }
+      ],
+      "pourquoi": "C’est une boucle de régulation : l’organisme détecte un écart et le corrige. À distance des repas, c’est le glucagon qui libère le glucose stocké dans le foie.",
+      "fiche": {
+        "titre": "Régulation de la glycémie",
+        "texte": "Repas → glycémie ↑ → pancréas → insuline → glucose stocké (glycogène du foie et des muscles) → glycémie normale. Jeûne → glucagon → libère le glucose du foie."
+      }
+    },
+    {
+      "id": "bio-glycemie-04",
+      "atelier": "bio-glycemie",
+      "type": "tri",
+      "enonce": "Diabète de type 1 ou de type 2 ?",
+      "categories": [
+        "Type 1",
+        "Type 2"
+      ],
+      "icones": [
+        "1️⃣",
+        "2️⃣"
+      ],
+      "elements": [
+        {
+          "texte": "Les cellules du pancréas qui font l’insuline sont détruites par le système immunitaire",
+          "categorie": 0
+        },
+        {
+          "texte": "Survient souvent chez l’enfant ou le jeune, de façon brutale",
+          "categorie": 0
+        },
+        {
+          "texte": "Traitement : injections d’insuline à vie",
+          "categorie": 0
+        },
+        {
+          "texte": "L’insuline agit mal (insulinorésistance)",
+          "categorie": 1
+        },
+        {
+          "texte": "Favorisé par le surpoids, la sédentarité, l’âge, l’hérédité",
+          "categorie": 1
+        },
+        {
+          "texte": "Souvent silencieux pendant des années",
+          "categorie": 1
+        }
+      ],
+      "pourquoi": "Type 1 : maladie auto-immune, plus d’insuline. Type 2 : le plus fréquent, l’insuline agit mal ; on le traite par l’alimentation, l’activité physique, des médicaments et parfois de l’insuline.",
+      "fiche": {
+        "titre": "Type 1 / type 2",
+        "texte": "Type 1 : auto-immun, jeune, début brutal (soif, urines abondantes, amaigrissement), insuline à vie. Type 2 : insulinorésistance, surpoids, sédentarité, souvent silencieux ; hygiène de vie + médicaments."
+      }
+    },
+    {
+      "id": "bio-glycemie-05",
+      "atelier": "bio-glycemie",
+      "type": "qcm",
+      "contexte": "😰 Chloé, 14 ans · Diabétique de type 1, elle a sauté sa collation après le sport. Elle tremble, transpire, est pâle et dit qu’elle a très faim. Elle est consciente.",
+      "enonce": "Que faire en premier ?",
+      "options": [
+        "Lui donner du sucre rapide (environ 15 g : 3 morceaux de sucre ou un petit verre de jus) selon son protocole, puis prévenir et surveiller",
+        "La laisser se reposer seule et au calme dans une salle, allongée, le temps que son corps récupère de l’effort fourni au sport",
+        "Lui donner un grand verre d’eau et attendre la fin de la journée : la sensation de faim passera avec le repas du soir",
+        "Lui faire une injection d’insuline avec son stylo pour corriger sa glycémie, puis la surveiller et prévenir ses parents et l’infirmière"
+      ],
+      "bonnes": [
+        0
+      ],
+      "pourquoi": "Ce sont des signes d’hypoglycémie (glycémie trop basse) : on « resucre » vite si la personne est consciente et peut avaler, selon son PAI. On contrôle la glycémie environ 15 minutes après si le matériel est disponible, et on réévalue. Jamais d’insuline, qui ferait encore baisser la glycémie ! Si elle ne peut pas avaler ou perd connaissance : rien par la bouche, appel au 15 (ou 112) ; PLS si elle est inconsciente et respire normalement.",
+      "fiche": {
+        "titre": "Hypoglycémie",
+        "texte": "Sueurs, tremblements, pâleur, faim, malaise, confusion. Consciente et peut avaler : sucre rapide (≈ 15 g), contrôle de la glycémie après ≈ 15 min, prévenir, surveiller. Inconsciente : rien par la bouche, 15 ; PLS si elle respire normalement."
+      }
+    },
+    {
+      "id": "bio-glycemie-06",
+      "atelier": "bio-glycemie",
+      "type": "multi",
+      "enonce": "Quelles sont les complications possibles d’un diabète mal équilibré ? Choisis-en 4.",
+      "options": [
+        "🦶 Plaies du pied qui cicatrisent mal",
+        "🦷 Pousse de nouvelles dents",
+        "👁️ Atteinte de la rétine (rétinopathie)",
+        "❤️ Infarctus et AVC",
+        "💧 Atteinte des reins (insuffisance rénale)"
+      ],
+      "bonnes": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "explications": [
+        "Oui : les nerfs et vaisseaux du pied sont abîmés ; surveiller les pieds chaque jour.",
+        "Non.",
+        "Oui : une cause importante de malvoyance.",
+        "Oui : les artères s’abîment.",
+        "Oui."
+      ],
+      "pourquoi": "Trop de sucre dans le sang abîme les petits et gros vaisseaux et les nerfs. D’où la surveillance : glycémies, hémoglobine glyquée (HbA1c), fond d’œil, examen des pieds.",
+      "fiche": {
+        "titre": "Complications du diabète",
+        "texte": "Yeux (rétinopathie), reins, nerfs, pieds (plaies), cœur et vaisseaux (infarctus, AVC). Surveillance : glycémie capillaire, HbA1c, fond d’œil, pieds."
+      }
+    },
+    {
+      "id": "bio-glycemie-07",
+      "atelier": "bio-glycemie",
+      "type": "multi",
+      "contexte": "🏃 M. Faure, 55 ans · Surpoids, peu d’activité, son père était diabétique. Il veut éviter le diabète de type 2.",
+      "enonce": "Quels conseils de prévention lui donner ? Choisis-en 3.",
+      "options": [
+        "🚴 Une activité physique régulière (au moins 30 minutes par jour)",
+        "🥤 Remplacer l’eau par des sodas et des jus de fruits sucrés à chaque repas",
+        "⚖️ Viser une perte de poids progressive et durable",
+        "🥗 Une alimentation équilibrée, moins de sucres et de graisses",
+        "🛋️ Éviter tout effort pour ne pas fatiguer le cœur et le pancréas"
+      ],
+      "bonnes": [
+        0,
+        2,
+        3
+      ],
+      "explications": [
+        "Oui : le muscle consomme du glucose.",
+        "Non : très sucrés.",
+        "Oui.",
+        "Oui.",
+        "Non : l’activité physique aide au contraire à faire baisser la glycémie."
+      ],
+      "pourquoi": "On ne peut pas changer l’hérédité ou l’âge, mais on peut agir sur l’alimentation, l’activité physique et le poids. C’est aussi le premier traitement du diabète de type 2.",
+      "fiche": {
+        "titre": "Prévenir le type 2",
+        "texte": "Alimentation équilibrée, activité physique quotidienne, poids maîtrisé. Dépistage si facteurs de risque (hérédité, surpoids, plus de 45 ans)."
+      }
+    },
+    {
+      "id": "bio-glycemie-08",
+      "atelier": "bio-glycemie",
+      "type": "qcm",
+      "contexte": "📈 Relevé de glycémie capillaire de M. André, 66 ans, diabétique : 7 h (à jeun) 1,05 g/L · 9 h (après le petit-déjeuner) 1,60 g/L · 11 h 1,10 g/L · 16 h (après le sport) 0,55 g/L.",
+      "enonce": "Quelle valeur impose d’agir immédiatement ?",
+      "options": [
+        "1,10 g/L à 11 h : la glycémie ne redescend pas assez vite après le repas ; je lui fais sauter le déjeuner",
+        "0,55 g/L à 16 h : hypoglycémie ; je préviens aussitôt l’infirmière et on applique le protocole (resucrage s’il est conscient et peut avaler)",
+        "1,05 g/L à 7 h : hyperglycémie à jeun ; je préviens l’infirmière pour qu’elle lui injecte de l’insuline",
+        "1,60 g/L à 9 h : c’est une hyperglycémie grave, donc forcément une urgence ; j’appelle le 15 sans attendre l’avis de l’infirmière"
+      ],
+      "bonnes": [
+        1
+      ],
+      "pourquoi": "À jeun, la glycémie normale est d’environ 0,70 à 1,10 g/L. Elle monte normalement après un repas puis redescend. Sous 0,70 g/L environ, c’est une hypoglycémie : à 0,55 g/L, on agit selon le protocole (resucrage si la personne est consciente et peut avaler), on prévient et on recontrôle après environ 15 minutes. L’effort physique fait baisser la glycémie.",
+      "fiche": {
+        "titre": "Lire un relevé de glycémie",
+        "texte": "À jeun ≈ 0,70-1,10 g/L. Hausse normale après le repas. Hypoglycémie : < 0,70 g/L → protocole (resucrage si conscient et peut avaler), prévenir, recontrôler vers 15 min. L’effort fait baisser la glycémie."
+      },
+      "meta": {
+        "ajout": "relecture-2026-11"
+      }
+    },
+    {
+      "id": "bio-glycemie-09",
+      "atelier": "bio-glycemie",
+      "type": "qcm",
+      "contexte": "📄 Document : la régulation de la glycémie. Suis les flèches à partir du pancréas.",
+      "enonce": "D’après le document, quelle hormone fait baisser la glycémie ?",
+      "image": {
+        "src": "schemas/regulation-glycemie.webp",
+        "alt": "Schéma de la régulation de la glycémie : le pancréas, le foie, les muscles et les autres cellules, reliés par les flèches de l’insuline et du glucagon, entre « Glycémie élevée » et « Glycémie basse »."
+      },
+      "options": [
+        "Le glucagon",
+        "L’insuline",
+        "L’adrénaline",
+        "Le glycogène"
+      ],
+      "bonnes": [
+        1
+      ],
+      "pourquoi": "Quand la glycémie est élevée, le pancréas libère de l’insuline. Les flèches violettes de l’insuline vont vers le foie, les muscles et les autres cellules, puis vers « Baisse de la glycémie ». Le glycogène n’est pas une hormone : c’est la réserve de glucose.",
+      "fiche": {
+        "titre": "Lire le schéma de la glycémie",
+        "texte": "Glycémie élevée → pancréas → insuline → foie, muscles, cellules : la glycémie baisse. Glycémie basse → pancréas → glucagon → foie : la glycémie monte."
+      },
+      "meta": {
+        "ajout": "programme-2026-11"
+      }
+    },
+    {
+      "id": "bio-glycemie-10",
+      "atelier": "bio-glycemie",
+      "type": "multi",
+      "contexte": "📄 Document : la régulation de la glycémie. Suis les flèches à partir du pancréas.",
+      "enonce": "Sous l’action de l’insuline, quels organes stockent le glucose sous forme de glycogène ? Choisis-en 2.",
+      "image": {
+        "src": "schemas/regulation-glycemie.webp",
+        "alt": "Schéma de la régulation de la glycémie : le pancréas, le foie, les muscles et les autres cellules, reliés par les flèches de l’insuline et du glucagon, entre « Glycémie élevée » et « Glycémie basse »."
+      },
+      "options": [
+        "Le foie",
+        "Le pancréas",
+        "Les muscles",
+        "Le sang"
+      ],
+      "bonnes": [
+        0,
+        2
+      ],
+      "explications": [
+        "Oui : sur le schéma, le glucose y est transformé en glycogène, et inversement.",
+        "Non : il fabrique les hormones (insuline, glucagon), mais ne stocke pas le glucose.",
+        "Oui : l’insuline y stimule la glycogénogenèse, c’est-à-dire la fabrication de glycogène.",
+        "Non : le sang transporte le glucose ; sa concentration dans le sang, c’est la glycémie."
+      ],
+      "pourquoi": "Le glycogène est la forme de réserve du glucose. Le foie et les muscles en stockent après un repas, grâce à l’insuline.",
+      "fiche": {
+        "titre": "Le glycogène",
+        "texte": "Réserve de glucose stockée dans le foie et les muscles. Insuline : glucose → glycogène (stockage). Glucagon : glycogène du foie → glucose (libéré dans le sang)."
+      },
+      "meta": {
+        "ajout": "programme-2026-11"
+      }
+    },
+    {
+      "id": "bio-glycemie-11",
+      "atelier": "bio-glycemie",
+      "type": "qcm",
+      "contexte": "📄 Document : la régulation de la glycémie. Suis les flèches à partir du pancréas.",
+      "enonce": "La glycémie est basse. D’après le document, quel organe libère alors du glucose dans le sang ?",
+      "image": {
+        "src": "schemas/regulation-glycemie.webp",
+        "alt": "Schéma de la régulation de la glycémie : le pancréas, le foie, les muscles et les autres cellules, reliés par les flèches de l’insuline et du glucagon, entre « Glycémie élevée » et « Glycémie basse »."
+      },
+      "options": [
+        "Le pancréas",
+        "Les muscles",
+        "Le foie",
+        "Les autres cellules"
+      ],
+      "bonnes": [
+        2
+      ],
+      "pourquoi": "Le pancréas libère du glucagon. Le glucagon agit sur le foie, qui transforme son glycogène en glucose et le libère dans le sang : la glycémie remonte. Le pancréas produit l’hormone, mais ne libère pas de glucose. Les muscles gardent leur glycogène pour eux-mêmes.",
+      "fiche": {
+        "titre": "Lire le schéma de la glycémie",
+        "texte": "Glycémie élevée → pancréas → insuline → foie, muscles, cellules : la glycémie baisse. Glycémie basse → pancréas → glucagon → foie : la glycémie monte."
+      },
+      "meta": {
+        "ajout": "programme-2026-11"
+      }
+    }
+  ]
+}

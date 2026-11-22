@@ -1,0 +1,158 @@
+{
+  "id": "sante",
+  "nom": "Cité Santé",
+  "icone": "🏥",
+  "description": "Biologie humaine, physiopathologie et microbiologie : tout le programme du Bac Pro ASSP (référentiel 2022).",
+  "missions": [
+    {
+      "id": "garde-urgences",
+      "titre": "Une nuit aux urgences",
+      "icone": "🚑",
+      "intro": "Ce soir, tu es en stage aux urgences, aux côtés de l’équipe soignante. Ton rôle : observer, repérer les signes d’alerte et transmettre vite aux professionnels.",
+      "etapes": [
+        {
+          "texte": "22 h · M. Bernard arrive en se tenant la poitrine. Tu repères les signes et tu alertes.",
+          "atelier": "bio-coeur",
+          "items": [
+            "bio-coeur-09"
+          ]
+        },
+        {
+          "texte": "22 h 30 · En salle d’attente, la bouche de Mme Lucette se déforme : tu alertes et tu transmets. Peu après, M. Henri a des signes semblables qui disparaissent seuls : est-ce rassurant ?",
+          "atelier": "bio-coeur",
+          "items": [
+            "bio-coeur-07",
+            "bio-coeur-15",
+            "bio-coeur-08"
+          ]
+        },
+        {
+          "texte": "23 h · Yanis, 9 ans, siffle en respirant. Que se passe-t-il dans ses bronches ?",
+          "atelier": "bio-respi",
+          "items": [
+            "bio-respi-05"
+          ]
+        },
+        {
+          "texte": "0 h 30 · Chloé, diabétique, fait un malaise. Le bon geste, tout de suite.",
+          "atelier": "bio-glycemie",
+          "items": [
+            "bio-glycemie-05"
+          ]
+        },
+        {
+          "texte": "2 h · Bastien fait une crise convulsive. Protéger sans immobiliser, puis transmettre ce que tu as observé.",
+          "atelier": "bio-nerveux",
+          "items": [
+            "bio-nerveux-10",
+            "bio-nerveux-13"
+          ]
+        },
+        {
+          "texte": "4 h · Dernier patient : M. Fernand, alité, a une rougeur persistante au sacrum. Tu repères une escarre débutante et tu participes à sa prévention.",
+          "atelier": "bio-peau",
+          "items": [
+            "bio-peau-06"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enquete-microbes",
+      "titre": "Enquête à la résidence des Tilleuls",
+      "icone": "🕵️",
+      "intro": "Janvier. Plusieurs résidents de la résidence seniors toussent et ont de la fièvre. Mène l’enquête : quel microbe, comment il circule, comment l’arrêter.",
+      "etapes": [
+        {
+          "texte": "Indice n° 1 · Les suspects : bactérie, virus, champignon ou parasite ?",
+          "atelier": "bio-microbes",
+          "items": [
+            "bio-microbes-01",
+            "bio-microbes-18"
+          ]
+        },
+        {
+          "texte": "Indice n° 2 · M. Paul tousse, a de la fièvre, et ce matin il est essoufflé et confus. Quelle maladie ? Et toi, que fais-tu ?",
+          "atelier": "bio-maladies",
+          "items": [
+            "bio-maladies-06",
+            "bio-maladies-09"
+          ]
+        },
+        {
+          "texte": "Indice n° 3 · Comment les microbes passent-ils d’un résident à l’autre, par les mains ?",
+          "atelier": "bio-ias",
+          "items": [
+            "bio-ias-02"
+          ]
+        },
+        {
+          "texte": "Indice n° 4 · On coupe la chaîne de transmission : précautions standard et complémentaires.",
+          "atelier": "bio-ias",
+          "items": [
+            "bio-ias-04",
+            "bio-ias-05",
+            "bio-ias-06"
+          ]
+        },
+        {
+          "texte": "Dernier indice · Pour l’an prochain : comment le vaccin prépare les défenses.",
+          "atelier": "bio-immunite",
+          "items": [
+            "bio-immunite-09",
+            "bio-immunite-08"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neuf-mois",
+      "titre": "Neuf mois pour naître",
+      "icone": "🍼",
+      "intro": "De la rencontre des gamètes au premier cri : découvre les étapes de la grossesse et de la naissance à travers plusieurs futures mamans, dont Inaya, Clara et Mme Awa.",
+      "etapes": [
+        {
+          "texte": "Tout commence par deux cellules très différentes : les gamètes.",
+          "atelier": "bio-reproduction",
+          "items": [
+            "bio-reproduction-03",
+            "bio-reproduction-02"
+          ]
+        },
+        {
+          "texte": "Fécondation, divisions de la cellule-œuf, nidation : la grossesse démarre.",
+          "atelier": "bio-grossesse",
+          "items": [
+            "bio-grossesse-01"
+          ]
+        },
+        {
+          "texte": "Le placenta se met en place, l’embryon devient fœtus : qui passe dans quel sens ?",
+          "atelier": "bio-grossesse",
+          "items": [
+            "bio-grossesse-02",
+            "bio-grossesse-09"
+          ]
+        },
+        {
+          "texte": "La grossesse avance : suivi médical, conseils de prévention et signes d’alerte, dans différentes situations professionnelles.",
+          "atelier": "bio-grossesse",
+          "items": [
+            "bio-grossesse-04",
+            "bio-grossesse-03",
+            "bio-grossesse-05",
+            "bio-grossesse-10"
+          ]
+        },
+        {
+          "texte": "Le jour J : le travail commence.",
+          "atelier": "bio-grossesse",
+          "items": [
+            "bio-grossesse-07",
+            "bio-grossesse-08"
+          ]
+        }
+      ]
+    }
+  ]
+}

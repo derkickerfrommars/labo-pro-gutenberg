@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr" data-filiere="portail">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tableau de bord enseignant · Labo Pro Gutenberg</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#6247e8">
+<link rel="icon" href="../commun/icones/icone.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../commun/theme.css">
+<link rel="stylesheet" href="../jeu/jeu.css">
+<link rel="stylesheet" href="prof.css">
+<script src="../commun/bandeau.js" data-bandeau="non"></script>
+<style>
+  .tableau-defile { overflow-x: auto; border: 1px solid var(--lp-bord); border-radius: var(--lp-rayon); background: var(--lp-carte); -webkit-overflow-scrolling: touch; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid var(--lp-bord); text-align: left; white-space: nowrap; }
+  thead th { position: sticky; top: 0; background: var(--lp-carte); font-size: .8rem; vertical-align: bottom; }
+  th.atelier-col { writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; font-weight: 600; font-size: .75rem; padding: 8px 4px; }
+  td.cellule { text-align: center; font-weight: 700; font-size: .8rem; min-width: 44px; }
+  tbody th { position: sticky; left: 0; background: var(--lp-carte); z-index: 1; }
+  .synthese { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 16px 0; }
+  .synthese div { background: var(--lp-carte); border: 1px solid var(--lp-bord); border-radius: 14px; padding: 12px; }
+  .synthese dt { font-size: .8rem; color: var(--lp-doux); }
+  .synthese dd { margin: 0; font-size: 1.4rem; font-weight: 800; }
+  .difficile { display: flex; gap: 12px; align-items: flex-start; }
+  .difficile .taux { flex: none; font-weight: 900; font-size: 1.1rem; color: var(--lp-erreur); min-width: 56px; }
+  .legende { display: flex; flex-wrap: wrap; gap: 10px; font-size: .85rem; color: var(--lp-doux); margin: 8px 0; }
+  .legende span::before { content: ''; display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; background: var(--c); }
+  .zone-depot { border: 2px dashed var(--lp-bord); border-radius: 14px; padding: 14px; text-align: center; color: var(--lp-doux); }
+  .zone-depot.survol { border-color: var(--filiere); background: var(--filiere-clair); }
+  .avertissements { color: var(--lp-erreur); font-size: .9rem; margin: 0; padding-left: 1.2em; }
+  .presence-badge { font-size: .78rem; font-weight: 700; padding: 5px 10px; border-radius: 999px; background: var(--lp-carte); border: 1px solid var(--lp-bord); color: var(--lp-doux); white-space: nowrap; display: inline-flex; align-items: center; gap: 5px; }
+  .presence-badge.actif { color: #0b7a4f; border-color: #0b7a4f; background: #e6f6ee; }
+</style>
+</head>
+<body class="lp-page">
+<header class="entete">
+  <a class="bouton-icone" href="../" aria-label="Portail Labo Pro">⌂</a>
+  <div class="entete-titre"><span class="entete-filiere">Espace enseignant</span><span>Tableau de bord de la classe</span></div>
+  <span id="presence-badge" class="presence-badge" role="status" aria-live="polite" hidden></span>
+  <button class="bouton-icone" type="button" data-lp-dys aria-pressed="false" title="Lecture DYS">Aa</button>
+</header>
+<main class="conteneur">
+  <h1>👩‍🏫 Progression de la classe</h1>
+  <p class="doux">Chaque élève trouve son code dans le mode jeu, rubrique <strong>💾 Sauvegarde</strong>, et vous le transmet (messagerie de l’ENT, devoir en ligne…). Les codes ne quittent pas cette page : rien n’est envoyé ni enregistré.</p>
+
+  <section class="carte pile" aria-labelledby="t-codes">
+    <h2 id="t-codes">1. Ajouter les codes des élèves</h2>
+    <label class="champ"><span>Collez un ou plusieurs codes (un par ligne)</span>
+      <textarea id="codes" class="code" rows="5" placeholder="LPG1z.…&#10;LPG1z.…"></textarea>
+    </label>
+    <div class="zone-depot" id="depot">ou déposez ici les fichiers <code>.txt</code> téléchargés par les élèves · <label class="bouton" style="min-height:40px;padding:6px 12px">choisir des fichiers<input type="file" id="fichiers" accept=".txt,text/plain" multiple hidden></label></div>
+    <div class="actions-ligne">
+      <button class="bouton principal" type="button" id="analyser">Afficher la progression</button>
+      <button class="bouton" type="button" id="vider">Tout effacer</button>
+    </div>
+    <ul class="avertissements" id="avertissements"></ul>
+  </section>
+
+  <div id="resultats"></div>
+</main>
+
+<script type="module">
+import * as M from '../jeu/moteur.js';
+
+const $ = s => document.querySelector(s);
+const echapper = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const NOMS = { assp: 'Bac Pro ASSP', aepa: 'Bac Pro AEPA' };
+const banques = {};
+async function banque(f) {
+  if (!banques[f]) banques[f] = await (await fetch(`../contenu/${f}.json`)).json();
+  return banques[f];
+}
+const dateDe = jour => jour == null ? '—' : new Date(jour * 86400000).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit' });
+const couleurMaitrise = m => m >= 0.9 ? '#0b7a4f' : m >= 0.6 ? '#4f9d69' : m >= 0.3 ? '#d9a400' : m > 0 ? '#e07a3a' : 'transparent';
+
+document.querySelectorAll('[data-lp-dys]').forEach(b => {
+  b.setAttribute('aria-pressed', String(document.documentElement.hasAttribute('data-dys')));
+  b.addEventListener('click', () => { window.LaboPro.basculerDys(); });
+});
+
+// --- dépôt de fichiers
+const depot = $('#depot');
+async function lireFichiers(fichiers) {
+  const textes = await Promise.all([...fichiers].map(f => f.text()));
+  $('#codes').value = ($('#codes').value.trim() + '\n' + textes.join('\n')).trim();
+  analyser();
+}
+$('#fichiers').addEventListener('change', e => lireFichiers(e.target.files));
+['dragenter', 'dragover'].forEach(t => depot.addEventListener(t, e => { e.preventDefault(); depot.classList.add('survol'); }));
+['dragleave', 'drop'].forEach(t => depot.addEventListener(t, e => { e.preventDefault(); depot.classList.remove('survol'); }));
+depot.addEventListener('drop', e => lireFichiers(e.dataTransfer.files));
+$('#analyser').addEventListener('click', analyser);
+$('#vider').addEventListener('click', () => { $('#codes').value = ''; $('#resultats').innerHTML = ''; $('#avertissements').innerHTML = ''; });
+
+async function analyser() {
+  const codes = $('#codes').value.split(/\s+/).filter(c => c.startsWith('LPG1'));
+  const avert = [];
+  const profils = new Map();
+  for (const c of codes) {
+    try {
+      const p = await M.importerCode(c);
+      const deja = profils.get(p.id);
+      if (!deja || p.xp > deja.xp) profils.set(p.id, p); // le code le plus récent d’un même élève
+    } catch (e) { avert.push(`Code illisible : ${c.slice(0, 18)}…`); }
+  }
+  if (!codes.length) avert.push('Aucun code détecté (un code commence par « LPG1 »).');
+  $('#avertissements').innerHTML = avert.map(a => `<li>${echapper(a)}</li>`).join('');
+  const parFiliere = {};
+  for (const p of profils.values()) (parFiliere[p.filiere] ||= []).push(p);
+  let html = '';
+  for (const [f, liste] of Object.entries(parFiliere)) html += await rendreFiliere(f, liste);
+  $('#resultats').innerHTML = html;
+  $('#resultats').querySelectorAll('[data-csv]').forEach(b => b.addEventListener('click', () => exporterCSV(b.dataset.csv, parFiliere[b.dataset.csv])));
+  if (html) $('#resultats h2')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+async function rendreFiliere(f, liste) {
+  const b = await banque(f);
+  liste.sort((x, y) => x.pseudo.localeCompare(y.pseudo, 'fr'));
+  const jour = M.jourDe();
+  const actifs7 = liste.filter(p => Object.keys(p.jours).some(j => jour - j < 7)).length;
+  const lignes = liste.map(p => {
+    const s = M.statistiques(p, b, jour);
+    const dernier = Math.max(...Object.keys(p.jours).map(Number), -Infinity);
+    return `<tr><th scope="row">${echapper(p.avatar)} ${echapper(p.pseudo)}</th>
+      <td>${s.niveau.icone} ${s.niveau.nom}</td><td>${p.xp}</td><td>${dateDe(isFinite(dernier) ? dernier : null)}</td><td>${s.fichesDebloquees}/${s.fichesTotal}</td>
+      ${b.ateliers.map(a => { const m = M.maitriseAtelier(p, b, a.id); return `<td class="cellule" style="background:${couleurMaitrise(m.maitrise)};color:${m.maitrise >= 0.3 ? '#fff' : 'inherit'}" title="${echapper(a.titre)} : ${Math.round(m.maitrise * 100)} %, ${m.vus}/${m.total} vues">${m.vus ? Math.round(m.maitrise * 100) : '·'}</td>`; }).join('')}
+    </tr>`;
+  }).join('');
+
+  // Questions les plus ratées : part des élèves ayant vu la question et actuellement en boîte 1
+  const difficiles = b.items.map(it => {
+    const vus = liste.filter(p => p.items[it.id]);
+    const enErreur = vus.filter(p => p.items[it.id].b === 1).length;
+    const reponses = vus.reduce((s, p) => s + p.items[it.id].n, 0), bonnes = vus.reduce((s, p) => s + p.items[it.id].r, 0);
+    return { it, vus: vus.length, taux: vus.length ? enErreur / vus.length : 0, reussite: reponses ? bonnes / reponses : 1 };
+  }).filter(x => x.vus >= Math.min(2, liste.length) && x.taux > 0).sort((x, y) => y.taux - x.taux || x.reussite - y.reussite).slice(0, 10);
+
+  return `<section class="pile" style="margin-top:24px" data-filiere="${f}" aria-labelledby="t-${f}">
+    <h2 id="t-${f}">2. ${NOMS[f] || f} · ${liste.length} élève${liste.length > 1 ? 's' : ''}</h2>
+    <dl class="synthese">
+      <div><dt>Actifs cette semaine</dt><dd>${actifs7}/${liste.length}</dd></div>
+      <div><dt>XP moyen</dt><dd>${Math.round(liste.reduce((s, p) => s + p.xp, 0) / liste.length)}</dd></div>
+      <div><dt>Questions vues (moyenne)</dt><dd>${Math.round(liste.reduce((s, p) => s + Object.keys(p.items).length, 0) / liste.length)}/${b.items.length}</dd></div>
+      <div><dt>Défis du jour réussis</dt><dd>${liste.reduce((s, p) => s + Object.keys(p.defis).length, 0)}</dd></div>
+    </dl>
+    <p class="legende"><strong>Maîtrise par atelier (%) :</strong> <span style="--c:#e07a3a">débutée</span><span style="--c:#d9a400">≥ 30 % 🥉</span><span style="--c:#4f9d69">≥ 60 % 🥈</span><span style="--c:#0b7a4f">≥ 90 % 🥇</span><span style="--c:transparent">· = pas commencé</span></p>
+    <div class="tableau-defile" tabindex="0" role="region" aria-label="Tableau de progression ${NOMS[f] || f}">
+      <table>
+        <thead><tr><th scope="col">Élève</th><th scope="col">Niveau</th><th scope="col">XP</th><th scope="col">Dernière activité</th><th scope="col">Fiches</th>
+          ${b.ateliers.map(a => `<th scope="col" class="atelier-col" title="${echapper(a.titre)}">${a.icone} ${echapper(a.titre)}</th>`).join('')}</tr></thead>
+        <tbody>${lignes}</tbody>
+      </table>
+    </div>
+    <p class="actions-ligne"><button class="bouton" type="button" data-csv="${f}">⬇️ Exporter en CSV (tableur)</button></p>
+    <section class="carte pile" aria-labelledby="t-diff-${f}">
+      <h3 id="t-diff-${f}">🎯 À retravailler en classe</h3>
+      ${difficiles.length ? `<p class="doux petit">Questions où la plus grande part des élèves en est restée à une erreur.</p>` + difficiles.map(d => {
+        const a = b.ateliers.find(x => x.id === d.it.atelier);
+        return `<div class="difficile"><span class="taux">${Math.round(d.taux * 100)} %</span><div><strong>${a.icone} ${echapper(a.titre)}</strong><br>${d.it.contexte ? `<span class="doux">${echapper(d.it.contexte.slice(0, 160))}${d.it.contexte.length > 160 ? '…' : ''}</span><br>` : ''}${echapper(d.it.enonce)}<br><span class="doux petit">${d.vus} élève${d.vus > 1 ? 's' : ''} l’ont vue · ${Math.round(d.reussite * 100)} % de bonnes réponses</span></div></div>`;
+      }).join('') : '<p class="doux">Pas encore assez de réponses pour repérer des difficultés communes.</p>'}
+    </section>
+  </section>`;
+}
+
+async function exporterCSV(f, liste) {
+  const b = await banque(f);
+  const sep = ';';
+  const entete = ['Pseudo', 'Niveau', 'XP', 'Questions vues', 'Fiches', ...b.ateliers.map(a => `${a.titre} (%)`)];
+  const lignes = liste.map(p => {
+    const s = M.statistiques(p, b);
+    return [p.pseudo, s.niveau.nom, p.xp, Object.keys(p.items).length, s.fichesDebloquees, ...b.ateliers.map(a => Math.round(M.maitriseAtelier(p, b, a.id).maitrise * 100))];
+  });
+  const csv = '﻿' + [entete, ...lignes].map(l => l.map(v => `"${String(v).replace(/"/g, '""')}"`).join(sep)).join('\n');
+  const lien = document.createElement('a');
+  lien.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+  lien.download = `progression-${f}-${new Date().toISOString().slice(0, 10)}.csv`;
+  lien.click();
+  setTimeout(() => URL.revokeObjectURL(lien.href), 1000);
+}
+</script>
+
+<script type="module">
+// Compteur de présence anonyme, visible dans le seul espace enseignant.
+import { suivrePresence } from './presence.js';
+const badge = document.getElementById('presence-badge');
+suivrePresence(etat => {
+  if (!badge) return;
+  if (!etat || !etat.configure || etat.erreur || !etat.n) { badge.hidden = true; return; }
+  badge.hidden = false;
+  badge.classList.toggle('actif', etat.n >= 2);
+  badge.textContent = `👥 ${etat.n} en ligne`;
+  badge.title = etat.n >= 2
+    ? `${etat.n} personnes ont l’espace enseignant ouvert en ce moment.`
+    : 'Vous êtes seul·e sur l’espace enseignant pour l’instant.';
+});
+</script>
+</body>
+</html>
